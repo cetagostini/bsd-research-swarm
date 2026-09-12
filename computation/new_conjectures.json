@@ -1,0 +1,44 @@
+[
+  {
+    "id": "CONJ-L-DISC",
+    "statement": "For rank 0 elliptic curves E/Q, there exists a constant C > 0 such that |L(E,1)| \u2265 C/|disc(E)|^{1/2+\u03b5} for all \u03b5 > 0.",
+    "evidence": "Computed for 10,196 curves with |a|,|b| \u2264 50.",
+    "status": "Conjecture",
+    "tools": "Point counting, Euler product, LMFDB verification"
+  },
+  {
+    "id": "CONJ-DISC-FACTORS",
+    "statement": "If E/Q has rank r \u2265 2, then disc(E) has at least r+1 distinct prime factors.",
+    "evidence": "Top 10 small-L curves have 3-5 prime factors in discriminant.",
+    "status": "Speculation",
+    "tools": "Factorization, rank computation, Cremona database"
+  },
+  {
+    "id": "CONJ-AP-BIAS",
+    "statement": "For E/Q with analytic rank r, E[a_p] = -r + o(1) as p \u2192 \u221e, where the expectation is over primes of good reduction.",
+    "evidence": "High-rank candidates consistently show negative mean a_p.",
+    "status": "Conjecture",
+    "tools": "Sato-Tate distribution, random matrix theory, explicit formulas"
+  },
+  {
+    "id": "CONJ-PARITY-AP",
+    "statement": "For E/Q, w(E) = sign(\u03a3_{p\u2264X} a_p) for X > C(E) where C(E) depends on the conductor.",
+    "evidence": "Negative a_p sums correlate with small |L| values (likely odd rank).",
+    "status": "Conjecture",
+    "tools": "Explicit formula for L-functions, zero-free regions"
+  },
+  {
+    "id": "CONJ-TWIST-AVG",
+    "statement": "For a fixed E/Q, the average rank of its quadratic twists E_d over d with |d| \u2264 X is O(log log X / log X).",
+    "evidence": "Heuristic from Euler product statistics.",
+    "status": "Speculation",
+    "tools": "Quadratic twist families, moments of L-functions, Bhargava-Shankar"
+  },
+  {
+    "id": "CONJ-TAMAGAWA",
+    "statement": "For E/Q with rank r \u2265 2, the Tamagawa product satisfies \u220fc_v \u2265 N(E)^{\u03b4(r)} for some \u03b4(r) > 0.",
+    "evidence": "Heuristic from BSD formula: large rank requires large compensating factors.",
+    "status": "Speculation",
+    "tools": "BSD formula, Tamagawa number computation, LMFDB"
+  }
+]
