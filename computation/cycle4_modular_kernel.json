@@ -1,0 +1,5917 @@
+{
+  "title": "Modular Parametrization Kernel for Rank 2 Curves",
+  "description": "For each rank 2 elliptic curve E/Q with conductor N \u2264 2000, we compute the kernel K = ker(\u03c6*: J_0(N) \u2192 E) of the dual modular parametrization and its 2-torsion K[2].",
+  "max_conductor": 2000,
+  "total_curves_analyzed": 108,
+  "genus_formula": "g(N) = 1 + \u03c8(N)/12 - \u03bd\u2082(N)/4 - \u03bd\u2083(N)/3 - \u03bc(N)/2 (OEIS A001617)",
+  "visibility_theorem": "Sha(E)[2] is potentially visible in J_0(N) iff K[2]^{G_Q} \u2260 0. This occurs iff E(Q)[2] \u2260 0 (i.e., E has a rational 2-torsion point).",
+  "summary_statistics": {
+    "total_rank2_curves": 108,
+    "genus_distribution": {
+      "32": 1,
+      "35": 1,
+      "47": 2,
+      "53": 1,
+      "54": 1,
+      "58": 1,
+      "65": 1,
+      "67": 1,
+      "71": 1,
+      "75": 1,
+      "81": 1,
+      "82": 2,
+      "89": 1,
+      "93": 1,
+      "97": 2,
+      "99": 1,
+      "107": 1,
+      "109": 1,
+      "112": 1,
+      "115": 3,
+      "119": 1,
+      "123": 1,
+      "125": 2,
+      "127": 2,
+      "129": 1,
+      "133": 2,
+      "134": 2,
+      "135": 2,
+      "137": 1,
+      "139": 2,
+      "140": 1,
+      "141": 2,
+      "147": 1,
+      "149": 3,
+      "151": 1,
+      "155": 1,
+      "157": 1,
+      "159": 3,
+      "160": 1,
+      "163": 2,
+      "167": 1,
+      "171": 2,
+      "173": 3,
+      "177": 4,
+      "178": 1,
+      "181": 2,
+      "195": 1,
+      "197": 1,
+      "198": 1,
+      "199": 1,
+      "204": 1,
+      "207": 1,
+      "208": 2,
+      "209": 2,
+      "211": 2,
+      "214": 1,
+      "216": 2,
+      "221": 1,
+      "225": 1,
+      "226": 1,
+      "229": 2,
+      "233": 2,
+      "235": 1,
+      "237": 1,
+      "238": 1,
+      "240": 1,
+      "244": 1,
+      "264": 3,
+      "273": 2,
+      "274": 1,
+      "277": 1,
+      "287": 2,
+      "288": 2
+    },
+    "visibility_classification": {
+      "potentially_visible": 14,
+      "K2_GQ_trivial": 94
+    },
+    "modular_degree_range": [
+      28,
+      1296
+    ],
+    "modular_degree_v2_range": [
+      2,
+      8
+    ],
+    "even_modular_degree_count": 108,
+    "kernel_dim_range": [
+      31,
+      287
+    ],
+    "K2_order_range": [
+      2147483648,
+      248661618204893321077691124073410420050228075398673858720231988446579748506266687766528
+    ],
+    "K2GQ_zero_count": 94,
+    "K2GQ_nonzero_count": 14
+  },
+  "isogeny_class_summary": {
+    "1001c": {
+      "conductor": 1001,
+      "genus": 109,
+      "kernel_dim": 108,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1001c1",
+          "modular_degree": 1008,
+          "kernel_dim": 108,
+          "K2_dim": 108,
+          "K2_order": 324518553658426726783156020576256,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1028a": {
+      "conductor": 1028,
+      "genus": 127,
+      "kernel_dim": 126,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1028a1",
+          "modular_degree": 132,
+          "kernel_dim": 126,
+          "K2_dim": 126,
+          "K2_order": 85070591730234615865843651857942052864,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1034a": {
+      "conductor": 1034,
+      "genus": 141,
+      "kernel_dim": 140,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1034a1",
+          "modular_degree": 128,
+          "kernel_dim": 140,
+          "K2_dim": 140,
+          "K2_order": 1393796574908163946345982392040522594123776,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1058c": {
+      "conductor": 1058,
+      "genus": 115,
+      "kernel_dim": 114,
+      "num_curves": 2,
+      "curves": [
+        {
+          "label": "1058c1",
+          "modular_degree": 80,
+          "kernel_dim": 114,
+          "K2_dim": 114,
+          "K2_order": 20769187434139310514121985316880384,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        },
+        {
+          "label": "1058c2",
+          "modular_degree": 240,
+          "kernel_dim": 114,
+          "K2_dim": 114,
+          "K2_order": 20769187434139310514121985316880384,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1070a": {
+      "conductor": 1070,
+      "genus": 159,
+      "kernel_dim": 158,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1070a1",
+          "modular_degree": 240,
+          "kernel_dim": 158,
+          "K2_dim": 158,
+          "K2_order": 365375409332725729550921208179070754913983135744,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1073a": {
+      "conductor": 1073,
+      "genus": 93,
+      "kernel_dim": 92,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1073a1",
+          "modular_degree": 128,
+          "kernel_dim": 92,
+          "K2_dim": 92,
+          "K2_order": 4951760157141521099596496896,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1077a": {
+      "conductor": 1077,
+      "genus": 119,
+      "kernel_dim": 118,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1077a1",
+          "modular_degree": 144,
+          "kernel_dim": 118,
+          "K2_dim": 118,
+          "K2_order": 332306998946228968225951765070086144,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1088j": {
+      "conductor": 1088,
+      "genus": 133,
+      "kernel_dim": 132,
+      "num_curves": 2,
+      "curves": [
+        {
+          "label": "1088j1",
+          "modular_degree": 192,
+          "kernel_dim": 132,
+          "K2_dim": 132,
+          "K2_order": 5444517870735015415413993718908291383296,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        },
+        {
+          "label": "1088j2",
+          "modular_degree": 384,
+          "kernel_dim": 132,
+          "K2_dim": 132,
+          "K2_order": 5444517870735015415413993718908291383296,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        }
+      ]
+    },
+    "1094a": {
+      "conductor": 1094,
+      "genus": 135,
+      "kernel_dim": 134,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1094a1",
+          "modular_degree": 88,
+          "kernel_dim": 134,
+          "K2_dim": 134,
+          "K2_order": 21778071482940061661655974875633165533184,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1102a": {
+      "conductor": 1102,
+      "genus": 147,
+      "kernel_dim": 146,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1102a1",
+          "modular_degree": 288,
+          "kernel_dim": 146,
+          "K2_dim": 146,
+          "K2_order": 89202980794122492566142873090593446023921664,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1126a": {
+      "conductor": 1126,
+      "genus": 140,
+      "kernel_dim": 139,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1126a1",
+          "modular_degree": 176,
+          "kernel_dim": 139,
+          "K2_dim": 139,
+          "K2_order": 696898287454081973172991196020261297061888,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1132a": {
+      "conductor": 1132,
+      "genus": 139,
+      "kernel_dim": 138,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1132a1",
+          "modular_degree": 120,
+          "kernel_dim": 138,
+          "K2_dim": 138,
+          "K2_order": 348449143727040986586495598010130648530944,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1137a": {
+      "conductor": 1137,
+      "genus": 125,
+      "kernel_dim": 124,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1137a1",
+          "modular_degree": 72,
+          "kernel_dim": 124,
+          "K2_dim": 124,
+          "K2_order": 21267647932558653966460912964485513216,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1141a": {
+      "conductor": 1141,
+      "genus": 107,
+      "kernel_dim": 106,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1141a1",
+          "modular_degree": 280,
+          "kernel_dim": 106,
+          "K2_dim": 106,
+          "K2_order": 81129638414606681695789005144064,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1143c": {
+      "conductor": 1143,
+      "genus": 125,
+      "kernel_dim": 124,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1143c1",
+          "modular_degree": 352,
+          "kernel_dim": 124,
+          "K2_dim": 124,
+          "K2_order": 21267647932558653966460912964485513216,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1147a": {
+      "conductor": 1147,
+      "genus": 99,
+      "kernel_dim": 98,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1147a1",
+          "modular_degree": 80,
+          "kernel_dim": 98,
+          "K2_dim": 98,
+          "K2_order": 316912650057057350374175801344,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1171a": {
+      "conductor": 1171,
+      "genus": 97,
+      "kernel_dim": 96,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1171a1",
+          "modular_degree": 88,
+          "kernel_dim": 96,
+          "K2_dim": 96,
+          "K2_order": 79228162514264337593543950336,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1246c": {
+      "conductor": 1246,
+      "genus": 177,
+      "kernel_dim": 176,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1246c1",
+          "modular_degree": 320,
+          "kernel_dim": 176,
+          "K2_dim": 176,
+          "K2_order": 95780971304118053647396689196894323976171195136475136,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1309b": {
+      "conductor": 1309,
+      "genus": 141,
+      "kernel_dim": 140,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1309b1",
+          "modular_degree": 256,
+          "kernel_dim": 140,
+          "K2_dim": 140,
+          "K2_order": 1393796574908163946345982392040522594123776,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1324a": {
+      "conductor": 1324,
+      "genus": 163,
+      "kernel_dim": 162,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1324a1",
+          "modular_degree": 108,
+          "kernel_dim": 162,
+          "K2_dim": 162,
+          "K2_order": 5846006549323611672814739330865132078623730171904,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1325e": {
+      "conductor": 1325,
+      "genus": 129,
+      "kernel_dim": 128,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1325e1",
+          "modular_degree": 216,
+          "kernel_dim": 128,
+          "K2_dim": 128,
+          "K2_order": 340282366920938463463374607431768211456,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1431a": {
+      "conductor": 1431,
+      "genus": 157,
+      "kernel_dim": 156,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1431a1",
+          "modular_degree": 288,
+          "kernel_dim": 156,
+          "K2_dim": 156,
+          "K2_order": 91343852333181432387730302044767688728495783936,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1436a": {
+      "conductor": 1436,
+      "genus": 178,
+      "kernel_dim": 177,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1436a1",
+          "modular_degree": 192,
+          "kernel_dim": 177,
+          "K2_dim": 177,
+          "K2_order": 191561942608236107294793378393788647952342390272950272,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1443c": {
+      "conductor": 1443,
+      "genus": 173,
+      "kernel_dim": 172,
+      "num_curves": 2,
+      "curves": [
+        {
+          "label": "1443c1",
+          "modular_degree": 112,
+          "kernel_dim": 172,
+          "K2_dim": 172,
+          "K2_order": 5986310706507378352962293074805895248510699696029696,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        },
+        {
+          "label": "1443c2",
+          "modular_degree": 224,
+          "kernel_dim": 172,
+          "K2_dim": 172,
+          "K2_order": 5986310706507378352962293074805895248510699696029696,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        }
+      ]
+    },
+    "1446a": {
+      "conductor": 1446,
+      "genus": 238,
+      "kernel_dim": 237,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1446a1",
+          "modular_degree": 192,
+          "kernel_dim": 237,
+          "K2_dim": 237,
+          "K2_order": 220855883097298041197912187592864814478435487109452369765200775161577472,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1466b": {
+      "conductor": 1466,
+      "genus": 181,
+      "kernel_dim": 180,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1466b1",
+          "modular_degree": 1040,
+          "kernel_dim": 180,
+          "K2_dim": 180,
+          "K2_order": 1532495540865888858358347027150309183618739122183602176,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1477a": {
+      "conductor": 1477,
+      "genus": 139,
+      "kernel_dim": 138,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1477a1",
+          "modular_degree": 104,
+          "kernel_dim": 138,
+          "K2_dim": 138,
+          "K2_order": 348449143727040986586495598010130648530944,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1480a": {
+      "conductor": 1480,
+      "genus": 221,
+      "kernel_dim": 220,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1480a1",
+          "modular_degree": 448,
+          "kernel_dim": 220,
+          "K2_dim": 220,
+          "K2_order": 1684996666696914987166688442938726917102321526408785780068975640576,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1483a": {
+      "conductor": 1483,
+      "genus": 123,
+      "kernel_dim": 122,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1483a1",
+          "modular_degree": 120,
+          "kernel_dim": 122,
+          "K2_dim": 122,
+          "K2_order": 5316911983139663491615228241121378304,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1525c": {
+      "conductor": 1525,
+      "genus": 149,
+      "kernel_dim": 148,
+      "num_curves": 2,
+      "curves": [
+        {
+          "label": "1525c1",
+          "modular_degree": 112,
+          "kernel_dim": 148,
+          "K2_dim": 148,
+          "K2_order": 356811923176489970264571492362373784095686656,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        },
+        {
+          "label": "1525c2",
+          "modular_degree": 224,
+          "kernel_dim": 148,
+          "K2_dim": 148,
+          "K2_order": 356811923176489970264571492362373784095686656,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        }
+      ]
+    },
+    "1531a": {
+      "conductor": 1531,
+      "genus": 127,
+      "kernel_dim": 126,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1531a1",
+          "modular_degree": 96,
+          "kernel_dim": 126,
+          "K2_dim": 126,
+          "K2_order": 85070591730234615865843651857942052864,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1534b": {
+      "conductor": 1534,
+      "genus": 207,
+      "kernel_dim": 206,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1534b1",
+          "modular_degree": 576,
+          "kernel_dim": 206,
+          "K2_dim": 206,
+          "K2_order": 102844034832575377634685573909834406561420991602098741459288064,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1570b": {
+      "conductor": 1570,
+      "genus": 233,
+      "kernel_dim": 232,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1570b1",
+          "modular_degree": 176,
+          "kernel_dim": 232,
+          "K2_dim": 232,
+          "K2_order": 6901746346790563787434755862277025452451108972170386555162524223799296,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1576a": {
+      "conductor": 1576,
+      "genus": 195,
+      "kernel_dim": 194,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1576a1",
+          "modular_degree": 176,
+          "kernel_dim": 194,
+          "K2_dim": 194,
+          "K2_order": 25108406941546723055343157692830665664409421777856138051584,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1591a": {
+      "conductor": 1591,
+      "genus": 137,
+      "kernel_dim": 136,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1591a1",
+          "modular_degree": 744,
+          "kernel_dim": 136,
+          "K2_dim": 136,
+          "K2_order": 87112285931760246646623899502532662132736,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1594a": {
+      "conductor": 1594,
+      "genus": 198,
+      "kernel_dim": 197,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1594a1",
+          "modular_degree": 960,
+          "kernel_dim": 197,
+          "K2_dim": 197,
+          "K2_order": 200867255532373784442745261542645325315275374222849104412672,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1608a": {
+      "conductor": 1608,
+      "genus": 264,
+      "kernel_dim": 263,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1608a1",
+          "modular_degree": 416,
+          "kernel_dim": 263,
+          "K2_dim": 263,
+          "K2_order": 14821387422376473014217086081112052205218558037201992197050570753012880593911808,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1611d": {
+      "conductor": 1611,
+      "genus": 177,
+      "kernel_dim": 176,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1611d1",
+          "modular_degree": 288,
+          "kernel_dim": 176,
+          "K2_dim": 176,
+          "K2_order": 95780971304118053647396689196894323976171195136475136,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1613a": {
+      "conductor": 1613,
+      "genus": 134,
+      "kernel_dim": 133,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1613a1",
+          "modular_degree": 80,
+          "kernel_dim": 133,
+          "K2_dim": 133,
+          "K2_order": 10889035741470030830827987437816582766592,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1615a": {
+      "conductor": 1615,
+      "genus": 177,
+      "kernel_dim": 176,
+      "num_curves": 2,
+      "curves": [
+        {
+          "label": "1615a1",
+          "modular_degree": 576,
+          "kernel_dim": 176,
+          "K2_dim": 176,
+          "K2_order": 95780971304118053647396689196894323976171195136475136,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        },
+        {
+          "label": "1615a2",
+          "modular_degree": 1152,
+          "kernel_dim": 176,
+          "K2_dim": 176,
+          "K2_order": 95780971304118053647396689196894323976171195136475136,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        }
+      ]
+    },
+    "1621a": {
+      "conductor": 1621,
+      "genus": 134,
+      "kernel_dim": 133,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1621a1",
+          "modular_degree": 68,
+          "kernel_dim": 133,
+          "K2_dim": 133,
+          "K2_order": 10889035741470030830827987437816582766592,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1627a": {
+      "conductor": 1627,
+      "genus": 135,
+      "kernel_dim": 134,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1627a1",
+          "modular_degree": 72,
+          "kernel_dim": 134,
+          "K2_dim": 134,
+          "K2_order": 21778071482940061661655974875633165533184,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1639b": {
+      "conductor": 1639,
+      "genus": 149,
+      "kernel_dim": 148,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1639b1",
+          "modular_degree": 136,
+          "kernel_dim": 148,
+          "K2_dim": 148,
+          "K2_order": 356811923176489970264571492362373784095686656,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1641b": {
+      "conductor": 1641,
+      "genus": 181,
+      "kernel_dim": 180,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1641b1",
+          "modular_degree": 184,
+          "kernel_dim": 180,
+          "K2_dim": 180,
+          "K2_order": 1532495540865888858358347027150309183618739122183602176,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1642a": {
+      "conductor": 1642,
+      "genus": 204,
+      "kernel_dim": 203,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1642a1",
+          "modular_degree": 112,
+          "kernel_dim": 203,
+          "K2_dim": 203,
+          "K2_order": 12855504354071922204335696738729300820177623950262342682411008,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1653a": {
+      "conductor": 1653,
+      "genus": 197,
+      "kernel_dim": 196,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1653a1",
+          "modular_degree": 384,
+          "kernel_dim": 196,
+          "K2_dim": 196,
+          "K2_order": 100433627766186892221372630771322662657637687111424552206336,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1662a": {
+      "conductor": 1662,
+      "genus": 274,
+      "kernel_dim": 273,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1662a1",
+          "modular_degree": 352,
+          "kernel_dim": 273,
+          "K2_dim": 273,
+          "K2_order": 15177100720513508366558296147058741458143803430094840009779784451085189728165691392,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1664n": {
+      "conductor": 1664,
+      "genus": 208,
+      "kernel_dim": 207,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1664n1",
+          "modular_degree": 320,
+          "kernel_dim": 207,
+          "K2_dim": 207,
+          "K2_order": 205688069665150755269371147819668813122841983204197482918576128,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1674d": {
+      "conductor": 1674,
+      "genus": 277,
+      "kernel_dim": 276,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1674d1",
+          "modular_degree": 336,
+          "kernel_dim": 276,
+          "K2_dim": 276,
+          "K2_order": 121416805764108066932466369176469931665150427440758720078238275608681517825325531136,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1688a": {
+      "conductor": 1688,
+      "genus": 208,
+      "kernel_dim": 207,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1688a1",
+          "modular_degree": 160,
+          "kernel_dim": 207,
+          "K2_dim": 207,
+          "K2_order": 205688069665150755269371147819668813122841983204197482918576128,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1696d": {
+      "conductor": 1696,
+      "genus": 209,
+      "kernel_dim": 208,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1696d1",
+          "modular_degree": 448,
+          "kernel_dim": 208,
+          "K2_dim": 208,
+          "K2_order": 411376139330301510538742295639337626245683966408394965837152256,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1696e": {
+      "conductor": 1696,
+      "genus": 209,
+      "kernel_dim": 208,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1696e1",
+          "modular_degree": 256,
+          "kernel_dim": 208,
+          "K2_dim": 208,
+          "K2_order": 411376139330301510538742295639337626245683966408394965837152256,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1701j": {
+      "conductor": 1701,
+      "genus": 199,
+      "kernel_dim": 198,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1701j1",
+          "modular_degree": 432,
+          "kernel_dim": 198,
+          "K2_dim": 198,
+          "K2_order": 401734511064747568885490523085290650630550748445698208825344,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1712d": {
+      "conductor": 1712,
+      "genus": 211,
+      "kernel_dim": 210,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1712d1",
+          "modular_degree": 224,
+          "kernel_dim": 210,
+          "K2_dim": 210,
+          "K2_order": 1645504557321206042154969182557350504982735865633579863348609024,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1717b": {
+      "conductor": 1717,
+      "genus": 151,
+      "kernel_dim": 150,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1717b1",
+          "modular_degree": 104,
+          "kernel_dim": 150,
+          "K2_dim": 150,
+          "K2_order": 1427247692705959881058285969449495136382746624,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1732a": {
+      "conductor": 1732,
+      "genus": 214,
+      "kernel_dim": 213,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1732a1",
+          "modular_degree": 312,
+          "kernel_dim": 213,
+          "K2_dim": 213,
+          "K2_order": 13164036458569648337239753460458804039861886925068638906788872192,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1738a": {
+      "conductor": 1738,
+      "genus": 237,
+      "kernel_dim": 236,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1738a1",
+          "modular_degree": 256,
+          "kernel_dim": 236,
+          "K2_dim": 236,
+          "K2_order": 110427941548649020598956093796432407239217743554726184882600387580788736,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1745d": {
+      "conductor": 1745,
+      "genus": 173,
+      "kernel_dim": 172,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1745d1",
+          "modular_degree": 160,
+          "kernel_dim": 172,
+          "K2_dim": 172,
+          "K2_order": 5986310706507378352962293074805895248510699696029696,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1746b": {
+      "conductor": 1746,
+      "genus": 287,
+      "kernel_dim": 286,
+      "num_curves": 2,
+      "curves": [
+        {
+          "label": "1746b1",
+          "modular_degree": 448,
+          "kernel_dim": 286,
+          "K2_dim": 286,
+          "K2_order": 124330809102446660538845562036705210025114037699336929360115994223289874253133343883264,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        },
+        {
+          "label": "1746b2",
+          "modular_degree": 896,
+          "kernel_dim": 286,
+          "K2_dim": 286,
+          "K2_order": 124330809102446660538845562036705210025114037699336929360115994223289874253133343883264,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        }
+      ]
+    },
+    "1748a": {
+      "conductor": 1748,
+      "genus": 235,
+      "kernel_dim": 234,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1748a1",
+          "modular_degree": 360,
+          "kernel_dim": 234,
+          "K2_dim": 234,
+          "K2_order": 27606985387162255149739023449108101809804435888681546220650096895197184,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1752e": {
+      "conductor": 1752,
+      "genus": 288,
+      "kernel_dim": 287,
+      "num_curves": 2,
+      "curves": [
+        {
+          "label": "1752e1",
+          "modular_degree": 384,
+          "kernel_dim": 287,
+          "K2_dim": 287,
+          "K2_order": 248661618204893321077691124073410420050228075398673858720231988446579748506266687766528,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        },
+        {
+          "label": "1752e2",
+          "modular_degree": 768,
+          "kernel_dim": 287,
+          "K2_dim": 287,
+          "K2_order": 248661618204893321077691124073410420050228075398673858720231988446579748506266687766528,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        }
+      ]
+    },
+    "1793b": {
+      "conductor": 1793,
+      "genus": 163,
+      "kernel_dim": 162,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1793b1",
+          "modular_degree": 184,
+          "kernel_dim": 162,
+          "K2_dim": 162,
+          "K2_order": 5846006549323611672814739330865132078623730171904,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1832b": {
+      "conductor": 1832,
+      "genus": 226,
+      "kernel_dim": 225,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1832b1",
+          "modular_degree": 176,
+          "kernel_dim": 225,
+          "K2_dim": 225,
+          "K2_order": 53919893334301279589334030174039261347274288845081144962207220498432,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1856d": {
+      "conductor": 1856,
+      "genus": 229,
+      "kernel_dim": 228,
+      "num_curves": 2,
+      "curves": [
+        {
+          "label": "1856d1",
+          "modular_degree": 256,
+          "kernel_dim": 228,
+          "K2_dim": 228,
+          "K2_order": 431359146674410236714672241392314090778194310760649159697657763987456,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        },
+        {
+          "label": "1856d2",
+          "modular_degree": 768,
+          "kernel_dim": 228,
+          "K2_dim": 228,
+          "K2_order": 431359146674410236714672241392314090778194310760649159697657763987456,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1862a": {
+      "conductor": 1862,
+      "genus": 264,
+      "kernel_dim": 263,
+      "num_curves": 2,
+      "curves": [
+        {
+          "label": "1862a1",
+          "modular_degree": 432,
+          "kernel_dim": 263,
+          "K2_dim": 263,
+          "K2_order": 14821387422376473014217086081112052205218558037201992197050570753012880593911808,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        },
+        {
+          "label": "1862a2",
+          "modular_degree": 1296,
+          "kernel_dim": 263,
+          "K2_dim": 263,
+          "K2_order": 14821387422376473014217086081112052205218558037201992197050570753012880593911808,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1873a": {
+      "conductor": 1873,
+      "genus": 155,
+      "kernel_dim": 154,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1873a1",
+          "modular_degree": 64,
+          "kernel_dim": 154,
+          "K2_dim": 154,
+          "K2_order": 22835963083295358096932575511191922182123945984,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1887a": {
+      "conductor": 1887,
+      "genus": 225,
+      "kernel_dim": 224,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1887a1",
+          "modular_degree": 160,
+          "kernel_dim": 224,
+          "K2_dim": 224,
+          "K2_order": 26959946667150639794667015087019630673637144422540572481103610249216,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1888a": {
+      "conductor": 1888,
+      "genus": 233,
+      "kernel_dim": 232,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1888a1",
+          "modular_degree": 128,
+          "kernel_dim": 232,
+          "K2_dim": 232,
+          "K2_order": 6901746346790563787434755862277025452451108972170386555162524223799296,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1907a": {
+      "conductor": 1907,
+      "genus": 159,
+      "kernel_dim": 158,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1907a1",
+          "modular_degree": 112,
+          "kernel_dim": 158,
+          "K2_dim": 158,
+          "K2_order": 365375409332725729550921208179070754913983135744,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1909a": {
+      "conductor": 1909,
+      "genus": 167,
+      "kernel_dim": 166,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1909a1",
+          "modular_degree": 72,
+          "kernel_dim": 166,
+          "K2_dim": 166,
+          "K2_order": 93536104789177786765035829293842113257979682750464,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1913a": {
+      "conductor": 1913,
+      "genus": 159,
+      "kernel_dim": 158,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1913a1",
+          "modular_degree": 300,
+          "kernel_dim": 158,
+          "K2_dim": 158,
+          "K2_order": 365375409332725729550921208179070754913983135744,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1917c": {
+      "conductor": 1917,
+      "genus": 211,
+      "kernel_dim": 210,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1917c1",
+          "modular_degree": 216,
+          "kernel_dim": 210,
+          "K2_dim": 210,
+          "K2_order": 1645504557321206042154969182557350504982735865633579863348609024,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1918c": {
+      "conductor": 1918,
+      "genus": 273,
+      "kernel_dim": 272,
+      "num_curves": 2,
+      "curves": [
+        {
+          "label": "1918c1",
+          "modular_degree": 384,
+          "kernel_dim": 272,
+          "K2_dim": 272,
+          "K2_order": 7588550360256754183279148073529370729071901715047420004889892225542594864082845696,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        },
+        {
+          "label": "1918c2",
+          "modular_degree": 768,
+          "kernel_dim": 272,
+          "K2_dim": 272,
+          "K2_order": 7588550360256754183279148073529370729071901715047420004889892225542594864082845696,
+          "visibility_class": "potentially_visible",
+          "E_Q2_size": 2
+        }
+      ]
+    },
+    "1922b": {
+      "conductor": 1922,
+      "genus": 216,
+      "kernel_dim": 215,
+      "num_curves": 2,
+      "curves": [
+        {
+          "label": "1922b1",
+          "modular_degree": 120,
+          "kernel_dim": 215,
+          "K2_dim": 215,
+          "K2_order": 52656145834278593348959013841835216159447547700274555627155488768,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        },
+        {
+          "label": "1922b2",
+          "modular_degree": 360,
+          "kernel_dim": 215,
+          "K2_dim": 215,
+          "K2_order": 52656145834278593348959013841835216159447547700274555627155488768,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1933a": {
+      "conductor": 1933,
+      "genus": 160,
+      "kernel_dim": 159,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1933a1",
+          "modular_degree": 84,
+          "kernel_dim": 159,
+          "K2_dim": 159,
+          "K2_order": 730750818665451459101842416358141509827966271488,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1952b": {
+      "conductor": 1952,
+      "genus": 240,
+      "kernel_dim": 239,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1952b1",
+          "modular_degree": 256,
+          "kernel_dim": 239,
+          "K2_dim": 239,
+          "K2_order": 883423532389192164791648750371459257913741948437809479060803100646309888,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1957a": {
+      "conductor": 1957,
+      "genus": 171,
+      "kernel_dim": 170,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1957a1",
+          "modular_degree": 880,
+          "kernel_dim": 170,
+          "K2_dim": 170,
+          "K2_order": 1496577676626844588240573268701473812127674924007424,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1957b": {
+      "conductor": 1957,
+      "genus": 171,
+      "kernel_dim": 170,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1957b1",
+          "modular_degree": 112,
+          "kernel_dim": 170,
+          "K2_dim": 170,
+          "K2_order": 1496577676626844588240573268701473812127674924007424,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "1964a": {
+      "conductor": 1964,
+      "genus": 244,
+      "kernel_dim": 243,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "1964a1",
+          "modular_degree": 300,
+          "kernel_dim": 243,
+          "K2_dim": 243,
+          "K2_order": 14134776518227074636666380005943348126619871175004951664972849610340958208,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "389a": {
+      "conductor": 389,
+      "genus": 32,
+      "kernel_dim": 31,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "389a1",
+          "modular_degree": 40,
+          "kernel_dim": 31,
+          "K2_dim": 31,
+          "K2_order": 2147483648,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "433a": {
+      "conductor": 433,
+      "genus": 35,
+      "kernel_dim": 34,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "433a1",
+          "modular_degree": 28,
+          "kernel_dim": 34,
+          "K2_dim": 34,
+          "K2_order": 17179869184,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "446d": {
+      "conductor": 446,
+      "genus": 54,
+      "kernel_dim": 53,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "446d1",
+          "modular_degree": 88,
+          "kernel_dim": 53,
+          "K2_dim": 53,
+          "K2_order": 9007199254740992,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "563a": {
+      "conductor": 563,
+      "genus": 47,
+      "kernel_dim": 46,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "563a1",
+          "modular_degree": 52,
+          "kernel_dim": 46,
+          "K2_dim": 46,
+          "K2_order": 70368744177664,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "571b": {
+      "conductor": 571,
+      "genus": 47,
+      "kernel_dim": 46,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "571b1",
+          "modular_degree": 48,
+          "kernel_dim": 46,
+          "K2_dim": 46,
+          "K2_order": 70368744177664,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "643a": {
+      "conductor": 643,
+      "genus": 53,
+      "kernel_dim": 52,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "643a1",
+          "modular_degree": 32,
+          "kernel_dim": 52,
+          "K2_dim": 52,
+          "K2_order": 4503599627370496,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "655a": {
+      "conductor": 655,
+      "genus": 65,
+      "kernel_dim": 64,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "655a1",
+          "modular_degree": 144,
+          "kernel_dim": 64,
+          "K2_dim": 64,
+          "K2_order": 18446744073709551616,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "664a": {
+      "conductor": 664,
+      "genus": 81,
+      "kernel_dim": 80,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "664a1",
+          "modular_degree": 160,
+          "kernel_dim": 80,
+          "K2_dim": 80,
+          "K2_order": 1208925819614629174706176,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "681c": {
+      "conductor": 681,
+      "genus": 75,
+      "kernel_dim": 74,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "681c1",
+          "modular_degree": 96,
+          "kernel_dim": 74,
+          "K2_dim": 74,
+          "K2_order": 18889465931478580854784,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "707a": {
+      "conductor": 707,
+      "genus": 67,
+      "kernel_dim": 66,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "707a1",
+          "modular_degree": 104,
+          "kernel_dim": 66,
+          "K2_dim": 66,
+          "K2_order": 73786976294838206464,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "709a": {
+      "conductor": 709,
+      "genus": 58,
+      "kernel_dim": 57,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "709a1",
+          "modular_degree": 44,
+          "kernel_dim": 57,
+          "K2_dim": 57,
+          "K2_order": 144115188075855872,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "718b": {
+      "conductor": 718,
+      "genus": 89,
+      "kernel_dim": 88,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "718b1",
+          "modular_degree": 112,
+          "kernel_dim": 88,
+          "K2_dim": 88,
+          "K2_order": 309485009821345068724781056,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "794a": {
+      "conductor": 794,
+      "genus": 97,
+      "kernel_dim": 96,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "794a1",
+          "modular_degree": 88,
+          "kernel_dim": 96,
+          "K2_dim": 96,
+          "K2_order": 79228162514264337593543950336,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "817a": {
+      "conductor": 817,
+      "genus": 71,
+      "kernel_dim": 70,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "817a1",
+          "modular_degree": 56,
+          "kernel_dim": 70,
+          "K2_dim": 70,
+          "K2_order": 1180591620717411303424,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "916c": {
+      "conductor": 916,
+      "genus": 112,
+      "kernel_dim": 111,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "916c1",
+          "modular_degree": 132,
+          "kernel_dim": 111,
+          "K2_dim": 111,
+          "K2_order": 2596148429267413814265248164610048,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "944e": {
+      "conductor": 944,
+      "genus": 115,
+      "kernel_dim": 114,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "944e1",
+          "modular_degree": 224,
+          "kernel_dim": 114,
+          "K2_dim": 114,
+          "K2_order": 20769187434139310514121985316880384,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "997b": {
+      "conductor": 997,
+      "genus": 82,
+      "kernel_dim": 81,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "997b1",
+          "modular_degree": 48,
+          "kernel_dim": 81,
+          "K2_dim": 81,
+          "K2_order": 2417851639229258349412352,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    },
+    "997c": {
+      "conductor": 997,
+      "genus": 82,
+      "kernel_dim": 81,
+      "num_curves": 1,
+      "curves": [
+        {
+          "label": "997c1",
+          "modular_degree": 96,
+          "kernel_dim": 81,
+          "K2_dim": 81,
+          "K2_order": 2417851639229258349412352,
+          "visibility_class": "K2_GQ_trivial",
+          "E_Q2_size": 1
+        }
+      ]
+    }
+  },
+  "curves": [
+    {
+      "label": "389a1",
+      "conductor": 389,
+      "iso_class": "389a",
+      "a_invariants": [
+        0,
+        1,
+        1,
+        -2,
+        0
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 32,
+      "modular_degree": 40,
+      "generators": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "kernel_dim": 31,
+      "K2_dim_F2": 31,
+      "K2_order": 2147483648,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "433a1",
+      "conductor": 433,
+      "iso_class": "433a",
+      "a_invariants": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 35,
+      "modular_degree": 28,
+      "generators": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "kernel_dim": 34,
+      "K2_dim_F2": 34,
+      "K2_order": 17179869184,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 2,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "446d1",
+      "conductor": 446,
+      "iso_class": "446d",
+      "a_invariants": [
+        1,
+        -1,
+        0,
+        -4,
+        4
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 54,
+      "modular_degree": 88,
+      "generators": [
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "kernel_dim": 53,
+      "K2_dim_F2": 53,
+      "K2_order": 9007199254740992,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "563a1",
+      "conductor": 563,
+      "iso_class": "563a",
+      "a_invariants": [
+        1,
+        1,
+        1,
+        -15,
+        16
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 47,
+      "modular_degree": 52,
+      "generators": [
+        [
+          2,
+          -2
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "kernel_dim": 46,
+      "K2_dim_F2": 46,
+      "K2_order": 70368744177664,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 2,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "571b1",
+      "conductor": 571,
+      "iso_class": "571b",
+      "a_invariants": [
+        0,
+        1,
+        1,
+        -4,
+        2
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 47,
+      "modular_degree": 48,
+      "generators": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "kernel_dim": 46,
+      "K2_dim_F2": 46,
+      "K2_order": 70368744177664,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "643a1",
+      "conductor": 643,
+      "iso_class": "643a",
+      "a_invariants": [
+        1,
+        0,
+        0,
+        -4,
+        3
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 53,
+      "modular_degree": 32,
+      "generators": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "kernel_dim": 52,
+      "K2_dim_F2": 52,
+      "K2_order": 4503599627370496,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "655a1",
+      "conductor": 655,
+      "iso_class": "655a",
+      "a_invariants": [
+        0,
+        0,
+        1,
+        -13,
+        18
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 65,
+      "modular_degree": 144,
+      "generators": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "kernel_dim": 64,
+      "K2_dim_F2": 64,
+      "K2_order": 18446744073709551616,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "664a1",
+      "conductor": 664,
+      "iso_class": "664a",
+      "a_invariants": [
+        0,
+        0,
+        0,
+        -7,
+        10
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 81,
+      "modular_degree": 160,
+      "generators": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "kernel_dim": 80,
+      "K2_dim_F2": 80,
+      "K2_order": 1208925819614629174706176,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "681c1",
+      "conductor": 681,
+      "iso_class": "681c",
+      "a_invariants": [
+        0,
+        -1,
+        1,
+        0,
+        2
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 75,
+      "modular_degree": 96,
+      "generators": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "kernel_dim": 74,
+      "K2_dim_F2": 74,
+      "K2_order": 18889465931478580854784,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "707a1",
+      "conductor": 707,
+      "iso_class": "707a",
+      "a_invariants": [
+        0,
+        1,
+        1,
+        -12,
+        12
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 67,
+      "modular_degree": 104,
+      "generators": [
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "kernel_dim": 66,
+      "K2_dim_F2": 66,
+      "K2_order": 73786976294838206464,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "709a1",
+      "conductor": 709,
+      "iso_class": "709a",
+      "a_invariants": [
+        0,
+        -1,
+        1,
+        -2,
+        0
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 58,
+      "modular_degree": 44,
+      "generators": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "kernel_dim": 57,
+      "K2_dim_F2": 57,
+      "K2_order": 144115188075855872,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 2,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "718b1",
+      "conductor": 718,
+      "iso_class": "718b",
+      "a_invariants": [
+        1,
+        0,
+        1,
+        -5,
+        0
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 89,
+      "modular_degree": 112,
+      "generators": [
+        [
+          -1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "kernel_dim": 88,
+      "K2_dim_F2": 88,
+      "K2_order": 309485009821345068724781056,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "794a1",
+      "conductor": 794,
+      "iso_class": "794a",
+      "a_invariants": [
+        1,
+        0,
+        1,
+        -3,
+        2
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 97,
+      "modular_degree": 88,
+      "generators": [
+        [
+          1,
+          0
+        ],
+        [
+          -1,
+          2
+        ]
+      ],
+      "kernel_dim": 96,
+      "K2_dim_F2": 96,
+      "K2_order": 79228162514264337593543950336,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "817a1",
+      "conductor": 817,
+      "iso_class": "817a",
+      "a_invariants": [
+        0,
+        1,
+        1,
+        1,
+        6
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 71,
+      "modular_degree": 56,
+      "generators": [
+        [
+          4,
+          9
+        ],
+        [
+          -6,
+          15
+        ]
+      ],
+      "kernel_dim": 70,
+      "K2_dim_F2": 70,
+      "K2_order": 1180591620717411303424,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "916c1",
+      "conductor": 916,
+      "iso_class": "916c",
+      "a_invariants": [
+        0,
+        0,
+        0,
+        -4,
+        1
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 112,
+      "modular_degree": 132,
+      "generators": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "kernel_dim": 111,
+      "K2_dim_F2": 111,
+      "K2_order": 2596148429267413814265248164610048,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 2,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "944e1",
+      "conductor": 944,
+      "iso_class": "944e",
+      "a_invariants": [
+        0,
+        0,
+        0,
+        -19,
+        34
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 115,
+      "modular_degree": 224,
+      "generators": [
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "kernel_dim": 114,
+      "K2_dim_F2": 114,
+      "K2_order": 20769187434139310514121985316880384,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "997b1",
+      "conductor": 997,
+      "iso_class": "997b",
+      "a_invariants": [
+        0,
+        -1,
+        1,
+        -5,
+        -3
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 82,
+      "modular_degree": 48,
+      "generators": [
+        [
+          -1,
+          0
+        ],
+        [
+          -6,
+          -3
+        ]
+      ],
+      "kernel_dim": 81,
+      "K2_dim_F2": 81,
+      "K2_order": 2417851639229258349412352,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "997c1",
+      "conductor": 997,
+      "iso_class": "997c",
+      "a_invariants": [
+        0,
+        -1,
+        1,
+        -24,
+        54
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 82,
+      "modular_degree": 96,
+      "generators": [
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "kernel_dim": 81,
+      "K2_dim_F2": 81,
+      "K2_order": 2417851639229258349412352,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1001c1",
+      "conductor": 1001,
+      "iso_class": "1001c",
+      "a_invariants": [
+        0,
+        0,
+        1,
+        -199,
+        1092
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 109,
+      "modular_degree": 1008,
+      "generators": [
+        [
+          20,
+          71
+        ],
+        [
+          -13,
+          38
+        ]
+      ],
+      "kernel_dim": 108,
+      "K2_dim_F2": 108,
+      "K2_order": 324518553658426726783156020576256,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1028a1",
+      "conductor": 1028,
+      "iso_class": "1028a",
+      "a_invariants": [
+        0,
+        1,
+        0,
+        -10,
+        9
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 127,
+      "modular_degree": 132,
+      "generators": [
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "kernel_dim": 126,
+      "K2_dim_F2": 126,
+      "K2_order": 85070591730234615865843651857942052864,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 2,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1034a1",
+      "conductor": 1034,
+      "iso_class": "1034a",
+      "a_invariants": [
+        1,
+        0,
+        1,
+        -12,
+        14
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 141,
+      "modular_degree": 128,
+      "generators": [
+        [
+          2,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "kernel_dim": 140,
+      "K2_dim_F2": 140,
+      "K2_order": 1393796574908163946345982392040522594123776,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 7,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1058c1",
+      "conductor": 1058,
+      "iso_class": "1058c",
+      "a_invariants": [
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 115,
+      "modular_degree": 80,
+      "generators": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "kernel_dim": 114,
+      "K2_dim_F2": 114,
+      "K2_order": 20769187434139310514121985316880384,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1058c2",
+      "conductor": 1058,
+      "iso_class": "1058c",
+      "a_invariants": [
+        1,
+        0,
+        1,
+        -115,
+        462
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 115,
+      "modular_degree": 240,
+      "generators": [
+        [
+          7,
+          0
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "kernel_dim": 114,
+      "K2_dim_F2": 114,
+      "K2_order": 20769187434139310514121985316880384,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1070a1",
+      "conductor": 1070,
+      "iso_class": "1070a",
+      "a_invariants": [
+        1,
+        -1,
+        0,
+        -10,
+        16
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 159,
+      "modular_degree": 240,
+      "generators": [
+        [
+          3,
+          1
+        ],
+        [
+          -2,
+          6
+        ]
+      ],
+      "kernel_dim": 158,
+      "K2_dim_F2": 158,
+      "K2_order": 365375409332725729550921208179070754913983135744,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1073a1",
+      "conductor": 1073,
+      "iso_class": "1073a",
+      "a_invariants": [
+        0,
+        -1,
+        1,
+        -45,
+        132
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 93,
+      "modular_degree": 128,
+      "generators": [
+        [
+          -2,
+          14
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "kernel_dim": 92,
+      "K2_dim_F2": 92,
+      "K2_order": 4951760157141521099596496896,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 7,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1077a1",
+      "conductor": 1077,
+      "iso_class": "1077a",
+      "a_invariants": [
+        1,
+        1,
+        1,
+        -27,
+        42
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 119,
+      "modular_degree": 144,
+      "generators": [
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "kernel_dim": 118,
+      "K2_dim_F2": 118,
+      "K2_order": 332306998946228968225951765070086144,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1088j1",
+      "conductor": 1088,
+      "iso_class": "1088j",
+      "a_invariants": [
+        0,
+        1,
+        0,
+        -25,
+        39
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 133,
+      "modular_degree": 192,
+      "generators": [
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "kernel_dim": 132,
+      "K2_dim_F2": 132,
+      "K2_order": 5444517870735015415413993718908291383296,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1088j2",
+      "conductor": 1088,
+      "iso_class": "1088j",
+      "a_invariants": [
+        0,
+        1,
+        0,
+        -65,
+        -161
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 133,
+      "modular_degree": 384,
+      "generators": [
+        [
+          -5,
+          8
+        ],
+        [
+          11,
+          24
+        ],
+        [
+          -7,
+          0
+        ]
+      ],
+      "kernel_dim": 132,
+      "K2_dim_F2": 132,
+      "K2_order": 5444517870735015415413993718908291383296,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 7,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1094a1",
+      "conductor": 1094,
+      "iso_class": "1094a",
+      "a_invariants": [
+        1,
+        0,
+        1,
+        -7,
+        6
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 135,
+      "modular_degree": 88,
+      "generators": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "kernel_dim": 134,
+      "K2_dim_F2": 134,
+      "K2_order": 21778071482940061661655974875633165533184,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1102a1",
+      "conductor": 1102,
+      "iso_class": "1102a",
+      "a_invariants": [
+        1,
+        1,
+        0,
+        -29,
+        61
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 147,
+      "modular_degree": 288,
+      "generators": [
+        [
+          -1,
+          10
+        ],
+        [
+          18,
+          67
+        ]
+      ],
+      "kernel_dim": 146,
+      "K2_dim_F2": 146,
+      "K2_order": 89202980794122492566142873090593446023921664,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1126a1",
+      "conductor": 1126,
+      "iso_class": "1126a",
+      "a_invariants": [
+        1,
+        -1,
+        0,
+        2,
+        4
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 140,
+      "modular_degree": 176,
+      "generators": [
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "kernel_dim": 139,
+      "K2_dim_F2": 139,
+      "K2_order": 696898287454081973172991196020261297061888,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1132a1",
+      "conductor": 1132,
+      "iso_class": "1132a",
+      "a_invariants": [
+        0,
+        1,
+        0,
+        -5,
+        4
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 139,
+      "modular_degree": 120,
+      "generators": [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          3
+        ]
+      ],
+      "kernel_dim": 138,
+      "K2_dim_F2": 138,
+      "K2_order": 348449143727040986586495598010130648530944,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1137a1",
+      "conductor": 1137,
+      "iso_class": "1137a",
+      "a_invariants": [
+        1,
+        1,
+        1,
+        -2,
+        2
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 125,
+      "modular_degree": 72,
+      "generators": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "kernel_dim": 124,
+      "K2_dim_F2": 124,
+      "K2_order": 21267647932558653966460912964485513216,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1141a1",
+      "conductor": 1141,
+      "iso_class": "1141a",
+      "a_invariants": [
+        1,
+        0,
+        0,
+        -27,
+        94
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 107,
+      "modular_degree": 280,
+      "generators": [
+        [
+          9,
+          20
+        ],
+        [
+          23,
+          97
+        ]
+      ],
+      "kernel_dim": 106,
+      "K2_dim_F2": 106,
+      "K2_order": 81129638414606681695789005144064,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1143c1",
+      "conductor": 1143,
+      "iso_class": "1143c",
+      "a_invariants": [
+        0,
+        0,
+        1,
+        -39,
+        90
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 125,
+      "modular_degree": 352,
+      "generators": [
+        [
+          2,
+          4
+        ],
+        [
+          11,
+          31
+        ]
+      ],
+      "kernel_dim": 124,
+      "K2_dim_F2": 124,
+      "K2_order": 21267647932558653966460912964485513216,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1147a1",
+      "conductor": 1147,
+      "iso_class": "1147a",
+      "a_invariants": [
+        0,
+        -1,
+        1,
+        -9,
+        9
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 99,
+      "modular_degree": 80,
+      "generators": [
+        [
+          7,
+          15
+        ],
+        [
+          -6,
+          27
+        ]
+      ],
+      "kernel_dim": 98,
+      "K2_dim_F2": 98,
+      "K2_order": 316912650057057350374175801344,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1171a1",
+      "conductor": 1171,
+      "iso_class": "1171a",
+      "a_invariants": [
+        1,
+        -1,
+        1,
+        -3,
+        0
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 97,
+      "modular_degree": 88,
+      "generators": [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "kernel_dim": 96,
+      "K2_dim_F2": 96,
+      "K2_order": 79228162514264337593543950336,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1246c1",
+      "conductor": 1246,
+      "iso_class": "1246c",
+      "a_invariants": [
+        1,
+        -1,
+        0,
+        -1,
+        13
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 177,
+      "modular_degree": 320,
+      "generators": [
+        [
+          6,
+          11
+        ],
+        [
+          -1,
+          4
+        ]
+      ],
+      "kernel_dim": 176,
+      "K2_dim_F2": 176,
+      "K2_order": 95780971304118053647396689196894323976171195136475136,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1309b1",
+      "conductor": 1309,
+      "iso_class": "1309b",
+      "a_invariants": [
+        0,
+        -1,
+        1,
+        -22,
+        52
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 141,
+      "modular_degree": 256,
+      "generators": [
+        [
+          -1,
+          8
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "kernel_dim": 140,
+      "K2_dim_F2": 140,
+      "K2_order": 1393796574908163946345982392040522594123776,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 8,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1324a1",
+      "conductor": 1324,
+      "iso_class": "1324a",
+      "a_invariants": [
+        0,
+        1,
+        0,
+        3,
+        4
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 163,
+      "modular_degree": 108,
+      "generators": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "kernel_dim": 162,
+      "K2_dim_F2": 162,
+      "K2_order": 5846006549323611672814739330865132078623730171904,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 2,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1325e1",
+      "conductor": 1325,
+      "iso_class": "1325e",
+      "a_invariants": [
+        0,
+        1,
+        1,
+        -8,
+        -6
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 129,
+      "modular_degree": 216,
+      "generators": [
+        [
+          -2,
+          2
+        ],
+        [
+          8,
+          22
+        ]
+      ],
+      "kernel_dim": 128,
+      "K2_dim_F2": 128,
+      "K2_order": 340282366920938463463374607431768211456,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1431a1",
+      "conductor": 1431,
+      "iso_class": "1431a",
+      "a_invariants": [
+        1,
+        -1,
+        1,
+        -29,
+        -26
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 157,
+      "modular_degree": 288,
+      "generators": [
+        [
+          -2,
+          5
+        ],
+        [
+          16,
+          50
+        ]
+      ],
+      "kernel_dim": 156,
+      "K2_dim_F2": 156,
+      "K2_order": 91343852333181432387730302044767688728495783936,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1436a1",
+      "conductor": 1436,
+      "iso_class": "1436a",
+      "a_invariants": [
+        0,
+        1,
+        0,
+        -12,
+        4
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 178,
+      "modular_degree": 192,
+      "generators": [
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "kernel_dim": 177,
+      "K2_dim_F2": 177,
+      "K2_order": 191561942608236107294793378393788647952342390272950272,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1443c1",
+      "conductor": 1443,
+      "iso_class": "1443c",
+      "a_invariants": [
+        1,
+        1,
+        1,
+        -9,
+        6
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 173,
+      "modular_degree": 112,
+      "generators": [
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "kernel_dim": 172,
+      "K2_dim_F2": 172,
+      "K2_order": 5986310706507378352962293074805895248510699696029696,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1443c2",
+      "conductor": 1443,
+      "iso_class": "1443c",
+      "a_invariants": [
+        1,
+        1,
+        1,
+        6,
+        42
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 173,
+      "modular_degree": 224,
+      "generators": [
+        [
+          0,
+          6
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          -26,
+          9
+        ]
+      ],
+      "kernel_dim": 172,
+      "K2_dim_F2": 172,
+      "K2_order": 5986310706507378352962293074805895248510699696029696,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1446a1",
+      "conductor": 1446,
+      "iso_class": "1446a",
+      "a_invariants": [
+        1,
+        1,
+        0,
+        -4,
+        4
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 238,
+      "modular_degree": 192,
+      "generators": [
+        [
+          1,
+          1
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "kernel_dim": 237,
+      "K2_dim_F2": 237,
+      "K2_order": 220855883097298041197912187592864814478435487109452369765200775161577472,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1466b1",
+      "conductor": 1466,
+      "iso_class": "1466b",
+      "a_invariants": [
+        1,
+        -1,
+        1,
+        -42,
+        105
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 181,
+      "modular_degree": 1040,
+      "generators": [
+        [
+          1,
+          7
+        ],
+        [
+          9,
+          15
+        ]
+      ],
+      "kernel_dim": 180,
+      "K2_dim_F2": 180,
+      "K2_order": 1532495540865888858358347027150309183618739122183602176,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1477a1",
+      "conductor": 1477,
+      "iso_class": "1477a",
+      "a_invariants": [
+        1,
+        0,
+        0,
+        -6,
+        7
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 139,
+      "modular_degree": 104,
+      "generators": [
+        [
+          -1,
+          4
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "kernel_dim": 138,
+      "K2_dim_F2": 138,
+      "K2_order": 348449143727040986586495598010130648530944,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1480a1",
+      "conductor": 1480,
+      "iso_class": "1480a",
+      "a_invariants": [
+        0,
+        0,
+        0,
+        -28,
+        52
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 221,
+      "modular_degree": 448,
+      "generators": [
+        [
+          6,
+          10
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "kernel_dim": 220,
+      "K2_dim_F2": 220,
+      "K2_order": 1684996666696914987166688442938726917102321526408785780068975640576,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1483a1",
+      "conductor": 1483,
+      "iso_class": "1483a",
+      "a_invariants": [
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 123,
+      "modular_degree": 120,
+      "generators": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "kernel_dim": 122,
+      "K2_dim_F2": 122,
+      "K2_order": 5316911983139663491615228241121378304,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1525c1",
+      "conductor": 1525,
+      "iso_class": "1525c",
+      "a_invariants": [
+        1,
+        0,
+        0,
+        -8,
+        7
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 149,
+      "modular_degree": 112,
+      "generators": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "kernel_dim": 148,
+      "K2_dim_F2": 148,
+      "K2_order": 356811923176489970264571492362373784095686656,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1525c2",
+      "conductor": 1525,
+      "iso_class": "1525c",
+      "a_invariants": [
+        1,
+        0,
+        0,
+        -33,
+        -68
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 149,
+      "modular_degree": 224,
+      "generators": [
+        [
+          -3,
+          4
+        ],
+        [
+          -4,
+          4
+        ],
+        [
+          -34,
+          17
+        ]
+      ],
+      "kernel_dim": 148,
+      "K2_dim_F2": 148,
+      "K2_order": 356811923176489970264571492362373784095686656,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1531a1",
+      "conductor": 1531,
+      "iso_class": "1531a",
+      "a_invariants": [
+        0,
+        0,
+        1,
+        -14,
+        20
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 127,
+      "modular_degree": 96,
+      "generators": [
+        [
+          2,
+          0
+        ],
+        [
+          18,
+          -7
+        ]
+      ],
+      "kernel_dim": 126,
+      "K2_dim_F2": 126,
+      "K2_order": 85070591730234615865843651857942052864,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1534b1",
+      "conductor": 1534,
+      "iso_class": "1534b",
+      "a_invariants": [
+        1,
+        -1,
+        0,
+        5,
+        37
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 207,
+      "modular_degree": 576,
+      "generators": [
+        [
+          1,
+          6
+        ],
+        [
+          14,
+          45
+        ]
+      ],
+      "kernel_dim": 206,
+      "K2_dim_F2": 206,
+      "K2_order": 102844034832575377634685573909834406561420991602098741459288064,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1570b1",
+      "conductor": 1570,
+      "iso_class": "1570b",
+      "a_invariants": [
+        1,
+        0,
+        1,
+        -4,
+        6
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 233,
+      "modular_degree": 176,
+      "generators": [
+        [
+          3,
+          3
+        ],
+        [
+          -2,
+          3
+        ]
+      ],
+      "kernel_dim": 232,
+      "K2_dim_F2": 232,
+      "K2_order": 6901746346790563787434755862277025452451108972170386555162524223799296,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1576a1",
+      "conductor": 1576,
+      "iso_class": "1576a",
+      "a_invariants": [
+        0,
+        1,
+        0,
+        -9,
+        -5
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 195,
+      "modular_degree": 176,
+      "generators": [
+        [
+          -1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "kernel_dim": 194,
+      "K2_dim_F2": 194,
+      "K2_order": 25108406941546723055343157692830665664409421777856138051584,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1591a1",
+      "conductor": 1591,
+      "iso_class": "1591a",
+      "a_invariants": [
+        0,
+        0,
+        1,
+        -71,
+        552
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 137,
+      "modular_degree": 744,
+      "generators": [
+        [
+          -9,
+          21
+        ],
+        [
+          273,
+          782
+        ]
+      ],
+      "kernel_dim": 136,
+      "K2_dim_F2": 136,
+      "K2_order": 87112285931760246646623899502532662132736,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1594a1",
+      "conductor": 1594,
+      "iso_class": "1594a",
+      "a_invariants": [
+        1,
+        -1,
+        1,
+        -27,
+        75
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 198,
+      "modular_degree": 960,
+      "generators": [
+        [
+          3,
+          2
+        ],
+        [
+          11,
+          26
+        ]
+      ],
+      "kernel_dim": 197,
+      "K2_dim_F2": 197,
+      "K2_order": 200867255532373784442745261542645325315275374222849104412672,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1608a1",
+      "conductor": 1608,
+      "iso_class": "1608a",
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        -25,
+        61
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 264,
+      "modular_degree": 416,
+      "generators": [
+        [
+          1,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "kernel_dim": 263,
+      "K2_dim_F2": 263,
+      "K2_order": 14821387422376473014217086081112052205218558037201992197050570753012880593911808,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1611d1",
+      "conductor": 1611,
+      "iso_class": "1611d",
+      "a_invariants": [
+        0,
+        0,
+        1,
+        -9,
+        20
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 177,
+      "modular_degree": 288,
+      "generators": [
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "kernel_dim": 176,
+      "K2_dim_F2": 176,
+      "K2_order": 95780971304118053647396689196894323976171195136475136,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1613a1",
+      "conductor": 1613,
+      "iso_class": "1613a",
+      "a_invariants": [
+        0,
+        1,
+        1,
+        -3,
+        0
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 134,
+      "modular_degree": 80,
+      "generators": [
+        [
+          0,
+          0
+        ],
+        [
+          -2,
+          1
+        ]
+      ],
+      "kernel_dim": 133,
+      "K2_dim_F2": 133,
+      "K2_order": 10889035741470030830827987437816582766592,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1615a1",
+      "conductor": 1615,
+      "iso_class": "1615a",
+      "a_invariants": [
+        1,
+        0,
+        0,
+        -215,
+        1192
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 177,
+      "modular_degree": 576,
+      "generators": [
+        [
+          9,
+          -2
+        ],
+        [
+          -1,
+          38
+        ],
+        [
+          8,
+          -4
+        ]
+      ],
+      "kernel_dim": 176,
+      "K2_dim_F2": 176,
+      "K2_order": 95780971304118053647396689196894323976171195136475136,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1615a2",
+      "conductor": 1615,
+      "iso_class": "1615a",
+      "a_invariants": [
+        1,
+        0,
+        0,
+        -120,
+        2275
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 177,
+      "modular_degree": 1152,
+      "generators": [
+        [
+          5,
+          40
+        ],
+        [
+          -15,
+          35
+        ],
+        [
+          -130,
+          65
+        ]
+      ],
+      "kernel_dim": 176,
+      "K2_dim_F2": 176,
+      "K2_order": 95780971304118053647396689196894323976171195136475136,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 7,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1621a1",
+      "conductor": 1621,
+      "iso_class": "1621a",
+      "a_invariants": [
+        1,
+        -1,
+        1,
+        -4,
+        4
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 134,
+      "modular_degree": 68,
+      "generators": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "kernel_dim": 133,
+      "K2_dim_F2": 133,
+      "K2_order": 10889035741470030830827987437816582766592,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 2,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1627a1",
+      "conductor": 1627,
+      "iso_class": "1627a",
+      "a_invariants": [
+        1,
+        1,
+        1,
+        -3,
+        -2
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 135,
+      "modular_degree": 72,
+      "generators": [
+        [
+          -1,
+          1
+        ],
+        [
+          -2,
+          1
+        ]
+      ],
+      "kernel_dim": 134,
+      "K2_dim_F2": 134,
+      "K2_order": 21778071482940061661655974875633165533184,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1639b1",
+      "conductor": 1639,
+      "iso_class": "1639b",
+      "a_invariants": [
+        1,
+        -1,
+        1,
+        -6,
+        6
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 149,
+      "modular_degree": 136,
+      "generators": [
+        [
+          2,
+          -1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "kernel_dim": 148,
+      "K2_dim_F2": 148,
+      "K2_order": 356811923176489970264571492362373784095686656,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1641b1",
+      "conductor": 1641,
+      "iso_class": "1641b",
+      "a_invariants": [
+        0,
+        -1,
+        1,
+        -4,
+        6
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 181,
+      "modular_degree": 184,
+      "generators": [
+        [
+          1,
+          1
+        ],
+        [
+          -2,
+          1
+        ]
+      ],
+      "kernel_dim": 180,
+      "K2_dim_F2": 180,
+      "K2_order": 1532495540865888858358347027150309183618739122183602176,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1642a1",
+      "conductor": 1642,
+      "iso_class": "1642a",
+      "a_invariants": [
+        1,
+        1,
+        0,
+        -1,
+        5
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 204,
+      "modular_degree": 112,
+      "generators": [
+        [
+          -2,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "kernel_dim": 203,
+      "K2_dim_F2": 203,
+      "K2_order": 12855504354071922204335696738729300820177623950262342682411008,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1653a1",
+      "conductor": 1653,
+      "iso_class": "1653a",
+      "a_invariants": [
+        0,
+        -1,
+        1,
+        -27,
+        182
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 197,
+      "modular_degree": 384,
+      "generators": [
+        [
+          0,
+          13
+        ],
+        [
+          -4,
+          14
+        ]
+      ],
+      "kernel_dim": 196,
+      "K2_dim_F2": 196,
+      "K2_order": 100433627766186892221372630771322662657637687111424552206336,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 7,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1662a1",
+      "conductor": 1662,
+      "iso_class": "1662a",
+      "a_invariants": [
+        1,
+        1,
+        0,
+        -27,
+        45
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 274,
+      "modular_degree": 352,
+      "generators": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "kernel_dim": 273,
+      "K2_dim_F2": 273,
+      "K2_order": 15177100720513508366558296147058741458143803430094840009779784451085189728165691392,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1664n1",
+      "conductor": 1664,
+      "iso_class": "1664n",
+      "a_invariants": [
+        0,
+        0,
+        0,
+        -4,
+        16
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 208,
+      "modular_degree": 320,
+      "generators": [
+        [
+          2,
+          4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "kernel_dim": 207,
+      "K2_dim_F2": 207,
+      "K2_order": 205688069665150755269371147819668813122841983204197482918576128,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1674d1",
+      "conductor": 1674,
+      "iso_class": "1674d",
+      "a_invariants": [
+        1,
+        -1,
+        0,
+        -9,
+        9
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 277,
+      "modular_degree": 336,
+      "generators": [
+        [
+          0,
+          3
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "kernel_dim": 276,
+      "K2_dim_F2": 276,
+      "K2_order": 121416805764108066932466369176469931665150427440758720078238275608681517825325531136,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1688a1",
+      "conductor": 1688,
+      "iso_class": "1688a",
+      "a_invariants": [
+        0,
+        1,
+        0,
+        -12,
+        16
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 208,
+      "modular_degree": 160,
+      "generators": [
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "kernel_dim": 207,
+      "K2_dim_F2": 207,
+      "K2_order": 205688069665150755269371147819668813122841983204197482918576128,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1696d1",
+      "conductor": 1696,
+      "iso_class": "1696d",
+      "a_invariants": [
+        0,
+        0,
+        0,
+        -76,
+        256
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 209,
+      "modular_degree": 448,
+      "generators": [
+        [
+          6,
+          4
+        ],
+        [
+          -2,
+          20
+        ]
+      ],
+      "kernel_dim": 208,
+      "K2_dim_F2": 208,
+      "K2_order": 411376139330301510538742295639337626245683966408394965837152256,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1696e1",
+      "conductor": 1696,
+      "iso_class": "1696e",
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        15,
+        1
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 209,
+      "modular_degree": 256,
+      "generators": [
+        [
+          1,
+          4
+        ],
+        [
+          9,
+          28
+        ]
+      ],
+      "kernel_dim": 208,
+      "K2_dim_F2": 208,
+      "K2_order": 411376139330301510538742295639337626245683966408394965837152256,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 8,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1701j1",
+      "conductor": 1701,
+      "iso_class": "1701j",
+      "a_invariants": [
+        0,
+        0,
+        1,
+        -27,
+        56
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 199,
+      "modular_degree": 432,
+      "generators": [
+        [
+          -3,
+          10
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "kernel_dim": 198,
+      "K2_dim_F2": 198,
+      "K2_order": 401734511064747568885490523085290650630550748445698208825344,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1712d1",
+      "conductor": 1712,
+      "iso_class": "1712d",
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        0,
+        16
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 211,
+      "modular_degree": 224,
+      "generators": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "kernel_dim": 210,
+      "K2_dim_F2": 210,
+      "K2_order": 1645504557321206042154969182557350504982735865633579863348609024,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1717b1",
+      "conductor": 1717,
+      "iso_class": "1717b",
+      "a_invariants": [
+        0,
+        -1,
+        1,
+        -4,
+        4
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 151,
+      "modular_degree": 104,
+      "generators": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "kernel_dim": 150,
+      "K2_dim_F2": 150,
+      "K2_order": 1427247692705959881058285969449495136382746624,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1732a1",
+      "conductor": 1732,
+      "iso_class": "1732a",
+      "a_invariants": [
+        0,
+        1,
+        0,
+        -44,
+        100
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 214,
+      "modular_degree": 312,
+      "generators": [
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "kernel_dim": 213,
+      "K2_dim_F2": 213,
+      "K2_order": 13164036458569648337239753460458804039861886925068638906788872192,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1738a1",
+      "conductor": 1738,
+      "iso_class": "1738a",
+      "a_invariants": [
+        1,
+        1,
+        0,
+        -14,
+        4
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 237,
+      "modular_degree": 256,
+      "generators": [
+        [
+          8,
+          18
+        ],
+        [
+          -3,
+          7
+        ]
+      ],
+      "kernel_dim": 236,
+      "K2_dim_F2": 236,
+      "K2_order": 110427941548649020598956093796432407239217743554726184882600387580788736,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 8,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1745d1",
+      "conductor": 1745,
+      "iso_class": "1745d",
+      "a_invariants": [
+        0,
+        -1,
+        1,
+        -6,
+        6
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 173,
+      "modular_degree": 160,
+      "generators": [
+        [
+          3,
+          2
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "kernel_dim": 172,
+      "K2_dim_F2": 172,
+      "K2_order": 5986310706507378352962293074805895248510699696029696,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1746b1",
+      "conductor": 1746,
+      "iso_class": "1746b",
+      "a_invariants": [
+        1,
+        -1,
+        0,
+        -24,
+        44
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 287,
+      "modular_degree": 448,
+      "generators": [
+        [
+          1,
+          4
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          4,
+          -2
+        ]
+      ],
+      "kernel_dim": 286,
+      "K2_dim_F2": 286,
+      "K2_order": 124330809102446660538845562036705210025114037699336929360115994223289874253133343883264,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1746b2",
+      "conductor": 1746,
+      "iso_class": "1746b",
+      "a_invariants": [
+        1,
+        -1,
+        0,
+        -114,
+        -406
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 287,
+      "modular_degree": 896,
+      "generators": [
+        [
+          -5,
+          7
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          -58,
+          29
+        ]
+      ],
+      "kernel_dim": 286,
+      "K2_dim_F2": 286,
+      "K2_order": 124330809102446660538845562036705210025114037699336929360115994223289874253133343883264,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 7,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1748a1",
+      "conductor": 1748,
+      "iso_class": "1748a",
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        -90,
+        361
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 235,
+      "modular_degree": 360,
+      "generators": [
+        [
+          10,
+          19
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "kernel_dim": 234,
+      "K2_dim_F2": 234,
+      "K2_order": 27606985387162255149739023449108101809804435888681546220650096895197184,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1752e1",
+      "conductor": 1752,
+      "iso_class": "1752e",
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        -20,
+        36
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 288,
+      "modular_degree": 384,
+      "generators": [
+        [
+          4,
+          2
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "kernel_dim": 287,
+      "K2_dim_F2": 287,
+      "K2_order": 248661618204893321077691124073410420050228075398673858720231988446579748506266687766528,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 7,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1752e2",
+      "conductor": 1752,
+      "iso_class": "1752e",
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        40,
+        156
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 288,
+      "modular_degree": 768,
+      "generators": [
+        [
+          -2,
+          8
+        ],
+        [
+          6,
+          24
+        ],
+        [
+          -3,
+          0
+        ]
+      ],
+      "kernel_dim": 287,
+      "K2_dim_F2": 287,
+      "K2_order": 248661618204893321077691124073410420050228075398673858720231988446579748506266687766528,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 8,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1793b1",
+      "conductor": 1793,
+      "iso_class": "1793b",
+      "a_invariants": [
+        0,
+        1,
+        1,
+        6,
+        6
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 163,
+      "modular_degree": 184,
+      "generators": [
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "kernel_dim": 162,
+      "K2_dim_F2": 162,
+      "K2_order": 5846006549323611672814739330865132078623730171904,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1832b1",
+      "conductor": 1832,
+      "iso_class": "1832b",
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        -27,
+        64
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 226,
+      "modular_degree": 176,
+      "generators": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "kernel_dim": 225,
+      "K2_dim_F2": 225,
+      "K2_order": 53919893334301279589334030174039261347274288845081144962207220498432,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1856d1",
+      "conductor": 1856,
+      "iso_class": "1856d",
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        -17,
+        49
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 229,
+      "modular_degree": 256,
+      "generators": [
+        [
+          5,
+          8
+        ],
+        [
+          -3,
+          8
+        ]
+      ],
+      "kernel_dim": 228,
+      "K2_dim_F2": 228,
+      "K2_order": 431359146674410236714672241392314090778194310760649159697657763987456,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 8,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1856d2",
+      "conductor": 1856,
+      "iso_class": "1856d",
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        143,
+        -751
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 229,
+      "modular_degree": 768,
+      "generators": [
+        [
+          37,
+          232
+        ],
+        [
+          13,
+          56
+        ]
+      ],
+      "kernel_dim": 228,
+      "K2_dim_F2": 228,
+      "K2_order": 431359146674410236714672241392314090778194310760649159697657763987456,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 8,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1862a1",
+      "conductor": 1862,
+      "iso_class": "1862a",
+      "a_invariants": [
+        1,
+        0,
+        1,
+        -75,
+        242
+      ],
+      "rank": 2,
+      "torsion_order": 3,
+      "genus_X0_N": 264,
+      "modular_degree": 432,
+      "generators": [
+        [
+          5,
+          -4
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "kernel_dim": 263,
+      "K2_dim_F2": 263,
+      "K2_order": 14821387422376473014217086081112052205218558037201992197050570753012880593911808,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1862a2",
+      "conductor": 1862,
+      "iso_class": "1862a",
+      "a_invariants": [
+        1,
+        0,
+        1,
+        170,
+        1320
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 264,
+      "modular_degree": 1296,
+      "generators": [
+        [
+          13,
+          69
+        ],
+        [
+          32,
+          183
+        ]
+      ],
+      "kernel_dim": 263,
+      "K2_dim_F2": 263,
+      "K2_order": 14821387422376473014217086081112052205218558037201992197050570753012880593911808,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1873a1",
+      "conductor": 1873,
+      "iso_class": "1873a",
+      "a_invariants": [
+        1,
+        -1,
+        1,
+        -1,
+        2
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 155,
+      "modular_degree": 64,
+      "generators": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "kernel_dim": 154,
+      "K2_dim_F2": 154,
+      "K2_order": 22835963083295358096932575511191922182123945984,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 6,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1887a1",
+      "conductor": 1887,
+      "iso_class": "1887a",
+      "a_invariants": [
+        1,
+        1,
+        1,
+        -17,
+        20
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 225,
+      "modular_degree": 160,
+      "generators": [
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "kernel_dim": 224,
+      "K2_dim_F2": 224,
+      "K2_order": 26959946667150639794667015087019630673637144422540572481103610249216,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 5,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1888a1",
+      "conductor": 1888,
+      "iso_class": "1888a",
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        -2,
+        4
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 233,
+      "modular_degree": 128,
+      "generators": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "kernel_dim": 232,
+      "K2_dim_F2": 232,
+      "K2_order": 6901746346790563787434755862277025452451108972170386555162524223799296,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 7,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1907a1",
+      "conductor": 1907,
+      "iso_class": "1907a",
+      "a_invariants": [
+        1,
+        -1,
+        1,
+        -46,
+        130
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 159,
+      "modular_degree": 112,
+      "generators": [
+        [
+          4,
+          -2
+        ],
+        [
+          10,
+          19
+        ]
+      ],
+      "kernel_dim": 158,
+      "K2_dim_F2": 158,
+      "K2_order": 365375409332725729550921208179070754913983135744,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1909a1",
+      "conductor": 1909,
+      "iso_class": "1909a",
+      "a_invariants": [
+        0,
+        0,
+        1,
+        -4,
+        2
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 167,
+      "modular_degree": 72,
+      "generators": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "kernel_dim": 166,
+      "K2_dim_F2": 166,
+      "K2_order": 93536104789177786765035829293842113257979682750464,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1913a1",
+      "conductor": 1913,
+      "iso_class": "1913a",
+      "a_invariants": [
+        1,
+        1,
+        0,
+        -202,
+        1025
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 159,
+      "modular_degree": 300,
+      "generators": [
+        [
+          8,
+          -3
+        ],
+        [
+          500,
+          -245
+        ]
+      ],
+      "kernel_dim": 158,
+      "K2_dim_F2": 158,
+      "K2_order": 365375409332725729550921208179070754913983135744,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 2,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1917c1",
+      "conductor": 1917,
+      "iso_class": "1917c",
+      "a_invariants": [
+        1,
+        -1,
+        1,
+        -41,
+        110
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 211,
+      "modular_degree": 216,
+      "generators": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          -2
+        ]
+      ],
+      "kernel_dim": 210,
+      "K2_dim_F2": 210,
+      "K2_order": 1645504557321206042154969182557350504982735865633579863348609024,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1918c1",
+      "conductor": 1918,
+      "iso_class": "1918c",
+      "a_invariants": [
+        1,
+        0,
+        1,
+        -22,
+        -24
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 273,
+      "modular_degree": 384,
+      "generators": [
+        [
+          -3,
+          5
+        ],
+        [
+          -4,
+          3
+        ],
+        [
+          5,
+          -3
+        ]
+      ],
+      "kernel_dim": 272,
+      "K2_dim_F2": 272,
+      "K2_order": 7588550360256754183279148073529370729071901715047420004889892225542594864082845696,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 7,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1918c2",
+      "conductor": 1918,
+      "iso_class": "1918c",
+      "a_invariants": [
+        1,
+        0,
+        1,
+        -302,
+        -2040
+      ],
+      "rank": 2,
+      "torsion_order": 2,
+      "genus_X0_N": 273,
+      "modular_degree": 768,
+      "generators": [
+        [
+          -10,
+          5
+        ],
+        [
+          298,
+          4988
+        ],
+        [
+          -82,
+          37
+        ]
+      ],
+      "kernel_dim": 272,
+      "K2_dim_F2": 272,
+      "K2_order": 7588550360256754183279148073529370729071901715047420004889892225542594864082845696,
+      "K2_GQ_dim_lower_bound": 1,
+      "E_Q2_size": 2,
+      "E2_irreducible": false,
+      "galois_image_2adic": "split:Z/2Z",
+      "v2_modular_degree": 8,
+      "modular_degree_even": true,
+      "visibility_class": "potentially_visible",
+      "visibility_possible": true
+    },
+    {
+      "label": "1922b1",
+      "conductor": 1922,
+      "iso_class": "1922b",
+      "a_invariants": [
+        1,
+        1,
+        0,
+        -4,
+        -4
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 216,
+      "modular_degree": 120,
+      "generators": [
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "kernel_dim": 215,
+      "K2_dim_F2": 215,
+      "K2_order": 52656145834278593348959013841835216159447547700274555627155488768,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1922b2",
+      "conductor": 1922,
+      "iso_class": "1922b",
+      "a_invariants": [
+        1,
+        1,
+        0,
+        -159,
+        709
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 216,
+      "modular_degree": 360,
+      "generators": [
+        [
+          6,
+          1
+        ],
+        [
+          22,
+          81
+        ]
+      ],
+      "kernel_dim": 215,
+      "K2_dim_F2": 215,
+      "K2_order": 52656145834278593348959013841835216159447547700274555627155488768,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 3,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1933a1",
+      "conductor": 1933,
+      "iso_class": "1933a",
+      "a_invariants": [
+        1,
+        0,
+        0,
+        1,
+        -2
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 160,
+      "modular_degree": 84,
+      "generators": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "kernel_dim": 159,
+      "K2_dim_F2": 159,
+      "K2_order": 730750818665451459101842416358141509827966271488,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 2,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1952b1",
+      "conductor": 1952,
+      "iso_class": "1952b",
+      "a_invariants": [
+        0,
+        1,
+        0,
+        -17,
+        31
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 240,
+      "modular_degree": 256,
+      "generators": [
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "kernel_dim": 239,
+      "K2_dim_F2": 239,
+      "K2_order": 883423532389192164791648750371459257913741948437809479060803100646309888,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 8,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1957a1",
+      "conductor": 1957,
+      "iso_class": "1957a",
+      "a_invariants": [
+        1,
+        1,
+        0,
+        -522,
+        4315
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 171,
+      "modular_degree": 880,
+      "generators": [
+        [
+          6,
+          35
+        ],
+        [
+          82,
+          681
+        ]
+      ],
+      "kernel_dim": 170,
+      "K2_dim_F2": 170,
+      "K2_order": 1496577676626844588240573268701473812127674924007424,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1957b1",
+      "conductor": 1957,
+      "iso_class": "1957b",
+      "a_invariants": [
+        1,
+        1,
+        1,
+        -8,
+        -12
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 171,
+      "modular_degree": 112,
+      "generators": [
+        [
+          -2,
+          1
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "kernel_dim": 170,
+      "K2_dim_F2": 170,
+      "K2_order": 1496577676626844588240573268701473812127674924007424,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 4,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    },
+    {
+      "label": "1964a1",
+      "conductor": 1964,
+      "iso_class": "1964a",
+      "a_invariants": [
+        0,
+        0,
+        0,
+        -16,
+        25
+      ],
+      "rank": 2,
+      "torsion_order": 1,
+      "genus_X0_N": 244,
+      "modular_degree": 300,
+      "generators": [
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "kernel_dim": 243,
+      "K2_dim_F2": 243,
+      "K2_order": 14134776518227074636666380005943348126619871175004951664972849610340958208,
+      "K2_GQ_dim_lower_bound": 0,
+      "E_Q2_size": 1,
+      "E2_irreducible": true,
+      "galois_image_2adic": "irreducible",
+      "v2_modular_degree": 2,
+      "modular_degree_even": true,
+      "visibility_class": "K2_GQ_trivial",
+      "visibility_possible": false
+    }
+  ]
+}
