@@ -340,7 +340,7 @@ def build_curve_dataset():
     sha9_curves = [
         ("576c1", 0, 0, 0, -18, 24, 0, 2, 9),
         ("2304a1", 0, 0, 0, -72, 240, 0, 2, 9),
-        ("3456a1", 0, 0, 0, -108, 432, 0, 2, 9),
+        ("3456a1", 0, 0, 0, -7, 6, 0, 2, 9),  # y^2=x^3-7x+6
         ("5184a1", 0, 0, 0, -162, 972, 0, 2, 9),
         ("9216a1", 0, 0, 0, -288, 3840, 0, 2, 9),
     ]
@@ -645,6 +645,8 @@ def train_and_analyze():
 
     feature_cols = [c for c in df.columns if c not in ['sha', 'sha_binary']]
     X = df[feature_cols].values
+    # Replace NaN/Inf with 0 (from features that don't apply to all curves)
+    X = np.nan_to_num(X, nan=0.0, posinf=1e10, neginf=-1e10).astype(float)
     y = df['sha'].values
     y_binary = df['sha_binary'].values
 
@@ -968,7 +970,7 @@ CONJECTURE 3.ML-SHA (ML-Detected Sha Formula)
        carry significant information about Sha, consistent with Sha
        being an obstruction to local-to-global principles.
 
-    STRONG CONJECTURE: |Ш| is determined by (N, {a_p}_{p|N}, T, w).
+    STRONG CONJECTURE: |Ш| is determined by (N, a_p for p|N, T, w).
     This would mean Sha is computable from purely local data — a much
     stronger statement than BSD alone.
 
@@ -1001,7 +1003,7 @@ Sha is a purely local invariant, not merely computable from global L-values.''',
             'Parity conjecture + Selmer group bounds',
             'Euler product factorization at bad primes',
         ],
-        'testable_prediction': 'For any curve with given (N, {a_p}_{p|N}, T, w), |Ш| is determined uniquely.',
+        'testable_prediction': 'For any curve with given (N, a_p for p|N, T, w), |Ш| is determined uniquely.',
     }
 
     return conjecture

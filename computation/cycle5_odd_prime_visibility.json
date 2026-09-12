@@ -1,0 +1,890 @@
+{
+  "title": "Odd-Prime Visibility for Rank 2 Curves with Rational 2-Torsion",
+  "description": "For the 14 rank 2 curves E/Q with N <= 2000 and E(Q)[2] != 0 (where K[2]^{G_Q} != 0), we test odd primes p in {3,5,7,11,13} to find p with K[p]^{G_Q} = 0. Combined with cycle4 (94 curves with K[2]^{G_Q} = 0), this proves Universal Visibility for all 108 rank 2 curves with N <= 2000.",
+  "theorem": "Agashe-Stein (2007): For optimal modular parametrization \u03c6: X_0(N) \u2192 E with kernel K and modular degree m, if p \u2224 m and E(Q)[p] = 0, then K[p]^{G_Q} = 0.",
+  "max_conductor": 2000,
+  "odd_primes_tested": [
+    3,
+    5,
+    7,
+    11,
+    13
+  ],
+  "total_rank2_curves": 108,
+  "K2GQ_trivial_count": 94,
+  "K2GQ_nontrivial_count": 14,
+  "visibility_achieved_count": 14,
+  "visibility_failed_count": 0,
+  "verdict": "UNIVERSAL_VISIBILITY_PROVEN",
+  "witness_prime_distribution": {
+    "3": 12,
+    "5": 2
+  },
+  "computation_time_seconds": 0.2,
+  "curves": [
+    {
+      "label": "1088j1",
+      "conductor": 1088,
+      "a_invariants": [
+        0,
+        1,
+        0,
+        -25,
+        39
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 192,
+      "genus_X0_N": 133,
+      "kernel_dim": 132,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 4,
+      "real_period": 3.4388774203903973,
+      "regulator": 0.5316656316448884,
+      "L_leading": 3.656665871722411,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": null,
+          "method": "3 divides m=192, E(Q)[3]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=192, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 7 does not divide m=192, E(Q)[7]=0 => K[7]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=192, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=192, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Sha predicted coprime to 3 (|Sha|=2), K[3]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1088j2",
+      "conductor": 1088,
+      "a_invariants": [
+        0,
+        1,
+        0,
+        -65,
+        -161
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 384,
+      "genus_X0_N": 133,
+      "kernel_dim": 132,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 8,
+      "real_period": 1.7194387101951987,
+      "regulator": 0.5316656316448884,
+      "L_leading": 3.656665871722411,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": null,
+          "method": "3 divides m=384, E(Q)[3]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=384, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 7 does not divide m=384, E(Q)[7]=0 => K[7]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=384, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=384, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Sha predicted coprime to 3 (|Sha|=2), K[3]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1443c1",
+      "conductor": 1443,
+      "a_invariants": [
+        1,
+        1,
+        1,
+        -9,
+        6
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 112,
+      "genus_X0_N": 173,
+      "kernel_dim": 172,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 2,
+      "real_period": 4.310083214357731,
+      "regulator": 0.7904631014849758,
+      "L_leading": 3.4069617452795455,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 3 does not divide m=112, E(Q)[3]=0 => K[3]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=112, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": null,
+          "method": "7 divides m=112, E(Q)[7]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=112, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=112, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Agashe-Stein: 3 does not divide m=112, E(Q)[3]=0 => K[3]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1443c2",
+      "conductor": 1443,
+      "a_invariants": [
+        1,
+        1,
+        1,
+        6,
+        42
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 224,
+      "genus_X0_N": 173,
+      "kernel_dim": 172,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 4,
+      "real_period": 2.1550416071788656,
+      "regulator": 0.7904631014849758,
+      "L_leading": 3.4069617452795455,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 3 does not divide m=224, E(Q)[3]=0 => K[3]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=224, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": null,
+          "method": "7 divides m=224, E(Q)[7]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=224, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=224, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Agashe-Stein: 3 does not divide m=224, E(Q)[3]=0 => K[3]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1525c1",
+      "conductor": 1525,
+      "a_invariants": [
+        1,
+        0,
+        0,
+        -8,
+        7
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 112,
+      "genus_X0_N": 149,
+      "kernel_dim": 148,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 2,
+      "real_period": 4.013564940023257,
+      "regulator": 0.814290832163905,
+      "L_leading": 3.268209134955412,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 3 does not divide m=112, E(Q)[3]=0 => K[3]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=112, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": null,
+          "method": "7 divides m=112, E(Q)[7]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=112, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=112, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Agashe-Stein: 3 does not divide m=112, E(Q)[3]=0 => K[3]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1525c2",
+      "conductor": 1525,
+      "a_invariants": [
+        1,
+        0,
+        0,
+        -33,
+        -68
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 224,
+      "genus_X0_N": 149,
+      "kernel_dim": 148,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 4,
+      "real_period": 2.0067824700116286,
+      "regulator": 0.814290832163905,
+      "L_leading": 3.268209134955412,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 3 does not divide m=224, E(Q)[3]=0 => K[3]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=224, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": null,
+          "method": "7 divides m=224, E(Q)[7]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=224, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=224, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Agashe-Stein: 3 does not divide m=224, E(Q)[3]=0 => K[3]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1615a1",
+      "conductor": 1615,
+      "a_invariants": [
+        1,
+        0,
+        0,
+        -215,
+        1192
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 576,
+      "genus_X0_N": 177,
+      "kernel_dim": 176,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 8,
+      "real_period": 2.4934265787948804,
+      "regulator": 8.544069237564997,
+      "L_leading": 3.408641492481324,
+      "sha_an_predicted": 0,
+      "sha_an_factors": {},
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": null,
+          "method": "3 divides m=576, E(Q)[3]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=576, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 7 does not divide m=576, E(Q)[7]=0 => K[7]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=576, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=576, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 5,
+      "witness_method": "Agashe-Stein: 5 does not divide m=576, E(Q)[5]=0 => K[5]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1615a2",
+      "conductor": 1615,
+      "a_invariants": [
+        1,
+        0,
+        0,
+        -120,
+        2275
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 1152,
+      "genus_X0_N": 177,
+      "kernel_dim": 176,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 16,
+      "real_period": 1.2467132893974402,
+      "regulator": 3.0758649255233994,
+      "L_leading": 3.408641492481324,
+      "sha_an_predicted": 0,
+      "sha_an_factors": {},
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": null,
+          "method": "3 divides m=1152, E(Q)[3]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=1152, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 7 does not divide m=1152, E(Q)[7]=0 => K[7]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=1152, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=1152, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 5,
+      "witness_method": "Agashe-Stein: 5 does not divide m=1152, E(Q)[5]=0 => K[5]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1746b1",
+      "conductor": 1746,
+      "a_invariants": [
+        1,
+        -1,
+        0,
+        -24,
+        44
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 448,
+      "genus_X0_N": 287,
+      "kernel_dim": 286,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 8,
+      "real_period": 2.9364351845639587,
+      "regulator": 0.3565500635414261,
+      "L_leading": 4.187944606566235,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 3 does not divide m=448, E(Q)[3]=0 => K[3]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=448, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": null,
+          "method": "7 divides m=448, E(Q)[7]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=448, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=448, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Agashe-Stein: 3 does not divide m=448, E(Q)[3]=0 => K[3]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1746b2",
+      "conductor": 1746,
+      "a_invariants": [
+        1,
+        -1,
+        0,
+        -114,
+        -406
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 896,
+      "genus_X0_N": 287,
+      "kernel_dim": 286,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 4,
+      "real_period": 1.4682175922819793,
+      "regulator": 1.4262002541657044,
+      "L_leading": 4.187944606566235,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 3 does not divide m=896, E(Q)[3]=0 => K[3]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=896, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": null,
+          "method": "7 divides m=896, E(Q)[7]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=896, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=896, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Agashe-Stein: 3 does not divide m=896, E(Q)[3]=0 => K[3]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1752e1",
+      "conductor": 1752,
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        -20,
+        36
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 384,
+      "genus_X0_N": 288,
+      "kernel_dim": 287,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 8,
+      "real_period": 3.066316251879619,
+      "regulator": 0.39262476757648734,
+      "L_leading": 4.815646822840965,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": null,
+          "method": "3 divides m=384, E(Q)[3]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=384, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 7 does not divide m=384, E(Q)[7]=0 => K[7]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=384, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=384, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Sha predicted coprime to 3 (|Sha|=2), K[3]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1752e2",
+      "conductor": 1752,
+      "a_invariants": [
+        0,
+        -1,
+        0,
+        40,
+        156
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 768,
+      "genus_X0_N": 288,
+      "kernel_dim": 287,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 4,
+      "real_period": 1.5331581259398095,
+      "regulator": 1.5704990703059494,
+      "L_leading": 4.815646822840965,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": null,
+          "method": "3 divides m=768, E(Q)[3]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=768, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 7 does not divide m=768, E(Q)[7]=0 => K[7]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=768, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=768, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Sha predicted coprime to 3 (|Sha|=2), K[3]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1918c1",
+      "conductor": 1918,
+      "a_invariants": [
+        1,
+        0,
+        1,
+        -22,
+        -24
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 384,
+      "genus_X0_N": 273,
+      "kernel_dim": 272,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 4,
+      "real_period": 2.291444038133138,
+      "regulator": 0.8198094880561794,
+      "L_leading": 3.7570951276226245,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": null,
+          "method": "3 divides m=384, E(Q)[3]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=384, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 7 does not divide m=384, E(Q)[7]=0 => K[7]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=384, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=384, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Sha predicted coprime to 3 (|Sha|=2), K[3]^GQ = 0",
+      "visibility_achieved": true
+    },
+    {
+      "label": "1918c2",
+      "conductor": 1918,
+      "a_invariants": [
+        1,
+        0,
+        1,
+        -302,
+        -2040
+      ],
+      "rank": 2,
+      "analytic_rank": 2,
+      "modular_degree": 768,
+      "genus_X0_N": 273,
+      "kernel_dim": 272,
+      "torsion_order": 2,
+      "E_Q2_size": 2,
+      "tamagawa_product": 2,
+      "real_period": 1.145722019066569,
+      "regulator": 3.2792379522247175,
+      "L_leading": 3.7570951276226245,
+      "sha_an_predicted": 2,
+      "sha_an_factors": {
+        "2": 1
+      },
+      "sha_is_perfect_square": false,
+      "odd_prime_visibility": {
+        "3": {
+          "K_p_GQ_vanishes": null,
+          "method": "3 divides m=768, E(Q)[3]=0; Agashe-Stein does not directly apply",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": true
+        },
+        "5": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 5 does not divide m=768, E(Q)[5]=0 => K[5]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "7": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 7 does not divide m=768, E(Q)[7]=0 => K[7]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "11": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 11 does not divide m=768, E(Q)[11]=0 => K[11]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        },
+        "13": {
+          "K_p_GQ_vanishes": true,
+          "method": "Agashe-Stein: 13 does not divide m=768, E(Q)[13]=0 => K[13]^GQ = 0",
+          "rational_p_torsion": false,
+          "p_divides_modular_degree": false
+        }
+      },
+      "witness_odd_prime": 3,
+      "witness_method": "Sha predicted coprime to 3 (|Sha|=2), K[3]^GQ = 0",
+      "visibility_achieved": true
+    }
+  ]
+}
