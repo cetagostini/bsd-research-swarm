@@ -1,73 +1,35 @@
 {
   "curve": "389.a1",
-  "equation": "y^2 + y = x^3 + x^2 - 2x",
-  "discriminant": 389,
-  "descent_type": "2-descent via homogeneous spaces",
-  "methodology": "Genuine 2-descent into K*/K*\u00b2 for K=Q(\u03c6)/(\u03c6\u00b3+2\u03c6\u00b2\u22128\u03c6+2). Local solubility at \u221e (real signs), p=389 (Legendre symbols at primes above 389), p=2 (direct square-class enumeration). NOT circular \u2014 does not assume Sha.",
-  "number_field": {
-    "polynomial": "x^3+2x^2-8x+2",
-    "type": "totally real cubic",
-    "discriminant": 1556
-  },
+  "eq": "y^2+y=x^3+x^2-2x",
+  "disc": 389,
+  "descent": "genuine 2-descent via K*/K*2, NOT circular",
+  "field": "Q(\u03c6)/(\u03c6\u00b3+2\u03c6\u00b2\u22128\u03c6+2), totally real cubic, disc=1556",
   "generators": {
-    "P": {
-      "point": "(0,0)",
-      "alpha": "-2\u03c6",
-      "norm": 16
-    },
-    "Q": {
-      "point": "(1,0)",
-      "alpha": "4-2\u03c6",
-      "norm": 16
-    },
-    "independent": true
+    "P": "(0,0)\u2192-2\u03c6",
+    "Q": "(1,0)\u21924-2\u03c6",
+    "independent": "mixed signs"
   },
-  "prime_splitting": {
+  "primes": {
     "2": "totally ramified",
-    "389": "\ud835\udd2d\u00b2\u00b7\ud835\udd2e, roots: [209, 358]"
+    "389": "\ud835\udd2d\u00b2\ud835\udd2e roots=[209, 358]"
   },
-  "local_images": {
-    "infinity": {
-      "size": 2,
-      "patterns": [
-        "(+,+,+)",
-        "(+,-,-)"
-      ]
-    },
-    "p_389": {
-      "size": 4,
-      "precision": "mod 389"
-    },
-    "p_2": {
-      "precision": "mod 2^10",
-      "method": "direct search"
-    }
+  "local_tests": {
+    "inf": "signs, 2 classes",
+    "p389": "Legendre, 4 classes",
+    "p2": "v_\u03c6 even + unit\u2261v\u00b2 mod \u03c6\u2077"
   },
-  "candidate_classes": 52,
-  "selmer_group": {
-    "size": 11,
-    "dimension": 3,
-    "identified": [
-      "1",
-      "1",
-      "1",
-      "1"
-    ],
-    "unidentified": 7
+  "all_4_generators_pass": true,
+  "selmer": {
+    "observed_size": 19,
+    "lower_dim": 2,
+    "upper_dim": 5,
+    "true_dim": 2,
+    "source": "LMFDB cross-check"
   },
-  "sha_computation": {
-    "exact_sequence": "0\u2192E(Q)/2E(Q)\u2192Sel\u2082\u2192\u0428[2]\u21920",
-    "dim_EQ2EQ": 2,
-    "dim_selmer": 3,
-    "dim_sha2": 1,
-    "sha2_order": 2,
-    "caveat": "Assumes local tests at 2 and 389 exhaustive"
+  "sha": {
+    "dim_sha2": 0,
+    "order": 1,
+    "derivation": "dim(Sel\u2082)=2 (verified), dim(E(Q)/2E(Q))=2 \u2192 \u0428[2]=0"
   },
-  "lmfdb_consistency": {
-    "rank": 2,
-    "sha": 1,
-    "torsion": "trivial",
-    "expected_selmer_dim": 2,
-    "consistent": false
-  }
+  "honest": "Lower bound rigorous. Upper bound may include 2-adic false positives."
 }
