@@ -1,0 +1,61 @@
+{
+  "computation": "2-Selmer group dimension for rank 2 curves",
+  "method": "Descent exact sequence with LMFDB invariants",
+  "disclaimer": "This is a computation, not a proof. Full 2-descent via homogeneous spaces requires SageMath/PARI.",
+  "date": "2026-09-13 18:39:24",
+  "exact_sequence": "0 \u2192 E(Q)/2E(Q) \u2192 Sel_2(E/Q) \u2192 \u0428(E/Q)[2] \u2192 0",
+  "formula": "dim_{F_2}(Sel_2) = rank + dim_{F_2}(E(Q)_tors[2]) + dim_{F_2}(\u0428[2])",
+  "curves": {
+    "433a1": {
+      "curve": "y^2 + xy = x^3 + 1",
+      "conductor": 433,
+      "lmfdb_url": "https://www.lmfdb.org/EllipticCurve/Q/433/a/1",
+      "rank": 2,
+      "torsion": "trivial",
+      "torsion_order": 1,
+      "sha_order": 1,
+      "delta_tors": 0,
+      "dim_EQ_mod_2EQ": 2,
+      "dim_Sha2": 0,
+      "dim_Sel_2": 2,
+      "order_Sel_2": 4,
+      "method": "LMFDB invariants + descent exact sequence",
+      "note": "Expected dimension from rank, torsion, and Sha data; not a full 2-descent computation"
+    },
+    "571a1": {
+      "curve": "y^2 + y = x^3 + x^2 - 4x + 2",
+      "conductor": 571,
+      "lmfdb_url": "https://www.lmfdb.org/EllipticCurve/Q/571/a/1",
+      "rank": 2,
+      "torsion": "trivial",
+      "torsion_order": 1,
+      "sha_order": 1,
+      "delta_tors": 0,
+      "dim_EQ_mod_2EQ": 2,
+      "dim_Sha2": 0,
+      "dim_Sel_2": 2,
+      "order_Sel_2": 4,
+      "method": "LMFDB invariants + descent exact sequence",
+      "note": "Expected dimension from rank, torsion, and Sha data; not a full 2-descent computation"
+    },
+    "681a1": {
+      "curve": "y^2 + xy = x^3 - x^2 - 4x + 6",
+      "conductor": 681,
+      "lmfdb_url": "https://www.lmfdb.org/EllipticCurve/Q/681/a/1",
+      "rank": 2,
+      "torsion": [
+        2
+      ],
+      "torsion_order": 2,
+      "sha_order": 1,
+      "delta_tors": 1,
+      "dim_EQ_mod_2EQ": 3,
+      "dim_Sha2": 0,
+      "dim_Sel_2": 3,
+      "order_Sel_2": 8,
+      "method": "LMFDB invariants + descent exact sequence",
+      "note": "Expected dimension from rank, torsion, and Sha data; not a full 2-descent computation"
+    }
+  },
+  "conclusion": "For all three rank-2 curves (433a1, 571a1, 681a1), the expected 2-Selmer group dimension equals rank + \u03b4_tors. Since |\u0428| = 1 for all three curves (hence \u0428[2] = 0), the descent is consistent: dim(Sel_2) = dim(E(Q)/2E(Q)). This means every locally soluble homogeneous space is globally soluble, which is the hallmark of trivial 2-part of Sha."
+}
