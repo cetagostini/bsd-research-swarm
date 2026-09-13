@@ -175,7 +175,7 @@ def build_curve_dataset():
         # (label, a1,a2,a3,a4,a6, rank, tors_order)
         # Rank 0 curves with Sha=1
         ("11a1", 0, -1, 1, -10, -20, 0, 5),
-        ("14a1", 0, -1, 1, -19, -34, 0, 6),  # wrong, let me use verified ones
+        # ("14a1", 0, -1, 1, -19, -34, 0, 6),  # REMOVED: wrong data (14a has torsion 6 but wrong Weierstrass model)
         ("15a1", 0, 1, 1, -10, -10, 0, 8),
         ("17a1", 0, -1, 1, -26, -48, 0, 4),
         ("19a1", 0, -1, 1, -9, -15, 0, 3),
@@ -199,12 +199,12 @@ def build_curve_dataset():
         ("45a1", 0, 1, 1, -1, 0, 0, 2),
         ("46a1", 0, -1, 1, -3, -1, 0, 3),
         ("48a1", 0, 0, 0, -1, 0, 0, 2),  # y^2=x^3-x
-        ("49a1", 0, 0, 0, -1, 0, 0, 2),  # y^2=x^3-x (wrong conductor?)
+        # ("49a1", 0, 0, 0, -1, 0, 0, 2),  # REMOVED: wrong conductor (49a1 minimal model is y^2+xy=x^3-x^2-2x-1, not y^2=x^3-x)
         ("50a1", 0, 0, 1, -2, 1, 0, 2),
         ("54a1", 0, 3, 0, -6, 9, 0, 2),
         ("55a1", 0, -1, 1, 2, 0, 0, 4),
         ("56a1", 0, 0, 0, -21, -28, 0, 2),
-        ("57a1", 0, -1, 1, -3, 1, 0, 2),  # wrong, 57a has rank 1
+        # ("57a1", 0, -1, 1, -3, 1, 0, 2),  # REMOVED: wrong — 57a has rank 1, not rank 0
         ("60a1", 0, 0, 1, -1, 0, 0, 2),
         ("64a1", 0, 0, 0, -4, 0, 0, 2),  # y^2=x^3-4x
         ("66a1", 0, -1, 1, -4, 6, 0, 2),
@@ -231,7 +231,7 @@ def build_curve_dataset():
         ("53a1", 0, -1, 1, -3, -4, 1, 1),
         ("58a1", 0, -1, 1, -3, 3, 1, 1),
         ("61a1", 0, -1, 1, -4, 15, 1, 1),
-        ("65a1", 0, 0, 1, -2, 1, 0, 4),  # this one is rank 0
+        # ("65a1", 0, 0, 1, -2, 1, 0, 4),  # REMOVED: rank 0 curve placed in the rank 1 section
         ("77a1", 0, -1, 1, -2, -1, 1, 1),
         ("79a1", 0, -1, 1, -4, 6, 1, 1),
         ("82a1", 0, -1, 1, -3, 3, 1, 1),  # same as 58?
@@ -244,7 +244,7 @@ def build_curve_dataset():
         ("121d1", 0, 1, 1, -28, -53, 0, 1),
         ("144a1", 0, 0, 0, -1, 0, 0, 2),
         ("150a1", 0, 1, 1, -5, 2, 0, 2),
-        ("162a1", 0, 0, 0, 0, -27, 0, 2),  # wrong conductor?
+        # ("162a1", 0, 0, 0, 0, -27, 0, 2),  # REMOVED: wrong conductor (162a1 minimal model differs from y^2=x^3-27)
         ("169a1", 0, 1, 1, -11, -14, 0, 1),
 
         # More rank 1

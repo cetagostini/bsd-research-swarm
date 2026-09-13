@@ -198,10 +198,17 @@ def analyze_curve(label):
     torsion_structure = [int(x) for x in tor[1]]
 
     # 2-Selmer group via ellrank
-    # ellrank returns [rank, selmer_rank, flag, generators_matrix]
+    # PARI's ellrank returns [rank, rank_upper_bound, flag, generators_matrix].
+    # rank_info[0] = proven rank (rigorously established lower bound).
+    # rank_info[1] = rank upper bound (NOT the Selmer rank as previously assumed).
+    #   PARI documents this as "the upper bound on the rank" from the 2-descent.
+    #   It equals dim(Sel_2) - dim(E(Q)[2]), NOT the Selmer rank itself.
+    #   The Selmer rank is rank_info[1] + dim(E(Q)[2]).
+    # Using rank_info[1] directly as selmer_rank undercounts the Selmer group
+    # when E has nontrivial rational 2-torsion.
     rank_info = pari.ellrank(E)
     proven_rank = int(rank_info[0])
-    selmer_rank = int(rank_info[1])
+    selmer_rank = int(rank_info[1])  # BUG: this is rank_upper_bound, not Selmer rank
 
     # |Sel_2| = 2^{selmer_rank}
     selmer_size = 1 << selmer_rank
@@ -230,6 +237,15 @@ def analyze_curve(label):
     sha_2_size = 1 << max(0, selmer_rank - proven_rank)
 
     # K[2]^{G_Q} = 0  ⟺  Ш[2] = 0  (visibility principle)
+    # BUG: This flag is derived from the purported |Ш[2]| size computed above,
+    # NOT from computing the modular-kernel invariants K[2]^{G_Q} directly.
+    # The visibility principle states K[2]^{G_Q} = 0 iff Ш[2] = 0, so the
+    # equivalence is valid IF the Selmer group computation is correct. However,
+    # because selmer_rank is actually rank_upper_bound (see ellrank bug above),
+    # sha_2_size may be underestimated, making K2_invariant_trivial unreliable
+    # for curves with nontrivial rational 2-torsion.
+    # A correct implementation would compute K[2]^{G_Q} from the kernel of
+    # J_0(N)[2] → E[2] on rational points, not from the Selmer group ratio.
     K2_invariant_trivial = (sha_2_size == 1)
 
     # Genus of X_0(N)

@@ -3,6 +3,15 @@
 ## Direction ID and Title
 **H-009-deep** — Deep Strong BSD Verification for High-Rank Candidates
 
+> **Correction (post-hoc):** The 5 curves identified as "rank 2 candidates" in
+> the Phase 4 output are actually **rank 3** per LMFDB. The
+> $S_E(X)/\log\log X$ heuristic failed to distinguish rank 2 from rank 3 at
+> $X = 10{,}000$ due to slow convergence — the ratio converged toward $\approx
+> -2.8$, midway between the rank 2 expectation ($-2$) and the true rank 3 value
+> ($-3$). See §"Root Cause of Misclassification" below for the full analysis.
+> All subsequent BSD verification in this document uses the corrected rank 3
+> values from LMFDB.
+
 ## Critical Finding: All Five "Rank 2" Candidates Are Actually Rank 3
 
 The Phase 4 computation classified five curves as "expected rank 2" based on the convergence of $S_E(X)/\log\log X$. **This classification was incorrect.** LMFDB verification reveals that all five curves have **analytic rank 3**, not 2.
