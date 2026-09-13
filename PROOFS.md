@@ -1,208 +1,202 @@
-# Proof Sketches: New Results on a_p Bias and BSD
+# Analysis of a_p Bias and BSD: Heuristics, Conditional Results, and Corrections
 
 ## Author: BSD Research Swarm
-## Date: 2026-09-12
-## Status: Rigorous proof sketches (not yet peer-reviewed)
+## Date: 2026-09-13 (corrected from 2026-09-12)
+## Status: Honest assessment of what is proven, conditional, and speculative
 
 ---
 
-## Theorem 1: a_p Bias Detects Analytic Rank
+## Preamble: What Went Wrong
 
-### Statement
+The previous version of this document labelled four claims as "Theorems." None of them were theorems. This corrected version reclassifies each claim according to its actual logical status and adds a section stating what is genuinely correct.
 
-Let E/Q be an elliptic curve with conductor N and analytic rank r = ord_{s=1} L(E,s). Define the partial sum:
+---
+
+## Heuristic 1: a_p Bias and Analytic Rank (formerly "Theorem 1")
+
+### Status: HEURISTIC — not a theorem, not diagnostic
+
+### Claim
+
+For E/Q with analytic rank r, the partial sum
 
 $$S_E(X) = \sum_{\substack{p \leq X \\ p \nmid N}} \frac{a_p(E)}{p}$$
 
-Then as X → ∞:
+satisfies
 
 $$S_E(X) = -r \cdot \log\log X + c_E + o(1)$$
 
-where c_E is a constant depending on E (involving the logarithmic derivative of L(E,s) at s=1 and the Euler factors at bad primes).
+as X → ∞.
 
-### Proof
+### Why This Is Only a Heuristic
 
-**Step 1: The Explicit Formula for L(E,s).**
+The derivation appeals to the explicit formula and a Tauberian argument. The critical problem is the error term. Here is what is actually true:
 
-By the explicit formula for L-functions (see Iwaniec-Kowalski, §5.11), for a test function φ satisfying appropriate conditions:
-
-$$\sum_\rho \hat{\varphi}(\rho) = \hat{\varphi}(1) + \hat{\varphi}(0) - \sum_p \frac{\log p}{p^{1/2}} (a_p \cdot \tilde{\varphi}(\log p) + \overline{a_p} \cdot \tilde{\varphi}(-\log p)) + \text{archimedean terms}$$
-
-where the sum is over all zeros ρ of L(E,s) (trivial and non-trivial), and $\tilde{\varphi}$ is the Mellin transform of φ.
-
-**Step 2: Counting zeros near s=1.**
-
-For E with analytic rank r, L(E,s) has a zero of order r at s=1. The non-trivial zeros ρ = 1/2 + iγ satisfy the GRH conjecture (ρ on the critical line). By the argument principle:
-
-$$\frac{1}{2\pi i} \oint \frac{L'(E,s)}{L(E,s)} ds = r + N(T)$$
-
-where N(T) counts zeros with |Im(ρ)| ≤ T, and the contour encloses s=1.
-
-**Step 3: Connecting a_p to zeros.**
-
-By the Hadamard product L(E,s) = e^{A+Bs} ∏_ρ (1-s/ρ)e^{s/ρ}, taking the logarithmic derivative:
-
-$$\frac{L'(E,s)}{L(E,s)} = B + \sum_\rho \frac{1}{s-\rho}$$
-
-At s=1, the principal part from the r zeros at s=1 gives:
-
-$$\frac{L'(E,s)}{L(E,s)} \sim \frac{r}{s-1} + \text{regular at } s=1$$
-
-**Step 4: The explicit formula for a_p/p.**
-
-From the Euler product log L(E,s) = -Σ_p Σ_k a_{p^k}/(kp^{ks}), taking the derivative:
+**What the explicit formula gives.** From the Euler product, for Re(s) > 1:
 
 $$\frac{L'(E,s)}{L(E,s)} = -\sum_p \frac{a_p \log p}{p^s} + O(1)$$
 
-for Re(s) > 1. By analytic continuation, near s = 1:
+Near s = 1, if L(E,s) has a zero of order r at s = 1, the logarithmic derivative has a pole of residue r at s = 1. Via partial summation and contour integration, one gets:
 
-$$\sum_p \frac{a_p}{p^s} \sim \frac{r}{s-1} + \text{bounded}$$
+$$\sum_{p \leq X} \frac{a_p}{p} = -r \log\log X + c_E + E(X)$$
 
-Taking s → 1+ via a Tauberian theorem (Wiener-Ikehara or partial summation):
+**The problem: E(X) is not o(1).** The error term E(X) receives contributions from every non-trivial zero ρ = 1/2 + iγ of L(E,s):
 
-$$\sum_{p \leq X} \frac{a_p}{p} = -r \cdot \log\log X + c_E + o(1)$$
+$$E(X) \sim -\sum_{\gamma} \frac{X^{\rho - 1}}{(\rho - 1)\log X} + \ldots$$
 
-The sign is negative because a_p > 0 (on average) would mean L(E,s) grows as s → 1+, but a zero at s=1 requires L(E,s) → 0, forcing a_p < 0 on average. ∎
+Each term X^{ρ-1}/(ρ-1) has magnitude ~ X^{-1/2}/|γ|, which is individually small. But there are ~T log T zeros with |γ| ≤ T, and their sum is not convergent. The partial sums of this oscillatory series are of order O(1) — the same scale as the main term constant c_E. Worse, without GRH, some zeros could have Re(ρ) > 1/2, making individual terms much larger.
 
-### Corollary 1.1: Rank Detection
+**The consequence.** The "o(1)" in the formula is not justified. The actual error is O(1) and oscillates. For any finite X, one cannot reliably distinguish r = 0 from r = 1 from r = 2 based on S_E(X), because the O(1) oscillation from non-trivial zeros is the same size as the differences between these cases for computationally accessible X.
 
-For X large enough (depending on E), the sign of S_E(X) + (r·log log X) is determined by c_E. In particular:
+The explicit formula is a precise identity. The heuristic step is the claim that the oscillatory error averages away. This is plausible but unproven, and the computational data does not resolve it because the number of primes used (300) is far too small relative to the height of the zeros contributing to the error.
 
-- If r = 0: S_E(X) → c_E (converges)
-- If r ≥ 1: S_E(X) → -∞ as X → ∞
-- If r ≥ 2: S_E(X) ≤ -2·log log X + O(1)
+### What the Computation Actually Shows
 
-This gives a **computational criterion for rank detection**: compute S_E(X) for X ~ 10^6. If S_E(X) < -3, the curve likely has rank ≥ 2.
+Our S_E(X) values at X ~ 300 primes are consistent with the heuristic, but "consistent with" is not evidence for. The values are also consistent with many other explanations. The computation cannot distinguish rank 0 from rank 1 from rank 2 because the signal (-r · log log 300 ≈ -r · 5.5) is swamped by the unknown O(1) constant c_E and the oscillatory error.
 
 ---
 
-## Theorem 2: L-value Lower Bound in Terms of Discriminant
+## Conditional Conjecture 2: L-value Lower Bound (formerly "Theorem 2")
 
-### Statement (Weaker form of CONJ-L-DISC)
+### Status: CONDITIONAL on GRH — not a theorem over Q
+
+### Claim (conditional on GRH for L(E,s))
 
 For E/Q with analytic rank 0 and conductor N:
 
 $$|L(E,1)| \geq \frac{c}{N^{1/2+\varepsilon}}$$
 
-for some absolute constant c > 0 and all ε > 0, assuming GRH for L(E,s).
+for some c > 0 and all ε > 0.
 
-### Proof Sketch
+### What Is Actually Known
 
-**Step 1: The approximate functional equation.**
+- **Unconditionally**, the best lower bound on |L(E,1)| for rank 0 curves is of the form 1/exp(c√log N), coming from the Burgess bound on character sums. This is far weaker than N^{-1/2-ε}.
+- **Conditionally on GRH**, the mollifier method (following Soundararajan, Iwaniec-Sarnak) does give bounds of the shape N^{-1/2-ε}. The argument uses the approximate functional equation, a mollifier of length N^θ with θ < 1/2, and GRH to control the error terms in the mollifier moment calculation.
+- The exponent 1/2 + ε is expected to be non-optimal. The Lindelöf hypothesis for L(E,s) would give |L(E,1)| ≫ N^{-ε} for any ε > 0.
 
-For E with analytic rank 0:
+### Why "Theorem" Was Wrong
 
-$$L(E,1) = 2\sum_{n=1}^{\infty} \frac{a_n}{n} \exp\left(-\frac{2\pi n}{\sqrt{N}}\right)$$
-
-The exponential decay ensures convergence, with the main contribution from n ≪ √N.
-
-**Step 2: Lower bound from the first term.**
-
-The n=1 term gives a_1/1 · exp(-2π/√N) = 1 · exp(-2π/√N) ≈ 1 for large N. However, cancellation in the sum can make L(E,1) very small.
-
-**Step 3: Non-vanishing via the mollifier method.**
-
-Following Soundararajan (2000) and Iwaniec-Sarnak, define the mollified L-value:
-
-$$L^M(E,1) = L(E,1) \sum_{m \leq M} \frac{\mu(m)a_m}{m^{1/2}} \cdot g(m)$$
-
-where g is a smooth cutoff. By choosing M = N^{θ} with θ < 1/2 and using GRH:
-
-$$|L^M(E,1)| \geq \frac{c}{N^{1/2+\varepsilon}}$$
-
-Since |L(E,1)| ≥ |L^M(E,1)| / |Mollifier| and the mollifier is bounded, we get:
-
-$$|L(E,1)| \geq \frac{c'}{N^{1/2+\varepsilon}}$$
-
-**Step 4: The role of GRH.**
-
-Without GRH, the best known lower bound is much weaker (essentially 1/exp(c√log N)). The Burgess bound on character sums gives partial results but not the optimal exponent.
-
-### Remarks
-
-- The exponent 1/2+ε is likely not optimal. The conjectured bound is |L(E,1)| ≫ 1/N^ε for any ε > 0 (the "Lindelöf hypothesis" for L(E,s)).
-- The connection to the discriminant comes from N ≪ |disc(E)| (Silverman's bound: N divides disc).
-- Our computational data (10,196 curves) is consistent with |L(E,1)| · |disc|^{0.5} being bounded below.
+GRH is an open conjecture. A result conditional on GRH is a conditional result, not a theorem. The original document did state "assuming GRH" but labelled it "Theorem" without qualification, which is misleading.
 
 ---
 
-## Theorem 3: Discriminant Factorization and Rank
+## Speculation 3: Discriminant Factorization and Rank (formerly "Theorem 3")
 
-### Statement (Computational observation, not yet proven)
+### Status: SPECULATION — no known mechanism, small sample
 
-For our 10,196 curves, all curves with |L(E,1)| < 0.02 (heuristic rank ≥ 2 candidates) have discriminants with at least 3 distinct prime factors, and most have 4+.
+### Claim
 
-### Evidence
+Curves with small |L(E,1)| (presumed rank ≥ 2) tend to have discriminants with many distinct prime factors.
 
-| (a,b) | disc | Prime factors |
-|-------|------|---------------|
-| (14,1) | -176048 | 2^4 · 11003 |
-| (8,25) | -302768 | 2^4 · 18923 |
-| (-49,1) | 7529104 | 2^4 · 11^2 · 3889 |
-| (-31,34) | 1407232 | 2^8 · 5497 |
-| (-13,4) | 133696 | 2^6 · 2089 |
+### Assessment
 
-### Analysis
+- The observation is drawn from 10,196 curves, which is a tiny sample.
+- There is **no known mechanism** connecting ω(disc(E)) to rank. The discriminant is Δ = -16(4a³ + 27b²); its factorization depends on the arithmetic of the polynomial x³ + ax + b, not obviously on the analytic properties of L(E,s).
+- The suggestion that the abc conjecture is relevant is hand-waving. The abc conjecture bounds radical(abc) in terms of c; it does not connect factorization patterns to rank.
+- The Cohen-Lenstra heuristics, which are the standard probabilistic model for ranks of elliptic curves, predict no such correlation.
+- The observed correlation in a small sample could easily be an artifact of the way curves were selected or a consequence of the specific range of (a, b) values.
 
-The discriminant of y² = x³ + ax + b is Δ = -16(4a³ + 27b²). For the discriminant to have many prime factors, we need 4a³ + 27b² to be highly composite. This is related to the **abc conjecture**: if 4a³ + 27b² has many prime factors, then a and b must be "arithmetically complex," which tends to happen for curves with high rank.
+### Verdict
 
-### Open Question
-
-Is there a rigorous connection between ω(disc(E)) (the number of distinct prime factors) and the rank of E? The Cohen-Lenstra heuristics suggest no direct connection, but our data shows a correlation.
+This is a conjecture without supporting theory. It may be worth investigating computationally with a much larger sample, but it should not be cited as a result.
 
 ---
 
-## Theorem 4: Parity Detection via a_p Sums
+## Retraction 4: Parity Detection via a_p Sums (formerly "Theorem 4")
 
-### Statement
+### Status: RETRACTED — the original claim was false
 
-For E/Q with root number w(E) = (-1)^r:
+### The Original Claim
 
 $$\lim_{X \to \infty} \frac{S_E(X)}{\log\log X} = -r$$
 
-Hence w(E) = sign((-1)^r · lim S_E(X)/log log X).
+and therefore the parity of r is detectable from S_E.
 
-### Proof
+### Why This Is Wrong
 
-This follows directly from Theorem 1. If r is even, S_E(X)/log log X → -r < 0. If r is odd, S_E(X)/log log X → -r < 0 as well. So the sign alone doesn't distinguish parity, but the magnitude does:
+Even granting the heuristic formula S_E(X) ≈ -r · log log X + c_E + O(1), we get:
 
-- r = 0: S_E(X) converges (|S_E(X)/log log X| → 0)
-- r = 1: S_E(X)/log log X → -1
-- r = 2: S_E(X)/log log X → -2
-- etc.
+$$\frac{S_E(X)}{\log\log X} \to -r$$
 
-The parity is detectable from the **rate of convergence**: for odd r, the sum converges to its limit from above; for even r, from below (modulo oscillation from non-trivial zeros). ∎
+for **every** r, whether r is even or odd. The limit is always negative (for r > 0). The sign does not distinguish parity. The original "proof" acknowledged this ("the sign alone doesn't distinguish parity") but then claimed parity was detectable from the "rate of convergence." This is meaningless: the formula has the same shape for all r, and the O(1) error term makes any convergence-rate argument vacuous.
 
----
+**The original document was internally contradictory**: it stated both that S_E/log log X → -r for all r and that parity was detectable. These are incompatible.
 
-## Computational Verification
+### Retraction
 
-Our computation of S = Σ(a_p/p) for 300 primes confirms:
-
-| Curve type | S (300 primes) | Expected S |
-|-----------|---------------|------------|
-| Rank 0 (e.g., (1,-1)) | -1.81 | ~-2 (converging) |
-| Rank 1 candidates | -4.5 to -5.5 | ~-1·log(log 300) ≈ -5.5 |
-| Rank 2+ candidates | -5.0 to -6.1 | ~-2·log(log 300) ≈ -7.0 |
-
-The data is consistent with Theorem 1, though more primes are needed for definitive rank determination.
+Theorem 4 is retracted in full. There is no known way to detect the parity of the analytic rank from S_E(X) without already knowing r.
 
 ---
 
-## Connection to BSD
+## What Is Actually Correct
 
-These results connect to BSD in two ways:
+The following are mathematically established facts. None of them are original to this project.
 
-1. **Computational tool**: The a_p bias gives a fast heuristic for estimating rank, which guides which curves to study for BSD verification.
+### Fact 1: Galois invariants of the p-torsion
 
-2. **Analytic input**: The explicit formula (Theorem 1) is the analytic counterpart to the algebraic rank. BSD asserts these two ranks are equal. Our computations provide evidence that the analytic rank (detected via a_p) matches the algebraic rank (detected via descent).
+For an elliptic curve E/Q and a prime p, there is a canonical isomorphism:
+
+$$E[p]^{G_{\mathbb{Q}}} \cong E(\mathbb{Q})[p]$$
+
+where G_Q = Gal(Q̄/Q) is the absolute Galois group. This is standard: E[p]^{G_Q} consists of p-torsion points fixed by all of G_Q, which are precisely the p-torsion points defined over Q.
+
+**Source:** Silverman, *The Arithmetic of Elliptic Curves*, Chapter III. This is an elementary consequence of the definition of the Galois action on torsion points.
+
+### Fact 2: Selmer group structure
+
+The p-Selmer group Sel_p(E/Q) sits in an exact sequence:
+
+$$0 \to E(\mathbb{Q})/pE(\mathbb{Q}) \to \mathrm{Sel}_p(E/\mathbb{Q}) \to \mathrm{Ш}(E/\mathbb{Q})[p] \to 0$$
+
+where Ш is the Tate-Shafarevich group. This is a definition/standard construction (see Milne's *Elliptic Curves*, or Silverman Chapter X).
+
+### Fact 3: K[p]^{G_Q} = 0 for large p
+
+If φ: X₀(N) → E is the optimal modular parametrization and K = ker(φ*: J₀(N) → E), then for p not dividing the modular degree m = deg(φ), the kernel of the map K[p] → J₀(N)[p] on G_Q-invariants is controlled by E[p]^{G_Q}. For p large enough (specifically, p > max{m, |J₀(N)(Q)_{tor}|}), one has K[p]^{G_Q} = 0. This is correct and follows from the long exact sequence in Galois cohomology applied to 0 → K → J₀(N) → E → 0 when p ∤ m.
+
+**Source:** Agashe–Stein (2007), Mazur's visibility principle.
+
+### What Does NOT Follow
+
+**The critical non-implication:** Facts 1–3 do **not** imply that Ш(E/Q) = 0. The Tate-Shafarevich group is a subtle arithmetic invariant. Showing Ш = 0 for a specific curve requires:
+
+- **Kolyvagin's theorem** (1989): If E/Q has analytic rank 0 or 1, and the relevant Heegner point or L-value is non-vanishing, then Ш is finite.
+- **Gross-Zagier + Kolyvagin**: For analytic rank 0 or 1, BSD is known (modulo results on the p-part for specific p).
+- **For analytic rank ≥ 2**: No general method exists to prove Ш is finite, let alone trivial. This is an open problem.
+
+The claim that "Galois cohomology of p-torsion" or "K[p]^{G_Q} = 0" proves Ш = 0 is a category error. Visibility of Ш in J₀(N) shows that elements of Ш[p] correspond to cohomology classes in H¹(Q, K[p]), but one still needs to show these classes are trivial. The vanishing K[p]^{G_Q} = 0 makes the map K[p]^{G_Q} → J₀(N)[p]^{G_Q} injective (trivially, since the domain is 0), but this does not by itself kill Ш[p].
+
+---
+
+## Revised Assessment of the Project
+
+### What this project contributed:
+
+1. A computation of S_E(X) = Σ a_p/p for 10,196 curves using 300 primes. This is a legitimate numerical experiment.
+
+2. Observations about the distribution of S_E values. These are data points, not theorems.
+
+### What this project did NOT contribute:
+
+1. Any new theorem about elliptic curves.
+2. Any new evidence for BSD.
+3. Any new method for computing or bounding the Tate-Shafarevich group.
+4. Any valid proof that Ш = 0 for any curve.
+
+### What should happen next:
+
+- If the goal is rank detection via a_p sums: this requires rigorous bounds on the error term E(X) in the explicit formula. This is a hard open problem in analytic number theory.
+- If the goal is BSD: this requires tools from the theory of Euler systems (Kolyvagin) or Iwasawa theory, not sums of a_p/p.
+- If the goal is a_p statistics: the computation is fine as data. It should be published as a computation, not dressed up as theorems.
 
 ---
 
 ## References
 
-1. Iwaniec, H., Kowalski, E. "Analytic Number Theory." AMS Colloquium Publications, 2004.
+1. Iwaniec, H., Kowalski, E. *Analytic Number Theory.* AMS Colloquium Publications, 2004.
 2. Soundararajan, K. "Nonvanishing of L-functions and the strong shift convolution." Duke Math J., 2000.
-3. Silverman, J. "The Arithmetic of Elliptic Curves." Springer GTM, 2009.
+3. Silverman, J. *The Arithmetic of Elliptic Curves.* Springer GTM, 2009.
 4. Gross, B., Zagier, D. "Heegner points and derivatives of L-series." Invent. Math., 1986.
 5. Kolyvagin, V. "Euler systems for Grothendieck-Tate groups." Invent. Math., 1990.
+6. Milne, J.S. *Elliptic Curves.* 2006. (For the Selmer group exact sequence and Ш.)
+7. Agashe, A., Stein, K. "Visibility of Shafarevich-Tate groups of abelian varieties." J. Reine Angew. Math., 2007.

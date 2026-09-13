@@ -1,0 +1,6 @@
+[[require]]
+name = "mathlib"
+version = "master"
+
+[[lean_lib]]
+name = "BSD"

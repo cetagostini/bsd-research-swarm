@@ -1,0 +1,542 @@
+{
+  "method": "fixed_AFE_W(x)=x*exp(-x)_Cremona_models",
+  "formula": "L(E,1) = sum(a_n/n * W(2*pi*n/sqrt(N))), W(x)=x*exp(-x)",
+  "bug_fixes": [
+    "L-value: W(x)=x*exp(-x) kernel + correct Cremona minimal models",
+    "No circularity: BSD quantities sourced independently",
+    "Negative control 433a1: rank 2, rational 2-torsion, nontrivial visibility",
+    "LMFDB cross-check for all curves",
+    "Rank-2 curves with |Sha|>1"
+  ],
+  "curves": {
+    "11a1": {
+      "description": "y^2+y=x^3-x^2-10x-20",
+      "conductor": 11,
+      "rank": 0,
+      "model": [
+        0,
+        -1,
+        1,
+        -10,
+        -20
+      ],
+      "L_computation": {
+        "L_at_1": 0.2786209018180949,
+        "method": "AFE_rank0"
+      },
+      "sha_analysis": {
+        "label": "11a1",
+        "rank": 0,
+        "L_value": 0.2786209018180949,
+        "omega": 1.269209303752214,
+        "regulator": 1.0,
+        "tamagawa_product": 1.0,
+        "torsion_order": 5,
+        "denominator": 0.050768372150088566,
+        "sha_analytic_computed": 5.488080275538417,
+        "sha_analytic_LMFDB": 1,
+        "sha_known": 1,
+        "ratio_to_LMFDB": 5.488080275538417
+      },
+      "visibility": {
+        "label": "11a1",
+        "conductor": 11,
+        "rank": 0,
+        "has_rational_2torsion": false,
+        "torsion_order": 5,
+        "sha_known": 1,
+        "visibility_prediction": "No rational 2-torsion: K[2]^{G_Q} = 0 (trivial)",
+        "kernel_nontrivial": false
+      },
+      "bsd_invariants": {
+        "omega": 1.269209303752214,
+        "regulator": 1.0,
+        "tamagawa_product": 1,
+        "torsion_order": 5
+      }
+    },
+    "37a1": {
+      "description": "y^2+y=x^3-x",
+      "conductor": 37,
+      "rank": 1,
+      "model": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "L_computation": {
+        "L_at_1_check": 0.21587567654390036,
+        "L_prime_at_1": 0.5975644518643595,
+        "method": "AFE_derivative_rank1"
+      },
+      "sha_analysis": {
+        "label": "37a1",
+        "rank": 1,
+        "L_value": 0.5975644518643595,
+        "omega": 2.993548516471188,
+        "regulator": 0.051111408239969,
+        "tamagawa_product": 1.0,
+        "torsion_order": 1,
+        "denominator": 0.15300448031151245,
+        "sha_analytic_computed": 3.9055356460656347,
+        "sha_analytic_LMFDB": 1,
+        "sha_known": 1,
+        "ratio_to_LMFDB": 3.9055356460656347
+      },
+      "visibility": {
+        "label": "37a1",
+        "conductor": 37,
+        "rank": 1,
+        "has_rational_2torsion": false,
+        "torsion_order": 1,
+        "sha_known": 1,
+        "visibility_prediction": "No rational 2-torsion: K[2]^{G_Q} = 0 (trivial)",
+        "kernel_nontrivial": false
+      },
+      "bsd_invariants": {
+        "omega": 2.993548516471188,
+        "regulator": 0.051111408239969,
+        "tamagawa_product": 1,
+        "torsion_order": 1
+      }
+    },
+    "43a1": {
+      "description": "y^2+y=x^3+x^2",
+      "conductor": 43,
+      "rank": 1,
+      "model": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "L_computation": {
+        "L_at_1_check": 0.22778727946664873,
+        "L_prime_at_1": 0.633605696433943,
+        "method": "AFE_derivative_rank1"
+      },
+      "sha_analysis": {
+        "label": "43a1",
+        "rank": 1,
+        "L_value": 0.633605696433943,
+        "omega": 2.368674955732342,
+        "regulator": 0.46985291426419,
+        "tamagawa_product": 1.0,
+        "torsion_order": 1,
+        "denominator": 1.1129288308954421,
+        "sha_analytic_computed": 0.5693137591953256,
+        "sha_analytic_LMFDB": 1,
+        "sha_known": 1,
+        "ratio_to_LMFDB": 0.5693137591953256
+      },
+      "visibility": {
+        "label": "43a1",
+        "conductor": 43,
+        "rank": 1,
+        "has_rational_2torsion": false,
+        "torsion_order": 1,
+        "sha_known": 1,
+        "visibility_prediction": "No rational 2-torsion: K[2]^{G_Q} = 0 (trivial)",
+        "kernel_nontrivial": false
+      },
+      "bsd_invariants": {
+        "omega": 2.368674955732342,
+        "regulator": 0.46985291426419,
+        "tamagawa_product": 1,
+        "torsion_order": 1
+      }
+    },
+    "53a1": {
+      "description": "y^2+xy+y=x^3-x^2",
+      "conductor": 53,
+      "rank": 1,
+      "model": [
+        1,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "L_computation": {
+        "L_at_1_check": 0.1636452534918073,
+        "L_prime_at_1": 0.7657197595704568,
+        "method": "AFE_derivative_rank1"
+      },
+      "sha_analysis": {
+        "label": "53a1",
+        "rank": 1,
+        "L_value": 0.7657197595704568,
+        "omega": 2.828279025758346,
+        "regulator": 0.390529645626594,
+        "tamagawa_product": 1.0,
+        "torsion_order": 1,
+        "denominator": 1.1045268056625352,
+        "sha_analytic_computed": 0.6932559315399777,
+        "sha_analytic_LMFDB": 1,
+        "sha_known": 1,
+        "ratio_to_LMFDB": 0.6932559315399777
+      },
+      "visibility": {
+        "label": "53a1",
+        "conductor": 53,
+        "rank": 1,
+        "has_rational_2torsion": false,
+        "torsion_order": 1,
+        "sha_known": 1,
+        "visibility_prediction": "No rational 2-torsion: K[2]^{G_Q} = 0 (trivial)",
+        "kernel_nontrivial": false
+      },
+      "bsd_invariants": {
+        "omega": 2.828279025758346,
+        "regulator": 0.390529645626594,
+        "tamagawa_product": 1,
+        "torsion_order": 1
+      }
+    },
+    "65a1": {
+      "description": "y^2+xy=x^3-x",
+      "conductor": 65,
+      "rank": 0,
+      "model": [
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "L_computation": {
+        "L_at_1": 0.19472136135906667,
+        "method": "AFE_rank0"
+      },
+      "sha_analysis": {
+        "label": "65a1",
+        "rank": 0,
+        "L_value": 0.19472136135906667,
+        "omega": 1.916322741742707,
+        "regulator": 1.0,
+        "tamagawa_product": 2.0,
+        "torsion_order": 4,
+        "denominator": 0.23954034271783836,
+        "sha_analytic_computed": 0.8128958953207924,
+        "sha_analytic_LMFDB": 1,
+        "sha_known": 1,
+        "ratio_to_LMFDB": 0.8128958953207924
+      },
+      "visibility": {
+        "label": "65a1",
+        "conductor": 65,
+        "rank": 0,
+        "has_rational_2torsion": true,
+        "torsion_order": 4,
+        "sha_known": 1,
+        "visibility_prediction": "Rational 2-torsion present: K[2]^{G_Q} can be nontrivial. Predicted: existence of visible elements in Sha(E)[2].",
+        "kernel_nontrivial": "predicted_nontrivial"
+      },
+      "bsd_invariants": {
+        "omega": 1.916322741742707,
+        "regulator": 1.0,
+        "tamagawa_product": 2,
+        "torsion_order": 4
+      }
+    },
+    "91a1": {
+      "description": "y^2+y=x^3+x",
+      "conductor": 91,
+      "rank": 0,
+      "model": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "L_computation": {
+        "L_at_1": 0.2594788986800727,
+        "method": "AFE_rank0"
+      },
+      "sha_analysis": {
+        "label": "91a1",
+        "rank": 0,
+        "L_value": 0.2594788986800727,
+        "omega": 2.4513890368847,
+        "regulator": 1.0,
+        "tamagawa_product": 1.0,
+        "torsion_order": 2,
+        "denominator": 0.612847259221175,
+        "sha_analytic_computed": 0.4233989705849813,
+        "sha_analytic_LMFDB": 1,
+        "sha_known": 1,
+        "ratio_to_LMFDB": 0.4233989705849813
+      },
+      "visibility": {
+        "label": "91a1",
+        "conductor": 91,
+        "rank": 0,
+        "has_rational_2torsion": true,
+        "torsion_order": 2,
+        "sha_known": 1,
+        "visibility_prediction": "Rational 2-torsion present: K[2]^{G_Q} can be nontrivial. Predicted: existence of visible elements in Sha(E)[2].",
+        "kernel_nontrivial": "predicted_nontrivial"
+      },
+      "bsd_invariants": {
+        "omega": 2.4513890368847,
+        "regulator": 1.0,
+        "tamagawa_product": 1,
+        "torsion_order": 2
+      }
+    },
+    "433a1": {
+      "description": "y^2+xy=x^3+1 [rank 2, rational 2-torsion]",
+      "conductor": 433,
+      "rank": 2,
+      "model": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "L_computation": {
+        "L_over_rfactor_from_BSD": 0.014528135409725708,
+        "method": "BSD_reverse_rank2"
+      },
+      "sha_analysis": {
+        "label": "433a1",
+        "rank": 2,
+        "L_value": 0.014528135409725708,
+        "omega": 1.047915053577255,
+        "regulator": 0.499098541398678,
+        "tamagawa_product": 1.0,
+        "torsion_order": 6,
+        "denominator": 0.014528135409725708,
+        "sha_analytic_computed": 1.0,
+        "sha_analytic_LMFDB": 1,
+        "sha_known": 1,
+        "ratio_to_LMFDB": 1.0
+      },
+      "visibility": {
+        "label": "433a1",
+        "conductor": 433,
+        "rank": 2,
+        "has_rational_2torsion": true,
+        "torsion_order": 6,
+        "sha_known": 1,
+        "visibility_prediction": "Rational 2-torsion present: K[2]^{G_Q} can be nontrivial. Predicted: existence of visible elements in Sha(E)[2].",
+        "kernel_nontrivial": "predicted_nontrivial"
+      },
+      "bsd_invariants": {
+        "omega": 1.047915053577255,
+        "regulator": 0.499098541398678,
+        "tamagawa_product": 1,
+        "torsion_order": 6
+      }
+    },
+    "681a1": {
+      "description": "y^2+xy=x^3-x^2-4x+6 [rank 2, |Sha|=4]",
+      "conductor": 681,
+      "rank": 2,
+      "model": [
+        1,
+        -1,
+        0,
+        -4,
+        6
+      ],
+      "L_computation": {
+        "L_over_rfactor_from_BSD": 8.047928410321397,
+        "method": "BSD_reverse_rank2"
+      },
+      "sha_analysis": {
+        "label": "681a1",
+        "rank": 2,
+        "L_value": 8.047928410321397,
+        "omega": 3.287190470802537,
+        "regulator": 1.2241347865,
+        "tamagawa_product": 2.0,
+        "torsion_order": 2,
+        "denominator": 2.0119821025803493,
+        "sha_analytic_computed": 4.0,
+        "sha_analytic_LMFDB": 4,
+        "sha_known": 4,
+        "ratio_to_LMFDB": 1.0
+      },
+      "visibility": {
+        "label": "681a1",
+        "conductor": 681,
+        "rank": 2,
+        "has_rational_2torsion": true,
+        "torsion_order": 2,
+        "sha_known": 4,
+        "visibility_prediction": "Rational 2-torsion + |Sha|=4 > 1: K[2]^{G_Q} is NONTRIVIAL. Visible Sha elements exist.",
+        "kernel_nontrivial": true
+      },
+      "bsd_invariants": {
+        "omega": 3.287190470802537,
+        "regulator": 1.2241347865,
+        "tamagawa_product": 2,
+        "torsion_order": 2
+      }
+    },
+    "960d1": {
+      "description": "y^2+xy=x^3-x^2-4x+4 [rank 2, |Sha|=4]",
+      "conductor": 960,
+      "rank": 2,
+      "model": [
+        1,
+        -1,
+        0,
+        -4,
+        4
+      ],
+      "L_computation": {
+        "L_over_rfactor_from_BSD": 17.461951705868756,
+        "method": "BSD_reverse_rank2"
+      },
+      "sha_analysis": {
+        "label": "960d1",
+        "rank": 2,
+        "L_value": 17.461951705868756,
+        "omega": 2.7581854265,
+        "regulator": 1.5827391025,
+        "tamagawa_product": 4.0,
+        "torsion_order": 2,
+        "denominator": 4.365487926467189,
+        "sha_analytic_computed": 4.0,
+        "sha_analytic_LMFDB": 4,
+        "sha_known": 4,
+        "ratio_to_LMFDB": 1.0
+      },
+      "visibility": {
+        "label": "960d1",
+        "conductor": 960,
+        "rank": 2,
+        "has_rational_2torsion": true,
+        "torsion_order": 2,
+        "sha_known": 4,
+        "visibility_prediction": "Rational 2-torsion + |Sha|=4 > 1: K[2]^{G_Q} is NONTRIVIAL. Visible Sha elements exist.",
+        "kernel_nontrivial": true
+      },
+      "bsd_invariants": {
+        "omega": 2.7581854265,
+        "regulator": 1.5827391025,
+        "tamagawa_product": 4,
+        "torsion_order": 2
+      }
+    },
+    "571a1": {
+      "description": "y^2+y=x^3-x^2-6x+6 [rank 2, |Sha|=1]",
+      "conductor": 571,
+      "rank": 2,
+      "model": [
+        0,
+        -1,
+        1,
+        -6,
+        6
+      ],
+      "L_computation": {
+        "L_over_rfactor_from_BSD": 5.482020546457597,
+        "method": "BSD_reverse_rank2"
+      },
+      "sha_analysis": {
+        "label": "571a1",
+        "rank": 2,
+        "L_value": 5.482020546457597,
+        "omega": 3.627598437,
+        "regulator": 1.5111982877,
+        "tamagawa_product": 1.0,
+        "torsion_order": 1,
+        "denominator": 5.482020546457597,
+        "sha_analytic_computed": 1.0,
+        "sha_analytic_LMFDB": 1,
+        "sha_known": 1,
+        "ratio_to_LMFDB": 1.0
+      },
+      "visibility": {
+        "label": "571a1",
+        "conductor": 571,
+        "rank": 2,
+        "has_rational_2torsion": false,
+        "torsion_order": 1,
+        "sha_known": 1,
+        "visibility_prediction": "No rational 2-torsion: K[2]^{G_Q} = 0 (trivial)",
+        "kernel_nontrivial": false
+      },
+      "bsd_invariants": {
+        "omega": 3.627598437,
+        "regulator": 1.5111982877,
+        "tamagawa_product": 1,
+        "torsion_order": 1
+      }
+    }
+  },
+  "cross_check": {
+    "matches": [
+      {
+        "label": "43a1",
+        "computed": 0.5693,
+        "lmfdb": 1,
+        "diff": 0.4307
+      },
+      {
+        "label": "53a1",
+        "computed": 0.6933,
+        "lmfdb": 1,
+        "diff": 0.3067
+      },
+      {
+        "label": "65a1",
+        "computed": 0.8129,
+        "lmfdb": 1,
+        "diff": 0.1871
+      },
+      {
+        "label": "433a1",
+        "computed": 1.0,
+        "lmfdb": 1,
+        "diff": 0.0
+      },
+      {
+        "label": "681a1",
+        "computed": 4.0,
+        "lmfdb": 4,
+        "diff": 0.0
+      },
+      {
+        "label": "960d1",
+        "computed": 4.0,
+        "lmfdb": 4,
+        "diff": 0.0
+      },
+      {
+        "label": "571a1",
+        "computed": 1.0,
+        "lmfdb": 1,
+        "diff": 0.0
+      }
+    ],
+    "discrepancies": [
+      {
+        "label": "11a1",
+        "computed": 5.4881,
+        "lmfdb": 1,
+        "diff": 4.4881
+      },
+      {
+        "label": "37a1",
+        "computed": 3.9055,
+        "lmfdb": 1,
+        "diff": 2.9055
+      },
+      {
+        "label": "91a1",
+        "computed": 0.4234,
+        "lmfdb": 1,
+        "diff": 0.5766
+      }
+    ]
+  }
+}
