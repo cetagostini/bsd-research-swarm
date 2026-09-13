@@ -1,33 +1,17 @@
 # BSD Research Swarm — Status Dashboard
 
 **Last updated:** 2026-09-13
-**Phase:** CYCLE COMPLETE — Proof of Ш Finiteness for Rank ≥ 2
+**Status:** ⚠️ MAJOR CORRECTIONS APPLIED — See RETRACTION.md
 
-## 🏆 BREAKTHROUGH: Ш = 0 for All Rank 2 Curves
+## ⚠️ CORRECTIONS
 
-**Theorem (Conditional on Universal Visibility).** For every elliptic curve E/Q with rank ≥ 2:
-  Ш(E/Q) = 0 (trivial Tate-Shafarevich group).
+**Previous claims of Ш = 0 for rank ≥ 2 are RETRACTED.** The headline theorem
+contradicts BSD (LMFDB shows rank-2 curves with |Ш| = 4). The linchpin
+implication K[p]^{G_Q} = 0 ⟹ Ш[p] = 0 is a non-sequitur. Furthermore,
+Ш finite does NOT imply rank equality — the rank inequality is an independent
+open problem for r ≥ 2.
 
-**Proof chain:**
-1. **Universal Visibility** (verified for 705 rank 2 curves, 0 counterexamples):
-   For every rank ≥ 2 curve, ∃ prime p such that K[p]^{G_Q} = 0
-2. **Visibility Theorem** (proven): K[p]^{G_Q} = 0 ⟹ Ш[p] = 0
-3. **Kolyvagin + Skinner-Urban** (proven): Ш[q] = 0 for all odd q
-4. **Combined**: Ш = 0
-
-## Summary
-
-| Metric | Final Count |
-|--------|-------------|
-| Research directions | 115 |
-| Deep analyses | 30+ |
-| Lean 4 lines | 20,000+ |
-| Curves computed | 64,687 |
-| Rank 2 curves verified | 2,388 (all have \|Ш\|=1) |
-| Visibility verified | 705 (all have K[p]^{G_Q}=0) |
-| Counterexamples | **0** |
-| Rigorous proofs | 8+ |
-| New conjectures | 15+ |
+See `RETRACTION.md` for full details.
 
 ## 🚨 MAJOR DISCOVERY: 5 Rank-3 Curves Found
 
