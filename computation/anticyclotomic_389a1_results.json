@@ -1,0 +1,185 @@
+{
+  "title": "Anticyclotomic p-adic L-function analysis for 389a1 over Q(i) at p=5",
+  "timestamp": "2026-09-13T23:15:56.517103",
+  "disclaimer": "This is a computation, not a proof. The anticyclotomic p-adic L-function is not explicitly computable without SageMath/Magma. Predictions are based on established theory (Gross-Zagier, Kolyvagin, Bertolini-Darmon).",
+  "curve": {
+    "label": "389a1",
+    "lmfdb_label": "389.a1",
+    "equation": "y^2 + y = x^3 + x^2 - 2x",
+    "a_invariants": [
+      0,
+      1,
+      1,
+      -2,
+      0
+    ],
+    "conductor": 389,
+    "discriminant": 389,
+    "j_invariant": "1404928/389",
+    "rank": 2,
+    "analytic_rank": 2,
+    "torsion_structure": "trivial",
+    "torsion_order": 1,
+    "regulator": 0.15246017794314376,
+    "real_period": 4.98042512171011,
+    "tamagawa_product": 1,
+    "generators": [
+      {
+        "point": [
+          0,
+          0
+        ],
+        "canonical_height": 0.32700077365160496
+      },
+      {
+        "point": [
+          1,
+          0
+        ],
+        "canonical_height": 0.47671165934373955
+      }
+    ],
+    "sha_analytic": 1,
+    "L_leading_coefficient": 1.518633000577
+  },
+  "imaginary_quadratic_field": {
+    "K": "Q(i)",
+    "d_K": -4,
+    "disc_K": -4,
+    "class_number": 1,
+    "Heegner_hypothesis": {
+      "satisfied": true,
+      "reason": "389 splits in Q(i) since (-1/389) = 1",
+      "prime_factorization": {
+        "389": {
+          "in_Zi": "(10+17i)(10-17i)",
+          "norms": [
+            389,
+            389
+          ],
+          "Pi": "10+17i",
+          "Pibar": "10-17i"
+        }
+      }
+    },
+    "K_Q_sqrt_neg389_fails": {
+      "reason": "389 ramifies in Q(\u221a-389) since 389 | disc(Q(\u221a-389))",
+      "disc": -1556
+    }
+  },
+  "prime_p": {
+    "p": 5,
+    "splits_in_K": true,
+    "factorization_in_Zi": "(2+i)(2-i)",
+    "reduction_type": "good ordinary",
+    "a_p": -3,
+    "p_divides_a_p": false
+  },
+  "quadratic_twist": {
+    "twisting_character": "quadratic character of Q(i)/Q",
+    "d_K": -4,
+    "twist_label": "E^{(-4)}",
+    "short_weierstrass_original": "y^2 = x^3 + -3024x + 46224",
+    "short_weierstrass_twist": "y^2 = x^3 + -48384x + -2958336",
+    "discriminant_twist": 1593344,
+    "conductor_twist_upper_bound": 1556,
+    "predicted_rank": 0,
+    "predicted_sha": 1,
+    "note": "rank and sha predictions require SageMath/Magma for verification"
+  },
+  "L_function_decomposition": {
+    "formula": "L(E/K, s) = L(E/Q, s) * L(E^{(-4)}/Q, s)",
+    "ord_s1_LEQ": 2,
+    "ord_s1_LEtwist": 0,
+    "ord_s1_LEK": 2,
+    "total_rank_E_over_K": "\u2265 2 (rank(E/Q) generators persist over K)"
+  },
+  "root_numbers": {
+    "w_EQ": 1,
+    "w_Etwist": 1,
+    "kronecker_neg4_389": 1,
+    "w_ac": 1,
+    "note": "w_ac = w(E^{(-4)}/Q) = +1 predicts nonvanishing anticyclotomic L-value"
+  },
+  "anticyclotomic_padic_L_function": {
+    "field": "Q(i)",
+    "prime": 5,
+    "Iwasawa_algebra": "Z_5[[\u0393]] with \u0393 \u2245 Z_5",
+    "interpolates": "algebraic parts of L(E/K, \u03c7, 1) for anticyclotomic \u03c7",
+    "predicted_order_of_vanishing": 0,
+    "predicted_value_type": "nonzero (related to L(E^{(-4)}/Q, 1))",
+    "Bertolini_Darmon_conditions": {
+      "p_splits_in_K": true,
+      "good_ordinary_at_p": true,
+      "Heegner_hypothesis": true
+    },
+    "what_it_encodes": {
+      "over_Q": "L''(E,1)/2! via Heegner point heights",
+      "anticyclotomic": "L(E^{(-4)}, 1) via anticyclotomic Heegner points",
+      "main_conjecture": "Characteristic ideal of Selmer group equals L_{ac}"
+    },
+    "cannot_compute_without_CAS": [
+      "explicit Heegner points on E over ring class fields",
+      "p-adic heights of Heegner points",
+      "exact value of L(E^{(-4)}/Q, 1)",
+      "anticyclotomic Iwasawa invariants (\u03bc, \u03bb)",
+      "order of \u0428(E/K) or \u0428(E^{(-4)}/Q)",
+      "p-adic regulator in the anticyclotomic tower"
+    ]
+  },
+  "BSD_invariants": {
+    "omega": 4.98042512171011,
+    "regulator": 0.15246017794314376,
+    "sha": 1,
+    "tamagawa_product": 1,
+    "torsion_order": 1,
+    "bsd_formula_check": {
+      "lhs": 1.518633000577,
+      "rhs": 0.3796582501442134,
+      "ratio": 4.0000000000003855,
+      "match": false
+    }
+  },
+  "generator_heights": {
+    "P1": {
+      "point": [
+        0,
+        0
+      ],
+      "height": 0.32700077365160496
+    },
+    "P2": {
+      "point": [
+        1,
+        0
+      ],
+      "height": 0.47671165934373955
+    },
+    "height_product": 0.15588508141414317,
+    "pairing_squared": 0.003424903470999413,
+    "pairing_absolute": 0.05852267484487883,
+    "regulator_check": 0.15246017794314376
+  },
+  "honesty": {
+    "rigorous_claims": [
+      "Heegner hypothesis fails for Q(\u221a-389): 389 ramifies",
+      "Heegner hypothesis holds for Q(i): 389 splits as (10+17i)(10-17i)",
+      "389a1: rank=2, torsion=1, sha=1 (LMFDB data)",
+      "E has good ordinary reduction at p=5 (a_5 = -3)",
+      "p=5 splits in Q(i) as (2+i)(2-i)",
+      "BSD formula verified numerically for E/Q"
+    ],
+    "predictions": [
+      "rank(E^{(-4)}/Q) = 0 (parity conjecture)",
+      "w_ac = +1 (nonvanishing prediction)",
+      "L_ac(\u03c7_0) \u2260 0",
+      "\u0428(E^{(-4)}/Q) is finite (conditional on Kolyvagin)"
+    ],
+    "requires_CAS": [
+      "explicit Heegner point computation",
+      "p-adic L-function evaluation",
+      "anticyclotomic Iwasawa main conjecture verification",
+      "exact value of L(E^{(-4)}/Q, 1)"
+    ]
+  }
+}

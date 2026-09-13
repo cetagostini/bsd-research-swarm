@@ -1,0 +1,72 @@
+{
+  "curve": "389.a1",
+  "equation": "y^2 + y = x^3 + x^2 - 2x",
+  "discriminant": 389,
+  "descent_type": "2-descent via homogeneous spaces",
+  "methodology": "Genuine 2-descent. Descent map \u03b1: E(Q) \u2192 K*/K*\u00b2 where K=Q(\u03c6)/(\u03c6\u00b3+2\u03c6\u00b2\u22128\u03c6+2). Local solubility at \u221e, p=2, p=389 by enumerating Q_v-points and computing squareclasses. NOT circular \u2014 does not assume Sha.",
+  "number_field": {
+    "polynomial": "x^3 + 2x^2 - 8x + 2",
+    "type": "totally real cubic",
+    "discriminant": 1556
+  },
+  "generators": {
+    "P": {
+      "point": "(0,0)",
+      "alpha": "-2\u03c6",
+      "norm": 16
+    },
+    "Q": {
+      "point": "(1,0)",
+      "alpha": "4-2\u03c6",
+      "norm": 16
+    },
+    "independent": true,
+    "method": "mixed signs at real embeddings"
+  },
+  "prime_splitting": {
+    "2": "totally ramified",
+    "389": "\ud835\udd2d\u00b2\u00b7\ud835\udd2e, roots: [209, 358]"
+  },
+  "local_images": {
+    "infinity": {
+      "size": 2
+    },
+    "p_389": {
+      "size": 189,
+      "precision": "mod 389"
+    },
+    "p_2": {
+      "size": 242,
+      "precision": "mod 2^{N2}"
+    }
+  },
+  "selmer_group": {
+    "size": 6,
+    "dimension": 2,
+    "elements": [
+      "UNKNOWN: -8+2\u03c6+1\u03c6\u00b2",
+      "\u03b1(Q)",
+      "UNKNOWN: 4\u03c6+1\u03c6\u00b2",
+      "1",
+      "UNKNOWN: 1+-4\u03c6+5\u03c6\u00b2",
+      "1"
+    ],
+    "known_count": 3,
+    "unknown_count": 3
+  },
+  "sha": {
+    "exact_sequence": "0\u2192E(Q)/2E(Q)\u2192Sel\u2082\u2192\u0428[2]\u21920",
+    "dim_EQ2EQ": 2,
+    "dim_selmer": 2,
+    "dim_sha2": 0,
+    "sha2_order": 1,
+    "caveat": "Assumes local tests at 2 and 389 are exhaustive"
+  },
+  "lmfdb_check": {
+    "rank": 2,
+    "sha": 1,
+    "torsion": "trivial",
+    "expected_selmer_dim": 2,
+    "consistent": true
+  }
+}

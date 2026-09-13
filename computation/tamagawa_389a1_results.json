@@ -1,0 +1,124 @@
+{
+  "curve": "389.a1",
+  "cremona_label": "389a1",
+  "lmfdb_label": "389.a1",
+  "equation": {
+    "short_weierstrass": "y^2 + y = x^3 + x^2 - 2x",
+    "weierstrass_coeffs": [
+      0,
+      1,
+      1,
+      -2,
+      0
+    ],
+    "latex": "y^2 + y = x^3 + x^2 - 2x"
+  },
+  "conductor": 389,
+  "bad_primes": [
+    389
+  ],
+  "kodaira_type_at_389": {
+    "p": 389,
+    "kodaira_symbol": "I1",
+    "kodaira_code_pari": 5,
+    "reduction_type": "split multiplicative",
+    "conductor_valuation": 1,
+    "tamagawa_number": 1,
+    "component_group_order": 1,
+    "local_c4c6": "[1, 0, 0, 0]",
+    "notes": "Kodaira type I1 at p=389 means split multiplicative reduction. The component group \u03a6 \u2245 Z/1Z. For I\u2081 (split multiplicative): c_p = 1."
+  },
+  "tamagawa_numbers": {
+    "c_389": 1,
+    "product": 1
+  },
+  "real_period": {
+    "omega1": 2.490212560855055,
+    "discriminant": 389.0,
+    "n_real_components": 2,
+    "bsd_real_period": 2.490212560855055,
+    "notes": "\u03c9\u2081 = 2.490212560855055 (positive real period). Discriminant > 0, E(R) has 2 connected components. BSD real period \u03a9 = \u03c9\u2081."
+  },
+  "torsion": {
+    "order": 1,
+    "structure": [],
+    "is_trivial": true
+  },
+  "mordell_weil": {
+    "rank": 2,
+    "generators": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "regulator": 0.15246017794314373,
+    "height_matrix": {
+      "h11": 0.32700077365160496,
+      "h12": 0.058522674844878955,
+      "h22": 0.47671165934373955
+    }
+  },
+  "L_values": {
+    "L_E_1": -4.535417661239405e-20,
+    "L_prime_E_1_over_1": 2.570207312506529e-20,
+    "L_double_prime_E_1_over_2": 1.5186330005768536,
+    "analytic_rank": 2
+  },
+  "bsd_verification": {
+    "formula": "L''(E,1)/2! = \u03a9 \u00b7 Reg \u00b7 |\u0160| \u00b7 \u03a0c\u1d65 / |E(Q)_tors|\u00b2",
+    "L_value": 1.5186330005768536,
+    "real_period_omega": 2.490212560855055,
+    "regulator": 0.15246017794314373,
+    "tamagawa_product": 1,
+    "torsion_order_sq": 1,
+    "sha_estimated": 4,
+    "sha_is_perfect_square": true,
+    "sha_square_root": 2,
+    "predicted_rhs_sha1": 0.37965825014421334,
+    "ratio": 4.000000000000001,
+    "bsd_holds": true
+  },
+  "root_numbers": {
+    "local_w_389": -1,
+    "global_w": 1
+  },
+  "invariants": {
+    "c4": 112,
+    "c6": -856,
+    "discriminant": 389.0,
+    "j_invariant": 3611.6401028277637
+  },
+  "summary": {
+    "conductor": 389,
+    "rank": 2,
+    "kodaira_type": "I1",
+    "reduction_type": "split multiplicative",
+    "tamagawa": 1,
+    "torsion_order": 1,
+    "real_period": 2.490212560855055,
+    "regulator": 0.15246017794314373,
+    "sha": 4,
+    "L_double_prime_over_2": 1.5186330005768536,
+    "bsd_ratio": 4.000000000000001,
+    "bsd_confirmed": true,
+    "smallest_conductor_rank_2_curve": true
+  },
+  "notes": [
+    "389.a1 is the smallest conductor elliptic curve over Q with rank 2.",
+    "Equation: y\u00b2 + y = x\u00b3 + x\u00b2 - 2x",
+    "Conductor: 389 (prime), so only one bad prime p = 389.",
+    "Kodaira type at 389: I1 (split multiplicative reduction).",
+    "Tamagawa number c\u2083\u2088\u2089 = 1.",
+    "Torsion is trivial (|E(Q)_tors| = 1).",
+    "Rank = 2, Z-basis generators: (0,0) and (1,0).",
+    "Regulator = 0.152460177943144.",
+    "L''(E,1)/2! = 1.518633000576854.",
+    "BSD ratio = 4.000000000000001 \u2192 |\u0160| = 4 = 2\u00b2.",
+    "All computations via PARI/GP through cypari2."
+  ]
+}

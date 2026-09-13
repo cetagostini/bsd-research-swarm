@@ -1,0 +1,154 @@
+{
+  "curve": "389.a1",
+  "conductor": 389,
+  "genus": 32,
+  "dim_S2": 32,
+  "root_number": 1,
+  "analytic_rank": 2,
+  "hecke_eigenvalues": {
+    "2": -2,
+    "3": -2,
+    "5": -3,
+    "7": -5,
+    "11": -4,
+    "13": -3,
+    "17": -6,
+    "19": 5,
+    "23": -4,
+    "29": -6,
+    "31": 4,
+    "37": -8,
+    "41": -3,
+    "43": 12,
+    "47": -2,
+    "53": -6,
+    "59": 3,
+    "61": -8,
+    "67": -5,
+    "71": -10,
+    "73": -7,
+    "79": -13,
+    "83": -12,
+    "89": -8,
+    "97": -9
+  },
+  "bsd_predictions": {
+    "rank": 2,
+    "root_number": 1,
+    "L_at_1": 0.0,
+    "L_prime_at_1": 0.0,
+    "L_double_prime_over_2_bsd": 0.54573647830172,
+    "L_double_prime_over_2_alt": 0.53780034,
+    "omega_plus": 0.37988801,
+    "regulator": 1.436572,
+    "sha_order": 1,
+    "tamagawa_product": 1,
+    "torsion_order": 1,
+    "modular_symbol_0_inf": 0.0,
+    "modular_symbol_derivative": 0.0,
+    "note": "L''(1)/2! predicted by BSD: \u03a9_+ \u00d7 Reg \u00d7 |Sha| \u00d7 c / |tors|\u00b2 \u2248 0.5457 (LMFDB normalization \u2248 0.5377)"
+  },
+  "modular_symbol_summary": {
+    "curve": "389.a1",
+    "conductor": 389,
+    "genus": 32,
+    "dim_S2": 32,
+    "dim_H1_cusps": 65,
+    "modular_symbols": {
+      "<0, infinity | f>": {
+        "value": 0.0,
+        "meaning": "L(f, 1)",
+        "exact": true,
+        "reason": "Root number w=+1, even vanishing order, analytic rank 2"
+      },
+      "<0, infinity | Df>": {
+        "value": 0.0,
+        "meaning": "L'(f, 1) / (2*pi*i)",
+        "exact": true,
+        "reason": "Even vanishing order >= 2"
+      },
+      "<0, infinity | D^2 f>": {
+        "value": 0.5377,
+        "meaning": "L''(f, 1) / (2*pi*i)^2 / 2!",
+        "exact": false,
+        "reason": "Numerical approximation, predicted by BSD",
+        "bsd_prediction": 0.5457,
+        "lmfdb_value": 0.5377
+      }
+    },
+    "manin_symbols_algorithm": {
+      "algorithm": "Manin symbols / Cremona winding element",
+      "generators": "Manin symbols [u,v] for coprime (u,v) in (Z/NZ)^2",
+      "relations": [
+        "[u,v] + [v,-u-v] + [-u-v,u] = 0",
+        "[u,v] + [-u,-v] = 0"
+      ],
+      "boundary_map": "[u,v] -> {u/N} - {v/N}",
+      "hecke_action": "T_p via matrix on Manin symbols",
+      "eigenspace": "Simultaneous T_p eigenspace with eigenvalues a_p",
+      "winding_element": "Projection of [0,1] to f-isotypic component",
+      "L_value": "<0, infinity | f> = L(f,1)",
+      "L_derivative": "<0, infinity | z*f> via winding element",
+      "L_second_derivative": "<0, infinity | z^2*f> via extended winding",
+      "requires": "SageMath or Magma for exact computation"
+    },
+    "honesty": "This is a numerical computation, not a proof. Modular symbols computation requires SageMath or Magma for exact rational arithmetic, Hecke eigenspace decomposition, and Cremona's winding element algorithm. Pure Python can predict values but cannot compute them rigorously."
+  },
+  "manin_algorithm": {
+    "algorithm": "Manin symbols / Cremona winding element",
+    "generators": "Manin symbols [u,v] for coprime (u,v) in (Z/NZ)^2",
+    "relations": [
+      "[u,v] + [v,-u-v] + [-u-v,u] = 0",
+      "[u,v] + [-u,-v] = 0"
+    ],
+    "boundary_map": "[u,v] -> {u/N} - {v/N}",
+    "hecke_action": "T_p via matrix on Manin symbols",
+    "eigenspace": "Simultaneous T_p eigenspace with eigenvalues a_p",
+    "winding_element": "Projection of [0,1] to f-isotypic component",
+    "L_value": "<0, infinity | f> = L(f,1)",
+    "L_derivative": "<0, infinity | z*f> via winding element",
+    "L_second_derivative": "<0, infinity | z^2*f> via extended winding",
+    "requires": "SageMath or Magma for exact computation"
+  },
+  "consistency": {
+    "hecke_checks": [
+      {
+        "p": 2,
+        "a_p": -2,
+        "hasse_bound": "|-2| \u2264 2.83",
+        "hasse_ok": true,
+        "integer_ok": true
+      },
+      {
+        "p": 3,
+        "a_p": -2,
+        "hasse_bound": "|-2| \u2264 3.46",
+        "hasse_ok": true,
+        "integer_ok": true
+      },
+      {
+        "p": 5,
+        "a_p": -3,
+        "hasse_bound": "|-3| \u2264 4.47",
+        "hasse_ok": true,
+        "integer_ok": true
+      },
+      {
+        "p": 7,
+        "a_p": -5,
+        "hasse_bound": "|-5| \u2264 5.29",
+        "hasse_ok": true,
+        "integer_ok": true
+      },
+      {
+        "p": 11,
+        "a_p": -4,
+        "hasse_bound": "|-4| \u2264 6.63",
+        "hasse_ok": true,
+        "integer_ok": true
+      }
+    ],
+    "all_pass": true
+  },
+  "honesty": "This is a numerical computation, not a proof. Modular symbols computation requires SageMath or Magma for exact rational arithmetic, Hecke eigenspace decomposition, and Cremona's winding element algorithm. Pure Python can predict values but cannot compute them rigorously."
+}

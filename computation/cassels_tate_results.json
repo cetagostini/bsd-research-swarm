@@ -1,0 +1,232 @@
+{
+  "computation": "Cassels\u2013Tate pairing on \u0428[2] for elliptic curves",
+  "version": "1.0",
+  "date": "2026-09-13 23:18:25",
+  "honesty_notices": [
+    "This is a computation, not a proof.",
+    "The Cassels\u2013Tate pairing requires explicit descent data for numerical values.",
+    "Without SageMath, we can only predict what the pairing should give from LMFDB structure data.",
+    "The non-degeneracy of the pairing follows from Cassels's theorem (\u0428 finite \u27f9 pairing non-degenerate).",
+    "The square-order property follows from the alternating + non-degenerate properties."
+  ],
+  "mathematical_background": {
+    "pairing": "\u27e8\u00b7,\u00b7\u27e9: \u0428[2] \u00d7 \u0428[2] \u2192 Q\u2082/Z\u2082",
+    "properties": [
+      "Alternating: \u27e8\u03b1,\u03b1\u27e9 = 0 for all \u03b1 \u2208 \u0428[2]",
+      "Non-degenerate if \u0428 is finite (Cassels 1962)",
+      "Consequence: |\u0428[2]| is a perfect square",
+      "Structure: \u0428[2] \u2245 (\u2124/2)^{2k} with standard symplectic form"
+    ],
+    "formula": "\u27e8\u03b1,\u03b2\u27e9 = (1/2) \u03a3_v inv_v(C_\u03b1 \u222a C_\u03b2)  (mod 1)",
+    "references": [
+      "Cassels, J.W.S. 'Arithmetic on curves of genus 1, IV.' Proc. London Math. Soc. (1962)",
+      "O'Neil, C. 'The Cassels\u2013Tate pairing and the Platonic solids.' J. Number Theory (2002)",
+      "Schaefer, E.F. 'Computing a Selmer group of a Jacobian using functions on the curve.' Math. Ann. (1999)",
+      "Poonen, B. & Schaefer, E.F. 'A descent map for curves with a rational point of order 2.' (2007)"
+    ]
+  },
+  "curve_verifications": {
+    "389a1": {
+      "discriminant": "401",
+      "j_invariant": "1404928/401",
+      "rational_roots_2div_poly": [],
+      "has_2tors_computed": false,
+      "has_2tors_expected": false,
+      "torsion_consistent": true,
+      "consistent": true
+    },
+    "480d1": {
+      "discriminant": "42624",
+      "j_invariant": "96246176/9",
+      "rational_roots_2div_poly": [
+        "-7"
+      ],
+      "has_2tors_computed": true,
+      "has_2tors_expected": true,
+      "torsion_consistent": true,
+      "consistent": true
+    },
+    "571b1": {
+      "discriminant": "507977",
+      "j_invariant": "5221428494336/29881",
+      "rational_roots_2div_poly": [],
+      "has_2tors_computed": false,
+      "has_2tors_expected": false,
+      "torsion_consistent": true,
+      "consistent": true
+    }
+  },
+  "selmer_predictions": {
+    "389a1": {
+      "rank": 2,
+      "torsion_order": 1,
+      "has_rational_2torsion": false,
+      "dim_E_tors_2": 0,
+      "dim_EQ_mod_2EQ": 2,
+      "order_EQ_mod_2EQ": 4,
+      "sha_order": 1,
+      "dim_Sha2": 0,
+      "order_Sha2": 1,
+      "dim_Sel2": 2,
+      "order_Sel2": 4,
+      "method": "LMFDB invariants + descent exact sequence"
+    },
+    "480d1": {
+      "rank": 0,
+      "torsion_order": 2,
+      "has_rational_2torsion": true,
+      "dim_E_tors_2": 1,
+      "dim_EQ_mod_2EQ": 1,
+      "order_EQ_mod_2EQ": 2,
+      "sha_order": 4,
+      "dim_Sha2": 2,
+      "order_Sha2": 4,
+      "dim_Sel2": 3,
+      "order_Sel2": 8,
+      "method": "LMFDB invariants + descent exact sequence"
+    },
+    "571b1": {
+      "rank": 0,
+      "torsion_order": 1,
+      "has_rational_2torsion": false,
+      "dim_E_tors_2": 0,
+      "dim_EQ_mod_2EQ": 0,
+      "order_EQ_mod_2EQ": 1,
+      "sha_order": 4,
+      "dim_Sha2": 2,
+      "order_Sha2": 4,
+      "dim_Sel2": 2,
+      "order_Sel2": 4,
+      "method": "LMFDB invariants + descent exact sequence"
+    }
+  },
+  "pairing_analysis": {
+    "389a1": {
+      "curve": "389a1",
+      "lmfdb_label": "389.a1",
+      "rank": 2,
+      "sha_order": 1,
+      "sha_2_order": 1,
+      "sha_2_dim_F2": 0,
+      "pairing_trivially_zero": true,
+      "reason": "|\u0428(E/Q)| = 1, so \u0428[2] = 0. The Cassels\u2013Tate pairing on \u0428[2] is vacuously trivial: there are no elements to pair. The radical is all of \u0428[2] = 0, and the pairing is the zero map 0 \u00d7 0 \u2192 Q\u2082/Z\u2082.",
+      "is_perfect_square": true,
+      "perfect_square_reason": "|\u0428[2]| = 1 = 1\u00b2, which is trivially a perfect square.",
+      "pairing_matrix": [],
+      "pairing_structure": "trivial (empty pairing)",
+      "cassels_formula": "The Cassels formula \u27e8\u03b1,\u03b2\u27e9 = (1/2) \u03a3_v inv_v(C_\u03b1 \u222a C_\u03b2) has no terms to evaluate because \u0428[2] = 0: there are no everywhere-locally-soluble homogeneous spaces that fail to be globally soluble."
+    },
+    "480d1": {
+      "curve": "480d1",
+      "lmfdb_label": "480.d1",
+      "rank": 0,
+      "sha_order": 4,
+      "sha_2_order": 4,
+      "sha_2_dim_F2": 2,
+      "pairing_trivially_zero": false,
+      "reason": "|\u0428(E/Q)| = 4, so |\u0428[2]| = 4. \u0428[2] \u2245 (\u2124/2\u2124)^2, and the Cassels\u2013Tate pairing is a non-degenerate alternating form on this F\u2082-vector space.",
+      "symplectic_rank": 1,
+      "is_perfect_square": true,
+      "perfect_square_reason": "|\u0428[2]| = 4 = 2^2. Since the Cassels\u2013Tate pairing is alternating and non-degenerate, dim_F\u2082(\u0428[2]) must be even (= 2), so |\u0428[2]| = (2^1)\u00b2 is a perfect square.",
+      "pairing_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pairing_matrix_description": "Standard symplectic form on F\u2082\u00b2: \u27e8e\u2081,e\u2082\u27e9 = 1/2 mod Z, \u27e8e\u2081,e\u2081\u27e9 = \u27e8e\u2082,e\u2082\u27e9 = 0. The matrix [[0,1],[1,0]] over F\u2082 represents the pairing.",
+      "pairing_structure": "\u0428[2] \u2245 F\u2082\u00b2 with the standard symplectic (alternating, non-degenerate) form.  The pairing detects all nonzero elements: each nonzero \u03b1 \u2208 \u0428[2] has some \u03b2 with \u27e8\u03b1,\u03b2\u27e9 = 1/2 mod Z.  In particular, the two nontrivial elements e\u2081, e\u2082 \u2208 \u0428[2] pair as \u27e8e\u2081,e\u2082\u27e9 = 1/2.",
+      "cassels_formula": "The Cassels formula for the pairing is:\n  \u27e8\u03b1, \u03b2\u27e9 = (1/2) \u03a3_v inv_v(C_\u03b1 \u222a C_\u03b2)  (mod 1)\nwhere:\n  - C_\u03b1, C_\u03b2 are the homogeneous spaces representing \u03b1, \u03b2 \u2208 \u0428[2]\n  - inv_v is the local invariant (Brauer group element at place v)\n  - The sum runs over all places v of Q (including v = \u221e)\n  - C_\u03b1 \u222a C_\u03b2 \u2208 Br(E)[2] is the cup product\n\nEVALUATING THIS FORMULA REQUIRES:\n  1. Finding explicit defining equations for C_\u03b1, C_\u03b2\n     (via 2-descent: x \u2212 e\u1d62 maps, Hilbert symbols)\n  2. Computing local invariants at every prime of bad reduction\n  3. Summing modulo 1\n\nThis is implemented in SageMath (Simon's simsong, or CasselsPairing\nin Magma) and CANNOT be done in pure Python.",
+      "attempted_computation": "WITHOUT SAGEMATH: We cannot compute the explicit pairing values (i.e., \u27e8\u03b1,\u03b2\u27e9 for specific \u03b1,\u03b2 \u2208 \u0428[2]).  What we CAN determine from the LMFDB data alone:\n  - |\u0428[2]| = 4, which is a perfect square\n  - The alternating form must be non-degenerate (Cassels's theorem)\n  - This forces dim_F\u2082(\u0428[2]) to be even, consistent with 2 being even\n  - The pairing determines the symplectic structure up to isomorphism\n\nTO ACTUALLY COMPUTE THE PAIRING:\n  - Install SageMath\n  - Use:  E = EllipticCurve([0,-1,0,-160,-728])  # 480d1\n          S = E.selmer_rank(2)  # 2-Selmer group generators\n          # Then use descent tools to find \u0428[2] generators\n          # and compute the Cassels pairing on them\n  - Or use Magma:  CasselsTatePairing(E, 2)"
+    },
+    "571b1": {
+      "curve": "571b1",
+      "lmfdb_label": "571.b1",
+      "rank": 0,
+      "sha_order": 4,
+      "sha_2_order": 4,
+      "sha_2_dim_F2": 2,
+      "pairing_trivially_zero": false,
+      "reason": "|\u0428(E/Q)| = 4, so |\u0428[2]| = 4. \u0428[2] \u2245 (\u2124/2\u2124)^2, and the Cassels\u2013Tate pairing is a non-degenerate alternating form on this F\u2082-vector space.",
+      "symplectic_rank": 1,
+      "is_perfect_square": true,
+      "perfect_square_reason": "|\u0428[2]| = 4 = 2^2. Since the Cassels\u2013Tate pairing is alternating and non-degenerate, dim_F\u2082(\u0428[2]) must be even (= 2), so |\u0428[2]| = (2^1)\u00b2 is a perfect square.",
+      "pairing_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pairing_matrix_description": "Standard symplectic form on F\u2082\u00b2: \u27e8e\u2081,e\u2082\u27e9 = 1/2 mod Z, \u27e8e\u2081,e\u2081\u27e9 = \u27e8e\u2082,e\u2082\u27e9 = 0. The matrix [[0,1],[1,0]] over F\u2082 represents the pairing.",
+      "pairing_structure": "\u0428[2] \u2245 F\u2082\u00b2 with the standard symplectic (alternating, non-degenerate) form.  The pairing detects all nonzero elements: each nonzero \u03b1 \u2208 \u0428[2] has some \u03b2 with \u27e8\u03b1,\u03b2\u27e9 = 1/2 mod Z.  In particular, the two nontrivial elements e\u2081, e\u2082 \u2208 \u0428[2] pair as \u27e8e\u2081,e\u2082\u27e9 = 1/2.",
+      "cassels_formula": "The Cassels formula for the pairing is:\n  \u27e8\u03b1, \u03b2\u27e9 = (1/2) \u03a3_v inv_v(C_\u03b1 \u222a C_\u03b2)  (mod 1)\nwhere:\n  - C_\u03b1, C_\u03b2 are the homogeneous spaces representing \u03b1, \u03b2 \u2208 \u0428[2]\n  - inv_v is the local invariant (Brauer group element at place v)\n  - The sum runs over all places v of Q (including v = \u221e)\n  - C_\u03b1 \u222a C_\u03b2 \u2208 Br(E)[2] is the cup product\n\nEVALUATING THIS FORMULA REQUIRES:\n  1. Finding explicit defining equations for C_\u03b1, C_\u03b2\n     (via 2-descent: x \u2212 e\u1d62 maps, Hilbert symbols)\n  2. Computing local invariants at every prime of bad reduction\n  3. Summing modulo 1\n\nThis is implemented in SageMath (Simon's simsong, or CasselsPairing\nin Magma) and CANNOT be done in pure Python.",
+      "attempted_computation": "WITHOUT SAGEMATH: We cannot compute the explicit pairing values (i.e., \u27e8\u03b1,\u03b2\u27e9 for specific \u03b1,\u03b2 \u2208 \u0428[2]).  What we CAN determine from the LMFDB data alone:\n  - |\u0428[2]| = 4, which is a perfect square\n  - The alternating form must be non-degenerate (Cassels's theorem)\n  - This forces dim_F\u2082(\u0428[2]) to be even, consistent with 2 being even\n  - The pairing determines the symplectic structure up to isomorphism\n\nTO ACTUALLY COMPUTE THE PAIRING:\n  - Install SageMath\n  - Use:  E = EllipticCurve([0,-1,0,-160,-728])  # 480d1\n          S = E.selmer_rank(2)  # 2-Selmer group generators\n          # Then use descent tools to find \u0428[2] generators\n          # and compute the Cassels pairing on them\n  - Or use Magma:  CasselsTatePairing(E, 2)"
+    }
+  },
+  "conclusions": {
+    "389a1": {
+      "sha_trivial": true,
+      "sha_2_trivial": true,
+      "pairing_trivially_zero": true,
+      "consistent_with_bsd": true,
+      "consistent_with_descent": true,
+      "note": "|\u0428| = 1 \u27f9 \u0428[2] = 0 \u27f9 pairing vacuously trivial. All our computations (2-descent, L-function, BSD) are consistent."
+    },
+    "480d1": {
+      "sha_trivial": false,
+      "sha_2_trivial": false,
+      "sha_2_order": 4,
+      "sha_2_is_perfect_square": true,
+      "pairing_non_degenerate": true,
+      "symplectic_structure": "standard symplectic form on (\u2124/2)\u00b2",
+      "pairing_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "verified_from_lmdb": true,
+      "lmfdb_sha_an": 4,
+      "note": "|\u0428| = 4 \u27f9 |\u0428[2]| = 4 = 2\u00b2 (perfect square, as required by Cassels's theorem). The pairing is a non-degenerate alternating form on \u0428[2] \u2245 (\u2124/2)\u00b2."
+    },
+    "571b1": {
+      "sha_trivial": false,
+      "sha_2_trivial": false,
+      "sha_2_order": 4,
+      "sha_2_is_perfect_square": true,
+      "pairing_non_degenerate": true,
+      "symplectic_structure": "standard symplectic form on (\u2124/2)\u00b2",
+      "pairing_matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "verified_from_lmdb": true,
+      "lmfdb_sha_an": 4,
+      "note": "Prime conductor 571, rank 0, no rational 2-torsion. |\u0428| = 4 \u27f9 |\u0428[2]| = 4 = 2\u00b2. Same pairing structure as 480d1."
+    }
+  },
+  "what_would_be_needed_for_explicit_pairing": {
+    "tools": "SageMath or Magma",
+    "sage_command": "E = EllipticCurve([0, -1, 0, -160, -728])  # 480d1\n# Full 2-descent to find Selmer group generators\nS = E.selmer_rank(2)  # 2-Selmer group\n# Identify \u0428[2] generators from Selmer group\n# Compute Cassels\u2013Tate pairing on generators",
+    "magma_command": "E := EllipticCurve([0, -1, 0, -160, -728]);\nSha, pair := TwoSelmerGroup(E);\n# pair gives the Cassels\u2013Tate pairing on \u0428[2]",
+    "difficulty": "Straightforward with SageMath/Magma. Requires ~minutes of computation."
+  }
+}

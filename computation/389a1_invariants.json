@@ -1,0 +1,151 @@
+{
+  "curve": "389.a1",
+  "equation": "y^2 + y = x^3 + x^2 - 2x",
+  "weierstrass_coeffs": [0, 1, 1, -2, 0],
+  "short_weierstrass": {
+    "rational_form": "Y^2 = X^3 - (7/3)X + 107/108",
+    "integer_form": "V^2 = U^3 - 3024U + 46224",
+    "a": -3024,
+    "b": 46224,
+    "substitution": "U = 36X, V = 216Y"
+  },
+  "invariants": {
+    "b2": 4,
+    "b4": -4,
+    "b6": 1,
+    "b8": -3,
+    "c4": 112,
+    "c6": -856,
+    "j": "1404928/389",
+    "j_float": 3611.6401028277637
+  },
+  "discriminant": {
+    "Delta": 389,
+    "is_prime": true,
+    "is_minimal": true,
+    "short_form_Delta": 846768328704,
+    "short_form_factorization": "6^12 * 389",
+    "verification": "c4^3 - c6^2 = 672192 = 1728 * 389"
+  },
+  "conductor": {
+    "N": 389,
+    "is_prime": true,
+    "bad_primes": [389],
+    "conductor_exponent_at_389": 1
+  },
+  "torsion": {
+    "structure": "trivial",
+    "order": 1,
+    "proof_method": "Nagell-Lutz + Mazur's theorem",
+    "has_2_torsion": false,
+    "integer_points_checked": 14,
+    "max_multiple_checked": 14
+  },
+  "reduction": {
+    "at_389": {
+      "type": "multiplicative",
+      "kodaira_type": "I_1",
+      "split": true,
+      "c_389": 1,
+      "v_Delta": 1,
+      "v_c4": 0
+    },
+    "good_at_all_other_primes": true
+  },
+  "frobenius_traces": {
+    "2": -2,
+    "3": -2,
+    "5": -3,
+    "7": -5,
+    "11": -4,
+    "13": -3,
+    "17": -6,
+    "19": 5,
+    "23": -4,
+    "29": -6,
+    "31": 4,
+    "37": -8,
+    "41": -3,
+    "43": 12,
+    "47": -2,
+    "53": -6,
+    "59": 3,
+    "61": -8,
+    "67": -5,
+    "71": -10,
+    "389": 1
+  },
+  "point_counts": {
+    "2": 5,
+    "3": 6,
+    "5": 9,
+    "7": 13,
+    "11": 16,
+    "13": 17,
+    "389": 389
+  },
+  "points": {
+    "P": {
+      "coords": [0, 0],
+      "on_curve": true,
+      "LHS": 0,
+      "RHS": 0
+    },
+    "Q": {
+      "coords": [1, 0],
+      "on_curve": true,
+      "LHS": 0,
+      "RHS": 0
+    },
+    "2P": {
+      "coords": [3, 5],
+      "on_curve": true,
+      "LHS": 30,
+      "RHS": 30
+    },
+    "2Q": {
+      "coords": [6, -16],
+      "on_curve": true,
+      "LHS": 240,
+      "RHS": 240
+    },
+    "P_plus_Q": {
+      "coords": [-2, -1],
+      "on_curve": true,
+      "LHS": 0,
+      "RHS": 0
+    },
+    "3P": {
+      "coords": ["-11/9", "28/27"],
+      "on_curve": true,
+      "LHS": "1540/729",
+      "RHS": "1540/729"
+    },
+    "3Q": {
+      "coords": ["56/25", "371/125"],
+      "on_curve": true,
+      "LHS": "184016/15625",
+      "RHS": "184016/15625"
+    }
+  },
+  "canonical_heights": {
+    "hat_h_P": 0.326999,
+    "hat_h_Q": 0.476712,
+    "hat_h_P_plus_Q": 0.920755,
+    "hat_h_P_minus_Q": 0.686665,
+    "precision_note": "Computed via exact rational x-coordinate doubling to n=9 iterations (~10^-6 precision)"
+  },
+  "height_pairing": {
+    "pair_P_Q": 0.058522,
+    "matrix": [[0.326999, 0.058522], [0.058522, 0.476712]],
+    "determinant": 0.152501,
+    "determinant_positive": true,
+    "regulator": 0.152501
+  },
+  "independence": {
+    "P_Q_independent": true,
+    "method": "Height pairing matrix determinant > 0",
+    "det_H": 0.152501,
+    "rank_lower_bound": 2
+  }
+}
