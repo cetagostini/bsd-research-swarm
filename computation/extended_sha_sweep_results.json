@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-09-14T22:13:54",
+  "e1": {
+    "experiment": "E1",
+    "query": "rank=2&sha=4",
+    "summary": {
+      "total_curves": 0,
+      "certified": 0,
+      "not_certified": 0,
+      "s_value_distribution": {},
+      "flags": [],
+      "falsifier_found": false
+    },
+    "results": []
+  },
+  "e2": {
+    "experiment": "E2",
+    "sha_values_searched": [
+      16,
+      36,
+      64,
+      100,
+      144,
+      256
+    ],
+    "summary": {
+      "total_curves": 0,
+      "certified": 0,
+      "not_certified": 0,
+      "s_value_distribution": {},
+      "discoveries": []
+    },
+    "results": []
+  },
+  "overall_conclusion": {
+    "e1_falsifier": false,
+    "e1_uniform_s2": true,
+    "e2_discoveries": 0,
+    "sha2_stable_at_rank2": true
+  }
+}

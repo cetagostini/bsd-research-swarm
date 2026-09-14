@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-14T22:17:26",
+  "experiment": "E1",
+  "pool_source": "Dr. Science's 100-curve computation",
+  "summary": {
+    "total_curves": 100,
+    "certified": 100,
+    "not_certified": 0,
+    "s_value_distribution": {
+      "2": 100
+    },
+    "torsion_distribution": {
+      "2": 41,
+      "4": 1,
+      "1": 58
+    },
+    "sel2_distribution": {
+      "32": 42,
+      "16": 58
+    },
+    "T_distribution": {
+      "1": 42,
+      "0": 58
+    },
+    "anomalies": [],
+    "uncertified_curves": []
+  },
+  "conclusion": {
+    "anomalies_found": false,
+    "all_rank2_s2": true,
+    "s2_rate": 100.0
+  }
+}

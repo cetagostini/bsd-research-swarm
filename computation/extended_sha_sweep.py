@@ -77,8 +77,9 @@ def analyze_curve_pari(ainvs: list, label: str, conductor: int) -> dict:
         t0 = time.time()
         E = pari.ellinit(ainvs)
         R = pari.ellrank(E, 3)
-        result["ellrank"] = [int(x) for x in (R[0], R[1], R[2])]
-        result["rank_certified"] = (int(R[0]) == int(R[1]))
+        # ellrank returns [r1, r2, s, ...] where [3] may be generators
+        result["ellrank"] = [int(str(R[0])), int(str(R[1])), int(str(R[2]))]
+        result["rank_certified"] = (result["ellrank"][0] == result["ellrank"][1])
 
         # Torsion
         tors = pari.elltors(E)
