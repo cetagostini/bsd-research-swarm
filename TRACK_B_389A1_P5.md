@@ -2,7 +2,7 @@
 
 **Curve:** 389.a1 — $y^2 + y = x^3 + x^2 - 2x$
 **Prime:** $p = 5$
-**Date:** 2026-09-15T01:23:08
+**Date:** 2026-09-15T01:31:40
 **Software:** PARI/GP 2.17.2 via cypari2
 **Certificate status:** CERTIFIED
 

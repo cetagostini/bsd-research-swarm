@@ -385,7 +385,7 @@ def assemble_certificate(derivative_override=None):
             "statement": "rank_{Z_5}(X/TX) <= ord_T char_Lambda(X)",
             "hypotheses": ["X torsion Lambda-module (from Kato cotorsion)"],
             "status": "HYPOTHESES_MET" if checks["galois_image_GL2"] else "HYPOTHESES_INCOMPLETE",
-            "source": "Kim, A user's guide to Beilinson-Kato, Theorem 2.9"
+            "source": "General fact about finitely generated torsion Lambda-modules (structure theory)"
         },
         "kato_divisibility": {
             "statement": "ord_T char_Lambda(X) <= ord_T L_5(E,T)",

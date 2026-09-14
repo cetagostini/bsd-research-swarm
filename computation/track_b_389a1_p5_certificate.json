@@ -9,7 +9,7 @@
     0
   ],
   "prime": 5,
-  "timestamp": "2026-09-15T01:23:08",
+  "timestamp": "2026-09-15T01:31:40",
   "software": "PARI/GP 2.17.2 via cypari2",
   "rank_data": {
     "r1": 2,
@@ -134,7 +134,7 @@
         "X torsion Lambda-module (from Kato cotorsion)"
       ],
       "status": "HYPOTHESES_MET",
-      "source": "Kim, A user's guide to Beilinson-Kato, Theorem 2.9"
+      "source": "General fact about finitely generated torsion Lambda-modules (structure theory)"
     },
     "kato_divisibility": {
       "statement": "ord_T char_Lambda(X) <= ord_T L_5(E,T)",

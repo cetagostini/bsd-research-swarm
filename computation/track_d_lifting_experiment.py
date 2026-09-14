@@ -67,102 +67,92 @@ def analyze_unresolved_twist(pari, ainvs, d, base_label):
         "rank_certified": r1 == r2,
     }
     
-    # Classification using dim_F2(2Sha[4]) = r2 - R.
+    # Classification using the PARI identities.
     #
-    # PARI's identity: dim Sel_2 = T + R + dim Sha[2], where R = actual rank.
-    # Also dim Sel_2 = T + r2 (from the 2-descent upper bound).
-    # And dim Sha[2] = s + dim(2Sha[4]) where s = dim_F2(Sha[2]/2Sha[4]).
-    # So: T + r2 = T + R + s + dim(2Sha[4]), hence dim(2Sha[4]) = r2 - R - s.
+    # PARI defines (from ellrank docs):
+    #   r2 = C - T - s    where C = dim Sel_2, T = dim E(Q)[2], s = dim(Sha[2]/2Sha[4])
     #
-    # Wait — let me be precise. PARI gives r1, r2, s with:
-    #   r1 <= R <= r2 (R = actual rank)
-    #   s = dim_F2(Sha[2]/2Sha[4])  (always even, since it's the dimension of a
-    #       quotient of Sha[2] by the image of multiplication by 2)
-    #   C = dim Sel_2 = T + r2 (exact, from 2-descent)
+    # Kummer exact sequence gives:
+    #   C = T + R + S     where R = actual Mordell-Weil rank, S = dim Sha[2]
     #
-    # The exact formula: dim Sel_2 = T + R + dim Sha[2]
-    #   => T + r2 = T + R + dim Sha[2]
-    #   => dim Sha[2] = r2 - R
-    #   And dim Sha[2] = s + dim(2Sha[4])
-    #   => dim(2Sha[4]) = (r2 - R) - s
+    # Combining:
+    #   T + r2 + s = T + R + S    (since C = T + r2 + s from PARI's definition)
+    #   => S = r2 + s - R         (dim Sha[2])
+    #   And S = s + d             where d = dim(2Sha[4])
+    #   => d = r2 - R             (dim(2Sha[4]))
     #
-    # Note: 2Sha[4] is an F_2-vector space (killed by 2), so its dimension
-    # is a non-negative integer. It cannot contain a Z/4 summand.
+    # Note: d = r2 - R does NOT depend on s. It only depends on r2 and R.
+    # 2Sha[4] is an F_2-vector space (killed by 2); it cannot contain a Z/4 summand.
     #
-    # For [0,2,2]:
-    #   If R=0: dim Sha[2] = 2-0 = 2, dim(2Sha[4]) = 2-2 = 0
-    #   If R=2: dim Sha[2] = 2-2 = 0, dim(2Sha[4]) = 0-2 = -2 (impossible)
-    #   So R cannot be 2 when s=2 and r2=2. R must be 0 (or 1 if s permits).
-    #   With R=0, s=2: dim Sha[2]=2, dim(2Sha[4])=0. Sha[2]≅(Z/2)^2.
-    #   No 4-torsion in this case.
+    # PARI says s is "conjecturally even" — the nondegenerate quotient Sha[2]/2Sha[4]
+    # has even dimension (alternating form), but the full Sha[2] need not.
+    # We cannot assume nondegeneracy on all of Sha[2] to force parity on S.
     #
-    # For [1,3,2]:
-    #   If R=1: dim Sha[2] = 3-1 = 2, dim(2Sha[4]) = 2-2 = 0
-    #   If R=2: dim Sha[2] = 3-2 = 1 (impossible: dim Sha[2] must be even
-    #       since Sha[2] has a nondegenerate alternating form)
-    #   If R=3: dim Sha[2] = 3-3 = 0, dim(2Sha[4]) = 0-2 = -2 (impossible)
-    #   So R must be 1. dim Sha[2]=2, no 4-torsion.
+    # The 4-torsion criterion: dim(2Sha[4]) = r2 - R > 0, i.e. R < r2.
+    # Nonzero lifting is possible when r2 > R (regardless of s).
     #
-    # For [0,2,0]:
-    #   If R=0: dim Sha[2] = 2-0 = 2, dim(2Sha[4]) = 2-0 = 2
-    #   This IS a 4-torsion candidate: Sha[2^inf] could be Z/4 x Z/2 or (Z/2)^3
-    #   (but s=0 means Sha[2]/2Sha[4]=0, so Sha[2]=2Sha[4]; dim Sha[2]=2,
-    #   dim(2Sha[4])=2 means Sha[2] = 2Sha[4], which with dim=2 means
-    #   Sha[2^inf] contains Z/4 components)
-    #
-    # Summary: the interesting 4-torsion case is s=0 with r2>R (not s>=1).
+    # Verified: 194040.cu1 (r1=r2=2, s=2, T=1):
+    #   C = 1+2+2 = 5, S = 2+2-2 = 2, d = 2-2 = 0. Correct.
 
-    if r1 == r2 and r1 >= 2:
-        # Certified rank >= 2
-        dim_sha2 = r2 - r1  # = 0 for certified
-        dim_2sha4 = dim_sha2 - s  # = 0 - s
-        result["classification"] = "CERTIFIED_RANK"
+    if r1 == r2:
+        # Certified rank: R = r1 = r2 exactly.
+        dim_sha2 = r2 + s - r1   # = s (since r1=r2)
+        dim_2sha4 = r2 - r1      # = 0 (since r1=r2)
         result["dim_sha2"] = dim_sha2
         result["dim_2sha4"] = dim_2sha4
-        if s >= 3:
-            result["flag"] = "HIGH_SHA2"
-            result["note"] = f"s={s} >= 3: dim Sha[2] >= {s} (certified). Higher Sha[2] dimension found!"
-        elif s == 0:
-            # r1=r2 and s=0 => dim Sha[2] = 0, Sha[2]=0 exactly.
-            # No room for (Z/4)^2 or any nonzero Sha at all.
-            result["flag"] = "TRIVIAL_SHA2"
-            result["note"] = f"s=0, rank={r1} certified. Sha[2]=0 (exactly)."
+        if r1 >= 2:
+            result["classification"] = "CERTIFIED_RANK"
+            if s >= 3:
+                result["flag"] = "HIGH_SHA2"
+                result["note"] = f"s={s} >= 3: dim Sha[2] = {dim_sha2} (certified). Higher Sha[2] dimension found!"
+            elif s == 0:
+                # r1=r2 and s=0 => dim Sha[2] = 0, Sha[2]=0 exactly.
+                result["flag"] = "TRIVIAL_SHA2"
+                result["note"] = f"s=0, rank={r1} certified. Sha[2]=0 (exactly)."
+            else:
+                result["flag"] = "STANDARD"
         else:
-            result["flag"] = "STANDARD"
+            result["classification"] = "CERTIFIED_LOW_RANK"
+            result["flag"] = "NOT_RANK_2"
     elif r2 >= 2 and r1 < r2:
-        # Rank not certified but upper bound >= 2
-        # We can compute dim Sha[2] = r2 - R for each possible R in [r1, r2].
-        # dim(2Sha[4]) = (r2 - R) - s for each R.
-        dim_sha2_at_r1 = r2 - r1
-        dim_2sha4_at_r1 = dim_sha2_at_r1 - s
+        # Rank not certified: R in [r1, r2].
+        # For each possible R:
+        #   dim Sha[2] = r2 + s - R
+        #   dim(2Sha[4]) = r2 - R
+        # 4-torsion requires R < r2 (i.e. dim(2Sha[4]) > 0).
+        dim_sha2_at_r1 = r2 + s - r1
+        dim_2sha4_at_r1 = r2 - r1
+        dim_sha2_at_r2 = s          # r2 + s - r2 = s
+        dim_2sha4_at_r2 = 0         # r2 - r2 = 0
         result["classification"] = "UNRESOLVED"
         result["dim_sha2_at_r1"] = dim_sha2_at_r1
         result["dim_2sha4_at_r1"] = dim_2sha4_at_r1
-        result["dim_sha2_at_r2"] = 0
-        result["dim_2sha4_at_r2"] = 0 - s
+        result["dim_sha2_at_r2"] = dim_sha2_at_r2
+        result["dim_2sha4_at_r2"] = dim_2sha4_at_r2
+        # For intermediate R values (if r2 - r1 > 1)
+        result["possible_ranks"] = list(range(r1, r2 + 1))
+        result["dim_2sha4_table"] = {R: r2 - R for R in range(r1, r2 + 1)}
+
         if s >= 3:
             result["flag"] = "HIGH_SHA2_UNRESOLVED"
-            result["note"] = f"s={s} >= 3 with uncertified rank. Candidate for higher Sha[2]."
-        elif s == 0 and r2 > r1:
-            # s=0 means Sha[2]=2Sha[4]. If R=r1, dim Sha[2]=r2-r1, dim(2Sha[4])=r2-r1.
-            # Sha[2] = 2Sha[4] with dim(2Sha[4]) > 0 means 4-torsion is present.
-            result["flag"] = "POSSIBLE_4_TORSION"
-            result["note"] = (f"r1={r1}, r2={r2}, s=0. "
-                             f"If rank={r1}: dim Sha[2]={dim_sha2_at_r1}, "
-                             f"dim(2Sha[4])={dim_2sha4_at_r1} (s=0 => Sha[2]=2Sha[4], 4-torsion). "
-                             f"If rank={r2}: Sha[2]=0. "
-                             f"Needs independent rank determination.")
+            result["note"] = (f"s={s} >= 3 with uncertified rank. "
+                             f"dim Sha[2] in [{dim_sha2_at_r2}, {dim_sha2_at_r1}] depending on rank. "
+                             f"Candidate for higher Sha[2].")
         elif dim_2sha4_at_r1 > 0:
+            # At rank r1, dim(2Sha[4]) = r2 - r1 > 0 => possible 4-torsion.
+            # At rank r2, dim(2Sha[4]) = 0 => no 4-torsion.
+            # Note: nonzero lifting is possible for ANY s when r2 > R.
             result["flag"] = "POSSIBLE_4_TORSION"
             result["note"] = (f"r1={r1}, r2={r2}, s={s}. "
-                             f"If rank={r1}: dim(2Sha[4])={dim_2sha4_at_r1} (possible 4-torsion). "
-                             f"If rank={r2}: dim(2Sha[4])={0 - s} (impossible, so rank < r2). "
+                             f"4-torsion possible iff R < r2: "
+                             f"dim(2Sha[4]) table by R: {result['dim_2sha4_table']}. "
                              f"Needs independent rank determination.")
         else:
             result["flag"] = "UNRESOLVED_STANDARD"
     else:
         result["classification"] = "LOW_RANK"
         result["flag"] = "NOT_RANK_2"
+        result["dim_sha2"] = None
         result["dim_2sha4"] = None
     
     return result
@@ -233,10 +223,10 @@ def main():
     print(f"  Possible 4-torsion: {len(flags['POSSIBLE_4_TORSION'])}")
     print(f"  High Sha[2] unresolved: {len(flags['HIGH_SHA2_UNRESOLVED'])}")
     print()
-    print("4-torsion analysis (dim(2Sha[4]) = r2 - R):")
-    print("  [0,2,2] candidates: 4-torsion possible iff rank=0 (not rank=2)")
-    print("  [1,3,2] candidates: 4-torsion possible iff rank=1 (not rank=3)")
-    print("  All need independent rank determination via 3-descent or other method")
+    print("Identity (PARI): C = T + r2 + s, S = r2 + s - R, d = r2 - R")
+    print("4-torsion criterion: dim(2Sha[4]) = r2 - R > 0, i.e. R < r2.")
+    print("Nonzero lifting is possible for ANY s when r2 > R.")
+    print("All candidates need independent rank determination.")
     
     # Identify best candidates for further investigation
     candidates = []
@@ -295,9 +285,9 @@ def main():
         "candidates": candidates,
         "all_results": results,
         "conclusion": ("Candidates need independent rank determination. "
-                       "[0,2,2] pairs: 4-torsion iff rank=0 (dim(2Sha[4])=2). "
-                       "[1,3,2] pairs: 4-torsion iff rank=1 (dim(2Sha[4])=2). "
-                       "Neither provides rank 2 + nonzero first lifting simultaneously.")
+                       "dim(2Sha[4]) = r2 - R (does not depend on s). "
+                       "4-torsion criterion: R < r2. "
+                       "Nonzero lifting is possible for any s when r2 > R.")
     }
     
     out_path = "computation/track_d_lifting_experiment.json"
@@ -308,5 +298,58 @@ def main():
     return output
 
 
+def test_base_curve_identity():
+    """Regression test: verify PARI identity on 194040.cu1 (d=1, untwisted).
+
+    Per Mr. Genius: r1=r2=2, s=2, T=1, C=5.
+    Expected: dim_sha2=2, dim_2sha4=0.
+    """
+    if not HAS_PARI:
+        print("SKIPPED: PARI not available")
+        return True
+
+    pari = Pari()
+    base_ainvs = [0, 0, 0, -456382227, -3752677112114]  # 194040.cu1
+    result = analyze_unresolved_twist(pari, base_ainvs, 1, "194040.cu1")
+
+    assert result["r1"] == 2, f"r1 should be 2, got {result['r1']}"
+    assert result["r2"] == 2, f"r2 should be 2, got {result['r2']}"
+    assert result["s"] == 2, f"s should be 2, got {result['s']}"
+    assert result["T"] == 1, f"T should be 1, got {result['T']}"
+    assert result["rank_certified"] is True, "Rank should be certified"
+
+    # C = T + r2 + s = 1 + 2 + 2 = 5
+    C = result["T"] + result["r2"] + result["s"]
+    assert C == 5, f"C should be 5, got {C}"
+
+    # dim Sha[2] = r2 + s - R = 2 + 2 - 2 = 2
+    assert result["dim_sha2"] == 2, f"dim_sha2 should be 2, got {result['dim_sha2']}"
+    # dim(2Sha[4]) = r2 - R = 2 - 2 = 0
+    assert result["dim_2sha4"] == 0, f"dim_2sha4 should be 0, got {result['dim_2sha4']}"
+
+    print("PASSED: test_base_curve_identity")
+    return True
+
+
+def run_tests():
+    """Run Track D tests."""
+    print("=" * 40)
+    print("Running Track D tests")
+    print("=" * 40)
+    results = []
+    results.append(("base_curve_identity", test_base_curve_identity()))
+    print(f"\n{'='*40}")
+    all_pass = all(r[1] for r in results)
+    print(f"Results: {sum(1 for _, v in results if v)}/{len(results)} passed")
+    if not all_pass:
+        print("FAILURES detected!")
+    return all_pass
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+    if len(sys.argv) > 1 and sys.argv[1] == "--test":
+        success = run_tests()
+        sys.exit(0 if success else 1)
+    else:
+        main()
