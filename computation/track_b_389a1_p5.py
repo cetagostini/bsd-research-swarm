@@ -27,25 +27,33 @@ except ImportError:
 
 
 def compute_padic_l_function(pari, E, p, max_prec=8):
-    """Compute L_p(E,T) at T=0 to increasing precision."""
+    """Compute L_p(E,T) at T=0 to increasing precision.
+
+    Extracts valuation and absolute precision from the PARI p-adic number
+    using valuation() and padicprec(). No string parsing.
+    """
     results = {}
     for prec in range(3, max_prec + 1):
         try:
             val = pari.ellpadicL(E, p, prec, 0, 2)
-            # Parse the p-adic number: extract coefficients
-            # PARI returns a p-adic number; we need its valuation and expansion
             val_str = str(val)
-            results[prec] = {
+            entry = {
                 "raw": val_str,
-                "precision": prec,
+                "requested_precision": prec,
             }
-            # Try to extract the valuation
             try:
-                # The p-adic valuation
-                v = pari.padicprec(val, p)
-                results[prec]["precision_actual"] = int(v)
-            except:
-                pass
+                # valuation(padic_number, p) extracts the p-adic valuation
+                v = pari.valuation(val, p)
+                entry["valuation"] = int(v)
+            except Exception:
+                entry["valuation"] = None
+            try:
+                # padicprec(padic_number, p) extracts the absolute precision
+                ap = pari.padicprec(val, p)
+                entry["absolute_precision"] = int(ap)
+            except Exception:
+                entry["absolute_precision"] = None
+            results[prec] = entry
         except Exception as e:
             results[prec] = {"error": str(e)[:200]}
     return results
@@ -179,17 +187,22 @@ def verify_galois_image_conditions(pari, E, ainvs, p):
     }
 
 
-def assemble_certificate():
+def assemble_certificate(derivative_override=None):
     """Assemble the full p=5 Sha-finiteness certificate for 389.a1.
 
     Validation gates: each status is DERIVED from successful checks, not hardcoded.
     Missing/failed inputs prevent a certified conclusion.
+
+    Args:
+        derivative_override: If provided, replace the derivative computation
+            with this (raw_str, valuation, absolute_precision) tuple.
+            Used by regression tests to inject controlled inputs.
     """
     if not HAS_PARI:
         return {"error": "PARI not available"}
 
     pari = Pari()
-    pari.default("parisizemax", "2G")  # Increase stack for p-adic L-function
+    pari.default("parisizemax", "2G")
 
     # 389.a1: y^2 + y = x^3 + x^2 - 2x
     ainvs = [0, 1, 1, -2, 0]
@@ -208,15 +221,22 @@ def assemble_certificate():
         "software": "PARI/GP 2.17.2 via cypari2",
     }
 
+    # The derivative ORDER of the p-adic L-function we compute.
+    # ellpadicL(E, 5, prec, 0, 2) computes the 2nd derivative.
+    # This is a mathematical constant, not derived from the output.
+    DERIVATIVE_ORDER = 2
+
     # ---- Validation state ----
-    # Each check sets a flag; conclusion is DERIVED from these flags
     checks = {
         "rank_certified": False,
         "rank_value": None,
+        "rank_equals_derivative_order": False,
         "derivative_nonzero": False,
         "derivative_valuation": None,
         "derivative_abs_precision": None,
         "ordinary_at_5": False,
+        "image_irreducible": False,
+        "image_transvection": False,
         "galois_image_GL2": False,
         "all_checks_pass": False,
     }
@@ -227,12 +247,17 @@ def assemble_certificate():
     certificate["rank_data"] = rank_data
     checks["rank_certified"] = rank_data["rank_certified"]
     checks["rank_value"] = rank_data["r1"] if rank_data["rank_certified"] else None
+    checks["rank_equals_derivative_order"] = (
+        checks["rank_certified"] and checks["rank_value"] == DERIVATIVE_ORDER
+    )
     print(f"   Rank: {rank_data['r1']} (certified: {rank_data['rank_certified']})")
     print(f"   Torsion: {rank_data['torsion_structure']} (order {rank_data['torsion_order']})")
     print(f"   dim Sel_2 = {rank_data['C_dim_sel2']}")
 
     if not checks["rank_certified"]:
         print("   WARNING: Rank not certified -- cannot establish lower bound")
+    elif checks["rank_value"] != DERIVATIVE_ORDER:
+        print(f"   WARNING: Rank {checks['rank_value']} != derivative order {DERIVATIVE_ORDER}")
 
     # Step 2: p-adic L-function computation
     print("\n2. Computing p-adic L-function L_5(E, T) at T=0...")
@@ -245,42 +270,32 @@ def assemble_certificate():
         else:
             print(f"   prec={prec}: {data['raw']}")
 
-    # Validate derivative: nonvanishing requires valuation < actual absolute precision.
-    # Get the highest-precision computation
+    # Validate derivative using PARI-extracted valuation and precision.
+    # Nonvanishing: valuation < absolute_precision.
     max_prec = max(padic_data.keys())
     lp_val = padic_data[max_prec]
 
-    if isinstance(lp_val, dict) and "raw" in lp_val and "error" not in lp_val:
-        raw_str = lp_val["raw"]
-        # Parse valuation from the p-adic expansion: "5^2 + ..." means valuation 2
-        try:
-            # The valuation is the exponent of the lowest-order term
-            if "5^" in raw_str:
-                val_part = raw_str.split("5^")[1].split("+")[0].split("*")[0].strip()
-                val = int(val_part)
-            elif "O(5^" in raw_str:
-                # All terms are O(5^k), could be zero
-                val = None
-            else:
-                val = None
+    if derivative_override is not None:
+        # Test path: use injected values
+        raw_str, val, abs_prec = derivative_override
+        lp_val = {"raw": raw_str, "valuation": val, "absolute_precision": abs_prec,
+                  "requested_precision": max_prec}
+        padic_data["__override__"] = lp_val
 
-            # Actual absolute precision from precision_actual field
-            abs_prec = lp_val.get("precision_actual", max_prec)
+    if isinstance(lp_val, dict) and "error" not in lp_val:
+        val = lp_val.get("valuation")
+        abs_prec = lp_val.get("absolute_precision")
 
-            if val is not None and abs_prec is not None and val < abs_prec:
-                # Nonzero: valuation is strictly below precision
-                checks["derivative_nonzero"] = True
-                checks["derivative_valuation"] = val
-                checks["derivative_abs_precision"] = abs_prec
-                print(f"   Derivative nonzero: valuation={val} < abs_precision={abs_prec}")
-            else:
-                checks["derivative_nonzero"] = False
-                checks["derivative_valuation"] = val
-                checks["derivative_abs_precision"] = abs_prec
-                print(f"   WARNING: Cannot confirm nonzero derivative (val={val}, prec={abs_prec})")
-        except Exception as e:
+        if val is not None and abs_prec is not None and val < abs_prec:
+            checks["derivative_nonzero"] = True
+            checks["derivative_valuation"] = val
+            checks["derivative_abs_precision"] = abs_prec
+            print(f"   Derivative nonzero: valuation={val} < abs_precision={abs_prec}")
+        else:
             checks["derivative_nonzero"] = False
-            print(f"   WARNING: Failed to parse derivative: {e}")
+            checks["derivative_valuation"] = val
+            checks["derivative_abs_precision"] = abs_prec
+            print(f"   WARNING: Cannot confirm nonzero derivative (val={val}, prec={abs_prec})")
     else:
         checks["derivative_nonzero"] = False
         if isinstance(lp_val, dict) and "error" in lp_val:
@@ -292,13 +307,16 @@ def assemble_certificate():
     print("\n3. Verifying Galois image conditions...")
     galois_data = verify_galois_image_conditions(pari, E, ainvs, 5)
     certificate["galois_image"] = galois_data
-    checks["galois_image_GL2"] = galois_data.get("image_is_GL2_F5", False)
+    checks["image_irreducible"] = galois_data.get("char_poly_disc_nonsquare", False)
+    checks["image_transvection"] = galois_data.get("min_disc_val_at_389") == 1
+    # GL_2(F_5) requires BOTH irreducibility AND transvection
+    checks["galois_image_GL2"] = checks["image_irreducible"] and checks["image_transvection"]
     print(f"   Conductor: {galois_data['conductor']}")
     print(f"   j-invariant: {galois_data['j_invariant']}")
     print(f"   Frob_3 char poly disc mod 5 = {galois_data['char_poly_disc_mod5']}")
-    print(f"   Disc nonsquare => irreducible: {galois_data['char_poly_disc_nonsquare']}")
-    print(f"   v_389(Delta) = {galois_data['min_disc_val_at_389']} (inertia transvection)")
-    print(f"   Image = GL_2(F_5): {galois_data['image_is_GL2_F5']}")
+    print(f"   Disc nonsquare => irreducible: {checks['image_irreducible']}")
+    print(f"   v_389(Delta) = {galois_data['min_disc_val_at_389']} => transvection: {checks['image_transvection']}")
+    print(f"   Image = GL_2(F_5): {checks['galois_image_GL2']} (irred + transvection)")
     if galois_data.get("argument"):
         for k, v in galois_data["argument"].items():
             print(f"   {k}: {v}")
@@ -317,13 +335,14 @@ def assemble_certificate():
     print(f"\n5. Ordinary at 5: a_5 = {a5}, ordinary = {checks['ordinary_at_5']}")
 
     # Step 6: Derive overall conclusion from validated checks
-    # All four conditions must hold for the certificate to be valid:
-    #   (a) rank certified at 2
+    # Five conditions must hold:
+    #   (a) rank certified at DERIVATIVE_ORDER (= 2)
     #   (b) derivative nonzero (valuation < absolute precision)
     #   (c) ordinary at 5
-    #   (d) Galois image = GL_2(F_5)
+    #   (d) Galois image = GL_2(F_5) (irreducibility + transvection)
     checks["all_checks_pass"] = all([
         checks["rank_certified"],
+        checks["rank_equals_derivative_order"],
         checks["derivative_nonzero"],
         checks["ordinary_at_5"],
         checks["galois_image_GL2"],
@@ -331,42 +350,66 @@ def assemble_certificate():
 
     certificate["validation_checks"] = checks
 
-    # Build the divisibility chain with statuses DERIVED from checks
+    # Build the divisibility chain with CORRECT theorem attributions.
+    #
+    # The chain (with X = cyclotomic Selmer dual):
+    #   1. Kato cotorsion: X is finitely generated torsion Λ-module [Kim, Thm 2.6]
+    #   2. Mazur control: corank Sel = rank_{Z_5}(X/TX) [Kim, Prop 2.7]
+    #   3. Torsion-module algebra: rank_{Z_5}(X/TX) ≤ ord_T char_Λ(X) [Kim, Thm 2.9]
+    #   4. Kato divisibility: (L_5) ⊆ char_Λ(X), so ord_T char_Λ(X) ≤ ord_T L_5 [Kim, Thm 2.9]
+    #   5. Numerical: nonzero 2nd derivative → ord_T L_5 ≤ 2
+    #
+    # Combined: corank ≤ rank(X/TX) ≤ ord_T char ≤ ord_T L_5 ≤ 2
+    # Rank ≥ 2 gives corank ≥ 2, so corank = 2 and Sha[5^∞] is finite.
+
     chain = {
+        "kato_cotorsion": {
+            "statement": "X is a finitely generated torsion Lambda-module",
+            "hypotheses": [
+                "E has ordinary reduction at p=5",
+                "p-adic Galois image is large (contains SL_2(Z_5))"
+            ],
+            "status": "HYPOTHESES_MET" if (checks["ordinary_at_5"] and checks["galois_image_GL2"]) else "HYPOTHESES_INCOMPLETE",
+            "source": "Kim, A user's guide to Beilinson-Kato, Theorem 2.6"
+        },
+        "mazur_control": {
+            "statement": "corank Sel_{5^inf} = rank_{Z_5}(X/TX)",
+            "hypotheses": [
+                "Restriction map to Gamma-invariants has finite kernel and cokernel",
+                "Follows from Kato cotorsion + ordinary/large-image hypotheses"
+            ],
+            "status": "HYPOTHESES_MET" if (checks["ordinary_at_5"] and checks["galois_image_GL2"]) else "HYPOTHESES_INCOMPLETE",
+            "source": "Kim, A user's guide to Beilinson-Kato, Proposition 2.7"
+        },
+        "torsion_module_algebra": {
+            "statement": "rank_{Z_5}(X/TX) <= ord_T char_Lambda(X)",
+            "hypotheses": ["X torsion Lambda-module (from Kato cotorsion)"],
+            "status": "HYPOTHESES_MET" if checks["galois_image_GL2"] else "HYPOTHESES_INCOMPLETE",
+            "source": "Kim, A user's guide to Beilinson-Kato, Theorem 2.9"
+        },
+        "kato_divisibility": {
+            "statement": "ord_T char_Lambda(X) <= ord_T L_5(E,T)",
+            "hypotheses": [
+                "Kato's Euler system: (L_5) is contained in char_Lambda(X)",
+                "Requires: ordinary reduction, large Galois image"
+            ],
+            "status": "HYPOTHESES_MET" if (checks["ordinary_at_5"] and checks["galois_image_GL2"]) else "HYPOTHESES_INCOMPLETE",
+            "source": "Kim, A user's guide to Beilinson-Kato, Theorem 2.9"
+        },
+        "numerical_bound": {
+            "statement": f"ord_T L_5(E,T) <= {DERIVATIVE_ORDER}",
+            "justification": (
+                f"Nonzero {DERIVATIVE_ORDER}nd derivative: "
+                f"valuation {checks['derivative_valuation']} < "
+                f"absolute precision {checks['derivative_abs_precision']}"
+            ) if checks["derivative_nonzero"] else "DERIVATIVE NONVANISHING NOT CONFIRMED",
+            "status": "CERTIFIED" if checks["derivative_nonzero"] else "FAILED",
+            "padic_l_value": lp_val.get("raw", "unknown") if isinstance(lp_val, dict) else str(lp_val),
+        },
         "lower_bound": {
             "value": checks["rank_value"],
             "justification": f"rank E(Q) = {checks['rank_value']} (certified by PARI ellrank)" if checks["rank_certified"] else "RANK NOT CERTIFIED",
             "status": "CERTIFIED" if checks["rank_certified"] else "FAILED"
-        },
-        "upper_bound": {
-            "value": checks["derivative_valuation"],
-            "justification": (
-                f"ord_T L_5(E,T) <= {checks['derivative_valuation']} "
-                f"(nonzero derivative at T=0: valuation {checks['derivative_valuation']} < "
-                f"absolute precision {checks['derivative_abs_precision']}, "
-                f"see prec={max_prec})"
-            ) if checks["derivative_nonzero"] else "DERIVATIVE NONVANISHING NOT CONFIRMED",
-            "status": "CERTIFIED" if checks["derivative_nonzero"] else "FAILED",
-            "padic_l_value": lp_val.get("raw", "unknown") if isinstance(lp_val, dict) else str(lp_val),
-            "note": "Nonzero second derivative gives ord_T <= 2; rank/control/Kato lower bound gives ord_T >= 2."
-        },
-        "mazur_control": {
-            "statement": "ord_T char(X_cyc) <= ord_T L_5(E,T)",
-            "hypotheses": [
-                "E has ordinary reduction at p=5",
-                "p-adic Galois image is large (contains SL_2(Z_5))",
-                "Standard Mazur control theorem applies (torsion-Lambda-module inequality)"
-            ],
-            "status": "HYPOTHESES_MET" if (checks["ordinary_at_5"] and checks["galois_image_GL2"]) else "HYPOTHESES_INCOMPLETE"
-        },
-        "kato_divisibility": {
-            "statement": "corank Sel_{5^\\infty} <= ord_T char(X_cyc)",
-            "hypotheses": [
-                "Kato's Euler system divisibility: the zeta element maps surjectively onto X_cyc",
-                "Requires: ordinary reduction, large Galois image, Kato's theorem [Kim, Thm 1.13]"
-            ],
-            "status": "HYPOTHESES_MET" if (checks["ordinary_at_5"] and checks["galois_image_GL2"]) else "HYPOTHESES_INCOMPLETE",
-            "source": "Kim, A user's guide to Beilinson-Kato's zeta elements, Theorem 1.13"
         },
         "ordinary_reduction": {
             "a_5": a5,
@@ -375,6 +418,8 @@ def assemble_certificate():
         },
         "galois_image": {
             "image": "GL_2(F_5)" if checks["galois_image_GL2"] else "UNVERIFIED",
+            "irreducibility": checks["image_irreducible"],
+            "transvection": checks["image_transvection"],
             "status": "CERTIFIED" if checks["galois_image_GL2"] else "FAILED",
             "argument_summary": galois_data.get("argument", {})
         },
@@ -399,10 +444,11 @@ def assemble_certificate():
     print(f"Curve: 389.a1 (y^2 + y = x^3 + x^2 - 2x)")
     print(f"Prime: p = 5")
     print(f"Rank: {checks['rank_value']} (certified: {checks['rank_certified']})")
+    print(f"Rank == derivative order ({DERIVATIVE_ORDER}): {checks['rank_equals_derivative_order']}")
     print(f"L_5''(E,0) = {lp_val.get('raw', 'unknown') if isinstance(lp_val, dict) else 'unknown'}")
-    print(f"ord_T L_5(E,T) <= {checks['derivative_valuation']} (nonzero: {checks['derivative_nonzero']})")
+    print(f"Derivative nonzero (val < prec): {checks['derivative_nonzero']}")
     print(f"Ordinary at 5: {checks['ordinary_at_5']}")
-    print(f"Image = GL_2(F_5): {checks['galois_image_GL2']}")
+    print(f"Image = GL_2(F_5): {checks['galois_image_GL2']} (irred={checks['image_irreducible']}, transv={checks['image_transvection']})")
     print(f"All checks pass: {checks['all_checks_pass']}")
 
     if checks["all_checks_pass"]:
@@ -476,52 +522,37 @@ Missing/failed inputs prevent a certified conclusion.
 
 | Check | Value | Status |
 |-------|-------|--------|
-| Rank certified | {rd['r1']} (r1=r2) | {ch['lower_bound']['status']} |
+| Rank certified = 2 | {rd['r1']} (r1=r2) | {ch['lower_bound']['status']} |
 | Derivative nonzero | val={vc.get('derivative_valuation')} < prec={vc.get('derivative_abs_precision')} | {'CERTIFIED' if vc.get('derivative_nonzero') else 'FAILED'} |
 | Ordinary at 5 | a_5 = {ch['ordinary_reduction']['a_5']} | {ch['ordinary_reduction']['status']} |
-| Galois image | {gl.get('image_is_GL2_F5', 'unknown')} | {ch.get('galois_image', {}).get('status', 'unknown')} |
+| Galois image | GL_2(F_5): irred={vc.get('image_irreducible')}, transv={vc.get('image_transvection')} | {ch.get('galois_image', {}).get('status', 'unknown')} |
 | **All pass** | | **{cert_status}** |
 
 ---
 
 ## Divisibility Chain
 
-The certificate rests on the chain:
+The certificate rests on the chain (with $X$ = cyclotomic Selmer dual):
 
-$$2 \\leq \\text{{corank}}\\, \\text{{Sel}}_{{5^\\infty}}(E/\\mathbb{{Q}}) \\leq \\text{{ord}}_T \\text{{char}}(X^{{\\text{{cyc}}}}) \\leq \\text{{ord}}_T L_5(E,T) \\leq 2$$
+$$2 \\leq \\text{{corank}}\\, \\text{{Sel}}_{{5^\\infty}} \\leq \\text{{rank}}_{{\\mathbb{{Z}}_5}}(X/TX) \\leq \\text{{ord}}_T \\text{{char}}_\\Lambda(X) \\leq \\text{{ord}}_T L_5(E,T) \\leq 2$$
 
-This is **two** separate theorems:
-1. **Kato divisibility** [Kim, Thm 1.13]: $\\text{{corank}} \\leq \\text{{ord}}_T \\text{{char}}(X^{{\\text{{cyc}}}})$
-2. **Mazur control** (torsion-$\\Lambda$-module inequality): $\\text{{ord}}_T \\text{{char}}(X^{{\\text{{cyc}}}}) \\leq \\text{{ord}}_T L_5(E,T)$
+The links come from **five** distinct results:
 
-### Lower bound: $\\text{{corank}} \\geq 2$
+### 1. Kato cotorsion [Kim, Thm 2.6]
 
-**Status:** {ch['lower_bound']['status']}
+$X$ is a finitely generated torsion $\\Lambda$-module.
 
-$E(\\mathbb{{Q}})$ has rank {rd['r1']} (certified by PARI `ellrank`). Two independent points generate a $\\mathbb{{Z}}^2$ subgroup, so $\\text{{corank}}\\, \\text{{Sel}}_{{5^\\infty}} \\geq 2$.
+Hypotheses:
+"""
+    for hyp in ch.get('kato_cotorsion', {}).get('hypotheses', []):
+        md += f"- {hyp}\n"
 
-### Upper bound: $\\text{{ord}}_T L_5(E,T) \\leq 2$
+    md += f"""
+**Status:** {ch.get('kato_cotorsion', {}).get('status', 'not tracked')}
 
-**Status:** {ch['upper_bound']['status']}
+### 2. Mazur control [Kim, Prop 2.7]
 
-PARI `ellpadicL(E, 5, prec, 0, 2)` gives $L_5''(E,0)$:
-
-```
-{lp_val}
-```
-
-This is a **nonzero** second derivative of the ordinary $p$-adic L-function at the trivial character. Its $5$-adic valuation is {vc.get('derivative_valuation', '?')}, with absolute precision {vc.get('derivative_abs_precision', '?')}.
-Since $\\text{{val}} < \\text{{prec}}$, the derivative is confirmed nonzero, giving $\\text{{ord}}_T L_5(E,T) \\leq 2$.
-
-The rank lower bound gives $\\text{{ord}}_T L_5 \\geq \\text{{corank}} \\geq 2$. Combined: $\\text{{ord}}_T L_5 = 2$.
-
-**Note:** A nonzero $r$-th derivative gives $\\text{{ord}}_T \\leq r$, not $= r$. The rank/control/Kato lower bound supplies $\\geq r$.
-
-### Mazur control
-
-**Status:** {ch.get('mazur_control', {}).get('status', 'not tracked')}
-
-$\\text{{ord}}_T \\text{{char}}(X^{{\\text{{cyc}}}}) \\leq \\text{{ord}}_T L_5(E,T)$.
+$\\text{{corank}}\\, \\text{{Sel}}_{{5^\\infty}} = \\text{{rank}}_{{\\mathbb{{Z}}_5}}(X/TX)$, because the restriction map to $\\Gamma$-invariants has finite kernel and cokernel.
 
 Hypotheses:
 """
@@ -529,19 +560,52 @@ Hypotheses:
         md += f"- {hyp}\n"
 
     md += f"""
-### Kato divisibility
+**Status:** {ch.get('mazur_control', {}).get('status', 'not tracked')}
 
-**Status:** {ch['kato_divisibility']['status']}
+### 3. Torsion-module algebra [Kim, Thm 2.9]
 
-$\\text{{corank}}\\, \\text{{Sel}}_{{5^\\infty}} \\leq \\text{{ord}}_T \\text{{char}}(X^{{\\text{{cyc}}}})$.
+$\\text{{rank}}_{{\\mathbb{{Z}}_5}}(X/TX) \\leq \\text{{ord}}_T \\text{{char}}_\\Lambda(X)$.
+
+This is a general fact about finitely generated torsion $\\Lambda$-modules.
+
+**Status:** {ch.get('torsion_module_algebra', {}).get('status', 'not tracked')}
+
+### 4. Kato divisibility [Kim, Thm 2.9]
+
+$(L_5) \\subseteq \\text{{char}}_\\Lambda(X)$, hence $\\text{{ord}}_T \\text{{char}}_\\Lambda(X) \\leq \\text{{ord}}_T L_5(E,T)$.
 
 Hypotheses:
 """
-    for hyp in ch['kato_divisibility']['hypotheses']:
+    for hyp in ch.get('kato_divisibility', {}).get('hypotheses', []):
         md += f"- {hyp}\n"
 
     md += f"""
-Source: {ch['kato_divisibility'].get('source', 'Kim, Thm 1.13')}
+**Status:** {ch['kato_divisibility']['status']}
+
+### 5. Numerical upper bound
+
+PARI `ellpadicL(E, 5, prec, 0, 2)` computes the **second derivative** $L_5''(E,0)$:
+
+```
+{lp_val}
+```
+
+The derivative has $5$-adic valuation {vc.get('derivative_valuation', '?')} with absolute precision {vc.get('derivative_abs_precision', '?')}.
+Since $\\text{{val}} < \\text{{prec}}$, the derivative is **nonzero**, giving $\\text{{ord}}_T L_5(E,T) \\leq 2$.
+
+**Status:** {ch.get('numerical_bound', {}).get('status', ch.get('upper_bound', {}).get('status', 'not tracked'))}
+
+### Lower bound: $\\text{{corank}} \\geq 2$
+
+**Status:** {ch['lower_bound']['status']}
+
+$E(\\mathbb{{Q}})$ has rank {rd['r1']} (certified by PARI `ellrank`). Two independent points generate a $\\mathbb{{Z}}^2$ subgroup, so $\\text{{corank}}\\, \\text{{Sel}}_{{5^\\infty}} \\geq 2$.
+
+### Combined
+
+$$2 \\leq \\text{{corank}} \\leq \\text{{rank}}(X/TX) \\leq \\text{{ord}}_T \\text{{char}} \\leq \\text{{ord}}_T L_5 \\leq 2$$
+
+Therefore $\\text{{corank}} = 2$, and $\\text{{Sha}}[5^\\infty]$ is finite.
 
 ### Ordinary reduction at $p = 5$
 
@@ -549,7 +613,7 @@ $a_5 = {ch['ordinary_reduction']['a_5']}$, which is $\\not\\equiv 0 \\pmod{{5}}$
 
 ### Galois image at $p = 5$
 
-The correct argument uses the **characteristic polynomial discriminant**, not the trace or determinant alone.
+The argument uses the **characteristic polynomial discriminant**, not the trace or determinant alone.
 A nonsquare trace or determinant does not prove surjectivity (e.g. $\\text{{diag}}(1,2)$ over $\\mathbb{{F}}_5$ has both nonsquare).
 
 **Step 1 — Irreducibility.** Frobenius at 3 has characteristic polynomial $X^2 - a_3 X + 3$ with $a_3 = {gl['frobenius_at_3']}$.
@@ -574,7 +638,7 @@ $j = {gl['j_invariant']}$.
 
 All links in the chain are verified:
 
-$$2 \\leq \\text{{corank}} \\leq \\text{{ord}}_T \\text{{char}} \\leq \\text{{ord}}_T L_5 \\leq 2$$
+$$2 \\leq \\text{{corank}} \\leq \\text{{rank}}(X/TX) \\leq \\text{{ord}}_T \\text{{char}} \\leq \\text{{ord}}_T L_5 \\leq 2$$
 
 Therefore $\\text{{corank}} = 2$, and
 
@@ -595,7 +659,7 @@ This is **established machinery applied to a benchmark** — not claimed novelty
 ## Sources
 
 - [PARI: ellpadicL, elllocalred](https://pari.math.u-bordeaux.fr/dochtml/html-stable/Elliptic_curves.html)
-- [Kim, A user's guide to Beilinson–Kato's zeta elements](https://arxiv.org/abs/2404.05186), Theorems 1.9, 1.13–1.14; Proposition 2.7
+- [Kim, A user's guide to Beilinson–Kato's zeta elements](https://arxiv.org/abs/2404.05186), Theorems 2.6, 2.9; Proposition 2.7
 - [Kim, The structure of Selmer groups and the Iwasawa main conjecture](https://arxiv.org/abs/2203.12159), Theorems 1.8, 1.10
 - [Kim, Refined Tamagawa number conjectures for GL_2](https://arxiv.org/abs/2505.09121), Conjecture 1.6; Corollary 1.11
 """
@@ -605,55 +669,42 @@ This is **established machinery applied to a benchmark** — not claimed novelty
 
 
 def test_injected_error_prevents_certified_conclusion():
-    """Regression test: injected derivative error must prevent CERTIFIED conclusion.
-    
-    Per Mr. Genius review: with only the derivative computation replaced by an
-    injected error, assemble_certificate must NOT return sha_5_primary_finite=True.
+    """Regression test: calling assemble_certificate with an errored derivative
+    must NOT return sha_5_primary_finite=True.
+
+    This test patches the derivative computation via derivative_override
+    and calls the PRODUCTION function. It does not reimplement the gate logic.
     """
     if not HAS_PARI:
         print("SKIPPED: PARI not available")
         return True
 
-    pari = Pari()
-    pari.default("parisizemax", "2G")
-    ainvs = [0, 1, 1, -2, 0]
-    E = pari.ellinit(ainvs)
+    # Case 1: Missing derivative evidence (raw string has error, no valuation/precision)
+    cert = assemble_certificate(derivative_override=("error: missing derivative evidence", None, None))
+    ch = cert.get("divisibility_chain", {})
+    concl = ch.get("conclusion", {})
+    assert concl.get("sha_5_primary_finite") is False, \
+        f"Missing derivative must not certify: got {concl.get('sha_5_primary_finite')}"
+    assert concl.get("status") == "FAILED", \
+        f"Missing derivative must give FAILED status: got {concl.get('status')}"
 
-    # Compute everything except the derivative
-    rank_data = compute_rank_and_sha(pari, E)
-    galois_data = verify_galois_image_conditions(pari, E, ainvs, 5)
-    small_primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43]
-    traces = compute_frobenius_traces(pari, E, small_primes)
-    a5 = traces.get(5, None)
+    # Case 2: Derivative with valuation >= precision (could be zero)
+    cert2 = assemble_certificate(derivative_override=("5^3 + O(5^3)", 3, 3))
+    ch2 = cert2.get("divisibility_chain", {})
+    concl2 = ch2.get("conclusion", {})
+    assert concl2.get("sha_5_primary_finite") is False, \
+        f"val >= prec must not certify: got {concl2.get('sha_5_primary_finite')}"
 
-    # Inject error: derivative data is missing/errored
-    checks_with_error = {
-        "rank_certified": rank_data["rank_certified"],
-        "rank_value": rank_data["r1"],
-        "derivative_nonzero": False,  # <-- injected failure
-        "derivative_valuation": None,
-        "derivative_abs_precision": None,
-        "ordinary_at_5": (a5 is not None and a5 % 5 != 0),
-        "galois_image_GL2": galois_data.get("image_is_GL2_F5", False),
-        "all_checks_pass": False,  # derived: at least one check failed
-    }
-    checks_with_error["all_checks_pass"] = all([
-        checks_with_error["rank_certified"],
-        checks_with_error["derivative_nonzero"],
-        checks_with_error["ordinary_at_5"],
-        checks_with_error["galois_image_GL2"],
-    ])
-
-    # The conclusion MUST be FAILED
-    assert not checks_with_error["all_checks_pass"], \
-        "Regression: injected error must prevent all_checks_pass=True"
-    assert not checks_with_error["derivative_nonzero"], \
-        "Regression: derivative_nonzero must be False when injected"
-
-    # The conclusion status must be FAILED
-    conclusion_status = "CERTIFIED" if checks_with_error["all_checks_pass"] else "FAILED"
-    assert conclusion_status == "FAILED", \
-        f"Regression: conclusion status must be FAILED, got {conclusion_status}"
+    # Case 3: Derivative with valuation 3 (nonzero but wrong order for upper bound = 2)
+    # This should still certify if val < prec (the upper bound is DERIVATIVE_ORDER=2, not val)
+    cert3 = assemble_certificate(derivative_override=("5^3 + 2*5^4 + O(5^7)", 3, 7))
+    ch3 = cert3.get("divisibility_chain", {})
+    concl3 = ch3.get("conclusion", {})
+    # With val=3 < prec=7: derivative is nonzero, but val != DERIVATIVE_ORDER
+    # The certificate still uses DERIVATIVE_ORDER=2 for the upper bound
+    # So this should certify (nonzero 2nd derivative, even though valuation is 3)
+    assert concl3.get("sha_5_primary_finite") is True, \
+        f"Nonzero derivative with val < prec should certify: got {concl3.get('sha_5_primary_finite')}"
 
     print("PASSED: test_injected_error_prevents_certified_conclusion")
     return True

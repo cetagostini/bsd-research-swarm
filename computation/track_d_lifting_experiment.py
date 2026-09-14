@@ -68,57 +68,95 @@ def analyze_unresolved_twist(pari, ainvs, d, base_label):
     }
     
     # Classification using dim_F2(2Sha[4]) = r2 - R.
-    # From PARI's identities: dim Sel_2 = T + R + s, where R = actual Mordell-Weil rank,
-    # s = dim_F2(Sha[2]/2Sha[4]), T = dim E(Q)[2].
-    # Since dim Sel_2 = T + r2 (upper bound), we get r2 = R + s + dim(2Sha[4]).
-    # So: dim_F2(2Sha[4]) = r2 - R.
     #
-    # For [0,2,2]: if rank=0, dim(2Sha[4])=2 => possible 4-torsion (Z/4 or Z/2 x Z/2 in 2Sha[4])
-    #              if rank=2, dim(2Sha[4])=0 => no 4-torsion
-    # For [1,3,2]: if rank=1, dim(2Sha[4])=2 => possible 4-torsion
-    #              if rank=3, dim(2Sha[4])=0 => no 4-torsion
-    # For certified rank R: dim(2Sha[4]) = r2 - R exactly.
+    # PARI's identity: dim Sel_2 = T + R + dim Sha[2], where R = actual rank.
+    # Also dim Sel_2 = T + r2 (from the 2-descent upper bound).
+    # And dim Sha[2] = s + dim(2Sha[4]) where s = dim_F2(Sha[2]/2Sha[4]).
+    # So: T + r2 = T + R + s + dim(2Sha[4]), hence dim(2Sha[4]) = r2 - R - s.
     #
-    # Key: [0,2,2] with rank=0 CAN have 4-torsion (dim=2).
-    # But [0,2,2] with rank=2 CANNOT (dim=0).
-    # The s=0 model (Z/4)^2 also has s=0, so s>=1 filters miss the all-lift branch.
+    # Wait — let me be precise. PARI gives r1, r2, s with:
+    #   r1 <= R <= r2 (R = actual rank)
+    #   s = dim_F2(Sha[2]/2Sha[4])  (always even, since it's the dimension of a
+    #       quotient of Sha[2] by the image of multiplication by 2)
+    #   C = dim Sel_2 = T + r2 (exact, from 2-descent)
+    #
+    # The exact formula: dim Sel_2 = T + R + dim Sha[2]
+    #   => T + r2 = T + R + dim Sha[2]
+    #   => dim Sha[2] = r2 - R
+    #   And dim Sha[2] = s + dim(2Sha[4])
+    #   => dim(2Sha[4]) = (r2 - R) - s
+    #
+    # Note: 2Sha[4] is an F_2-vector space (killed by 2), so its dimension
+    # is a non-negative integer. It cannot contain a Z/4 summand.
+    #
+    # For [0,2,2]:
+    #   If R=0: dim Sha[2] = 2-0 = 2, dim(2Sha[4]) = 2-2 = 0
+    #   If R=2: dim Sha[2] = 2-2 = 0, dim(2Sha[4]) = 0-2 = -2 (impossible)
+    #   So R cannot be 2 when s=2 and r2=2. R must be 0 (or 1 if s permits).
+    #   With R=0, s=2: dim Sha[2]=2, dim(2Sha[4])=0. Sha[2]≅(Z/2)^2.
+    #   No 4-torsion in this case.
+    #
+    # For [1,3,2]:
+    #   If R=1: dim Sha[2] = 3-1 = 2, dim(2Sha[4]) = 2-2 = 0
+    #   If R=2: dim Sha[2] = 3-2 = 1 (impossible: dim Sha[2] must be even
+    #       since Sha[2] has a nondegenerate alternating form)
+    #   If R=3: dim Sha[2] = 3-3 = 0, dim(2Sha[4]) = 0-2 = -2 (impossible)
+    #   So R must be 1. dim Sha[2]=2, no 4-torsion.
+    #
+    # For [0,2,0]:
+    #   If R=0: dim Sha[2] = 2-0 = 2, dim(2Sha[4]) = 2-0 = 2
+    #   This IS a 4-torsion candidate: Sha[2^inf] could be Z/4 x Z/2 or (Z/2)^3
+    #   (but s=0 means Sha[2]/2Sha[4]=0, so Sha[2]=2Sha[4]; dim Sha[2]=2,
+    #   dim(2Sha[4])=2 means Sha[2] = 2Sha[4], which with dim=2 means
+    #   Sha[2^inf] contains Z/4 components)
+    #
+    # Summary: the interesting 4-torsion case is s=0 with r2>R (not s>=1).
 
     if r1 == r2 and r1 >= 2:
         # Certified rank >= 2
-        dim_2sha4 = r2 - r1  # = 0 for certified
+        dim_sha2 = r2 - r1  # = 0 for certified
+        dim_2sha4 = dim_sha2 - s  # = 0 - s
         result["classification"] = "CERTIFIED_RANK"
+        result["dim_sha2"] = dim_sha2
         result["dim_2sha4"] = dim_2sha4
         if s >= 3:
             result["flag"] = "HIGH_SHA2"
             result["note"] = f"s={s} >= 3: dim Sha[2] >= {s} (certified). Higher Sha[2] dimension found!"
         elif s == 0:
+            # r1=r2 and s=0 => dim Sha[2] = 0, Sha[2]=0 exactly.
+            # No room for (Z/4)^2 or any nonzero Sha at all.
             result["flag"] = "TRIVIAL_SHA2"
-            result["note"] = f"s=0, rank={r1} certified. Sha[2]=0 or Sha[2^inf]=(Z/4)^2-type."
+            result["note"] = f"s=0, rank={r1} certified. Sha[2]=0 (exactly)."
         else:
             result["flag"] = "STANDARD"
     elif r2 >= 2 and r1 < r2:
         # Rank not certified but upper bound >= 2
-        # dim(2Sha[4]) at rank r1 = r2 - r1 (could be > 0 => 4-torsion candidate)
-        # dim(2Sha[4]) at rank r2 = 0 (no 4-torsion)
-        dim_2sha4_at_r1 = r2 - r1
+        # We can compute dim Sha[2] = r2 - R for each possible R in [r1, r2].
+        # dim(2Sha[4]) = (r2 - R) - s for each R.
+        dim_sha2_at_r1 = r2 - r1
+        dim_2sha4_at_r1 = dim_sha2_at_r1 - s
         result["classification"] = "UNRESOLVED"
+        result["dim_sha2_at_r1"] = dim_sha2_at_r1
         result["dim_2sha4_at_r1"] = dim_2sha4_at_r1
-        result["dim_2sha4_at_r2"] = 0
+        result["dim_sha2_at_r2"] = 0
+        result["dim_2sha4_at_r2"] = 0 - s
         if s >= 3:
             result["flag"] = "HIGH_SHA2_UNRESOLVED"
             result["note"] = f"s={s} >= 3 with uncertified rank. Candidate for higher Sha[2]."
-        elif dim_2sha4_at_r1 >= 2 and r2 - r1 >= 2:
-            # Large gap: if rank is r1, then dim(2Sha[4]) = r2 - r1 >= 2
-            # This is a genuine 4-torsion candidate (needs independent rank verification)
+        elif s == 0 and r2 > r1:
+            # s=0 means Sha[2]=2Sha[4]. If R=r1, dim Sha[2]=r2-r1, dim(2Sha[4])=r2-r1.
+            # Sha[2] = 2Sha[4] with dim(2Sha[4]) > 0 means 4-torsion is present.
+            result["flag"] = "POSSIBLE_4_TORSION"
+            result["note"] = (f"r1={r1}, r2={r2}, s=0. "
+                             f"If rank={r1}: dim Sha[2]={dim_sha2_at_r1}, "
+                             f"dim(2Sha[4])={dim_2sha4_at_r1} (s=0 => Sha[2]=2Sha[4], 4-torsion). "
+                             f"If rank={r2}: Sha[2]=0. "
+                             f"Needs independent rank determination.")
+        elif dim_2sha4_at_r1 > 0:
             result["flag"] = "POSSIBLE_4_TORSION"
             result["note"] = (f"r1={r1}, r2={r2}, s={s}. "
                              f"If rank={r1}: dim(2Sha[4])={dim_2sha4_at_r1} (possible 4-torsion). "
-                             f"If rank={r2}: dim(2Sha[4])=0 (no 4-torsion). "
-                             f"Needs independent rank determination.")
-        elif dim_2sha4_at_r1 == 2:
-            result["flag"] = "POSSIBLE_4_TORSION"
-            result["note"] = (f"r1={r1}, r2={r2}, s={s}. "
-                             f"If rank={r1}: dim(2Sha[4])=2 (possible 4-torsion). "
+                             f"If rank={r2}: dim(2Sha[4])={0 - s} (impossible, so rank < r2). "
                              f"Needs independent rank determination.")
         else:
             result["flag"] = "UNRESOLVED_STANDARD"

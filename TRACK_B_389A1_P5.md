@@ -2,7 +2,7 @@
 
 **Curve:** 389.a1 — $y^2 + y = x^3 + x^2 - 2x$
 **Prime:** $p = 5$
-**Date:** 2026-09-15T01:11:00
+**Date:** 2026-09-15T01:23:08
 **Software:** PARI/GP 2.17.2 via cypari2
 **Certificate status:** CERTIFIED
 
@@ -27,23 +27,72 @@ Missing/failed inputs prevent a certified conclusion.
 
 | Check | Value | Status |
 |-------|-------|--------|
-| Rank certified | 2 (r1=r2) | CERTIFIED |
+| Rank certified = 2 | 2 (r1=r2) | CERTIFIED |
 | Derivative nonzero | val=2 < prec=7 | CERTIFIED |
 | Ordinary at 5 | a_5 = -3 | CERTIFIED |
-| Galois image | True | CERTIFIED |
+| Galois image | GL_2(F_5): irred=True, transv=True | CERTIFIED |
 | **All pass** | | **CERTIFIED** |
 
 ---
 
 ## Divisibility Chain
 
-The certificate rests on the chain:
+The certificate rests on the chain (with $X$ = cyclotomic Selmer dual):
 
-$$2 \leq \text{corank}\, \text{Sel}_{5^\infty}(E/\mathbb{Q}) \leq \text{ord}_T \text{char}(X^{\text{cyc}}) \leq \text{ord}_T L_5(E,T) \leq 2$$
+$$2 \leq \text{corank}\, \text{Sel}_{5^\infty} \leq \text{rank}_{\mathbb{Z}_5}(X/TX) \leq \text{ord}_T \text{char}_\Lambda(X) \leq \text{ord}_T L_5(E,T) \leq 2$$
 
-This is **two** separate theorems:
-1. **Kato divisibility** [Kim, Thm 1.13]: $\text{corank} \leq \text{ord}_T \text{char}(X^{\text{cyc}})$
-2. **Mazur control** (torsion-$\Lambda$-module inequality): $\text{ord}_T \text{char}(X^{\text{cyc}}) \leq \text{ord}_T L_5(E,T)$
+The links come from **five** distinct results:
+
+### 1. Kato cotorsion [Kim, Thm 2.6]
+
+$X$ is a finitely generated torsion $\Lambda$-module.
+
+Hypotheses:
+- E has ordinary reduction at p=5
+- p-adic Galois image is large (contains SL_2(Z_5))
+
+**Status:** HYPOTHESES_MET
+
+### 2. Mazur control [Kim, Prop 2.7]
+
+$\text{corank}\, \text{Sel}_{5^\infty} = \text{rank}_{\mathbb{Z}_5}(X/TX)$, because the restriction map to $\Gamma$-invariants has finite kernel and cokernel.
+
+Hypotheses:
+- Restriction map to Gamma-invariants has finite kernel and cokernel
+- Follows from Kato cotorsion + ordinary/large-image hypotheses
+
+**Status:** HYPOTHESES_MET
+
+### 3. Torsion-module algebra [Kim, Thm 2.9]
+
+$\text{rank}_{\mathbb{Z}_5}(X/TX) \leq \text{ord}_T \text{char}_\Lambda(X)$.
+
+This is a general fact about finitely generated torsion $\Lambda$-modules.
+
+**Status:** HYPOTHESES_MET
+
+### 4. Kato divisibility [Kim, Thm 2.9]
+
+$(L_5) \subseteq \text{char}_\Lambda(X)$, hence $\text{ord}_T \text{char}_\Lambda(X) \leq \text{ord}_T L_5(E,T)$.
+
+Hypotheses:
+- Kato's Euler system: (L_5) is contained in char_Lambda(X)
+- Requires: ordinary reduction, large Galois image
+
+**Status:** HYPOTHESES_MET
+
+### 5. Numerical upper bound
+
+PARI `ellpadicL(E, 5, prec, 0, 2)` computes the **second derivative** $L_5''(E,0)$:
+
+```
+5^2 + 3*5^3 + 5^4 + 2*5^5 + 5^6 + O(5^7)
+```
+
+The derivative has $5$-adic valuation 2 with absolute precision 7.
+Since $\text{val} < \text{prec}$, the derivative is **nonzero**, giving $\text{ord}_T L_5(E,T) \leq 2$.
+
+**Status:** CERTIFIED
 
 ### Lower bound: $\text{corank} \geq 2$
 
@@ -51,45 +100,11 @@ This is **two** separate theorems:
 
 $E(\mathbb{Q})$ has rank 2 (certified by PARI `ellrank`). Two independent points generate a $\mathbb{Z}^2$ subgroup, so $\text{corank}\, \text{Sel}_{5^\infty} \geq 2$.
 
-### Upper bound: $\text{ord}_T L_5(E,T) \leq 2$
+### Combined
 
-**Status:** CERTIFIED
+$$2 \leq \text{corank} \leq \text{rank}(X/TX) \leq \text{ord}_T \text{char} \leq \text{ord}_T L_5 \leq 2$$
 
-PARI `ellpadicL(E, 5, prec, 0, 2)` gives $L_5''(E,0)$:
-
-```
-5^2 + 3*5^3 + 5^4 + 2*5^5 + 5^6 + O(5^7)
-```
-
-This is a **nonzero** second derivative of the ordinary $p$-adic L-function at the trivial character. Its $5$-adic valuation is 2, with absolute precision 7.
-Since $\text{val} < \text{prec}$, the derivative is confirmed nonzero, giving $\text{ord}_T L_5(E,T) \leq 2$.
-
-The rank lower bound gives $\text{ord}_T L_5 \geq \text{corank} \geq 2$. Combined: $\text{ord}_T L_5 = 2$.
-
-**Note:** A nonzero $r$-th derivative gives $\text{ord}_T \leq r$, not $= r$. The rank/control/Kato lower bound supplies $\geq r$.
-
-### Mazur control
-
-**Status:** HYPOTHESES_MET
-
-$\text{ord}_T \text{char}(X^{\text{cyc}}) \leq \text{ord}_T L_5(E,T)$.
-
-Hypotheses:
-- E has ordinary reduction at p=5
-- p-adic Galois image is large (contains SL_2(Z_5))
-- Standard Mazur control theorem applies (torsion-Lambda-module inequality)
-
-### Kato divisibility
-
-**Status:** HYPOTHESES_MET
-
-$\text{corank}\, \text{Sel}_{5^\infty} \leq \text{ord}_T \text{char}(X^{\text{cyc}})$.
-
-Hypotheses:
-- Kato's Euler system divisibility: the zeta element maps surjectively onto X_cyc
-- Requires: ordinary reduction, large Galois image, Kato's theorem [Kim, Thm 1.13]
-
-Source: Kim, A user's guide to Beilinson-Kato's zeta elements, Theorem 1.13
+Therefore $\text{corank} = 2$, and $\text{Sha}[5^\infty]$ is finite.
 
 ### Ordinary reduction at $p = 5$
 
@@ -97,7 +112,7 @@ $a_5 = -3$, which is $\not\equiv 0 \pmod{5}$. So $E$ is ordinary at 5. Verified.
 
 ### Galois image at $p = 5$
 
-The correct argument uses the **characteristic polynomial discriminant**, not the trace or determinant alone.
+The argument uses the **characteristic polynomial discriminant**, not the trace or determinant alone.
 A nonsquare trace or determinant does not prove surjectivity (e.g. $\text{diag}(1,2)$ over $\mathbb{F}_5$ has both nonsquare).
 
 **Step 1 — Irreducibility.** Frobenius at 3 has characteristic polynomial $X^2 - a_3 X + 3$ with $a_3 = -2$.
@@ -122,7 +137,7 @@ $j = 1404928/389$.
 
 All links in the chain are verified:
 
-$$2 \leq \text{corank} \leq \text{ord}_T \text{char} \leq \text{ord}_T L_5 \leq 2$$
+$$2 \leq \text{corank} \leq \text{rank}(X/TX) \leq \text{ord}_T \text{char} \leq \text{ord}_T L_5 \leq 2$$
 
 Therefore $\text{corank} = 2$, and
 
@@ -143,6 +158,6 @@ This is **established machinery applied to a benchmark** — not claimed novelty
 ## Sources
 
 - [PARI: ellpadicL, elllocalred](https://pari.math.u-bordeaux.fr/dochtml/html-stable/Elliptic_curves.html)
-- [Kim, A user's guide to Beilinson–Kato's zeta elements](https://arxiv.org/abs/2404.05186), Theorems 1.9, 1.13–1.14; Proposition 2.7
+- [Kim, A user's guide to Beilinson–Kato's zeta elements](https://arxiv.org/abs/2404.05186), Theorems 2.6, 2.9; Proposition 2.7
 - [Kim, The structure of Selmer groups and the Iwasawa main conjecture](https://arxiv.org/abs/2203.12159), Theorems 1.8, 1.10
 - [Kim, Refined Tamagawa number conjectures for GL_2](https://arxiv.org/abs/2505.09121), Conjecture 1.6; Corollary 1.11

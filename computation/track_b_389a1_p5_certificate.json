@@ -9,7 +9,7 @@
     0
   ],
   "prime": 5,
-  "timestamp": "2026-09-15T01:11:00",
+  "timestamp": "2026-09-15T01:23:08",
   "software": "PARI/GP 2.17.2 via cypari2",
   "rank_data": {
     "r1": 2,
@@ -24,33 +24,39 @@
   "padic_l_function": {
     "3": {
       "raw": "5^2 + O(5^3)",
-      "precision": 3,
-      "precision_actual": 3
+      "requested_precision": 3,
+      "valuation": 2,
+      "absolute_precision": 3
     },
     "4": {
       "raw": "5^2 + 3*5^3 + O(5^4)",
-      "precision": 4,
-      "precision_actual": 4
+      "requested_precision": 4,
+      "valuation": 2,
+      "absolute_precision": 4
     },
     "5": {
       "raw": "5^2 + 3*5^3 + 5^4 + O(5^5)",
-      "precision": 5,
-      "precision_actual": 5
+      "requested_precision": 5,
+      "valuation": 2,
+      "absolute_precision": 5
     },
     "6": {
       "raw": "5^2 + 3*5^3 + 5^4 + O(5^5)",
-      "precision": 6,
-      "precision_actual": 5
+      "requested_precision": 6,
+      "valuation": 2,
+      "absolute_precision": 5
     },
     "7": {
       "raw": "5^2 + 3*5^3 + 5^4 + 2*5^5 + O(5^6)",
-      "precision": 7,
-      "precision_actual": 6
+      "requested_precision": 7,
+      "valuation": 2,
+      "absolute_precision": 6
     },
     "8": {
       "raw": "5^2 + 3*5^3 + 5^4 + 2*5^5 + 5^6 + O(5^7)",
-      "precision": 8,
-      "precision_actual": 7
+      "requested_precision": 8,
+      "valuation": 2,
+      "absolute_precision": 7
     }
   },
   "galois_image": {
@@ -93,43 +99,62 @@
   "validation_checks": {
     "rank_certified": true,
     "rank_value": 2,
+    "rank_equals_derivative_order": true,
     "derivative_nonzero": true,
     "derivative_valuation": 2,
     "derivative_abs_precision": 7,
     "ordinary_at_5": true,
+    "image_irreducible": true,
+    "image_transvection": true,
     "galois_image_GL2": true,
     "all_checks_pass": true
   },
   "divisibility_chain": {
+    "kato_cotorsion": {
+      "statement": "X is a finitely generated torsion Lambda-module",
+      "hypotheses": [
+        "E has ordinary reduction at p=5",
+        "p-adic Galois image is large (contains SL_2(Z_5))"
+      ],
+      "status": "HYPOTHESES_MET",
+      "source": "Kim, A user's guide to Beilinson-Kato, Theorem 2.6"
+    },
+    "mazur_control": {
+      "statement": "corank Sel_{5^inf} = rank_{Z_5}(X/TX)",
+      "hypotheses": [
+        "Restriction map to Gamma-invariants has finite kernel and cokernel",
+        "Follows from Kato cotorsion + ordinary/large-image hypotheses"
+      ],
+      "status": "HYPOTHESES_MET",
+      "source": "Kim, A user's guide to Beilinson-Kato, Proposition 2.7"
+    },
+    "torsion_module_algebra": {
+      "statement": "rank_{Z_5}(X/TX) <= ord_T char_Lambda(X)",
+      "hypotheses": [
+        "X torsion Lambda-module (from Kato cotorsion)"
+      ],
+      "status": "HYPOTHESES_MET",
+      "source": "Kim, A user's guide to Beilinson-Kato, Theorem 2.9"
+    },
+    "kato_divisibility": {
+      "statement": "ord_T char_Lambda(X) <= ord_T L_5(E,T)",
+      "hypotheses": [
+        "Kato's Euler system: (L_5) is contained in char_Lambda(X)",
+        "Requires: ordinary reduction, large Galois image"
+      ],
+      "status": "HYPOTHESES_MET",
+      "source": "Kim, A user's guide to Beilinson-Kato, Theorem 2.9"
+    },
+    "numerical_bound": {
+      "statement": "ord_T L_5(E,T) <= 2",
+      "justification": "Nonzero 2nd derivative: valuation 2 < absolute precision 7",
+      "status": "CERTIFIED",
+      "padic_l_value": "5^2 + 3*5^3 + 5^4 + 2*5^5 + 5^6 + O(5^7)"
+    },
     "lower_bound": {
       "value": 2,
       "justification": "rank E(Q) = 2 (certified by PARI ellrank)",
       "status": "CERTIFIED"
-    },
-    "upper_bound": {
-      "value": 2,
-      "justification": "ord_T L_5(E,T) <= 2 (nonzero derivative at T=0: valuation 2 < absolute precision 7, see prec=8)",
-      "status": "CERTIFIED",
-      "padic_l_value": "5^2 + 3*5^3 + 5^4 + 2*5^5 + 5^6 + O(5^7)",
-      "note": "Nonzero second derivative gives ord_T <= 2; rank/control/Kato lower bound gives ord_T >= 2."
-    },
-    "mazur_control": {
-      "statement": "ord_T char(X_cyc) <= ord_T L_5(E,T)",
-      "hypotheses": [
-        "E has ordinary reduction at p=5",
-        "p-adic Galois image is large (contains SL_2(Z_5))",
-        "Standard Mazur control theorem applies (torsion-Lambda-module inequality)"
-      ],
-      "status": "HYPOTHESES_MET"
-    },
-    "kato_divisibility": {
-      "statement": "corank Sel_{5^\\infty} <= ord_T char(X_cyc)",
-      "hypotheses": [
-        "Kato's Euler system divisibility: the zeta element maps surjectively onto X_cyc",
-        "Requires: ordinary reduction, large Galois image, Kato's theorem [Kim, Thm 1.13]"
-      ],
-      "status": "HYPOTHESES_MET",
-      "source": "Kim, A user's guide to Beilinson-Kato's zeta elements, Theorem 1.13"
     },
     "ordinary_reduction": {
       "a_5": -3,
@@ -138,6 +163,8 @@
     },
     "galois_image": {
       "image": "GL_2(F_5)",
+      "irreducibility": true,
+      "transvection": true,
       "status": "CERTIFIED",
       "argument_summary": {
         "step1": "Frob_3 char poly disc = -2^2 - 12 \u2261 2 (mod 5), nonsquare => residual rep irreducible",
