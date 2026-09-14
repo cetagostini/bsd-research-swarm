@@ -9,31 +9,32 @@
 
 ## 1. Precise Claim
 
-**Claim (Lifting Dichotomy).** For an elliptic curve $E/\mathbb{Q}$ of rank 2 and a prime $p$ with $|\text{Ш}(E/\mathbb{Q})[p^\infty]| = p^2$, the Cassels–Tate pairing forces $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$ (not $\mathbb{Z}/p^2$). Consequently, the descent map $d_p: \text{Ш}[p] \to \text{Sel}_p(E/\mathbb{Q})$ is injective, and **no nontrivial class in $\text{Ш}[p]$ lifts to $\text{Ш}[p^2]$**.
+**Claim (Lifting Dichotomy).** For an elliptic curve $E/\mathbb{Q}$ of rank 2 and a prime $p$ with $|\text{Ш}(E/\mathbb{Q})[p^\infty]| = p^2$, the Cassels–Tate pairing forces $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$ (not $\mathbb{Z}/p^2$). Consequently, the CT radical $D_1 = p\text{Ш}[p^2] \cap \text{Ш}[p] = 0$, and **no nontrivial class in $\text{Ш}[p]$ lifts to $\text{Ш}[p^2]$**.
 
-**What is new:** This is not a new theorem — it follows from the Cassels–Tate pairing structure. What IS new is:
-1. Framing it as a **lifting obstruction** with explicit descent-map characterization
+**What is new:** This is not a new theorem — it follows from the Cassels–Tate pairing structure (Cassels/Wall). What IS new is:
+1. Framing it as a **lifting obstruction** via the CT radical $D_n$
 2. Deriving the **family-level criterion**: for $|\text{Ш}[p^\infty]| = p^2$, the lifting behavior is completely determined by the $p$-primary decomposition type
-3. Identifying the **sharp dichotomy**: either ALL classes lift (when $\text{Ш}[p^\infty] \cong \mathbb{Z}/p^2$) or NONE do (when $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$), with no intermediate case possible for rank-2 curves
+3. Identifying the **sharp dichotomy**: either ALL classes lift (when $\text{Ш}[p^\infty] \cong \mathbb{Z}/p^2$) or NONE do (when $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$), with no intermediate case possible for $|Ш|=p^2$
 
 ---
 
 ## 2. Mathematical Framework
 
-### 2.1 The Descent Map
+### 2.1 The Lifting Map
 
 For $E/\mathbb{Q}$ and prime $p$, the Kummer sequence gives:
 $$0 \to E(\mathbb{Q})/pE(\mathbb{Q}) \xrightarrow{\delta} H^1(\mathbb{Q}, E[p]) \to H^1(\mathbb{Q}, E)[p] \to 0$$
 
 The $p$-Selmer group $\text{Sel}_p(E/\mathbb{Q})$ consists of classes in $H^1(\mathbb{Q}, E[p])$ that are locally in the image of $\delta$ at all places $v$.
 
-**Definition.** The *descent map* is the restriction:
-$$d_p: \text{Ш}(E/\mathbb{Q})[p] \hookrightarrow H^1(\mathbb{Q}, E[p]) \twoheadrightarrow \text{Sel}_p(E/\mathbb{Q})$$
+**Definition.** The multiplication map $p: \text{Ш}[p^2] \to \text{Ш}[p]$ sends $\eta \mapsto p\eta$. Its kernel is $\text{Ш}[p]$; its image is $p\text{Ш} \cap \text{Ш}[p] = p\text{Ш}[p^2]$.
 
 **Proposition 1.** For $\xi \in \text{Ш}[p]$:
-$$\xi \text{ lifts to } \text{Ш}[p^2] \iff d_p(\xi) = 0 \iff \xi \in p\text{Ш}[p^\infty]$$
+$$\xi \text{ lifts to } \text{Ш}[p^2] \iff \xi \in p\text{Ш}[p^2]$$
 
-*Proof.* $\xi$ lifts to $\text{Ш}[p^2]$ iff there exists $\eta \in \text{Ш}$ with $p\eta = \xi$. By the Kummer sequence, $d_p(\xi) = 0$ iff $\xi$ is in the image of $\delta$ globally, which (since $\xi \in \text{Ш}$ means $\xi$ is locally trivial everywhere) means $\xi$ comes from $E(\mathbb{Q})/pE(\mathbb{Q})$. But $\xi \in \text{Ш}$, so $\xi$ comes from $p\text{Ш}$, i.e., $\xi = p\eta$ for some $\eta \in \text{Ш}$. $\square$
+*Proof.* $\xi$ lifts to $\text{Ш}[p^2]$ iff there exists $\eta \in \text{Ш}[p^2]$ with $p\eta = \xi$. This is exactly the statement $\xi \in \text{im}(p: \text{Ш}[p^2] \to \text{Ш}[p]) = p\text{Ш}[p^2]$. $\square$
+
+**Note (per review).** The Kummer exact sequence gives $0 \to E(\mathbb{Q})/pE(\mathbb{Q}) \to \text{Sel}_p(E/\mathbb{Q}) \to \text{Ш}[p] \to 0$. The map $\text{Ш}[p] \to \text{Sel}_p$ is **not** well-defined (Ш[p] is a quotient of Sel_p, not a subgroup); the injection $\text{Ш}[p] \hookrightarrow H^1(\mathbb{Q}, E[p])$ requires a splitting and is non-canonical. The proper lifting criterion uses the multiplication map $p$ and the Cassels–Tate radical, not a descent map.
 
 ### 2.2 Cassels–Tate Pairing Constraint (corrected per review)
 
@@ -59,7 +60,8 @@ Therefore $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$ is the only CT-compatible
 **Corollary (Lifting Dichotomy).** For $|\text{Ш}[p^\infty]| = p^2$ on a rank-2 curve:
 - $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$ (forced by CT)
 - $p\text{Ш}[p^\infty] = 0$ (since every element has order $p$)
-- The descent map $d_p: \text{Ш}[p] \to \text{Sel}_p$ is **injective** (kernel = $\text{Ш}[p] \cap p\text{Ш} = 0$)
+- The multiplication map $p: \text{Ш}[p^2] \to \text{Ш}[p]$ has image $p\text{Ш}[p^2] = 0$
+- The Cassels–Tate radical $D_1 = p\text{Ш}[p^2] \cap \text{Ш}[p] = 0$
 - **No nontrivial class in $\text{Ш}[p]$ lifts to $\text{Ш}[p^2]$**
 
 ---
@@ -78,9 +80,9 @@ Therefore $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$ is the only CT-compatible
 - CT forces $\text{Ш}[2^\infty] \cong (\mathbb{Z}/2)^2$ (NOT $\mathbb{Z}/4$)
 - $\text{Ш}[2] \cong (\mathbb{Z}/2)^2$: 4 elements, 3 nontrivial
 - **Prediction:** None of the 3 nontrivial elements lift to $\text{Ш}[4]$
-- The descent map $d_2: \text{Ш}[2] \to \text{Sel}_2$ is injective, contributing 2 independent classes to $\text{Sel}_2$
+- The multiplication map $p: \text{Ш}[4] \to \text{Ш}[2]$ has trivial image (since $\text{Ш}[2^\infty] \cong (\mathbb{Z}/2)^2$), contributing 2 independent classes to $\text{Sel}_2$
 
-**Consistency check (corrected):** $|\text{Sel}_2| = 2^{r + T + S} = 2^{2+1+2} = 32$ where $T = \dim E(\mathbb{Q})[2] = 1$ (torsion $\mathbb{Z}/2\mathbb{Z}$) and $S = \dim \text{Ш}[2] = 2$. Previous value of 16 was incorrect. For the 58 torsion-free pool curves: $|\text{Sel}_2| = 2^{2+0+2} = 16$.
+**Consistency check (corrected per review):** $|\text{Sel}_2| = 2^{r + T + S} = 2^{2+1+2} = 32$ where $T = \dim E(\mathbb{Q})[2] = 1$ (torsion $\mathbb{Z}/2\mathbb{Z}$) and $S = \dim \text{Ш}[2] = 2$. Previous value of 16 was incorrect. For the 58 torsion-free pool curves: $|\text{Sel}_2| = 2^{2+0+2} = 16$.
 
 ### 3.2 Curve 194766.bg1
 
@@ -127,7 +129,7 @@ The $p$-primary decomposition $\text{Ш}[p^\infty] \cong \bigoplus_{i=1}^r \math
 
 For rank-2 curves with $|\text{Ш}| = p^2$:
 
-$$\boxed{\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2 \implies \text{descent map injective} \implies \text{no lifting}}$$
+$$\boxed{\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2 \implies D_1 = 0 \implies \text{no lifting}}$$
 
 This is the ONLY possibility. The alternative ($\text{Ш}[p^\infty] \cong \mathbb{Z}/p^2$) is forbidden by CT non-degeneracy (unbalanced).
 
@@ -139,25 +141,23 @@ This is the ONLY possibility. The alternative ($\text{Ш}[p^\infty] \cong \mathb
 
 ### 5.1 What the Obstruction Looks Like
 
-For $\xi \in \text{Ш}[p]$, the obstruction to lifting is $d_p(\xi) \in \text{Sel}_p(E/\mathbb{Q})$. This is a Galois cohomology class $[c] \in H^1(\mathbb{Q}, E[p])$ satisfying:
-- Local condition: $c_v \in \text{im}(\delta_v)$ at all places $v$
-- Global condition: $c$ does not come from $E(\mathbb{Q})/pE(\mathbb{Q})$
+For $\xi \in \text{Ш}[p]$, the obstruction to lifting is whether $\xi \in p\text{Ш}[p^2]$. When $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$, we have $p\text{Ш}[p^\infty] = 0$, so every nontrivial $\xi \in \text{Ш}[p]$ has $\xi \notin p\text{Ш}[p^2]$. The obstruction is absolute.
 
-When $d_p(\xi) \neq 0$ (which is always the case for nontrivial $\xi$ when $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$), the class $d_p(\xi)$ represents a genuine obstruction: a homogeneous space for $E$ that is locally soluble everywhere but has no global rational point.
+When the obstruction is active, each nontrivial class in $\text{Ш}[p]$ represents a genuine arithmetic obstruction: a homogeneous space for $E$ that is locally soluble everywhere but has no global rational point.
 
-### 5.2 Can We Compute $d_p(\xi)$ Explicitly?
+### 5.2 Can We Compute the Obstruction Explicitly?
 
 For the 2-descent on 194040.cu1:
 - The curve has torsion $\mathbb{Z}/2\mathbb{Z}$, so $E[2] \cong \mathbb{Z}/2 \times \mathbb{Z}/2$
-- The descent map factors through $H^1(\mathbb{Q}, E[2])$, which classifies 2-coverings of $E$
+- The Selmer group $\text{Sel}_2$ classifies 2-coverings of $E$
 - Each element of $\text{Ш}[2]$ corresponds to a 2-covering that is locally soluble everywhere but has no global point
 
-**Computational challenge:** Computing $d_p(\xi)$ explicitly requires:
-1. An explicit representation of $\xi$ as a homogeneous space
-2. Verification of local solubility at all primes
-3. Proof of global insolubility
+**Computational challenge:** Computing the Cassels–Tate radical explicitly requires:
+1. An explicit representation of Selmer group elements as homogeneous spaces
+2. Computation of the CT pairing matrix on $\text{Ш}[2]$
+3. Verification of local solubility at all primes
 
-This requires SageMath/Magma for the actual Galois cohomology computation. Pure Python cannot do it.
+This requires SageMath/Magma for the actual Galois cohomology computation. PARI provides rank and $s$-value but not explicit pairing data.
 
 ---
 
@@ -168,11 +168,11 @@ This requires SageMath/Magma for the actual Galois cohomology computation. Pure 
 The Lifting Dichotomy gives a **concrete structural constraint** on Ш for rank-2 curves:
 - For $|\text{Ш}| = p^2$: Ш is forced to be elementary abelian (exponent $p$)
 - This means Ш has no "hidden" higher-order structure at this level
-- The descent map is injective, giving a clean embedding $\text{Ш}[p] \hookrightarrow \text{Sel}_p$
+- The CT radical $D_1 = 0$, giving a clean characterization of liftable vs non-liftable classes
 
 ### 6.2 The Bad News
 
-The injectivity of $d_p$ means that Sha classes at level $p$ are "maximally obstructed":
+The triviality of $D_1$ means that Sha classes at level $p$ are "maximally obstructed":
 - They cannot be "resolved" by going to level $p^2$
 - Each nontrivial class in $\text{Ш}[p]$ contributes an independent element to $\text{Sel}_p$
 - This makes $\text{Sel}_p$ larger, not smaller
@@ -180,9 +180,11 @@ The injectivity of $d_p$ means that Sha classes at level $p$ are "maximally obst
 ### 6.3 Implication for Descent Strategy
 
 For the BSD program's goal of proving $\text{Ш}[p^\infty] = 0$:
-- The descent map approach cannot "kill" Sha by lifting — if $\text{Ш}[p] \neq 0$ and $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$, the descent map sees the full $\text{Ш}[p]$
+- The lifting approach cannot "kill" Sha — if $\text{Ш}[p] \neq 0$ and $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$, there are no liftable classes
+- Each nontrivial class in $\text{Ш}[p]$ contributes an independent element to $\text{Sel}_p$
+- This makes $\text{Sel}_p$ larger, not smaller
 - The only way to prove $\text{Ш}[p] = 0$ is to show $\text{Sel}_p$ has exactly the "expected" size (i.e., no Sha contribution)
-- This requires an independent bound on $|\text{Sel}_p|$, which is exactly what Kato's Euler system provides (for the upper bound)
+- This requires an independent bound on $|\text{Sel}_p|$, which is what Kato's Euler system provides **when $L(E,1) \neq 0$** (rank 0)
 
 ---
 
@@ -234,7 +236,7 @@ For the BSD program's goal of proving $\text{Ш}[p^\infty] = 0$:
 - 102.c1 (rank 0, |Ш|=4): [0,0,2] certified, Ш[2]≅(ℤ/2)² ✓
 - 210.e1, 582.d1 (rank 0, |Ш|=16): [0,2,0] **not** certified — 4-torsion signature ✓
 
-**Consequence:** for p=2 and each of these 100 rank-2 curves: **Ш[2^∞] is provably finite, |Ш[2^∞]| = 4**. For odd p, Kato's Euler system proves Ш[p^∞] finite outside a small curve-dependent exceptional set.
+**Consequence:** for p=2 and each of these 100 rank-2 curves: **Ш[2^∞] is provably finite, |Ш[2^∞]| = 4**. For odd p, finiteness requires separate arguments (p-adic L-functions, Kato divisibility under applicable hypotheses — not unconditionally available at rank 2).
 
 ---
 
@@ -258,7 +260,7 @@ For the BSD program's goal of proving $\text{Ш}[p^\infty] = 0$:
 - [x] Control cases verified (389.a1, 37.a1, 102.c1, 210.e1, 582.d1)
 - [x] **Unconditional 2-descent over 100-curve pool** (Dr. Science's review): 100/100 → rank certified 2, Ш[2]≅(ℤ/2)², no class lifts to Ш[4]
 - [x] PARI rank certification semantics validated against controls
-- [ ] Odd-primary finiteness (Kato Euler system + small exceptional set)
+- [ ] Odd-primary finiteness: requires p-adic L-function certificate under verified hypotheses (see Track B)
 - [ ] Extension to |Ш| = p⁴ (no rank-2 testbed exists in LMFDB)
 
 ---

@@ -1,0 +1,1193 @@
+{
+  "timestamp": "2026-09-15T00:55:28",
+  "track": "D",
+  "version": 2,
+  "design": "per_Mr_Genius_review",
+  "pre_registration": {
+    "base_curve": "194040.cu1",
+    "range": "squarefree 2 \u2264 d \u2264 100",
+    "target": "find s \u2265 3 or failed certification at rank \u2265 2",
+    "falsifier": "any certified rank-2 twist with s \u2265 3"
+  },
+  "summary": {
+    "twists_analyzed": 28,
+    "certified_rank2": 0,
+    "standard_s0_or_s2": 0,
+    "high_sha2": 0,
+    "high_sha2_unresolved": 0,
+    "possible_4_torsion": 19,
+    "unresolved_standard": 9
+  },
+  "candidates": [
+    {
+      "twist_d": 2,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 2,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -29208462528,
+          -1921370681402368
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 5,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 5,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -11409555675,
+          -469084639014250
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 6,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 6,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -262876162752,
+          -51877008397863936
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 13,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 13,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -77128596363,
+          -8244631615314458
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 6,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=1, r2=3, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 19,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 19,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -2636063743152,
+          -1647335187967355264
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 26,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 26,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -4936230167232,
+          -4221251387041002496
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 34,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 34,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -8441245670592,
+          -9439694157729833984
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 37,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 37,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -624787268763,
+          -190084353759910442
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 41,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 41,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -767178523587,
+          -258638259244008994
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 6,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=1, r2=3, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 53,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 53,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1281977675643,
+          -558687310420195978
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 57,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 57,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1482785855523,
+          -694969532423728002
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 65,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 65,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1928214909075,
+          -1030578951914307250
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 67,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 67,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -32779197072048,
+          -72234651281327550848
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 69,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 69,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -2172835782747,
+          -1232788205423458026
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 73,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 73,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -2432060887683,
+          -1459855192123251938
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 79,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 79,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -45572503659312,
+          -118413834923492764544
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 86,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 86,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -54006447214272,
+          -152762418766258072576
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 89,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 89,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -3615003620067,
+          -2645521031049894466
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    },
+    {
+      "twist_d": 93,
+      "reason": "r2-r1=2, s=2",
+      "priority": 2,
+      "data": {
+        "twist_d": 93,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -3947249881323,
+          -3018492103868680698
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "T": 1,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "C_dim_sel2_upper": 5,
+        "rank_certified": false,
+        "classification": "UNRESOLVED",
+        "flag": "POSSIBLE_4_TORSION",
+        "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+      }
+    }
+  ],
+  "all_results": [
+    {
+      "twist_d": 2,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -29208462528,
+        -1921370681402368
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 5,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -11409555675,
+        -469084639014250
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 6,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -262876162752,
+        -51877008397863936
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 13,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -77128596363,
+        -8244631615314458
+      ],
+      "r1": 1,
+      "r2": 3,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 6,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=1, r2=3, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 19,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -2636063743152,
+        -1647335187967355264
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 21,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -201264562107,
+        -34753542735287754
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 0,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 3,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "UNRESOLVED_STANDARD"
+    },
+    {
+      "twist_d": 26,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -4936230167232,
+        -4221251387041002496
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 29,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -383817452907,
+        -91524042087348346
+      ],
+      "r1": 2,
+      "r2": 4,
+      "s": 0,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "UNRESOLVED_STANDARD"
+    },
+    {
+      "twist_d": 30,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -6571904068800,
+        -6484626049732992000
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 0,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 3,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "UNRESOLVED_STANDARD"
+    },
+    {
+      "twist_d": 34,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -8441245670592,
+        -9439694157729833984
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 37,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -624787268763,
+        -190084353759910442
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 41,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -767178523587,
+        -258638259244008994
+      ],
+      "r1": 1,
+      "r2": 3,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 6,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=1, r2=3, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 46,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -15451276677312,
+        -23377317080622611456
+      ],
+      "r1": 1,
+      "r2": 3,
+      "s": 0,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 4,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "UNRESOLVED_STANDARD"
+    },
+    {
+      "twist_d": 53,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -1281977675643,
+        -558687310420195978
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 57,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -1482785855523,
+        -694969532423728002
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 61,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -1698198266667,
+        -851786403584747834
+      ],
+      "r1": 0,
+      "r2": 4,
+      "s": 0,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "UNRESOLVED_STANDARD"
+    },
+    {
+      "twist_d": 65,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -1928214909075,
+        -1030578951914307250
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 66,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -31808015692992,
+        -69048298177556898816
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 0,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 3,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "UNRESOLVED_STANDARD"
+    },
+    {
+      "twist_d": 67,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -32779197072048,
+        -72234651281327550848
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 69,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -2172835782747,
+        -1232788205423458026
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 73,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -2432060887683,
+        -1459855192123251938
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 74,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -39986385200832,
+        -97323189125074146304
+      ],
+      "r1": 1,
+      "r2": 3,
+      "s": 0,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 4,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "UNRESOLVED_STANDARD"
+    },
+    {
+      "twist_d": 79,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -45572503659312,
+        -118413834923492764544
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 85,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -3297361590075,
+        -2304612831477010250
+      ],
+      "r1": 1,
+      "r2": 3,
+      "s": 0,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 4,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "UNRESOLVED_STANDARD"
+    },
+    {
+      "twist_d": 86,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -54006447214272,
+        -152762418766258072576
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 89,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -3615003620067,
+        -2645521031049894466
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 93,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -3947249881323,
+        -3018492103868680698
+      ],
+      "r1": 0,
+      "r2": 2,
+      "s": 2,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 5,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "POSSIBLE_4_TORSION",
+      "note": "r1=0, r2=2, s=2. Large gap may indicate 4-torsion in Sha."
+    },
+    {
+      "twist_d": 94,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -64521493724352,
+        -199482468255238052864
+      ],
+      "r1": 1,
+      "r2": 3,
+      "s": 0,
+      "T": 1,
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "C_dim_sel2_upper": 4,
+      "rank_certified": false,
+      "classification": "UNRESOLVED",
+      "flag": "UNRESOLVED_STANDARD"
+    }
+  ],
+  "conclusion": "19 candidates identified"
+}

@@ -1,0 +1,88 @@
+E3: Quadratic Twist SHA Stability
+Date: 2026-09-14 22:13:53
+
+Found 194040.cu1 with a-invariants: [0, 0, 0, -456382227, -3752677112114]
+
+============================================================
+Finding rank-2 quadratic twists of 194040.cu1
+Testing d from 2 to 100
+============================================================
+Testing 60 squarefree values of d
+  d=  2: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d=  3: R≠2  rank=[0, 0, 2] s=2 
+  d=  5: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d=  6: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d=  7: R≠2  rank=[0, 0, 4] s=4 high_sha2_dim
+  d= 10: R2   rank=[2, 2, 0] s=0 
+  d= 11: R≠2  rank=[1, 1, 2] s=2 
+  d= 13: R≠2  rank=[1, 3, 2] s=2 not_certified
+  d= 14: R≠2  rank=[1, 1, 2] s=2 
+  d= 15: R≠2  rank=[1, 1, 2] s=2 
+  d= 17: R2   rank=[2, 2, 2] s=2 
+  d= 19: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 21: R≠2  rank=[0, 2, 0] s=0 not_certified
+  d= 22: R≠2  rank=[1, 1, 2] s=2 
+  d= 23: R≠2  rank=[0, 0, 4] s=4 high_sha2_dim
+  d= 26: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 29: R≠2  rank=[2, 4, 0] s=0 not_certified
+  d= 30: R≠2  rank=[0, 2, 0] s=0 not_certified
+  d= 31: R≠2  rank=[1, 1, 4] s=4 high_sha2_dim
+  d= 33: R≠2  rank=[0, 0, 4] s=4 high_sha2_dim
+  d= 34: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 35: R≠2  rank=[1, 1, 0] s=0 
+  d= 37: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 38: R≠2  rank=[1, 1, 4] s=4 high_sha2_dim
+  d= 39: R2   rank=[2, 2, 2] s=2 
+  d= 41: R≠2  rank=[1, 3, 2] s=2 not_certified
+  d= 42: R≠2  rank=[0, 0, 2] s=2 
+  d= 43: R≠2  rank=[1, 1, 2] s=2 
+  d= 46: R≠2  rank=[1, 3, 0] s=0 not_certified
+  d= 47: R2   rank=[2, 2, 2] s=2 
+  d= 51: R≠2  rank=[1, 1, 2] s=2 
+  d= 53: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 55: R≠2  rank=[0, 0, 4] s=4 high_sha2_dim
+  d= 57: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 58: R≠2  rank=[1, 1, 2] s=2 
+  d= 59: R≠2  rank=[1, 1, 2] s=2 
+  d= 61: R≠2  rank=[0, 4, 0] s=0 not_certified
+  d= 62: R2   rank=[2, 2, 2] s=2 
+  d= 65: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 66: R≠2  rank=[0, 2, 0] s=0 not_certified
+  d= 67: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 69: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 70: R≠2  rank=[1, 1, 2] s=2 
+  d= 71: R≠2  rank=[1, 1, 4] s=4 high_sha2_dim
+  d= 73: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 74: R≠2  rank=[1, 3, 0] s=0 not_certified
+  d= 77: R≠2  rank=[1, 1, 2] s=2 
+  d= 78: R≠2  rank=[0, 0, 4] s=4 high_sha2_dim
+  d= 79: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 82: R≠2  rank=[1, 1, 4] s=4 high_sha2_dim
+  d= 83: R≠2  rank=[1, 1, 2] s=2 
+  d= 85: R≠2  rank=[1, 3, 0] s=0 not_certified
+  d= 86: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 87: R≠2  rank=[0, 0, 4] s=4 high_sha2_dim
+  d= 89: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 91: R≠2  rank=[1, 1, 2] s=2 
+  d= 93: R≠2  rank=[0, 2, 2] s=2 not_certified
+  d= 94: R≠2  rank=[1, 3, 0] s=0 not_certified
+  d= 95: R≠2  rank=[1, 1, 4] s=4 high_sha2_dim
+  d= 97: R≠2  rank=[1, 1, 4] s=4 high_sha2_dim
+
+============================================================
+TWIST STABILITY SUMMARY for 194040.cu1
+============================================================
+Twists tested: 60
+Rank-2 twists found: 5
+s-value distribution: {0: 1, 2: 4}
+Ш[2] structures: {'trivial': 1, '(Z/2)^2': 4}
+
+*** UNSTABLE: Different s values found: {0, 2} ***
+
+Results written to computation/quadratic_twist_sha_stability.json
+
+============================================================
+E3 CONCLUSION
+============================================================
+UNSTABLE: Different Ш[2] structures found across twists.
+This would be a significant discovery — investigate the outliers.

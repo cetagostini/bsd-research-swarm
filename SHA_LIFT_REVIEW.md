@@ -52,7 +52,7 @@
   - 210.e1, 582.d1 (rank 0, analytic |Ш| = 16): [0, 2, 0] **not** certified — the 4-torsion signature, exactly as required ✓
 - **Honesty note:** none of this is a new theorem — 2-descent is classical. The genuinely useful output is: (i) the lifting question is *resolved by descent, not by CT*, for this entire family; (ii) PARI rank certification is a direct witness of the triviality of 2Ш[4]; (iii) a clean, rerunnable pipeline exists (script included).
 
-**Consequence for the team's question** (is Ш(E/ℚ)[p^∞] finite when rank = 2?): for p = 2 and each of these 100 rank-2 curves: **YES, provably, |Ш[2^∞]| = 4**. For odd p, Kato's Euler system proves Ш[p^∞] finite outside a small curve-dependent exceptional set; combining the two gives finiteness for all but finitely many primes per curve. The exact odd-primary order (BSD predicts 1 for these |Ш| = 4 curves) remains unproved.
+**Consequence for the team's question** (is Ш(E/ℚ)[p^∞] finite when rank = 2?): for p = 2 and each of these 100 rank-2 curves: **YES, provably, |Ш[2^∞]| = 4**. For odd p, finiteness requires separate p-adic arguments under verified hypotheses; combining the two gives finiteness for all but finitely many primes per curve, conditionally. The exact odd-primary order (BSD predicts 1 for these |Ш| = 4 curves) remains unproved.
 
 ### C. Factual errors to correct in the artifacts
 
@@ -68,7 +68,7 @@
 ## Gap (what remains unproved)
 
 1. **Finiteness of Ш[2^∞] at rank 2: settled for p = 2 on this 100-curve family only.** General rank-2 curves: open, as before.
-2. **Odd-primary part / total finiteness** for these curves: Kato covers all but a small exceptional set; the exceptional primes per curve and the exact odd order (BSD: 1) are unproved.
+2. **Odd-primary part / total finiteness** for these curves: requires p-adic L-function certificate under verified hypotheses; the exact odd order (BSD: 1) is unproved.
 3. **Higher-order lifting (Ш[p²]→Ш[p³]) and the p⁴/p⁶ dichotomy branches** have no computational testbed: no rank-2 curve with |Ш| ≥ 9 is in LMFDB. Until such a curve is found or constructed, the p⁴ "all-lift" branch and mixed p⁶ cases cannot be exercised.
 4. **Novelty assessment (per reviewer mandate):** the CT-balanced structure, the lifting-criterion, and the |Ш| = p² conclusion are all classical. What is new here is (modestly): the family-wide unconditional statement Ш[2^∞] ≅ (ℤ/2)² with certified ranks for the 100-curve pool; the correction of the p⁴/p⁶ table; the observation that rank certification witnesses 2Ш[4] = 0; the verified absence of rank-2 |Ш| ≥ 9 in the database. None of these advance BSD itself; they are honest, reproducible groundwork.
 
@@ -79,7 +79,7 @@
 - **E1 (finish the sweep, bounded):** run `run_pool_descent.py` over *all* rank-2 |Ш| = 4 curves in LMFDB (paginate past 100), record counts and any deviation. Falsifier: any curve with failed certification or s ≠ 2 → a p = 2 BSD anomaly (a genuine discovery, stop everything).
 - **E2 (the discriminating hunt, bounded):** search mid-conductor ranges for rank-2 curves with dim Ш[2] ≥ 3 (s = 3/4) or with **failed certification at rank 2** (4-torsion signature). Outcome space: (i) only s = 2 ever appears → strong statistical statement ("2-part of Ш is elementary of dim ≤ 2 across all computed rank-2 curves"), report and pivot; (ii) s = 4 found → first concrete p⁴ "none-lift" instance; (iii) failed certification at rank 2 → first (ℤ/4)²-type candidate, the "all-lift" branch — the pivotal object; seek expert tooling (4-descent in Sage/Magma) before deep investment.
 - **E3 (family-level criterion, the team's original ask):** for a fixed rank-2 curve with analytic |Ш| = 4 (now verified Ш[2] ≅ (ℤ/2)² for 194040.cu1 etc.), compute dim Ш^{(d)}[2] for quadratic twists E^{(d)} of rank 2; test whether the 2-part structure is twist-stable (always (ℤ/2)² when BSD predicts |Ш| = 4). A provable twist-stability lemma would be the first non-classical output of the program.
-- **E4 (per-curve certificate):** for two or three pool curves (194040.cu1, 194766.bg1, 226005.b5), combine: Ш[2^∞] ≅ (ℤ/2)² (proved here) + Kato odd-p finiteness + 3-,5-,7-descent checks of the small exceptional primes → a near-complete *unconditional* certificate "Ш = (ℤ/2)² × (provably finite odd part)". This is the closest the program can currently come to answering Carlos's question for concrete curves.
+- **E4 (per-curve certificate):** for two or three pool curves (194040.cu1, 194766.bg1, 226005.b5), combine: Ш[2^∞] ≅ (ℤ/2)² (proved here) + p-adic L-function certificate at small odd primes (under verified hypotheses) + 3-,5-,7-descent checks of the small exceptional primes → a near-complete certificate "Ш = (ℤ/2)² × (conditionally finite odd part)". This is the closest the program can currently come to answering Carlos's question for concrete curves.
 
 ---
 

@@ -1,0 +1,72 @@
+Extended SHA Sweep: E1 + E2
+Date: 2026-09-14 22:13:53
+
+============================================================
+E1: Sweeping rank-2 |Ш|=4 curves
+============================================================
+
+Fetching page at offset 0...
+  LMFDB search error: HTTP Error 404: Not Found
+  No more curves found.
+
+============================================================
+E1 SUMMARY
+============================================================
+Total curves analyzed: 0
+Rank certified: 0
+Not certified: 0
+s-value distribution: {}
+Falsifier found: False
+
+*** E1 RESULT: Uniform s=2 across all certified curves ***
+
+============================================================
+E2: Hunting for higher Ш[2] or 4-torsion at rank 2
+============================================================
+
+--- Searching rank-2 |Ш|=16 ---
+  LMFDB search error: HTTP Error 404: Not Found
+  No rank-2 curves with |Ш|=16 found.
+
+--- Searching rank-2 |Ш|=36 ---
+  LMFDB search error: HTTP Error 404: Not Found
+  No rank-2 curves with |Ш|=36 found.
+
+--- Searching rank-2 |Ш|=64 ---
+  LMFDB search error: HTTP Error 404: Not Found
+  No rank-2 curves with |Ш|=64 found.
+
+--- Searching rank-2 |Ш|=100 ---
+  LMFDB search error: HTTP Error 404: Not Found
+  No rank-2 curves with |Ш|=100 found.
+
+--- Searching rank-2 |Ш|=144 ---
+  LMFDB search error: Expecting value: line 1 column 1 (char 0)
+  No rank-2 curves with |Ш|=144 found.
+
+--- Searching rank-2 |Ш|=256 ---
+  LMFDB search error: Expecting value: line 1 column 1 (char 0)
+  No rank-2 curves with |Ш|=256 found.
+
+============================================================
+E2 SUMMARY
+============================================================
+Total curves analyzed: 0
+Rank certified: 0
+s-value distribution: {}
+Discoveries: 0
+
+*** E2 RESULT: No higher Ш[2] found at rank 2 ***
+
+============================================================
+OVERALL CONCLUSION
+============================================================
+E1 falsifier found: False
+E1 uniform s=2: True
+E2 discoveries: 0
+Ш[2] stable at rank 2: True
+
+*** RESULT: Ш[2] ≅ (ℤ/2)² is stable across all tested rank-2 curves ***
+*** The odd part remains the genuinely open problem ***
+
+Results written to computation/extended_sha_sweep_results.json

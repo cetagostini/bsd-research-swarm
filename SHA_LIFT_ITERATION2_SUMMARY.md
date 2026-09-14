@@ -54,7 +54,7 @@
 
 3. **No anomalies found.** All certified rank-2 curves have s∈{0,2}. No curve has s≥3 or failed certification at rank 2.
 
-4. **The genuinely open problem is the odd part.** For these curves, BSD predicts |Ш|=4, all of which is 2-primary. The odd-primary finiteness (Kato) and exact odd order remain unproved.
+4. **The genuinely open problem is the odd part.** For these curves, BSD predicts |Ш|=4, all of which is 2-primary. The odd-primary finiteness requires a separate p-adic L-function argument under verified hypotheses (see Track B).
 
 ---
 
@@ -74,15 +74,15 @@
 
 1. **E4 (per-curve certificate):** For 194040.cu1, combine:
    - Ш[2^∞]≅(ℤ/2)² (proved here)
-   - Kato odd-p finiteness (theoretical)
+   - p-adic L-function certificate for odd primes (under verified hypotheses)
    - Small-prime descent (3,5,7) to check exceptional primes
-   - Result: near-complete unconditional certificate
+   - Result: near-complete certificate "Ш = (ℤ/2)² × (conditionally finite odd part)"
 
 2. **Manual LMFDB sweep:** Use browser to paginate through rank-2 |Ш|=4 curves beyond 100, feed into pool runner.
 
 3. **Alternative base curves:** Test twist stability for other rank-2 curves (194766.bg1, 226005.b5).
 
-4. **Odd-primary investigation:** For curves with |Ш|=4 (all 2-primary), check if odd-primary part is provably trivial via descent at small primes.
+3. **Odd-primary investigation:** For curves with |Ш|=4 (all 2-primary), check if odd-primary part is provably trivial via small-prime descent + p-adic L-function certificates.
 
 **Decision rule:** Park after two unproductive rounds. The honest bottom line: at rank 2 with |Ш|=p², lifting is trivially settled by descent; the real open problem is the odd part.
 
@@ -110,4 +110,4 @@
 
 The lifting question for p=2 at rank 2 is **unconditionally settled** for the 100-curve family: Ш[2^∞]≅(ℤ/2)², no class lifts to Ш[4]. The structural stability across quadratic twists suggests this is a robust phenomenon, not an artifact of curve selection.
 
-The genuinely open problem is the **odd-primary part** of Ш for rank-2 curves. Kato's Euler system proves finiteness outside a small exceptional set, but the exact odd order (BSD predicts 1 for |Ш|=4 curves) remains unproved. This is the right direction for future work.
+The genuinely open problem is the **odd-primary part** of Ш for rank-2 curves. The standard Kato finiteness results require $L(E,1) \neq 0$; at rank 2, a separate p-adic L-function argument under verified hypotheses is needed (see Track B: 389.a1 at p=5).

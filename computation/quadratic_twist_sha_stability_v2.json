@@ -1,0 +1,3206 @@
+{
+  "timestamp": "2026-09-15T00:49:30",
+  "experiment": "E3_revised",
+  "version": 2,
+  "fixes_applied": [
+    "PARI elltwist instead of manual formula",
+    "C = r2 + T + s (not r1)",
+    "T from invariant factors (dim E(Q)[2])",
+    "Unresolved candidates preserved, not promoted",
+    "s reported as bound when rank not certified"
+  ],
+  "base_curve": "194040.cu1",
+  "results": {
+    "summary": {
+      "base_curve": "194040.cu1",
+      "twists_tested": 60,
+      "rank2_twists_certified": 5,
+      "rank2_twists_unresolved": 28,
+      "errors": 0,
+      "certified_s_values": {
+        "0": 1,
+        "2": 4
+      },
+      "certified_sha_structures": {
+        "trivial": 1,
+        "(Z/2)^2": 4
+      },
+      "unresolved_notes": [
+        "d=2: r1=0, r2=2, s=2",
+        "d=5: r1=0, r2=2, s=2",
+        "d=6: r1=0, r2=2, s=2",
+        "d=13: r1=1, r2=3, s=2",
+        "d=19: r1=0, r2=2, s=2",
+        "d=21: r1=0, r2=2, s=0",
+        "d=26: r1=0, r2=2, s=2",
+        "d=29: r1=2, r2=4, s=0",
+        "d=30: r1=0, r2=2, s=0",
+        "d=34: r1=0, r2=2, s=2",
+        "d=37: r1=0, r2=2, s=2",
+        "d=41: r1=1, r2=3, s=2",
+        "d=46: r1=1, r2=3, s=0",
+        "d=53: r1=0, r2=2, s=2",
+        "d=57: r1=0, r2=2, s=2",
+        "d=61: r1=0, r2=4, s=0",
+        "d=65: r1=0, r2=2, s=2",
+        "d=66: r1=0, r2=2, s=0",
+        "d=67: r1=0, r2=2, s=2",
+        "d=69: r1=0, r2=2, s=2",
+        "d=73: r1=0, r2=2, s=2",
+        "d=74: r1=1, r2=3, s=0",
+        "d=79: r1=0, r2=2, s=2",
+        "d=85: r1=1, r2=3, s=0",
+        "d=86: r1=0, r2=2, s=2",
+        "d=89: r1=0, r2=2, s=2",
+        "d=93: r1=0, r2=2, s=2",
+        "d=94: r1=1, r2=3, s=0"
+      ],
+      "stability": "structurally_stable",
+      "s2_count": 4,
+      "s0_count": 1
+    },
+    "rank2_twists": [
+      {
+        "label": "194040.cu1_twist_10",
+        "base_curve": "194040.cu1",
+        "twist_d": 10,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -730211563200,
+          -240171335175296000
+        ],
+        "ellrank": [
+          2,
+          2,
+          0
+        ],
+        "r1": 2,
+        "r2": 2,
+        "s": 0,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 3,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 8,
+        "S_dim_Sha2": 0,
+        "sha2_trivial": true,
+        "sha2_structure": "trivial",
+        "elapsed": 0.0
+      },
+      {
+        "label": "194040.cu1_twist_17",
+        "base_curve": "194040.cu1",
+        "twist_d": 17,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -131894463603,
+          -18436902651816082
+        ],
+        "ellrank": [
+          2,
+          2,
+          2
+        ],
+        "r1": 2,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.02
+      },
+      {
+        "label": "194040.cu1_twist_39",
+        "base_curve": "194040.cu1",
+        "twist_d": 39,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -11106517876272,
+          -14246723431263383424
+        ],
+        "ellrank": [
+          2,
+          2,
+          2
+        ],
+        "r1": 2,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.04
+      },
+      {
+        "label": "194040.cu1_twist_47",
+        "base_curve": "194040.cu1",
+        "twist_d": 47,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -16130373431088,
+          -24935308531904756608
+        ],
+        "ellrank": [
+          2,
+          2,
+          2
+        ],
+        "r1": 2,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.02
+      },
+      {
+        "label": "194040.cu1_twist_62",
+        "base_curve": "194040.cu1",
+        "twist_d": 62,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -28069332489408,
+          -57239553969657945088
+        ],
+        "ellrank": [
+          2,
+          2,
+          2
+        ],
+        "r1": 2,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.02
+      }
+    ],
+    "unresolved_candidates": [
+      {
+        "label": "194040.cu1_twist_2",
+        "base_curve": "194040.cu1",
+        "twist_d": 2,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -29208462528,
+          -1921370681402368
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.73
+      },
+      {
+        "label": "194040.cu1_twist_5",
+        "base_curve": "194040.cu1",
+        "twist_d": 5,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -11409555675,
+          -469084639014250
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.55
+      },
+      {
+        "label": "194040.cu1_twist_6",
+        "base_curve": "194040.cu1",
+        "twist_d": 6,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -262876162752,
+          -51877008397863936
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.43
+      },
+      {
+        "label": "194040.cu1_twist_13",
+        "base_curve": "194040.cu1",
+        "twist_d": 13,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -77128596363,
+          -8244631615314458
+        ],
+        "ellrank": [
+          1,
+          3,
+          2
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 6,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 64,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.4
+      },
+      {
+        "label": "194040.cu1_twist_19",
+        "base_curve": "194040.cu1",
+        "twist_d": 19,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -2636063743152,
+          -1647335187967355264
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.74
+      },
+      {
+        "label": "194040.cu1_twist_21",
+        "base_curve": "194040.cu1",
+        "twist_d": 21,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -201264562107,
+          -34753542735287754
+        ],
+        "ellrank": [
+          0,
+          2,
+          0
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 3,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 8,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.03
+      },
+      {
+        "label": "194040.cu1_twist_26",
+        "base_curve": "194040.cu1",
+        "twist_d": 26,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -4936230167232,
+          -4221251387041002496
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.87
+      },
+      {
+        "label": "194040.cu1_twist_29",
+        "base_curve": "194040.cu1",
+        "twist_d": 29,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -383817452907,
+          -91524042087348346
+        ],
+        "ellrank": [
+          2,
+          4,
+          0
+        ],
+        "r1": 2,
+        "r2": 4,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 1.01
+      },
+      {
+        "label": "194040.cu1_twist_30",
+        "base_curve": "194040.cu1",
+        "twist_d": 30,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -6571904068800,
+          -6484626049732992000
+        ],
+        "ellrank": [
+          0,
+          2,
+          0
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 3,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 8,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.67
+      },
+      {
+        "label": "194040.cu1_twist_34",
+        "base_curve": "194040.cu1",
+        "twist_d": 34,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -8441245670592,
+          -9439694157729833984
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.96
+      },
+      {
+        "label": "194040.cu1_twist_37",
+        "base_curve": "194040.cu1",
+        "twist_d": 37,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -624787268763,
+          -190084353759910442
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.27
+      },
+      {
+        "label": "194040.cu1_twist_41",
+        "base_curve": "194040.cu1",
+        "twist_d": 41,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -767178523587,
+          -258638259244008994
+        ],
+        "ellrank": [
+          1,
+          3,
+          2
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 6,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 64,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.24
+      },
+      {
+        "label": "194040.cu1_twist_46",
+        "base_curve": "194040.cu1",
+        "twist_d": 46,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -15451276677312,
+          -23377317080622611456
+        ],
+        "ellrank": [
+          1,
+          3,
+          0
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 16,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.88
+      },
+      {
+        "label": "194040.cu1_twist_53",
+        "base_curve": "194040.cu1",
+        "twist_d": 53,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1281977675643,
+          -558687310420195978
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.44
+      },
+      {
+        "label": "194040.cu1_twist_57",
+        "base_curve": "194040.cu1",
+        "twist_d": 57,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1482785855523,
+          -694969532423728002
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.17
+      },
+      {
+        "label": "194040.cu1_twist_61",
+        "base_curve": "194040.cu1",
+        "twist_d": 61,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1698198266667,
+          -851786403584747834
+        ],
+        "ellrank": [
+          0,
+          4,
+          0
+        ],
+        "r1": 0,
+        "r2": 4,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.49
+      },
+      {
+        "label": "194040.cu1_twist_65",
+        "base_curve": "194040.cu1",
+        "twist_d": 65,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1928214909075,
+          -1030578951914307250
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.4
+      },
+      {
+        "label": "194040.cu1_twist_66",
+        "base_curve": "194040.cu1",
+        "twist_d": 66,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -31808015692992,
+          -69048298177556898816
+        ],
+        "ellrank": [
+          0,
+          2,
+          0
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 3,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 8,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.37
+      },
+      {
+        "label": "194040.cu1_twist_67",
+        "base_curve": "194040.cu1",
+        "twist_d": 67,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -32779197072048,
+          -72234651281327550848
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.32
+      },
+      {
+        "label": "194040.cu1_twist_69",
+        "base_curve": "194040.cu1",
+        "twist_d": 69,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -2172835782747,
+          -1232788205423458026
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.39
+      },
+      {
+        "label": "194040.cu1_twist_73",
+        "base_curve": "194040.cu1",
+        "twist_d": 73,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -2432060887683,
+          -1459855192123251938
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.35
+      },
+      {
+        "label": "194040.cu1_twist_74",
+        "base_curve": "194040.cu1",
+        "twist_d": 74,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -39986385200832,
+          -97323189125074146304
+        ],
+        "ellrank": [
+          1,
+          3,
+          0
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 16,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 1.07
+      },
+      {
+        "label": "194040.cu1_twist_79",
+        "base_curve": "194040.cu1",
+        "twist_d": 79,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -45572503659312,
+          -118413834923492764544
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.44
+      },
+      {
+        "label": "194040.cu1_twist_85",
+        "base_curve": "194040.cu1",
+        "twist_d": 85,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -3297361590075,
+          -2304612831477010250
+        ],
+        "ellrank": [
+          1,
+          3,
+          0
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 16,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.47
+      },
+      {
+        "label": "194040.cu1_twist_86",
+        "base_curve": "194040.cu1",
+        "twist_d": 86,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -54006447214272,
+          -152762418766258072576
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.43
+      },
+      {
+        "label": "194040.cu1_twist_89",
+        "base_curve": "194040.cu1",
+        "twist_d": 89,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -3615003620067,
+          -2645521031049894466
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.62
+      },
+      {
+        "label": "194040.cu1_twist_93",
+        "base_curve": "194040.cu1",
+        "twist_d": 93,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -3947249881323,
+          -3018492103868680698
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.2
+      },
+      {
+        "label": "194040.cu1_twist_94",
+        "base_curve": "194040.cu1",
+        "twist_d": 94,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -64521493724352,
+          -199482468255238052864
+        ],
+        "ellrank": [
+          1,
+          3,
+          0
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 16,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 1.07
+      }
+    ],
+    "all_twists": [
+      {
+        "label": "194040.cu1_twist_2",
+        "base_curve": "194040.cu1",
+        "twist_d": 2,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -29208462528,
+          -1921370681402368
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.73
+      },
+      {
+        "label": "194040.cu1_twist_3",
+        "base_curve": "194040.cu1",
+        "twist_d": 3,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -65719040688,
+          -6484626049732992
+        ],
+        "ellrank": [
+          0,
+          0,
+          2
+        ],
+        "r1": 0,
+        "r2": 0,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 3,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 8,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.01
+      },
+      {
+        "label": "194040.cu1_twist_5",
+        "base_curve": "194040.cu1",
+        "twist_d": 5,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -11409555675,
+          -469084639014250
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.55
+      },
+      {
+        "label": "194040.cu1_twist_6",
+        "base_curve": "194040.cu1",
+        "twist_d": 6,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -262876162752,
+          -51877008397863936
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.43
+      },
+      {
+        "label": "194040.cu1_twist_7",
+        "base_curve": "194040.cu1",
+        "twist_d": 7,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -357803665968,
+          -82378767965126528
+        ],
+        "ellrank": [
+          0,
+          0,
+          4
+        ],
+        "r1": 0,
+        "r2": 0,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.03
+      },
+      {
+        "label": "194040.cu1_twist_10",
+        "base_curve": "194040.cu1",
+        "twist_d": 10,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -730211563200,
+          -240171335175296000
+        ],
+        "ellrank": [
+          2,
+          2,
+          0
+        ],
+        "r1": 2,
+        "r2": 2,
+        "s": 0,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 3,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 8,
+        "S_dim_Sha2": 0,
+        "sha2_trivial": true,
+        "sha2_structure": "trivial",
+        "elapsed": 0.0
+      },
+      {
+        "label": "194040.cu1_twist_11",
+        "base_curve": "194040.cu1",
+        "twist_d": 11,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -883555991472,
+          -319668047118318976
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.06
+      },
+      {
+        "label": "194040.cu1_twist_13",
+        "base_curve": "194040.cu1",
+        "twist_d": 13,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -77128596363,
+          -8244631615314458
+        ],
+        "ellrank": [
+          1,
+          3,
+          2
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 6,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 64,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.4
+      },
+      {
+        "label": "194040.cu1_twist_14",
+        "base_curve": "194040.cu1",
+        "twist_d": 14,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1431214663872,
+          -659030143721012224
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.03
+      },
+      {
+        "label": "194040.cu1_twist_15",
+        "base_curve": "194040.cu1",
+        "twist_d": 15,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1642976017200,
+          -810578256216624000
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.04
+      },
+      {
+        "label": "194040.cu1_twist_17",
+        "base_curve": "194040.cu1",
+        "twist_d": 17,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -131894463603,
+          -18436902651816082
+        ],
+        "ellrank": [
+          2,
+          2,
+          2
+        ],
+        "r1": 2,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.02
+      },
+      {
+        "label": "194040.cu1_twist_19",
+        "base_curve": "194040.cu1",
+        "twist_d": 19,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -2636063743152,
+          -1647335187967355264
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.74
+      },
+      {
+        "label": "194040.cu1_twist_21",
+        "base_curve": "194040.cu1",
+        "twist_d": 21,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -201264562107,
+          -34753542735287754
+        ],
+        "ellrank": [
+          0,
+          2,
+          0
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 3,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 8,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.03
+      },
+      {
+        "label": "194040.cu1_twist_22",
+        "base_curve": "194040.cu1",
+        "twist_d": 22,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -3534223965888,
+          -2557344376946551808
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.02
+      },
+      {
+        "label": "194040.cu1_twist_23",
+        "base_curve": "194040.cu1",
+        "twist_d": 23,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -3862819169328,
+          -2922164635077826432
+        ],
+        "ellrank": [
+          0,
+          0,
+          4
+        ],
+        "r1": 0,
+        "r2": 0,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.03
+      },
+      {
+        "label": "194040.cu1_twist_26",
+        "base_curve": "194040.cu1",
+        "twist_d": 26,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -4936230167232,
+          -4221251387041002496
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.87
+      },
+      {
+        "label": "194040.cu1_twist_29",
+        "base_curve": "194040.cu1",
+        "twist_d": 29,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -383817452907,
+          -91524042087348346
+        ],
+        "ellrank": [
+          2,
+          4,
+          0
+        ],
+        "r1": 2,
+        "r2": 4,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 1.01
+      },
+      {
+        "label": "194040.cu1_twist_30",
+        "base_curve": "194040.cu1",
+        "twist_d": 30,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -6571904068800,
+          -6484626049732992000
+        ],
+        "ellrank": [
+          0,
+          2,
+          0
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 3,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 8,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.67
+      },
+      {
+        "label": "194040.cu1_twist_31",
+        "base_curve": "194040.cu1",
+        "twist_d": 31,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -7017333122352,
+          -7154944246207243136
+        ],
+        "ellrank": [
+          1,
+          1,
+          4
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 6,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 64,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.05
+      },
+      {
+        "label": "194040.cu1_twist_33",
+        "base_curve": "194040.cu1",
+        "twist_d": 33,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -497000245203,
+          -134859957378040818
+        ],
+        "ellrank": [
+          0,
+          0,
+          4
+        ],
+        "r1": 0,
+        "r2": 0,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.05
+      },
+      {
+        "label": "194040.cu1_twist_34",
+        "base_curve": "194040.cu1",
+        "twist_d": 34,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -8441245670592,
+          -9439694157729833984
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.96
+      },
+      {
+        "label": "194040.cu1_twist_35",
+        "base_curve": "194040.cu1",
+        "twist_d": 35,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -8945091649200,
+          -10297345995640816000
+        ],
+        "ellrank": [
+          1,
+          1,
+          0
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 0,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 2,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 4,
+        "S_dim_Sha2": 0,
+        "sha2_trivial": true,
+        "sha2_structure": "trivial",
+        "elapsed": 0.0
+      },
+      {
+        "label": "194040.cu1_twist_37",
+        "base_curve": "194040.cu1",
+        "twist_d": 37,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -624787268763,
+          -190084353759910442
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.27
+      },
+      {
+        "label": "194040.cu1_twist_38",
+        "base_curve": "194040.cu1",
+        "twist_d": 38,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -10544254972608,
+          -13178681503738842112
+        ],
+        "ellrank": [
+          1,
+          1,
+          4
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 6,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 64,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.04
+      },
+      {
+        "label": "194040.cu1_twist_39",
+        "base_curve": "194040.cu1",
+        "twist_d": 39,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -11106517876272,
+          -14246723431263383424
+        ],
+        "ellrank": [
+          2,
+          2,
+          2
+        ],
+        "r1": 2,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.04
+      },
+      {
+        "label": "194040.cu1_twist_41",
+        "base_curve": "194040.cu1",
+        "twist_d": 41,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -767178523587,
+          -258638259244008994
+        ],
+        "ellrank": [
+          1,
+          3,
+          2
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 6,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 64,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.24
+      },
+      {
+        "label": "194040.cu1_twist_42",
+        "base_curve": "194040.cu1",
+        "twist_d": 42,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -12880931974848,
+          -17793813880467330048
+        ],
+        "ellrank": [
+          0,
+          0,
+          2
+        ],
+        "r1": 0,
+        "r2": 0,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 3,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 8,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.01
+      },
+      {
+        "label": "194040.cu1_twist_43",
+        "base_curve": "194040.cu1",
+        "twist_d": 43,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -13501611803568,
+          -19095302345782259072
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.04
+      },
+      {
+        "label": "194040.cu1_twist_46",
+        "base_curve": "194040.cu1",
+        "twist_d": 46,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -15451276677312,
+          -23377317080622611456
+        ],
+        "ellrank": [
+          1,
+          3,
+          0
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 16,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.88
+      },
+      {
+        "label": "194040.cu1_twist_47",
+        "base_curve": "194040.cu1",
+        "twist_d": 47,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -16130373431088,
+          -24935308531904756608
+        ],
+        "ellrank": [
+          2,
+          2,
+          2
+        ],
+        "r1": 2,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.02
+      },
+      {
+        "label": "194040.cu1_twist_51",
+        "base_curve": "194040.cu1",
+        "twist_d": 51,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -18992802758832,
+          -31858967782338189696
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.07
+      },
+      {
+        "label": "194040.cu1_twist_53",
+        "base_curve": "194040.cu1",
+        "twist_d": 53,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1281977675643,
+          -558687310420195978
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.44
+      },
+      {
+        "label": "194040.cu1_twist_55",
+        "base_curve": "194040.cu1",
+        "twist_d": 55,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -22088899786800,
+          -39958505889789872000
+        ],
+        "ellrank": [
+          0,
+          0,
+          4
+        ],
+        "r1": 0,
+        "r2": 0,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.02
+      },
+      {
+        "label": "194040.cu1_twist_57",
+        "base_curve": "194040.cu1",
+        "twist_d": 57,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1482785855523,
+          -694969532423728002
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.17
+      },
+      {
+        "label": "194040.cu1_twist_58",
+        "base_curve": "194040.cu1",
+        "twist_d": 58,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -24564316986048,
+          -46860309548722353152
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.63
+      },
+      {
+        "label": "194040.cu1_twist_59",
+        "base_curve": "194040.cu1",
+        "twist_d": 59,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -25418664514992,
+          -49326148646967117184
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.31
+      },
+      {
+        "label": "194040.cu1_twist_61",
+        "base_curve": "194040.cu1",
+        "twist_d": 61,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1698198266667,
+          -851786403584747834
+        ],
+        "ellrank": [
+          0,
+          4,
+          0
+        ],
+        "r1": 0,
+        "r2": 4,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.49
+      },
+      {
+        "label": "194040.cu1_twist_62",
+        "base_curve": "194040.cu1",
+        "twist_d": 62,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -28069332489408,
+          -57239553969657945088
+        ],
+        "ellrank": [
+          2,
+          2,
+          2
+        ],
+        "r1": 2,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.02
+      },
+      {
+        "label": "194040.cu1_twist_65",
+        "base_curve": "194040.cu1",
+        "twist_d": 65,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -1928214909075,
+          -1030578951914307250
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.4
+      },
+      {
+        "label": "194040.cu1_twist_66",
+        "base_curve": "194040.cu1",
+        "twist_d": 66,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -31808015692992,
+          -69048298177556898816
+        ],
+        "ellrank": [
+          0,
+          2,
+          0
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 3,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 8,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.37
+      },
+      {
+        "label": "194040.cu1_twist_67",
+        "base_curve": "194040.cu1",
+        "twist_d": 67,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -32779197072048,
+          -72234651281327550848
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.32
+      },
+      {
+        "label": "194040.cu1_twist_69",
+        "base_curve": "194040.cu1",
+        "twist_d": 69,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -2172835782747,
+          -1232788205423458026
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.39
+      },
+      {
+        "label": "194040.cu1_twist_70",
+        "base_curve": "194040.cu1",
+        "twist_d": 70,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -35780366596800,
+          -82378767965126528000
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.02
+      },
+      {
+        "label": "194040.cu1_twist_71",
+        "base_curve": "194040.cu1",
+        "twist_d": 71,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -36809964900912,
+          -85959962743925366656
+        ],
+        "ellrank": [
+          1,
+          1,
+          4
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 6,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 64,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.32
+      },
+      {
+        "label": "194040.cu1_twist_73",
+        "base_curve": "194040.cu1",
+        "twist_d": 73,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -2432060887683,
+          -1459855192123251938
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.35
+      },
+      {
+        "label": "194040.cu1_twist_74",
+        "base_curve": "194040.cu1",
+        "twist_d": 74,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -39986385200832,
+          -97323189125074146304
+        ],
+        "ellrank": [
+          1,
+          3,
+          0
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 16,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 1.07
+      },
+      {
+        "label": "194040.cu1_twist_77",
+        "base_curve": "194040.cu1",
+        "twist_d": 77,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -2705890223883,
+          -1713220940024740762
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.03
+      },
+      {
+        "label": "194040.cu1_twist_78",
+        "base_curve": "194040.cu1",
+        "twist_d": 78,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -44426071505088,
+          -113973787450107067392
+        ],
+        "ellrank": [
+          0,
+          0,
+          4
+        ],
+        "r1": 0,
+        "r2": 0,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.04
+      },
+      {
+        "label": "194040.cu1_twist_79",
+        "base_curve": "194040.cu1",
+        "twist_d": 79,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -45572503659312,
+          -118413834923492764544
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.44
+      },
+      {
+        "label": "194040.cu1_twist_82",
+        "base_curve": "194040.cu1",
+        "twist_d": 82,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -49099425509568,
+          -132422788732932604928
+        ],
+        "ellrank": [
+          1,
+          1,
+          4
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 6,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 64,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.02
+      },
+      {
+        "label": "194040.cu1_twist_83",
+        "base_curve": "194040.cu1",
+        "twist_d": 83,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -50304274588848,
+          -137326847225876973952
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.4
+      },
+      {
+        "label": "194040.cu1_twist_85",
+        "base_curve": "194040.cu1",
+        "twist_d": 85,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -3297361590075,
+          -2304612831477010250
+        ],
+        "ellrank": [
+          1,
+          3,
+          0
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 16,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.47
+      },
+      {
+        "label": "194040.cu1_twist_86",
+        "base_curve": "194040.cu1",
+        "twist_d": 86,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -54006447214272,
+          -152762418766258072576
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.43
+      },
+      {
+        "label": "194040.cu1_twist_87",
+        "base_curve": "194040.cu1",
+        "twist_d": 87,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -55269713218608,
+          -158153544726937941888
+        ],
+        "ellrank": [
+          0,
+          0,
+          4
+        ],
+        "r1": 0,
+        "r2": 0,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 32,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.05
+      },
+      {
+        "label": "194040.cu1_twist_89",
+        "base_curve": "194040.cu1",
+        "twist_d": 89,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -3615003620067,
+          -2645521031049894466
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.62
+      },
+      {
+        "label": "194040.cu1_twist_91",
+        "base_curve": "194040.cu1",
+        "twist_d": 91,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -60468819548592,
+          -180986153219382982016
+        ],
+        "ellrank": [
+          1,
+          1,
+          2
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 2,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 16,
+        "S_dim_Sha2": 2,
+        "sha2_trivial": false,
+        "sha2_structure": "(Z/2)^2",
+        "elapsed": 0.02
+      },
+      {
+        "label": "194040.cu1_twist_93",
+        "base_curve": "194040.cu1",
+        "twist_d": 93,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -3947249881323,
+          -3018492103868680698
+        ],
+        "ellrank": [
+          0,
+          2,
+          2
+        ],
+        "r1": 0,
+        "r2": 2,
+        "s": 2,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 5,
+        "S_dim_Sha2_bound": 2,
+        "Sel2_order": 32,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22642 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 0.2
+      },
+      {
+        "label": "194040.cu1_twist_94",
+        "base_curve": "194040.cu1",
+        "twist_d": 94,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -64521493724352,
+          -199482468255238052864
+        ],
+        "ellrank": [
+          1,
+          3,
+          0
+        ],
+        "r1": 1,
+        "r2": 3,
+        "s": 0,
+        "rank_certified": false,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 4,
+        "S_dim_Sha2_bound": 0,
+        "Sel2_order": 16,
+        "flag": "not_certified",
+        "sha2_structure": "CERTIFICATION FAILED",
+        "S_dim_Sha2": "\u22640 (not certified)",
+        "note": "Rank certification failed. This is NOT a BSD counterexample. May indicate 4-torsion in Sha, or insufficient descent effort.",
+        "elapsed": 1.07
+      },
+      {
+        "label": "194040.cu1_twist_95",
+        "base_curve": "194040.cu1",
+        "twist_d": 95,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -65901593578800,
+          -205916898495919408000
+        ],
+        "ellrank": [
+          1,
+          1,
+          4
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 6,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 64,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.02
+      },
+      {
+        "label": "194040.cu1_twist_97",
+        "base_curve": "194040.cu1",
+        "twist_d": 97,
+        "ainvs": [
+          0,
+          0,
+          0,
+          -4294100373843,
+          -3424967077944420722
+        ],
+        "ellrank": [
+          1,
+          1,
+          4
+        ],
+        "r1": 1,
+        "r2": 1,
+        "s": 4,
+        "rank_certified": true,
+        "torsion_order": 2,
+        "torsion_structure": [
+          2
+        ],
+        "T": 1,
+        "C_dim_Sel2": 6,
+        "S_dim_Sha2_bound": 4,
+        "Sel2_order": 64,
+        "S_dim_Sha2": 4,
+        "sha2_trivial": false,
+        "sha2_structure": "dim 4 (HIGHER)",
+        "flag": "high_sha2_dim",
+        "elapsed": 0.18
+      }
+    ]
+  }
+}

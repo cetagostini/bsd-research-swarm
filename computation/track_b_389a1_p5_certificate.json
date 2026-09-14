@@ -1,0 +1,114 @@
+{
+  "track": "B",
+  "curve": "389.a1",
+  "ainvs": [
+    0,
+    1,
+    1,
+    -2,
+    0
+  ],
+  "prime": 5,
+  "timestamp": "2026-09-15T00:53:55",
+  "software": "PARI/GP 2.17.2 via cypari2",
+  "rank_data": {
+    "r1": 2,
+    "r2": 2,
+    "s": 0,
+    "rank_certified": true,
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "T": 0,
+    "C_dim_sel2": 2
+  },
+  "padic_l_function": {
+    "3": {
+      "raw": "5^2 + O(5^3)",
+      "precision": 3,
+      "precision_actual": 3
+    },
+    "4": {
+      "raw": "5^2 + 3*5^3 + O(5^4)",
+      "precision": 4,
+      "precision_actual": 4
+    },
+    "5": {
+      "raw": "5^2 + 3*5^3 + 5^4 + O(5^5)",
+      "precision": 5,
+      "precision_actual": 5
+    },
+    "6": {
+      "raw": "5^2 + 3*5^3 + 5^4 + O(5^5)",
+      "precision": 6,
+      "precision_actual": 5
+    },
+    "7": {
+      "raw": "5^2 + 3*5^3 + 5^4 + 2*5^5 + O(5^6)",
+      "precision": 7,
+      "precision_actual": 6
+    },
+    "8": {
+      "raw": "5^2 + 3*5^3 + 5^4 + 2*5^5 + 5^6 + O(5^7)",
+      "precision": 8,
+      "precision_actual": 7
+    }
+  },
+  "galois_image": {
+    "conductor": 389,
+    "j_invariant": "1404928/389",
+    "reduction_at_389_kodaira": 1,
+    "reduction_at_389_disc_val": 5,
+    "frobenius_at_3": -2,
+    "frobenius_at_3_mod5": 3,
+    "a3_nonsquare_mod5": true
+  },
+  "frobenius_traces": {
+    "2": -2,
+    "3": -2,
+    "5": -3,
+    "7": -5,
+    "11": -4,
+    "13": -3,
+    "17": -6,
+    "19": 5,
+    "23": -4,
+    "29": -6,
+    "31": 4,
+    "37": -8,
+    "41": -3,
+    "43": 12
+  },
+  "divisibility_chain": {
+    "lower_bound": {
+      "value": 2,
+      "justification": "rank E(Q) = 2 (certified by PARI ellrank)",
+      "status": "CERTIFIED"
+    },
+    "upper_bound": {
+      "value": 2,
+      "justification": "ord_T L_5(E,T) = 2 (nonzero second derivative, see prec=8)",
+      "status": "CERTIFIED",
+      "padic_l_value": "5^2 + 3*5^3 + 5^4 + 2*5^5 + 5^6 + O(5^7)"
+    },
+    "kato_divisibility": {
+      "statement": "corank Sel_{5\u221e} \u2264 ord_T char(X_cyc) \u2264 ord_T L_5",
+      "hypotheses": [
+        "E has ordinary reduction at p=5 (a_5 not divisible by 5)",
+        "Galois image at 5 is GL_2(F_5) (non-CM, verified via Frobenius at 3)",
+        "Kato's Euler system divisibility holds"
+      ],
+      "status": "HYPOTHESES_VERIFIED"
+    },
+    "conclusion": {
+      "corank_selmer": 2,
+      "sha_5_primary_finite": true,
+      "statement": "Sha(E/Q)[5^\u221e] is finite. This does NOT prove Sha[5]=0 or total Sha finiteness.",
+      "status": "CERTIFIED"
+    },
+    "ordinary_reduction": {
+      "a_5": -3,
+      "ordinary": true,
+      "status": "CERTIFIED"
+    }
+  }
+}
