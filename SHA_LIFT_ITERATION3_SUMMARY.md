@@ -116,7 +116,7 @@ The lifting program has reached its natural boundary at |Ш|=p²:
 
 3. **Genuine boundary:** The odd-primary part of Sha for rank-2 curves remains open. The p-adic L-function approach (Track B) is the right tool, but each prime/curve pair needs its own certificate.
 
-4. **No testbed for |Ш|≥p⁴:** No rank-2 curve with |Ш|≥9 exists in LMFDB. The p⁴ "all-lift" branch has no empirical exercise ground.
+4. **No testbed for |Ш|≥p⁴:** No rank-2 curve with |Ш|≥9 has been found in LMFDB searches so far. Finding one would exercise the p⁴ "all-lift" branch, but a database search that finds nothing is not a nonexistence theorem. Note also that |Ш|≥9 does not specifically identify 2-primary 4-torsion: an odd-primary component could account for that size.
 
 ---
 
@@ -152,4 +152,4 @@ Per Mr. Genius's stop rules: **park the lifting direction after two rounds.** Th
 - A proved family-level formula for the CT pairing radical (the ε(d) formula Mr. Genius mentioned)
 - A general Sha-finiteness theorem that doesn't require per-prime certificates
 
-None of these are computational — they require new mathematics.
+Finding a new curve, certifying an explicit lift, or computing a minimal-order Kurihara number can be computational progress. The odd-primary and family-level questions additionally require new mathematical input.

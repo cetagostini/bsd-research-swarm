@@ -67,32 +67,65 @@ def analyze_unresolved_twist(pari, ainvs, d, base_label):
         "rank_certified": r1 == r2,
     }
     
-    # Classification
+    # Classification using dim_F2(2Sha[4]) = r2 - R.
+    # From PARI's identities: dim Sel_2 = T + R + s, where R = actual Mordell-Weil rank,
+    # s = dim_F2(Sha[2]/2Sha[4]), T = dim E(Q)[2].
+    # Since dim Sel_2 = T + r2 (upper bound), we get r2 = R + s + dim(2Sha[4]).
+    # So: dim_F2(2Sha[4]) = r2 - R.
+    #
+    # For [0,2,2]: if rank=0, dim(2Sha[4])=2 => possible 4-torsion (Z/4 or Z/2 x Z/2 in 2Sha[4])
+    #              if rank=2, dim(2Sha[4])=0 => no 4-torsion
+    # For [1,3,2]: if rank=1, dim(2Sha[4])=2 => possible 4-torsion
+    #              if rank=3, dim(2Sha[4])=0 => no 4-torsion
+    # For certified rank R: dim(2Sha[4]) = r2 - R exactly.
+    #
+    # Key: [0,2,2] with rank=0 CAN have 4-torsion (dim=2).
+    # But [0,2,2] with rank=2 CANNOT (dim=0).
+    # The s=0 model (Z/4)^2 also has s=0, so s>=1 filters miss the all-lift branch.
+
     if r1 == r2 and r1 >= 2:
-        # Certified rank ≥ 2
+        # Certified rank >= 2
+        dim_2sha4 = r2 - r1  # = 0 for certified
         result["classification"] = "CERTIFIED_RANK"
+        result["dim_2sha4"] = dim_2sha4
         if s >= 3:
             result["flag"] = "HIGH_SHA2"
-            result["note"] = f"s={s} ≥ 3: dim Sha[2] ≥ {s} (certified). Higher Ш[2] dimension found!"
+            result["note"] = f"s={s} >= 3: dim Sha[2] >= {s} (certified). Higher Sha[2] dimension found!"
         elif s == 0:
             result["flag"] = "TRIVIAL_SHA2"
+            result["note"] = f"s=0, rank={r1} certified. Sha[2]=0 or Sha[2^inf]=(Z/4)^2-type."
         else:
             result["flag"] = "STANDARD"
     elif r2 >= 2 and r1 < r2:
-        # Rank not certified but upper bound ≥ 2
-        # This could indicate 4-torsion in Sha (PARI can't certify)
+        # Rank not certified but upper bound >= 2
+        # dim(2Sha[4]) at rank r1 = r2 - r1 (could be > 0 => 4-torsion candidate)
+        # dim(2Sha[4]) at rank r2 = 0 (no 4-torsion)
+        dim_2sha4_at_r1 = r2 - r1
         result["classification"] = "UNRESOLVED"
+        result["dim_2sha4_at_r1"] = dim_2sha4_at_r1
+        result["dim_2sha4_at_r2"] = 0
         if s >= 3:
             result["flag"] = "HIGH_SHA2_UNRESOLVED"
-            result["note"] = f"s={s} ≥ 3 with uncertified rank. Candidate for higher Ш[2]."
-        elif s >= 1 and r2 > r1 + 1:
+            result["note"] = f"s={s} >= 3 with uncertified rank. Candidate for higher Sha[2]."
+        elif dim_2sha4_at_r1 >= 2 and r2 - r1 >= 2:
+            # Large gap: if rank is r1, then dim(2Sha[4]) = r2 - r1 >= 2
+            # This is a genuine 4-torsion candidate (needs independent rank verification)
             result["flag"] = "POSSIBLE_4_TORSION"
-            result["note"] = f"r1={r1}, r2={r2}, s={s}. Large gap may indicate 4-torsion in Sha."
+            result["note"] = (f"r1={r1}, r2={r2}, s={s}. "
+                             f"If rank={r1}: dim(2Sha[4])={dim_2sha4_at_r1} (possible 4-torsion). "
+                             f"If rank={r2}: dim(2Sha[4])=0 (no 4-torsion). "
+                             f"Needs independent rank determination.")
+        elif dim_2sha4_at_r1 == 2:
+            result["flag"] = "POSSIBLE_4_TORSION"
+            result["note"] = (f"r1={r1}, r2={r2}, s={s}. "
+                             f"If rank={r1}: dim(2Sha[4])=2 (possible 4-torsion). "
+                             f"Needs independent rank determination.")
         else:
             result["flag"] = "UNRESOLVED_STANDARD"
     else:
         result["classification"] = "LOW_RANK"
         result["flag"] = "NOT_RANK_2"
+        result["dim_2sha4"] = None
     
     return result
 
@@ -153,13 +186,19 @@ def main():
     print("TRACK D SUMMARY")
     print(f"{'='*60}")
     print(f"Twists analyzed: {len(results)}")
-    print(f"Certified rank ≥ 2: {len(flags['CERTIFIED_RANK'])}")
-    print(f"  Standard (s∈{{0,2}}): {len(flags['STANDARD'])}")
-    print(f"  High Ш[2] (s≥3): {len(flags['HIGH_SHA2'])}")
+    print(f"Certified rank >= 2: {len(flags['CERTIFIED_RANK'])}")
+    print(f"  Standard (s in {{0,2}}): {len(flags['STANDARD'])}")
+    print(f"  High Sha[2] (s>=3): {len(flags['HIGH_SHA2'])}")
+    print(f"  Trivial Sha[2] (s=0): {len(flags.get('TRIVIAL_SHA2', []))}")
     print(f"Unresolved (r1 < r2):")
     print(f"  Standard: {len(flags['UNRESOLVED_STANDARD'])}")
     print(f"  Possible 4-torsion: {len(flags['POSSIBLE_4_TORSION'])}")
-    print(f"  High Ш[2] unresolved: {len(flags['HIGH_SHA2_UNRESOLVED'])}")
+    print(f"  High Sha[2] unresolved: {len(flags['HIGH_SHA2_UNRESOLVED'])}")
+    print()
+    print("4-torsion analysis (dim(2Sha[4]) = r2 - R):")
+    print("  [0,2,2] candidates: 4-torsion possible iff rank=0 (not rank=2)")
+    print("  [1,3,2] candidates: 4-torsion possible iff rank=1 (not rank=3)")
+    print("  All need independent rank determination via 3-descent or other method")
     
     # Identify best candidates for further investigation
     candidates = []
@@ -217,7 +256,10 @@ def main():
         },
         "candidates": candidates,
         "all_results": results,
-        "conclusion": "No candidates found" if not candidates else f"{len(candidates)} candidates identified"
+        "conclusion": ("Candidates need independent rank determination. "
+                       "[0,2,2] pairs: 4-torsion iff rank=0 (dim(2Sha[4])=2). "
+                       "[1,3,2] pairs: 4-torsion iff rank=1 (dim(2Sha[4])=2). "
+                       "Neither provides rank 2 + nonzero first lifting simultaneously.")
     }
     
     out_path = "computation/track_d_lifting_experiment.json"

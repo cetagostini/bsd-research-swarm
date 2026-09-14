@@ -267,7 +267,7 @@ For the BSD program's goal of proving $\text{Ш}[p^\infty] = 0$:
 
 ## 10. Obstructions Found (updated per review)
 
-1. **No rank-2 curve with |Ш| ≥ 9 exists in LMFDB.** The "Direction B" (extension to |Ш| = p⁴) has no empirical testbed at rank 2. Until such a curve is found or constructed, the p⁴ "all-lift" branch cannot be exercised.
+1. **No rank-2 curve with |Ш| ≥ 9 has been found in LMFDB searches so far.** The "Direction B" (extension to |Ш| = p⁴) has no empirical testbed at rank 2. A database search that finds nothing is not a nonexistence theorem. Finding such a curve would be genuine progress. Note that |Ш| ≥ 9 does not specifically identify the 2-primary 4-torsion branch: an odd-primary component could account for that size.
 
 2. **Gap between analytic and algebraic Sha:** For rank-2 curves, LMFDB reports analytic Sha (from BSD formula), not algebraic Sha (which is unproven). The Lifting Dichotomy applies to algebraic Sha; for analytic Sha, it's a prediction conditional on BSD.
 

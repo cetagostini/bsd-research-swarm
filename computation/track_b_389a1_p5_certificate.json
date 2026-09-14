@@ -9,7 +9,7 @@
     0
   ],
   "prime": 5,
-  "timestamp": "2026-09-15T00:53:55",
+  "timestamp": "2026-09-15T01:11:00",
   "software": "PARI/GP 2.17.2 via cypari2",
   "rank_data": {
     "r1": 2,
@@ -56,11 +56,23 @@
   "galois_image": {
     "conductor": 389,
     "j_invariant": "1404928/389",
-    "reduction_at_389_kodaira": 1,
-    "reduction_at_389_disc_val": 5,
+    "cond_exp_at_389": 1,
+    "kodaira_at_389": 5,
+    "tamagawa_at_389": 1,
+    "min_disc_val_at_389": 1,
     "frobenius_at_3": -2,
     "frobenius_at_3_mod5": 3,
-    "a3_nonsquare_mod5": true
+    "char_poly_disc_mod5": 2,
+    "char_poly_disc_nonsquare": true,
+    "image_contains_SL2_F5": true,
+    "image_is_GL2_F5": true,
+    "argument": {
+      "step1": "Frob_3 char poly disc = -2^2 - 12 \u2261 2 (mod 5), nonsquare => residual rep irreducible",
+      "step2": "Mult. reduction at 389, v_389(Delta)=1 => nontrivial inertia transvection mod 5",
+      "step3": "Irreducible + transvection => SL_2(F_5) \u2282 image",
+      "step4": "Cyclotomic det => image = GL_2(F_5)",
+      "step5": "p >= 5 lifting lemma => SL_2(Z_5) containment"
+    }
   },
   "frobenius_traces": {
     "2": -2,
@@ -78,6 +90,16 @@
     "41": -3,
     "43": 12
   },
+  "validation_checks": {
+    "rank_certified": true,
+    "rank_value": 2,
+    "derivative_nonzero": true,
+    "derivative_valuation": 2,
+    "derivative_abs_precision": 7,
+    "ordinary_at_5": true,
+    "galois_image_GL2": true,
+    "all_checks_pass": true
+  },
   "divisibility_chain": {
     "lower_bound": {
       "value": 2,
@@ -86,28 +108,49 @@
     },
     "upper_bound": {
       "value": 2,
-      "justification": "ord_T L_5(E,T) = 2 (nonzero second derivative, see prec=8)",
+      "justification": "ord_T L_5(E,T) <= 2 (nonzero derivative at T=0: valuation 2 < absolute precision 7, see prec=8)",
       "status": "CERTIFIED",
-      "padic_l_value": "5^2 + 3*5^3 + 5^4 + 2*5^5 + 5^6 + O(5^7)"
+      "padic_l_value": "5^2 + 3*5^3 + 5^4 + 2*5^5 + 5^6 + O(5^7)",
+      "note": "Nonzero second derivative gives ord_T <= 2; rank/control/Kato lower bound gives ord_T >= 2."
+    },
+    "mazur_control": {
+      "statement": "ord_T char(X_cyc) <= ord_T L_5(E,T)",
+      "hypotheses": [
+        "E has ordinary reduction at p=5",
+        "p-adic Galois image is large (contains SL_2(Z_5))",
+        "Standard Mazur control theorem applies (torsion-Lambda-module inequality)"
+      ],
+      "status": "HYPOTHESES_MET"
     },
     "kato_divisibility": {
-      "statement": "corank Sel_{5\u221e} \u2264 ord_T char(X_cyc) \u2264 ord_T L_5",
+      "statement": "corank Sel_{5^\\infty} <= ord_T char(X_cyc)",
       "hypotheses": [
-        "E has ordinary reduction at p=5 (a_5 not divisible by 5)",
-        "Galois image at 5 is GL_2(F_5) (non-CM, verified via Frobenius at 3)",
-        "Kato's Euler system divisibility holds"
+        "Kato's Euler system divisibility: the zeta element maps surjectively onto X_cyc",
+        "Requires: ordinary reduction, large Galois image, Kato's theorem [Kim, Thm 1.13]"
       ],
-      "status": "HYPOTHESES_VERIFIED"
-    },
-    "conclusion": {
-      "corank_selmer": 2,
-      "sha_5_primary_finite": true,
-      "statement": "Sha(E/Q)[5^\u221e] is finite. This does NOT prove Sha[5]=0 or total Sha finiteness.",
-      "status": "CERTIFIED"
+      "status": "HYPOTHESES_MET",
+      "source": "Kim, A user's guide to Beilinson-Kato's zeta elements, Theorem 1.13"
     },
     "ordinary_reduction": {
       "a_5": -3,
       "ordinary": true,
+      "status": "CERTIFIED"
+    },
+    "galois_image": {
+      "image": "GL_2(F_5)",
+      "status": "CERTIFIED",
+      "argument_summary": {
+        "step1": "Frob_3 char poly disc = -2^2 - 12 \u2261 2 (mod 5), nonsquare => residual rep irreducible",
+        "step2": "Mult. reduction at 389, v_389(Delta)=1 => nontrivial inertia transvection mod 5",
+        "step3": "Irreducible + transvection => SL_2(F_5) \u2282 image",
+        "step4": "Cyclotomic det => image = GL_2(F_5)",
+        "step5": "p >= 5 lifting lemma => SL_2(Z_5) containment"
+      }
+    },
+    "conclusion": {
+      "corank_selmer": 2,
+      "sha_5_primary_finite": true,
+      "statement": "Sha(E/Q)[5^\\infty] is finite. This does NOT prove Sha[5]=0 or total Sha finiteness.",
       "status": "CERTIFIED"
     }
   }
