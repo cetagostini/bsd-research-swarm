@@ -208,9 +208,10 @@ For the BSD program's goal of proving $\text{Ш}[p^\infty] = 0$:
 - Test whether the 2-part structure is twist-stable (always (ℤ/2)² when BSD predicts |Ш|=4)
 - A provable twist-stability lemma would be the first non-classical output
 
-**E4 (certificate): Per-curve unconditional certificate**
-- For 2-3 pool curves (194040.cu1, 194766.bg1, 226005.b5): combine Ш[2^∞]≅(ℤ/2)² (proved) + Kato odd-p finiteness + small-prime descent checks
-- Result: near-complete unconditional certificate "Ш = (ℤ/2)² × (provably finite odd part)"
+**E4 (reframed, per Phd. Math review): Odd-primary scope for 194040.cu1**
+- For p ∈ {3, 5,7}: compute dim Sel_p by p-descent (`ellpadicbsd` for the conjectural value + independent p-Selmer bound where Kato applies)
+- State honestly, per prime: *unconditionally finite / finite outside exceptional set / open*
+- No "certificate" language. The deliverable is an honest map of which primes are reachable for a concrete rank-2 curve
 
 **Decision rule:** Park after two unproductive rounds. Honest bottom line: at rank 2 with |Ш|=p², lifting is trivially settled by descent; the genuinely open problem is the odd part of Ш / finiteness at odd p, where Kato + small-prime descent is the right tool.
 
@@ -261,13 +262,13 @@ For the BSD program's goal of proving $\text{Ш}[p^\infty] = 0$:
 - [x] **Unconditional 2-descent over 100-curve pool** (Dr. Science's review): 100/100 → rank certified 2, Ш[2]≅(ℤ/2)², no class lifts to Ш[4]
 - [x] PARI rank certification semantics validated against controls
 - [ ] Odd-primary finiteness: requires p-adic L-function certificate under verified hypotheses (see Track B)
-- [ ] Extension to |Ш| = p⁴ (no rank-2 testbed exists in LMFDB)
+- [ ] Extension to |Ш| = p⁴: no **rank-2** curve with |Ш|≥9 has been found in LMFDB. However, the p⁴ all-lift branch IS exercised by controls 210.e1 and 582.d1 (rank 0, s=0, |Ш|_an=16, Ш[2^∞]≅(ℤ/4)²) and potentially by the d=2 twist of 194040.cu1 (|Ш|_an=64, uncertified, see N1).
 
 ---
 
 ## 10. Obstructions Found (updated per review)
 
-1. **No rank-2 curve with |Ш| ≥ 9 has been found in LMFDB searches so far.** The "Direction B" (extension to |Ш| = p⁴) has no empirical testbed at rank 2. A database search that finds nothing is not a nonexistence theorem. Finding such a curve would be genuine progress. Note that |Ш| ≥ 9 does not specifically identify the 2-primary 4-torsion branch: an odd-primary component could account for that size.
+1. **No rank-2 curve with |Ш| ≥ 9 has been found in LMFDB searches so far.** The "Direction B" (extension to |Ш| = p⁴) has no **rank-2** empirical testbed. However, the p⁴ all-lift branch IS exercised at rank 0 by controls 210.e1 and 582.d1 (s=0, |Ш|_an=16, Ш[2^∞]≅(ℤ/4)²). The d=2 twist of 194040.cu1 (|Ш|_an=64, uncertified, see N1) may exercise the mixed p⁶ branch. A database search finding no rank-2 example is not a nonexistence theorem.
 
 2. **Gap between analytic and algebraic Sha:** For rank-2 curves, LMFDB reports analytic Sha (from BSD formula), not algebraic Sha (which is unproven). The Lifting Dichotomy applies to algebraic Sha; for analytic Sha, it's a prediction conditional on BSD.
 
