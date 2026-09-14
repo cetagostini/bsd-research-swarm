@@ -1,73 +1,102 @@
-# BSD Research Agenda — Based on Expert Review
+# BSD Research Agenda — Revised
 
-**Date:** 2026-09-13
-**Source:** DeepSeek v4 Flash review + external critique
+**Date:** 2026-09-14
+**Source:** Expert review (50 directions) + corrections
 
-## The 5 Missing Mathematical Results
+## Corrections to Previous Summary
 
-### 1. Rank Inequality for rank ≥ 2
-**What:** Prove rank E(Q) ≤ ord_{s=1} L(E,s) for r ≥ 2
-**Status:** OPEN. Only r ≤ 1 proven (Gross-Zagier/Kolyvagin)
-**Tools needed:** Higher-derivative Gross-Zagier, diagonal cycles, p-adic methods
-**Key papers:** Bertolini-Darmon, Yuan-Zhang-Zhang, Kings-Loeffler-Zerbes
+### "Every existing Selmer control theorem caps at rank 1" — FALSE
+- Kim's results address Selmer groups of arbitrary rank under stated hypotheses
+- Castella proves κₚ≠0 ⟹ dim Sel = 2 in specified settings (CM and partial non-CM)
+- The productive question: for (389.a1, p=5), which exact hypothesis remains unavailable?
 
-### 2. Ш Finiteness for rank ≥ 2
-**What:** Prove corank Sel_{p^∞}(E/Q) = rank E(Q) for all p
-**Status:** OPEN. All existing machines cap at r ≤ 1
-**Tools needed:** Rank-r Euler systems or substitute
-**Key papers:** Kato, Kolyvagin, Skinner-Urban (all r ≤ 1)
+### "BSD ratio = 1 confirms |Ш| = 1" — FALSE
+- A numerically computed ratio near one supports the BSD-predicted order
+- It does not independently determine the algebraic group
+- Genuine descent gives Ш[2]=0 ⟹ Ш[2^∞]=0
+- Does NOT eliminate odd-primary components
 
-### 3. Rank-r Euler System
-**What:** r norm-compatible independent cohomology classes in H^1
-**Status:** OPEN. No explicit classes known for r ≥ 2
-**Tools needed:** New construction (diagonal cycles, Beilinson-Flach, etc.)
-**Key papers:** Nekovář (Ext^k program — no explicit classes)
+### Correct achievement statement:
+> Certified rank-two arithmetic and vanishing of the 2-primary Sha component;
+> numerical leading-term agreement with BSD.
 
-### 4. Unconditional μ=0 and Full IMC
-**What:** Prove μ=0 and Iwasawa Main Conjecture at ALL primes
-**Status:** Partially known. Skinner-Urban covers good ordinary p ≥ 5 under hypotheses
-**Tools needed:** Supersingular (±-Selmer), additive primes, small primes
-**Key papers:** Skinner-Urban, Kobayashi, Pollack-Weston, Skinner-Wiles
+## Three Bounded Workstreams
 
-### 5. Higher-derivative Gross-Zagier
-**What:** Arithmetic cycle whose regulator computes L^{(r)}(E,1) for r ≥ 2
-**Status:** ACTIVE RESEARCH. Diagonal cycles on E×E×E, anticylotomic p-adic L-functions
-**Key papers:** Bertolini-Darmon-Longo, Yuan-Zhang-Zhang, GKS (Gross-Kudla-Schoen)
+### Primary: Direction 50 — Effective Local-Solubility Precision Bound
 
-## 3 New Approaches (from review)
+**Goal:** Prove a theorem, not reproduce an existing algorithm.
 
-### Approach A: Diagonal Cycles (E×E×E)
-The Gross-Kudla-Schoen diagonal cycle on E×E×E has a height that relates to L'''(E×E×E, s) at s=0. This is the triple product L-function, and its central derivative involves L(E,s) data. For rank 2 curves, this could provide the missing algebraic cycle.
+**Theorem candidate:**
+> For a specified class of normalized 2-coverings C/Q_p, local solubility is
+> equivalent to a specified finite congruence test at an explicitly bounded precision.
 
-### Approach B: Anticylotomic p-adic Methods
-For E over an imaginary quadratic field K, the anticylotomic p-adic L-function has a derivative that computes Heegner point heights. For rank 2, the second derivative might compute a "higher Heegner point" via Bertolini-Darmon's construction.
+**Required dossier:**
+- Objects: which covering curves, local fields, normalized models
+- Bound: explicit precision N with every dependency stated
+- Correctness: why the finite calculation decides the claimed local condition
+- Difficult cases: singular residue classes, bad reduction, wild behavior at 2
+- Novelty: what the closest published result does not already provide
+- Application: a descent calculation or theorem that becomes stronger
 
-### Approach C: Selmer Group Computational Approach
-Instead of proving Ш finite theoretically, compute Sel_{p^∞}(E/Q) explicitly for specific curves using p-descent. If we can show corank = rank for specific rank 2 curves, that's a genuine result.
+**Classification gates (must answer honestly):**
+1. New bound or broader theorem → pursue as mathematical research
+2. Known theorem with better certified implementation → pursue as computational research
+3. Restatement of existing result → retain as infrastructure, not discovery
 
-## 5-Step Research Program
+**Starting point:** Compare with Cremona-Fisher-O'Neil-Simon-Stoll (arXiv:1107.3516).
+State exactly what our bound adds beyond their algorithm.
 
-### Step 1: Fix the computational pipeline
-- Cross-validate against LMFDB including 194040.cu1 (|Ш|=4)
-- Compute Selmer groups for specific rank 2 curves
-- Produce honest numerical evidence
+### Supporting: Direction 49 — Lean Certificate for Real Descent Data
 
-### Step 2: Study diagonal cycles on E×E×E
-- For rank 2 curves, compute the Gross-Kudla-Schoen cycle
-- Relate its height to L'''(E×E×E, 0)
-- Check if this gives rank equality for specific curves
+**Goal:** Verify an arithmetic certificate actually used by the descent.
 
-### Step 3: Develop anticylotomic p-adic methods
-- For E over imaginary quadratic K, study the anticylotomic p-adic L-function
-- Compute its second derivative at s=0
-- Relate to "higher Heegner points"
+**Not:** "337 lines of Lean." The value is a sound implication:
+```
+certificate accepted ⟹ a precisely stated arithmetic conclusion
+```
 
-### Step 4: Prove one honest theorem
-- Target: For a specific rank 2 curve E and prime p, prove Sel_p(E/Q) has dimension 2
-- Method: Explicit 2-descent + Cassels-Tate pairing
-- This would prove Ш[p] = 0 for that specific curve
+**Check:**
+- Does the theorem concern genuine mathematical objects or abstract substitutes?
+- Which arithmetic facts are assumptions?
+- Does the proof depend on sorry or an axiom containing the desired conclusion?
+- Does the checker establish completeness where completeness is needed?
 
-### Step 5: Formalize in Lean 4
-- Formalize the one honest theorem
-- Build around genuine objects (not axioms)
-- Target: one compiling, sorry-free proof of a non-trivial arithmetic statement
+**Target:** A modest checker for a genuine local-solubility certificate is more
+valuable than a broad "BSD formalization" whose arithmetic content is assumed.
+
+### Exploratory: Fixed-Prime Application of Existing Higher-Rank Theory
+
+**Goal:** One theorem-application sheet for (389.a1, p=5).
+
+**Required sheet:**
+- Exact theorem and version (Kim, Castella, or Burns)
+- Every hypothesis listed
+- Evidence for each hypothesis for 389.a1 at p=5
+- Exact conclusion
+- Remaining gap to the next desired statement
+
+**Distinctions (never substitute one for another):**
+- Modular-symbol nonvanishing
+- Finite-level Selmer information
+- p^∞-Selmer structure
+- Mordell-Weil rank
+- Ш finiteness
+- Complex BSD leading term
+
+**For Kim/Kurihara route:** The hypothesis (H3) "analytic rank ≤ 1 or IMC" fails
+for 389.a1 (analytic rank = 2). Identify what would need to be proven to bridge this gap.
+
+**For Castella route:** The generalized Kato class κₚ exists. The question is
+whether κₚ ≠ 0. This is the Darmon-Rotger conjecture (open for non-CM).
+
+## Success Criterion
+
+> One correct, explicitly scoped theorem or certified algorithm, independently
+> checked by an arithmetic specialist, with a documented improvement over prior work.
+
+Neither "we are close to BSD" nor "nothing works beyond rank one" is accurate.
+
+## Frozen Directions
+
+All other directions (1-48, excluding 49-50) are frozen until one of the three
+workstreams produces a result worth extending.
