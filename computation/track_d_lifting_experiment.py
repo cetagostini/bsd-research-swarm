@@ -84,12 +84,17 @@ def analyze_unresolved_twist(pari, ainvs, d, base_label):
     # Note: d = r2 - R does NOT depend on s. It only depends on r2 and R.
     # 2Sha[4] is an F_2-vector space (killed by 2); it cannot contain a Z/4 summand.
     #
-    # PARI says s is "conjecturally even" — the nondegenerate quotient Sha[2]/2Sha[4]
-    # has even dimension (alternating form), but the full Sha[2] need not.
-    # We cannot assume nondegeneracy on all of Sha[2] to force parity on S.
+    # PARI calls S = dim Sha[2] "conjecturally even" (not s). The quotient
+    # dimension s = dim(Sha[2]/2Sha[4]) is unconditionally even (alternating form).
+    # These identities alone do not establish evenness of S. Also S >= s always.
     #
     # The 4-torsion criterion: dim(2Sha[4]) = r2 - R > 0, i.e. R < r2.
     # Nonzero lifting is possible when r2 > R (regardless of s).
+    #
+    # Eligibility filters for rank-2 + nonzero lifting:
+    #   rank exactly 2:   r1 <= 2 < r2
+    #   rank at least 2:  max(r1, 2) < r2
+    # These exclude [0,2,2] from the simultaneous rank>=2/lifting target.
     #
     # Verified: 194040.cu1 (r1=r2=2, s=2, T=1):
     #   C = 1+2+2 = 5, S = 2+2-2 = 2, d = 2-2 = 0. Correct.
@@ -132,6 +137,11 @@ def analyze_unresolved_twist(pari, ainvs, d, base_label):
         # For intermediate R values (if r2 - r1 > 1)
         result["possible_ranks"] = list(range(r1, r2 + 1))
         result["dim_2sha4_table"] = {R: r2 - R for R in range(r1, r2 + 1)}
+        # Eligibility filters for rank-2 + nonzero first lifting:
+        #   rank exactly 2:   r1 <= 2 < r2
+        #   rank at least 2:  max(r1, 2) < r2
+        result["eligible_rank2_lifting"] = (r1 <= 2 and r2 > 2)
+        result["eligible_rank_ge2_lifting"] = (max(r1, 2) < r2)
 
         if s >= 3:
             result["flag"] = "HIGH_SHA2_UNRESOLVED"
@@ -222,11 +232,15 @@ def main():
     print(f"  Standard: {len(flags['UNRESOLVED_STANDARD'])}")
     print(f"  Possible 4-torsion: {len(flags['POSSIBLE_4_TORSION'])}")
     print(f"  High Sha[2] unresolved: {len(flags['HIGH_SHA2_UNRESOLVED'])}")
+    eligible_r2 = sum(1 for r in results if r.get("eligible_rank2_lifting"))
+    eligible_rge2 = sum(1 for r in results if r.get("eligible_rank_ge2_lifting"))
+    print(f"Eligible for rank=2 + nonzero lifting (r1<=2<r2): {eligible_r2}")
+    print(f"Eligible for rank>=2 + nonzero lifting (max(r1,2)<r2): {eligible_rge2}")
     print()
     print("Identity (PARI): C = T + r2 + s, S = r2 + s - R, d = r2 - R")
     print("4-torsion criterion: dim(2Sha[4]) = r2 - R > 0, i.e. R < r2.")
     print("Nonzero lifting is possible for ANY s when r2 > R.")
-    print("All candidates need independent rank determination.")
+    print("Next: independent rank evidence + explicit lifted class/pairing computation.")
     
     # Identify best candidates for further investigation
     candidates = []
