@@ -2,7 +2,8 @@
 
 **Date:** 2026-09-14
 **Author:** Mr. Implementation
-**Status:** Iteration 1 complete — one precise claim tested, one structural obstruction found
+**Reviewed by:** Dr. Science (SHA_LIFT_REVIEW.md)
+**Status:** Iteration 1 complete — claim survives as classical theory; proof corrected per review; unconditional computation added
 
 ---
 
@@ -34,22 +35,24 @@ $$\xi \text{ lifts to } \text{Ш}[p^2] \iff d_p(\xi) = 0 \iff \xi \in p\text{Ш}
 
 *Proof.* $\xi$ lifts to $\text{Ш}[p^2]$ iff there exists $\eta \in \text{Ш}$ with $p\eta = \xi$. By the Kummer sequence, $d_p(\xi) = 0$ iff $\xi$ is in the image of $\delta$ globally, which (since $\xi \in \text{Ш}$ means $\xi$ is locally trivial everywhere) means $\xi$ comes from $E(\mathbb{Q})/pE(\mathbb{Q})$. But $\xi \in \text{Ш}$, so $\xi$ comes from $p\text{Ш}$, i.e., $\xi = p\eta$ for some $\eta \in \text{Ш}$. $\square$
 
-### 2.2 Cassels–Tate Pairing Constraint
+### 2.2 Cassels–Tate Pairing Constraint (corrected per review)
 
 The Cassels–Tate pairing $\text{CT}: \text{Ш} \times \text{Ш} \to \mathbb{Q}/\mathbb{Z}$ is:
 - Bilinear
 - Alternating: $\text{CT}(x, x) = 0$ for all $x$
-- Non-degenerate on $\text{Ш}/p\text{Ш}$ (for each prime $p$)
+- Non-degenerate on $\text{Ш}[n]/(\text{Ш}[n] \cap n\text{Ш})$ for each $n$
+
+**Important correction:** CT non-degeneracy does NOT apply directly to $\text{Ш}[p]$; it applies to the quotient $\text{Ш}[p]/(\text{Ш}[p] \cap p\text{Ш})$. For $\text{Ш} \cong \mathbb{Z}/p^2$, we have $\text{Ш}[p] = \mathbb{Z}/p$ but $\text{Ш}[p]/p\text{Ш}[p] = 0$, so non-degeneracy at level $p$ is vacuous. The real obstruction is at level $p^2$.
 
 **Proposition 2.** For $|\text{Ш}[p^\infty]| = p^2$, the CT pairing forces $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$, NOT $\mathbb{Z}/p^2$.
 
-*Proof.* The CT pairing restricted to $\text{Ш}[p] \times \text{Ш}[p] \to \mathbb{Z}/p\mathbb{Z}$ is alternating and non-degenerate on $\text{Ш}[p]/p\text{Ш}[p]$.
+*Proof (corrected).* A finite abelian group admits a nondegenerate alternating bilinear form if and only if it is *balanced*: isomorphic to $\prod (\mathbb{Z}/n_i)^2$ over equal pairs (Cassels; Wall's classification).
 
-- If $\text{Ш}[p^\infty] \cong \mathbb{Z}/p^2$: then $\text{Ш}[p] \cong \mathbb{Z}/p$ (rank 1 as $\mathbb{F}_p$-vector space). The alternating form on a 1-dimensional space must be zero (since $\text{CT}(x, x) = 0$ for all $x$, and there's only one nonzero element). This contradicts non-degeneracy. ✗
+- If $\text{Ш}[p^\infty] \cong \mathbb{Z}/p^2$: this is *unbalanced* (single cyclic factor), so no nondegenerate alternating form exists. ✗
 
-- If $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$: then $\text{Ш}[p] \cong (\mathbb{Z}/p)^2$ (rank 2). The standard alternating form $\text{CT}(e_1, e_2) = 1/p$, $\text{CT}(e_1, e_1) = \text{CT}(e_2, e_2) = 0$ is non-degenerate. ✓
+- If $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$: this is *balanced* ($(\mathbb{Z}/p)^2$). The standard alternating form $\text{CT}(e_1, e_2) = 1/p$, $\text{CT}(e_1, e_1) = \text{CT}(e_2, e_2) = 0$ is non-degenerate. ✓
 
-Therefore $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$ is the only CT-compatible structure. $\square$
+Therefore $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$ is the only CT-compatible structure. This is classical (Cassels/Wall). $\square$
 
 ### 2.3 The Lifting Dichotomy
 
@@ -77,15 +80,17 @@ Therefore $\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2$ is the only CT-compatible
 - **Prediction:** None of the 3 nontrivial elements lift to $\text{Ш}[4]$
 - The descent map $d_2: \text{Ш}[2] \to \text{Sel}_2$ is injective, contributing 2 independent classes to $\text{Sel}_2$
 
-**Consistency check:** $|\text{Sel}_2| = 2^{r + \dim \text{im}(d_2)} = 2^{2+2} = 16$ (assuming the 2 independent rational points and the 2 Sha classes all contribute independently).
+**Consistency check (corrected):** $|\text{Sel}_2| = 2^{r + T + S} = 2^{2+1+2} = 32$ where $T = \dim E(\mathbb{Q})[2] = 1$ (torsion $\mathbb{Z}/2\mathbb{Z}$) and $S = \dim \text{Ш}[2] = 2$. Previous value of 16 was incorrect. For the 58 torsion-free pool curves: $|\text{Sel}_2| = 2^{2+0+2} = 16$.
 
-### 3.2 Curve 246464.ba1
+### 3.2 Curve 194766.bg1
 
-- **Conductor:** 246464
-- **Rank:** 2
+- **Conductor:** 194766
+- **Rank:** 2 (certified by PARI: [2,2,2])
 - **$|\text{Ш}|$:** 4 = $2^2$
 
 **Same analysis:** $\text{Ш}[2^\infty] \cong (\mathbb{Z}/2)^2$, no nontrivial lifting.
+
+**Note:** Previous iteration incorrectly cited 246464.ba1, which does not exist (conductor 246464 has no rank-2 curves). Corrected per Dr. Science's review.
 
 ### 3.3 Control Cases
 
@@ -108,21 +113,25 @@ The $p$-primary decomposition $\text{Ш}[p^\infty] \cong \bigoplus_{i=1}^r \math
 2. The number of liftable classes in $\text{Ш}[p]$ is $p^k$ where $k = \#\{i : a_i \geq 2\}$
 3. The number of non-liftable classes is $p^r - p^k$
 
-### 4.2 Specific Cases
+### 4.2 Specific Cases (corrected per review)
 
 | $|\text{Ш}[p^\infty]|$ | CT-compatible structures | Liftable classes | Non-liftable |
 |---|---|---|---|
-| $p^2$ | $(\mathbb{Z}/p)^2$ only | 1 (identity only) | 3 (all nontrivial) |
-| $p^4$ | $(\mathbb{Z}/p)^4$ or $(\mathbb{Z}/p^2)^2$ or $\mathbb{Z}/p^3 \oplus \mathbb{Z}/p$ | 1, 16, or 4 resp. | 15, 0, or 12 resp. |
-| $p^6$ | Multiple | Varies | Varies |
+| $p^2$ | $(\mathbb{Z}/p)^2$ only | 1 (identity only) | $p^2 - 1$ (all nontrivial) |
+| $p^4$ | $(\mathbb{Z}/p)^4$ or $(\mathbb{Z}/p^2)^2$ | $(\mathbb{Z}/p)^4$: 1; $(\mathbb{Z}/p^2)^2$: $p^2$ | $(\mathbb{Z}/p)^4$: $p^4 - 1$; $(\mathbb{Z}/p^2)^2$: 0 |
+| $p^6$ | $(\mathbb{Z}/p)^6$, $(\mathbb{Z}/p)^2 \times (\mathbb{Z}/p^2)^2$, $(\mathbb{Z}/p^3)^2$ | Varies by structure | Varies |
 
-### 4.3 The Sharp Dichotomy for $|\text{Ш}| = p^2$
+**Note:** $\mathbb{Z}/p^3 \oplus \mathbb{Z}/p$ is NOT CT-compatible (unbalanced). Previous table row was incorrect. Verified by brute-force enumeration of all groups of order ≤ 64 (Dr. Science's review).
+
+### 4.3 The Sharp Dichotomy for $|\text{Ш}| = p^2$ (a $p^2$ coincidence)
 
 For rank-2 curves with $|\text{Ш}| = p^2$:
 
 $$\boxed{\text{Ш}[p^\infty] \cong (\mathbb{Z}/p)^2 \implies \text{descent map injective} \implies \text{no lifting}}$$
 
-This is the ONLY possibility. The alternative ($\text{Ш}[p^\infty] \cong \mathbb{Z}/p^2$) is forbidden by CT non-degeneracy.
+This is the ONLY possibility. The alternative ($\text{Ш}[p^\infty] \cong \mathbb{Z}/p^2$) is forbidden by CT non-degeneracy (unbalanced).
+
+**Important caveat:** This "all-or-nothing" dichotomy is specific to $|Ш| = p^2$. At $|Ш| = p^4$, both branches exist: $(\mathbb{Z}/p)^4$ (none lift) and $(\mathbb{Z}/p^2)^2$ (all lift). At $|Ш| = p^6$, mixed cases occur. The statement "no intermediate case possible" in the original version was false as a general claim.
 
 ---
 
@@ -177,56 +186,90 @@ For the BSD program's goal of proving $\text{Ш}[p^\infty] = 0$:
 
 ---
 
-## 7. Next Directions (Iteration 2)
+## 7. Next Directions (Iteration 2, per Dr. Science's review)
 
-Based on the Lifting Dichotomy, the most productive next step is:
+**E1 (bounded, priority): Finish the sweep**
+- Run `run_pool_descent.py` over *all* rank-2 |Ш|=4 curves in LMFDB (paginate past 100)
+- Record counts and any deviation from s=2
+- Falsifier: any curve with failed certification or s ≠ 2 → a p=2 BSD anomaly (genuine discovery, stop everything)
+- Decision: once sweep complete with uniform s=2, treat "s=2 uniform" as empirical fact, move to E2
 
-**Direction A: Explicit descent computation for 194040.cu1**
-- Use SageMath to compute the 2-Selmer group explicitly
-- Identify the 3 nontrivial elements of $\text{Ш}[2]$ as explicit homogeneous spaces
-- Verify that none lift to $\text{Ш}[4]$ (confirming the theoretical prediction)
-- This would be the first explicit verification of the Lifting Dichotomy for a specific curve
+**E2 (bounded, discriminating): Hunt for higher Ш[2]**
+- Search mid-conductor ranges for rank-2 curves with dim Ш[2] ≥ 3 (s=3/4) or failed certification at rank 2 (4-torsion signature)
+- Outcome space:
+  - (i) only s=2 ever appears → strong statistical statement, pivot to E3/E4
+  - (ii) s=4 found → first concrete p⁴ "none-lift" instance
+  - (iii) failed certification at rank 2 → first (ℤ/4)²-type candidate (the "all-lift" branch) — pivotal object, seek Magma 4-descent before deep investment
 
-**Direction B: Extension to $|\text{Ш}| = p^4$**
-- For $|\text{Ш}| = 16 = 2^4$: three CT-compatible structures exist
-- $(\mathbb{Z}/2)^4$: no lifting (16 elements, 15 nontrivial, none lift)
-- $(\mathbb{Z}/4)^2$: all lift (16 elements, all lift)
-- $\mathbb{Z}/8 \oplus \mathbb{Z}/2$: partial lifting (4 out of 16 lift)
-- The question: can we predict which structure occurs without computing Ш explicitly?
+**E3 (family-level criterion): Quadratic twist stability**
+- For 194040.cu1 with analytic |Ш|=4: compute dim Ш^{(d)}[2] for quadratic twists E^{(d)} of rank 2
+- Test whether the 2-part structure is twist-stable (always (ℤ/2)² when BSD predicts |Ш|=4)
+- A provable twist-stability lemma would be the first non-classical output
 
-**Direction C: Cassels–Tate pairing as a lifting detector**
-- The CT pairing on $\text{Ш}[p]/p\text{Ш}[p]$ detects liftable classes
-- Can we compute the CT pairing from local data alone (without full descent)?
-- If yes, this gives a "cheap" way to determine Sha structure
+**E4 (certificate): Per-curve unconditional certificate**
+- For 2-3 pool curves (194040.cu1, 194766.bg1, 226005.b5): combine Ш[2^∞]≅(ℤ/2)² (proved) + Kato odd-p finiteness + small-prime descent checks
+- Result: near-complete unconditional certificate "Ш = (ℤ/2)² × (provably finite odd part)"
+
+**Decision rule:** Park after two unproductive rounds. Honest bottom line: at rank 2 with |Ш|=p², lifting is trivially settled by descent; the genuinely open problem is the odd part of Ш / finiteness at odd p, where Kato + small-prime descent is the right tool.
 
 ---
 
-## 8. Files Produced
+## 8. Unconditional Computation (Dr. Science's contribution)
+
+**Method:** PARI `ellrank(E, effort)` via `cypari2` (pip-installable, no SageMath needed).
+
+**Semantics:** output [r₁, r₂, s, pts] with r₁ ≤ rank ≤ r₂; r₁ = r₂ guarantees rank certification and is guaranteed to fail if Ш has 4-torsion. C := dim Sel₂ satisfies C = T + R + S where T = dim E(ℚ)[2], R = rank, S = dim Ш[2].
+
+**Pool:** 100 smallest-conductor rank-2 curves with analytic |Ш|=4 (LMFDB `rank=2&sha=4`, sorted by conductor).
+
+**Result:** **100/100 → [2, 2, 2], rank certified.** T = 1 (42 curves with rational 2-torsion) or T = 0 (58 torsion-free). Hence:
+- S = dim Ш[2] = 2 always
+- 2Ш[4] = 0 (no 4-torsion)
+- Ш[2^∞] ≅ (ℤ/2)², |Ш[2^∞]| = 4, finite
+- No class lifts to Ш[4]
+
+**Controls validated:**
+- 389.a1 (rank 2, |Ш|=1): [2,2,0] certified, Ш[2]=0 ✓
+- 37.a1 (rank 1): [1,1,0] certified ✓
+- 102.c1 (rank 0, |Ш|=4): [0,0,2] certified, Ш[2]≅(ℤ/2)² ✓
+- 210.e1, 582.d1 (rank 0, |Ш|=16): [0,2,0] **not** certified — 4-torsion signature ✓
+
+**Consequence:** for p=2 and each of these 100 rank-2 curves: **Ш[2^∞] is provably finite, |Ш[2^∞]| = 4**. For odd p, Kato's Euler system proves Ш[p^∞] finite outside a small curve-dependent exceptional set.
+
+---
+
+## 9. Files Produced
 
 | File | Description |
 |------|-------------|
 | `computation/sha_lift_research.py` | Main computation script: Sha structure analysis, CT compatibility, lifting predictions |
+| `computation/run_pool_descent.py` | PARI 2-descent pool runner (reusable for E1/E2) |
+| `computation/sha_lift_pool_results.json` | 100-curve pool results + derived dims (C, T, S, |Sel₂|) |
+| `computation/sha_lift_controls_results.json` | 5 control curves, both signatures |
 | `SHA_LIFT_RESEARCH.md` | This document: full research findings |
+| `SHA_LIFT_REVIEW.md` | Dr. Science's independent review |
 
 ---
 
 ## 9. Verification
 
-- [x] Mathematical argument is correct (CT non-degeneracy + alternating → even rank)
-- [x] Test cases consistent (194040.cu1, 246464.ba1 both have $|\text{Ш}| = 4 = 2^2$)
-- [x] Control cases verified (389.a1, 571.a1, 433.a1, 681.a1 all have $|\text{Ш}| = 1$)
-- [ ] Explicit descent computation (requires SageMath)
-- [ ] CT pairing computation (requires SageMath)
-- [ ] Extension to higher Sha orders (future work)
+- [x] Mathematical argument is correct (CT balanced structure → even rank, classical)
+- [x] Test cases consistent (194040.cu1, 194766.bg1 both have $|\text{Ш}| = 4 = 2^2$)
+- [x] Control cases verified (389.a1, 37.a1, 102.c1, 210.e1, 582.d1)
+- [x] **Unconditional 2-descent over 100-curve pool** (Dr. Science's review): 100/100 → rank certified 2, Ш[2]≅(ℤ/2)², no class lifts to Ш[4]
+- [x] PARI rank certification semantics validated against controls
+- [ ] Odd-primary finiteness (Kato Euler system + small exceptional set)
+- [ ] Extension to |Ш| = p⁴ (no rank-2 testbed exists in LMFDB)
 
 ---
 
-## 10. Obstructions Found
+## 10. Obstructions Found (updated per review)
 
-1. **LMFDB API rate limiting:** Could not query for additional rank-2 curves with nontrivial Sha. Used existing data from cycle3_sha_exhaust.json (conductor ≤ 10,000) and known examples (194040.cu1, 246464.ba1).
+1. **No rank-2 curve with |Ш| ≥ 9 exists in LMFDB.** The "Direction B" (extension to |Ш| = p⁴) has no empirical testbed at rank 2. Until such a curve is found or constructed, the p⁴ "all-lift" branch cannot be exercised.
 
-2. **No SageMath/Magma:** Cannot perform explicit 2-descent or compute the CT pairing. The theoretical analysis is complete, but computational verification requires CAS tools.
+2. **Gap between analytic and algebraic Sha:** For rank-2 curves, LMFDB reports analytic Sha (from BSD formula), not algebraic Sha (which is unproven). The Lifting Dichotomy applies to algebraic Sha; for analytic Sha, it's a prediction conditional on BSD.
 
-3. **Small sample size:** Only 2 rank-2 curves with nontrivial Sha were available for testing. The theoretical prediction is robust (follows from CT structure), but more examples would strengthen confidence.
-
-4. **Gap between analytic and algebraic Sha:** For rank-2 curves, LMFDB reports analytic Sha (from BSD formula), not algebraic Sha (which is unproven). The Lifting Dichotomy applies to algebraic Sha; for analytic Sha, it's a prediction conditional on BSD.
+3. **Previous blockers resolved:**
+   - ~~No SageMath/Magma~~ → PARI via `cypari2` completes 2-descent in < 1s/curve
+   - ~~Only 2 curves available~~ → LMFDB has 100+ rank-2 curves with analytic |Ш| = 4
+   - ~~LMFDB rate limiting~~ → Pool script with pagination resolves this
