@@ -1,0 +1,2406 @@
+{
+ "pool": "rank2_sha4",
+ "n": 100,
+ "results": [
+  {
+   "label": "194040.cu1",
+   "conductor": 194040,
+   "ainvs": [
+    0,
+    0,
+    0,
+    -456382227,
+    -3752677112114
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "194766.bg1",
+   "conductor": 194766,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -2077504,
+    -1152726172
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "226005.b5",
+   "conductor": 226005,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -268695,
+    67104702
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 4,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "226920.h1",
+   "conductor": 226920,
+   "ainvs": [
+    0,
+    1,
+    0,
+    -73824640,
+    -244170894880
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "245310.bs1",
+   "conductor": 245310,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -2143488860,
+    -38197932575245
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "256410.m1",
+   "conductor": 256410,
+   "ainvs": [
+    1,
+    -1,
+    0,
+    -3359385,
+    -2369097365
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "256410.q1",
+   "conductor": 256410,
+   "ainvs": [
+    1,
+    -1,
+    0,
+    -455384160,
+    3740487540790
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "297330.bm1",
+   "conductor": 297330,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -13993740,
+    -20149947900
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "305256.n1",
+   "conductor": 305256,
+   "ainvs": [
+    0,
+    1,
+    0,
+    -1628032,
+    -800087200
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "312018.bm3",
+   "conductor": 312018,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -3745349,
+    9047227241
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "341202.w6",
+   "conductor": 341202,
+   "ainvs": [
+    1,
+    0,
+    0,
+    1452466,
+    -511279512
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "348910.q1",
+   "conductor": 348910,
+   "ainvs": [
+    1,
+    -1,
+    1,
+    -4597537,
+    -3791114439
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "356730.cg1",
+   "conductor": 356730,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -346225,
+    -78441235
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "370230.cc1",
+   "conductor": 370230,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -433475,
+    -109884645
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "373230.s1",
+   "conductor": 373230,
+   "ainvs": [
+    1,
+    -1,
+    0,
+    -1289882880,
+    -17830588500144
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "389130.p1",
+   "conductor": 389130,
+   "ainvs": [
+    1,
+    0,
+    1,
+    -1428248,
+    -657100744
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "389298.cf1",
+   "conductor": 389298,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -8305024,
+    9211425080
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "392190.k1",
+   "conductor": 392190,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -9659056,
+    10808195993
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "392190.n1",
+   "conductor": 392190,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -5456,
+    -157387
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "394485.g1",
+   "conductor": 394485,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -78579308086,
+    -8478364648413622
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "395850.e1",
+   "conductor": 395850,
+   "ainvs": [
+    1,
+    1,
+    0,
+    -4724475,
+    -3954397125
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "401709.b1",
+   "conductor": 401709,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -59523632784,
+    -5589644447990010
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "413490.da1",
+   "conductor": 413490,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -1260210,
+    -544623348
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "427025.b1",
+   "conductor": 427025,
+   "ainvs": [
+    1,
+    -1,
+    1,
+    -2285605,
+    -1329366228
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "428298.m1",
+   "conductor": 428298,
+   "ainvs": [
+    1,
+    1,
+    0,
+    -251982140,
+    -1536766349538
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "433590.v1",
+   "conductor": 433590,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -115624000,
+    -478551677068
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "439110.q1",
+   "conductor": 439110,
+   "ainvs": [
+    1,
+    -1,
+    0,
+    -57435,
+    -5283145
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "442680.ba4",
+   "conductor": 442680,
+   "ainvs": [
+    0,
+    1,
+    0,
+    341984,
+    -45496480
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "448800.bh1",
+   "conductor": 448800,
+   "ainvs": [
+    0,
+    -1,
+    0,
+    -149608,
+    -22223288
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "451248.f1",
+   "conductor": 451248,
+   "ainvs": [
+    0,
+    -1,
+    0,
+    -9626624,
+    -11493119232
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "453390.bu1",
+   "conductor": 453390,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -266896,
+    -53182411
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "457470.j1",
+   "conductor": 457470,
+   "ainvs": [
+    1,
+    -1,
+    0,
+    -488085,
+    -131125609
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "463080.b1",
+   "conductor": 463080,
+   "ainvs": [
+    0,
+    -1,
+    0,
+    -2469760,
+    -1493107028
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "465120.g1",
+   "conductor": 465120,
+   "ainvs": [
+    0,
+    0,
+    0,
+    -1395363,
+    -634422998
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "472290.a1",
+   "conductor": 472290,
+   "ainvs": [
+    1,
+    1,
+    0,
+    -189903,
+    -31930773
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "485112.h1",
+   "conductor": 485112,
+   "ainvs": [
+    0,
+    1,
+    0,
+    -2587264,
+    -1602666208
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "485826.t1",
+   "conductor": 485826,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -27842,
+    -1694521
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "488070.bp4",
+   "conductor": 488070,
+   "ainvs": [
+    1,
+    -1,
+    0,
+    -2688354,
+    -6364417860
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "491970.bp1",
+   "conductor": 491970,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -11104090891,
+    -450377916058711
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "494760.co1",
+   "conductor": 494760,
+   "ainvs": [
+    0,
+    1,
+    0,
+    -1697120,
+    -851540592
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "495482.q1",
+   "conductor": 495482,
+   "ainvs": [
+    1,
+    -1,
+    1,
+    -312631,
+    -67196325
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "499290.e2",
+   "conductor": 499290,
+   "ainvs": [
+    1,
+    1,
+    0,
+    -11458,
+    -452978
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "ellapsed": 0.0,
+   "T_dim_E2": 1,
+   "C_dim_Sel2": 5,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 8,
+   "Sel2_order": 32
+  },
+  {
+   "label": "697691.a1",
+   "conductor": 697691,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -7117,
+    233485
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "776869.b1",
+   "conductor": 776869,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -16740,
+    839250
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "776869.c1",
+   "conductor": 776869,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -255,
+    -1485
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "2812189.a1",
+   "conductor": 2812189,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -115,
+    -516
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "3913541.a1",
+   "conductor": 3913541,
+   "ainvs": [
+    0,
+    0,
+    1,
+    -578,
+    -5348
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "4036069.b1",
+   "conductor": 4036069,
+   "ainvs": [
+    0,
+    1,
+    1,
+    -1040,
+    -13262
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "6045749.a1",
+   "conductor": 6045749,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -389,
+    -2825
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "6282277.a1",
+   "conductor": 6282277,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -693,
+    -6795
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "6568717.a1",
+   "conductor": 6568717,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -153,
+    -782
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "7067527.a1",
+   "conductor": 7067527,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -9788,
+    371911
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "7874851.a1",
+   "conductor": 7874851,
+   "ainvs": [
+    1,
+    0,
+    1,
+    47,
+    -45
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "8192159.a1",
+   "conductor": 8192159,
+   "ainvs": [
+    1,
+    0,
+    1,
+    -903743,
+    330610215
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "8300197.b1",
+   "conductor": 8300197,
+   "ainvs": [
+    0,
+    1,
+    1,
+    -2134,
+    -38664
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "8339939.a1",
+   "conductor": 8339939,
+   "ainvs": [
+    1,
+    -1,
+    1,
+    -172,
+    -812
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "9497503.a1",
+   "conductor": 9497503,
+   "ainvs": [
+    1,
+    -1,
+    0,
+    13,
+    144
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "10457833.a1",
+   "conductor": 10457833,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -5578,
+    159885
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "11760403.b1",
+   "conductor": 11760403,
+   "ainvs": [
+    1,
+    1,
+    0,
+    25,
+    -148
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "12895849.c1",
+   "conductor": 12895849,
+   "ainvs": [
+    1,
+    -1,
+    0,
+    -6484,
+    -199349
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "13289317.a1",
+   "conductor": 13289317,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -2945,
+    -60543
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "13843909.a1",
+   "conductor": 13843909,
+   "ainvs": [
+    0,
+    1,
+    1,
+    -1530,
+    -23552
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "15029101.a1",
+   "conductor": 15029101,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -101,
+    -312
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "16069379.a1",
+   "conductor": 16069379,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    63,
+    6
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "16497629.a1",
+   "conductor": 16497629,
+   "ainvs": [
+    0,
+    0,
+    1,
+    -896,
+    10321
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "16776379.a1",
+   "conductor": 16776379,
+   "ainvs": [
+    0,
+    0,
+    1,
+    46,
+    156
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "16827427.a1",
+   "conductor": 16827427,
+   "ainvs": [
+    0,
+    1,
+    1,
+    -4873,
+    129320
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "16954363.a1",
+   "conductor": 16954363,
+   "ainvs": [
+    0,
+    0,
+    1,
+    64,
+    20
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "18242699.a1",
+   "conductor": 18242699,
+   "ainvs": [
+    1,
+    0,
+    1,
+    16,
+    205
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "18854117.a1",
+   "conductor": 18854117,
+   "ainvs": [
+    0,
+    0,
+    1,
+    -746,
+    -7840
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "19306549.a1",
+   "conductor": 19306549,
+   "ainvs": [
+    0,
+    1,
+    1,
+    -2632,
+    -52860
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "19639297.b1",
+   "conductor": 19639297,
+   "ainvs": [
+    1,
+    0,
+    1,
+    65,
+    -57
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "20407753.a1",
+   "conductor": 20407753,
+   "ainvs": [
+    1,
+    -1,
+    0,
+    43,
+    178
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "20538527.a1",
+   "conductor": 20538527,
+   "ainvs": [
+    1,
+    0,
+    1,
+    -21,
+    219
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "20781517.a1",
+   "conductor": 20781517,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -403,
+    -3140
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "20971889.a1",
+   "conductor": 20971889,
+   "ainvs": [
+    1,
+    -1,
+    1,
+    -16642,
+    -822152
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "21084527.a1",
+   "conductor": 21084527,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -682939,
+    217173690
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "21236419.a1",
+   "conductor": 21236419,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -1050,
+    -13532
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "21702949.a1",
+   "conductor": 21702949,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -3327,
+    -72765
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "21880493.a1",
+   "conductor": 21880493,
+   "ainvs": [
+    1,
+    -1,
+    1,
+    -3990,
+    97994
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "22062809.a1",
+   "conductor": 22062809,
+   "ainvs": [
+    1,
+    1,
+    0,
+    61,
+    -110
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "23348233.a1",
+   "conductor": 23348233,
+   "ainvs": [
+    1,
+    -1,
+    1,
+    -2494126,
+    1516715742
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "23604829.a1",
+   "conductor": 23604829,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -10695,
+    429300
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "23911981.a1",
+   "conductor": 23911981,
+   "ainvs": [
+    0,
+    1,
+    1,
+    -1179,
+    -15980
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "24259237.b1",
+   "conductor": 24259237,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -4178,
+    -102564
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "24259237.c1",
+   "conductor": 24259237,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -31639,
+    2176699
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "25262557.a1",
+   "conductor": 25262557,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -216905,
+    38864276
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "25287193.a1",
+   "conductor": 25287193,
+   "ainvs": [
+    1,
+    -1,
+    1,
+    -1005,
+    -12004
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "25393429.a1",
+   "conductor": 25393429,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -467,
+    -3916
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "25470719.a1",
+   "conductor": 25470719,
+   "ainvs": [
+    1,
+    -1,
+    1,
+    -4387,
+    -110732
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "25702913.a1",
+   "conductor": 25702913,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -10939,
+    435810
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "25965757.a1",
+   "conductor": 25965757,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -1513,
+    -22154
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "26159149.a1",
+   "conductor": 26159149,
+   "ainvs": [
+    1,
+    0,
+    1,
+    -657,
+    -6525
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "26555077.b1",
+   "conductor": 26555077,
+   "ainvs": [
+    0,
+    0,
+    1,
+    -105940,
+    -13272052
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "27242717.a1",
+   "conductor": 27242717,
+   "ainvs": [
+    1,
+    1,
+    1,
+    -44803,
+    3631468
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "29523301.a1",
+   "conductor": 29523301,
+   "ainvs": [
+    0,
+    -1,
+    1,
+    -3126,
+    -66240
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "30299837.a1",
+   "conductor": 30299837,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -393,
+    -3020
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "30306949.a1",
+   "conductor": 30306949,
+   "ainvs": [
+    0,
+    1,
+    1,
+    -4480,
+    -116922
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "31143331.a1",
+   "conductor": 31143331,
+   "ainvs": [
+    1,
+    0,
+    0,
+    -2879,
+    -59698
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  },
+  {
+   "label": "32137373.a1",
+   "conductor": 32137373,
+   "ainvs": [
+    0,
+    1,
+    1,
+    -223,
+    -1330
+   ],
+   "ellrank": [
+    2,
+    2,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "ellapsed": 0.0,
+   "T_dim_E2": 0,
+   "C_dim_Sel2": 4,
+   "S_dim_Sha2": 2,
+   "dim_E_over_2E": 4,
+   "Sel2_order": 16
+  }
+ ]
+}

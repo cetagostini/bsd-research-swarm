@@ -1,0 +1,103 @@
+{
+ "pool": "controls",
+ "results": [
+  {
+   "label": "389.a1",
+   "note": "rank2 |\u0428|=1 control",
+   "ainvs": [
+    0,
+    1,
+    1,
+    -2,
+    0
+   ],
+   "ellrank": [
+    2,
+    2,
+    0
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "C_dim_Sel2": 2,
+   "S_dim_Sha2": 0
+  },
+  {
+   "label": "37.a1",
+   "note": "rank1 |\u0428|=1 control",
+   "ainvs": [
+    1,
+    1,
+    1,
+    -2,
+    0
+   ],
+   "ellrank": [
+    1,
+    1,
+    0
+   ],
+   "rank_certified": true,
+   "torsion_order": 1,
+   "C_dim_Sel2": 1,
+   "S_dim_Sha2": 0
+  },
+  {
+   "label": "102.c1",
+   "note": "rank0 |\u0428|_an=4 control",
+   "ainvs": [
+    1,
+    0,
+    0,
+    -27744,
+    -1781010
+   ],
+   "ellrank": [
+    0,
+    0,
+    2
+   ],
+   "rank_certified": true,
+   "torsion_order": 2,
+   "C_dim_Sel2": 3,
+   "S_dim_Sha2": 2
+  },
+  {
+   "label": "210.e1",
+   "note": "rank0 |\u0428|_an=16 (4-torsion expected)",
+   "ainvs": [
+    1,
+    0,
+    0,
+    -1920800,
+    -1024800150
+   ],
+   "ellrank": [
+    0,
+    2,
+    0
+   ],
+   "rank_certified": false,
+   "torsion_order": 2,
+   "C_dim_Sel2": 3
+  },
+  {
+   "label": "582.d1",
+   "note": "rank0 |\u0428|_an=16 (4-torsion expected)",
+   "ainvs": [
+    1,
+    0,
+    0,
+    -3104,
+    -66822
+   ],
+   "ellrank": [
+    0,
+    2,
+    0
+   ],
+   "rank_certified": false,
+   "torsion_order": 2,
+   "C_dim_Sel2": 3
+  }
+ ]
+}
