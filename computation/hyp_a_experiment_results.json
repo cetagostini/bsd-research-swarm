@@ -1,0 +1,69 @@
+{
+  "hypothesis": "A",
+  "statement": "For rank-2 curves, at least one admissible auxiliary construction produces a nonzero class.",
+  "experiment": "Discriminating local factor computation for two auxiliary choices",
+  "curve": {
+    "label": "389.a1",
+    "equation": "y^2 + y = x^3 + x^2 - 2x",
+    "conductor": 389,
+    "rank": 2,
+    "LMFDB_url": "https://www.lmfdb.org/EllipticCurve/Q/389/a/1"
+  },
+  "prime_of_interest": 5,
+  "auxiliary_constructions": {
+    "a1": {
+      "label": "\ud835\udd1e\u2081",
+      "ell": 2,
+      "character": "trivial",
+      "a_ell": -2,
+      "ell_plus_1": 3,
+      "euler_factor_numerator": {
+        "formula": "1 - a_ell / ell",
+        "rational": "4/2",
+        "decimal": "2.0",
+        "exact_decimal": "2.0"
+      },
+      "vanishes_at_s1": false,
+      "vanishing_condition": "a_2 = ell + 1 = 3",
+      "interpretation": "Euler factor is nonzero; construction does not vanish trivially"
+    },
+    "a2": {
+      "label": "\ud835\udd1e\u2082",
+      "ell": 3,
+      "character": "trivial",
+      "a_ell": -2,
+      "ell_plus_1": 4,
+      "euler_factor_numerator": {
+        "formula": "1 - a_ell / ell",
+        "rational": "5/3",
+        "decimal": "1.6666666666666667",
+        "exact_decimal": "1.666666666666666666666666666666666666667"
+      },
+      "vanishes_at_s1": false,
+      "vanishing_condition": "a_3 = ell + 1 = 4",
+      "interpretation": "Euler factor is nonzero; construction does not vanish trivially"
+    }
+  },
+  "local_factor_at_p5": {
+    "a_p": -3,
+    "formula": "1 / (1 - a_p/p)",
+    "rational": "5/8",
+    "decimal": "0.625",
+    "exact_decimal": "0.625",
+    "note": "Same for both auxiliary choices; intrinsic to E and p"
+  },
+  "discriminating_analysis": {
+    "both_nonvanishing": true,
+    "same_local_behavior": true,
+    "discriminating_power": false,
+    "a1_vanishes": false,
+    "a2_vanishes": false
+  },
+  "conclusion": {
+    "local_test_result": "PASSED",
+    "status": "Both auxiliary constructions survive local vanishing test. Core class computation needed for definitive answer.",
+    "honest_assessment": "This is a numerical experiment, not a proof. We have verified that for 389.a1 at p=5, neither the \u2113=2 nor the \u2113=3 auxiliary construction vanishes for trivial local reasons (Euler factors are nonzero at s=1). This is necessary but not sufficient for Hypothesis A. The full question requires computing the visibility map in J_0(389), which is a deeper arithmetic computation. These local factors tell us the auxiliary constructions are 'eligible' \u2014 they don't die from local obstructions \u2014 but whether they produce genuinely nonzero global classes remains an open question."
+  },
+  "computation_time_seconds": 0.0,
+  "note": "Numerical experiment for Hypothesis A. Not a proof."
+}
