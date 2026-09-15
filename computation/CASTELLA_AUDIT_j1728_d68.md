@@ -13,6 +13,10 @@
 
 **NOT** the d=2 quadratic twist of 194040.cu1 (N1). N1 has ainvs [0,0,0,-1825528908,-30021416896912], conductor 1,552,320, and numerical BSD quotient 64.
 
+**Isogeny fact (2026-09-15, verified):** y²=x³+68x is **2-isogenous to y²=x³−17x (LMFDB 9248g1), which is curve E₂ (D=17) in Coates–Liang–Sujatha** (arXiv:1005.4206, Thm 1.3). They prove Ш(E₂/ℚ)[p^∞]=0 at every good split prime p ≡ 1 (mod 4), p < 30,000, unconditionally (Rubin's main conjecture for ℚ(i)); the only exceptions are (E₁,29), (E₁,277), (E₄,577), (E₅,17) — (E₂, 5) is not among them. **Hence Ш[5^∞] = 0 for the d68 isogeny class is already a theorem of CLS 2010; p=5 is not an open case.** Banwait (arXiv:2609.08431, Sep 2026) settles the four CLS-inconclusive pairs with a cyclotomic unit-condition criterion + Lean 4 formalisation.
+
+**Consequence:** the Castella Theorem B route for E:y²=x³+68x at p=5 would reprove an already-proven statement, not produce new finiteness. The curve is not a genuine target for the program unless the goal is (a) an independent proof/control of the CLS machinery at an anomalous prime, or (b) an explicit construction of κ₅ (which is not in the literature for any CM curve — that construction is still new even though the finiteness conclusion is already known). The p=5 case has a₅=−4 ⟹ #Ẽ(𝔽₅)=10 ≡ 0 (mod 5), i.e. p=5 is anomalous for this curve, so it sits outside the unit-condition/regulator-unit workflow; that is the only reason it was a "candidate" — it is a genuinely harder case of an already-settled question.
+
 ## p=5 Properties
 
 - **Reduction**: Good (v₅(Δ) = 0)
@@ -20,6 +24,7 @@
 - **Frobenius trace**: a₅ = -4
 - **Ordinary**: Yes (a₅ ≡ 1 mod 5 ≠ 0)
 - **Root number**: w₅ = 1
+- **ANOMALOUS**: a₅ = −4 ⟹ #Ẽ(𝔽₅) = 10 ≡ 0 (mod 5). Excluded from the CLS criterion and Banwait's Theorem A unit-condition test; this is the reason p=5 was never ruled out by the routine criterion — but CLS Theorem 1.3's exception list does not contain (E₂, 5), so Ш[5^∞]=0 is already proven for the class.
 
 ## Castella Theorem B Hypotheses (arXiv:2204.09608v3)
 
