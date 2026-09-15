@@ -1,0 +1,5026 @@
+[
+  {
+    "label": "j0_d-11",
+    "cm_type": "j=0",
+    "d": -11,
+    "conductor": 13068,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -11
+    ],
+    "L_leading": 11.846549567646328,
+    "omega": 1.6285443875221912,
+    "regulator": 3.637158943414093,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 11,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d15",
+    "cm_type": "j=0",
+    "d": 15,
+    "conductor": 97200,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      15
+    ],
+    "L_leading": 20.157229780243842,
+    "omega": 2.678616040487274,
+    "regulator": 3.762620225438692,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 5,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999996,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d17",
+    "cm_type": "j=0",
+    "d": 17,
+    "conductor": 10404,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      17
+    ],
+    "L_leading": 11.03538108846787,
+    "omega": 15.739904942504483,
+    "regulator": 0.35055424822381287,
+    "tamagawa_product": 6,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 17,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.33333333333333337,
+    "raw_ratio_frac": "1/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-26",
+    "cm_type": "j=0",
+    "d": -26,
+    "conductor": 97344,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -26
+    ],
+    "L_leading": 22.614059704684646,
+    "omega": 2.8220594083714134,
+    "regulator": 4.0066590443847225,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 13,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d37",
+    "cm_type": "j=0",
+    "d": 37,
+    "conductor": 49284,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      37
+    ],
+    "L_leading": 18.553843507727006,
+    "omega": 4.608809067997596,
+    "regulator": 2.012867449484966,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 37,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.9999999999999998,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-39",
+    "cm_type": "j=0",
+    "d": -39,
+    "conductor": 164268,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -39
+    ],
+    "L_leading": 21.640311234617798,
+    "omega": 3.9564790270448627,
+    "regulator": 2.73479412966599,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 13,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666669,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d43",
+    "cm_type": "j=0",
+    "d": 43,
+    "conductor": 798768,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      43
+    ],
+    "L_leading": 25.039276305860138,
+    "omega": 2.247402876855364,
+    "regulator": 5.57071377004195,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 43,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-47",
+    "cm_type": "j=0",
+    "d": -47,
+    "conductor": 238572,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -47
+    ],
+    "L_leading": 28.260731960723565,
+    "omega": 3.8353351978072507,
+    "regulator": 3.6842584159111933,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 47,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666666,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-53",
+    "cm_type": "j=0",
+    "d": -53,
+    "conductor": 404496,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -53
+    ],
+    "L_leading": 27.28435556566766,
+    "omega": 2.5062000352693805,
+    "regulator": 5.4433714750815945,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 53,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.9999999999999999,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d57",
+    "cm_type": "j=0",
+    "d": 57,
+    "conductor": 350892,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      57
+    ],
+    "L_leading": 26.245032568116798,
+    "omega": 6.4328158695136,
+    "regulator": 2.0399334521991572,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 19,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666665,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-61",
+    "cm_type": "j=0",
+    "d": -61,
+    "conductor": 1607472,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -61
+    ],
+    "L_leading": 35.61592528926753,
+    "omega": 1.2240807696123894,
+    "regulator": 14.548029089839174,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 61,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d65",
+    "cm_type": "j=0",
+    "d": 65,
+    "conductor": 456300,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      65
+    ],
+    "L_leading": 31.591916686294635,
+    "omega": 6.293535752158301,
+    "regulator": 2.509870280427065,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 5,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 13,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666667,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-67",
+    "cm_type": "j=0",
+    "d": -67,
+    "conductor": 484812,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -67
+    ],
+    "L_leading": 25.279484813748056,
+    "omega": 1.2050893468477237,
+    "regulator": 10.488635087462274,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 67,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999998,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d73",
+    "cm_type": "j=0",
+    "d": 73,
+    "conductor": 191844,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      73
+    ],
+    "L_leading": 21.89036774626296,
+    "omega": 12.345910248029542,
+    "regulator": 0.8865432886877155,
+    "tamagawa_product": 6,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 73,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.33333333333333337,
+    "raw_ratio_frac": "1/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d79",
+    "cm_type": "j=0",
+    "d": 79,
+    "conductor": 2696112,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      79
+    ],
+    "L_leading": 48.57806046564488,
+    "omega": 2.030740794281689,
+    "regulator": 11.960674794743522,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 79,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-83",
+    "cm_type": "j=0",
+    "d": -83,
+    "conductor": 744012,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -83
+    ],
+    "L_leading": 27.84965495485303,
+    "omega": 1.1628366169763844,
+    "regulator": 11.97487873544432,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 83,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999998,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d89",
+    "cm_type": "j=0",
+    "d": 89,
+    "conductor": 285156,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      89
+    ],
+    "L_leading": 30.829159779843643,
+    "omega": 11.944791983812493,
+    "regulator": 1.290485419152679,
+    "tamagawa_product": 6,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 89,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.33333333333333326,
+    "raw_ratio_frac": "1/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-89",
+    "cm_type": "j=0",
+    "d": -89,
+    "conductor": 1140624,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -89
+    ],
+    "L_leading": 34.806636408896466,
+    "omega": 2.298776289089409,
+    "regulator": 7.570688060012152,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 89,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d101",
+    "cm_type": "j=0",
+    "d": 101,
+    "conductor": 1101708,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      101
+    ],
+    "L_leading": 32.67413723394284,
+    "omega": 1.9492705111045145,
+    "regulator": 8.381119256615824,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 101,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d106",
+    "cm_type": "j=0",
+    "d": 106,
+    "conductor": 4853952,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      106
+    ],
+    "L_leading": 42.718236471629766,
+    "omega": 1.9336358862001584,
+    "regulator": 11.046091142727125,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 53,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-106",
+    "cm_type": "j=0",
+    "d": -106,
+    "conductor": 4853952,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -106
+    ],
+    "L_leading": 55.50385223275086,
+    "omega": 1.1163851994123821,
+    "regulator": 24.858737047913987,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 53,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-109",
+    "cm_type": "j=0",
+    "d": -109,
+    "conductor": 1710864,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -109
+    ],
+    "L_leading": 28.804836865957643,
+    "omega": 2.2224088630032175,
+    "regulator": 6.480544004633035,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 109,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-118",
+    "cm_type": "j=0",
+    "d": -118,
+    "conductor": 2005056,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -118
+    ],
+    "L_leading": 37.31031622236803,
+    "omega": 2.1932158483877804,
+    "regulator": 8.505846848087165,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 59,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.9999999999999998,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d122",
+    "cm_type": "j=0",
+    "d": 122,
+    "conductor": 6429888,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      122
+    ],
+    "L_leading": 30.934855526037875,
+    "omega": 1.8888568114441147,
+    "regulator": 8.188777290743074,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 61,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999998,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d129",
+    "cm_type": "j=0",
+    "d": 129,
+    "conductor": 1797228,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      129
+    ],
+    "L_leading": 35.16242607353133,
+    "omega": 5.614123706916814,
+    "regulator": 3.1316041388801144,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 43,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666666,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d131",
+    "cm_type": "j=0",
+    "d": 131,
+    "conductor": 7413552,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      131
+    ],
+    "L_leading": 58.58863623783623,
+    "omega": 1.8665822247732575,
+    "regulator": 15.694094656064042,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 131,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-139",
+    "cm_type": "j=0",
+    "d": -139,
+    "conductor": 2086668,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -139
+    ],
+    "L_leading": 31.819147861253267,
+    "omega": 1.0670773813035512,
+    "regulator": 14.909484737827876,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 139,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d142",
+    "cm_type": "j=0",
+    "d": 142,
+    "conductor": 8710848,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      142
+    ],
+    "L_leading": 57.429604955054494,
+    "omega": 1.8416663416471124,
+    "regulator": 15.59175070324947,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 71,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d145",
+    "cm_type": "j=0",
+    "d": 145,
+    "conductor": 756900,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      145
+    ],
+    "L_leading": 36.61606933151468,
+    "omega": 11.011561915370297,
+    "regulator": 1.6626192366227708,
+    "tamagawa_product": 6,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 5,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 29,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.3333333333333333,
+    "raw_ratio_frac": "1/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d151",
+    "cm_type": "j=0",
+    "d": 151,
+    "conductor": 9850032,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      151
+    ],
+    "L_leading": 72.90114380202628,
+    "omega": 1.8229000233856245,
+    "regulator": 19.995924863347387,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 151,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-155",
+    "cm_type": "j=0",
+    "d": -155,
+    "conductor": 2594700,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -155
+    ],
+    "L_leading": 58.60448379978079,
+    "omega": 1.0478756888643952,
+    "regulator": 27.963471441584684,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 5,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 31,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d161",
+    "cm_type": "j=0",
+    "d": 161,
+    "conductor": 933156,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      161
+    ],
+    "L_leading": 37.55439897988445,
+    "omega": 10.82112995733823,
+    "regulator": 1.7352346348274543,
+    "tamagawa_product": 6,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 7,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 23,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.3333333333333333,
+    "raw_ratio_frac": "1/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-170",
+    "cm_type": "j=0",
+    "d": -170,
+    "conductor": 4161600,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -170
+    ],
+    "L_leading": 60.097823096537944,
+    "omega": 2.0637332265685817,
+    "regulator": 14.56046312644392,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 5,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 17,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d186",
+    "cm_type": "j=0",
+    "d": 186,
+    "conductor": 14945472,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      186
+    ],
+    "L_leading": 73.69879059063086,
+    "omega": 1.7606519728419259,
+    "regulator": 20.929403348144735,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 31,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999996,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-186",
+    "cm_type": "j=0",
+    "d": -186,
+    "conductor": 14945472,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -186
+    ],
+    "L_leading": 37.19787730595906,
+    "omega": 1.0165128904695315,
+    "regulator": 18.29680550768874,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 31,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-191",
+    "cm_type": "j=0",
+    "d": -191,
+    "conductor": 3939948,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -191
+    ],
+    "L_leading": 45.42354541785088,
+    "omega": 3.036086037353184,
+    "regulator": 7.480609057023046,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 191,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666666,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d195",
+    "cm_type": "j=0",
+    "d": 195,
+    "conductor": 16426800,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      195
+    ],
+    "L_leading": 74.23836571175983,
+    "omega": 1.7468404495987762,
+    "regulator": 21.249326384905757,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 5,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 13,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d197",
+    "cm_type": "j=0",
+    "d": 197,
+    "conductor": 1397124,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      197
+    ],
+    "L_leading": 35.33355179302167,
+    "omega": 3.4877442630938984,
+    "regulator": 5.065387414855653,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 197,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.9999999999999998,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-211",
+    "cm_type": "j=0",
+    "d": -211,
+    "conductor": 4808268,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -211
+    ],
+    "L_leading": 65.83058168589143,
+    "omega": 0.995370209284087,
+    "regulator": 33.06839057059967,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 211,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999996,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-214",
+    "cm_type": "j=0",
+    "d": -214,
+    "conductor": 19783872,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -214
+    ],
+    "L_leading": 63.6910882277118,
+    "omega": 0.9930308761143029,
+    "regulator": 32.06903720704684,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 107,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d217",
+    "cm_type": "j=0",
+    "d": 217,
+    "conductor": 1695204,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      217
+    ],
+    "L_leading": 35.94595302845355,
+    "omega": 10.295962919354114,
+    "regulator": 1.745633376402472,
+    "tamagawa_product": 6,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 7,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 31,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.3333333333333333,
+    "raw_ratio_frac": "1/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-219",
+    "cm_type": "j=0",
+    "d": -219,
+    "conductor": 5179788,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -219
+    ],
+    "L_leading": 50.38542100604804,
+    "omega": 0.9892157639041355,
+    "regulator": 25.467356488129557,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 73,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d222",
+    "cm_type": "j=0",
+    "d": 222,
+    "conductor": 21290688,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      222
+    ],
+    "L_leading": 75.70175114787729,
+    "omega": 1.7094911073957584,
+    "regulator": 22.14160425297604,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 37,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-222",
+    "cm_type": "j=0",
+    "d": -222,
+    "conductor": 21290688,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -222
+    ],
+    "L_leading": 65.07441552736631,
+    "omega": 0.9869751510322126,
+    "regulator": 32.96659265398387,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 37,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d223",
+    "cm_type": "j=0",
+    "d": 223,
+    "conductor": 21482928,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      223
+    ],
+    "L_leading": 77.21542685527498,
+    "omega": 1.7082110670333532,
+    "regulator": 22.601254711859134,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 223,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d229",
+    "cm_type": "j=0",
+    "d": 229,
+    "conductor": 5663628,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      229
+    ],
+    "L_leading": 57.2396916620299,
+    "omega": 1.7006688665554996,
+    "regulator": 16.828582208940535,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 229,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d233",
+    "cm_type": "j=0",
+    "d": 233,
+    "conductor": 1954404,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      233
+    ],
+    "L_leading": 41.53998774285194,
+    "omega": 10.174606107867042,
+    "regulator": 2.041356063441762,
+    "tamagawa_product": 6,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 233,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.33333333333333326,
+    "raw_ratio_frac": "1/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-233",
+    "cm_type": "j=0",
+    "d": -233,
+    "conductor": 7817616,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -233
+    ],
+    "L_leading": 67.6877638166775,
+    "omega": 1.9581038584251491,
+    "regulator": 17.284007568198398,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 233,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.9999999999999998,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-249",
+    "cm_type": "j=0",
+    "d": -249,
+    "conductor": 26784432,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -249
+    ],
+    "L_leading": 30.384345814661344,
+    "omega": 0.9682744893181886,
+    "regulator": 15.689944406186159,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 83,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999998,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-262",
+    "cm_type": "j=0",
+    "d": -262,
+    "conductor": 9884736,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -262
+    ],
+    "L_leading": 70.17909062405708,
+    "omega": 1.9201927611905911,
+    "regulator": 18.27397020821582,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 131,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d265",
+    "cm_type": "j=0",
+    "d": 265,
+    "conductor": 7584300,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      265
+    ],
+    "L_leading": 66.50881660420049,
+    "omega": 4.979349580551071,
+    "regulator": 6.6784642781437205,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 5,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 53,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666666,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d269",
+    "cm_type": "j=0",
+    "d": 269,
+    "conductor": 2604996,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      269
+    ],
+    "L_leading": 33.74682850040707,
+    "omega": 3.3112880162717273,
+    "regulator": 5.095725339290113,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 269,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-277",
+    "cm_type": "j=0",
+    "d": -277,
+    "conductor": 33146928,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -277
+    ],
+    "L_leading": 30.348144062445254,
+    "omega": 0.9512290089620181,
+    "regulator": 15.95207030931551,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 277,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d281",
+    "cm_type": "j=0",
+    "d": 281,
+    "conductor": 8527788,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      281
+    ],
+    "L_leading": 39.69685513893503,
+    "omega": 4.930934229405555,
+    "regulator": 4.025287429530433,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 281,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666667,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-286",
+    "cm_type": "j=0",
+    "d": -286,
+    "conductor": 35335872,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -286
+    ],
+    "L_leading": 30.96823002255309,
+    "omega": 0.9461733441890642,
+    "regulator": 16.364987564247542,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 11,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 13,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-291",
+    "cm_type": "j=0",
+    "d": -291,
+    "conductor": 9145548,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -291
+    ],
+    "L_leading": 45.40050003753182,
+    "omega": 0.9434441940961967,
+    "regulator": 24.061041618378244,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 97,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-293",
+    "cm_type": "j=0",
+    "d": -293,
+    "conductor": 37086768,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -293
+    ],
+    "L_leading": 66.9380981999661,
+    "omega": 0.9423678132884985,
+    "regulator": 35.51590857415752,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 293,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999996,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d295",
+    "cm_type": "j=0",
+    "d": 295,
+    "conductor": 37594800,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      295
+    ],
+    "L_leading": 43.67775982926567,
+    "omega": 1.6303793739048578,
+    "regulator": 13.39496822897568,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 5,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 59,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-298",
+    "cm_type": "j=0",
+    "d": -298,
+    "conductor": 12787776,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -298
+    ],
+    "L_leading": 40.85570255684641,
+    "omega": 1.8794278842936762,
+    "regulator": 10.86918601620108,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 149,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.9999999999999998,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-299",
+    "cm_type": "j=0",
+    "d": -299,
+    "conductor": 9655308,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -299
+    ],
+    "L_leading": 52.89343164193291,
+    "omega": 0.9391894013729788,
+    "regulator": 28.159086742572505,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 13,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 23,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d303",
+    "cm_type": "j=0",
+    "d": 303,
+    "conductor": 39661488,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      303
+    ],
+    "L_leading": 34.91205918037122,
+    "omega": 1.6231247632968713,
+    "regulator": 10.754582755997845,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 101,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999996,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d322",
+    "cm_type": "j=0",
+    "d": 322,
+    "conductor": 44791488,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      322
+    ],
+    "L_leading": 72.28281424430638,
+    "omega": 1.6067551346371087,
+    "regulator": 22.493413179797212,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 7,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 23,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-327",
+    "cm_type": "j=0",
+    "d": -327,
+    "conductor": 11548332,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -327
+    ],
+    "L_leading": 57.87082416266273,
+    "omega": 2.7758437111432466,
+    "regulator": 10.424006209418094,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 109,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666665,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-329",
+    "cm_type": "j=0",
+    "d": -329,
+    "conductor": 46760112,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -329
+    ],
+    "L_leading": 50.028988506657285,
+    "omega": 0.9243413853231559,
+    "regulator": 27.06196503858086,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 7,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 47,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d331",
+    "cm_type": "j=0",
+    "d": 331,
+    "conductor": 47330352,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      331
+    ],
+    "L_leading": 80.56317630729467,
+    "omega": 1.5993898764317322,
+    "regulator": 25.18559654980204,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 331,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999993,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-334",
+    "cm_type": "j=0",
+    "d": -334,
+    "conductor": 16064064,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -334
+    ],
+    "L_leading": 44.99715276464497,
+    "omega": 1.8440412521860106,
+    "regulator": 12.200690388922508,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 167,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d337",
+    "cm_type": "j=0",
+    "d": 337,
+    "conductor": 12265452,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      337
+    ],
+    "L_leading": 55.482568626339926,
+    "omega": 4.7838249509771815,
+    "regulator": 5.798975630892035,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 337,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666667,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d347",
+    "cm_type": "j=0",
+    "d": 347,
+    "conductor": 52016688,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      347
+    ],
+    "L_leading": 73.40389961150233,
+    "omega": 1.5868556747097262,
+    "regulator": 23.128725813369776,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 347,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d353",
+    "cm_type": "j=0",
+    "d": 353,
+    "conductor": 13457772,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      353
+    ],
+    "L_leading": 36.165461755186655,
+    "omega": 4.746984484288484,
+    "regulator": 3.8093090334386694,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 353,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666666,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-355",
+    "cm_type": "j=0",
+    "d": -355,
+    "conductor": 13610700,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -355
+    ],
+    "L_leading": 41.33889070055202,
+    "omega": 0.9126977688169553,
+    "regulator": 22.646538708063108,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 5,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 71,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999996,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d366",
+    "cm_type": "j=0",
+    "d": 366,
+    "conductor": 57868992,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      366
+    ],
+    "L_leading": 51.24471878462406,
+    "omega": 1.572819291889718,
+    "regulator": 16.29072044349555,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 61,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-366",
+    "cm_type": "j=0",
+    "d": -366,
+    "conductor": 57868992,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -366
+    ],
+    "L_leading": 79.22944873308107,
+    "omega": 0.9080676415591653,
+    "regulator": 43.625301192895144,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 61,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-370",
+    "cm_type": "j=0",
+    "d": -370,
+    "conductor": 19713600,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -370
+    ],
+    "L_leading": 59.32996213751829,
+    "omega": 1.8128481289971121,
+    "regulator": 16.363743103604683,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 5,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 37,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.9999999999999999,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-371",
+    "cm_type": "j=0",
+    "d": -371,
+    "conductor": 14865228,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -371
+    ],
+    "L_leading": 71.21378699626896,
+    "omega": 0.9060164078314272,
+    "regulator": 39.300495212178845,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 7,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 53,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d373",
+    "cm_type": "j=0",
+    "d": 373,
+    "conductor": 15025932,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      373
+    ],
+    "L_leading": 41.21480722230077,
+    "omega": 1.567860924545891,
+    "regulator": 13.143642582405088,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 373,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d377",
+    "cm_type": "j=0",
+    "d": 377,
+    "conductor": 5116644,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      377
+    ],
+    "L_leading": 62.901418155942515,
+    "omega": 9.390456395964561,
+    "regulator": 3.349220501304583,
+    "tamagawa_product": 6,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 13,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 29,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.33333333333333337,
+    "raw_ratio_frac": "1/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d381",
+    "cm_type": "j=0",
+    "d": 381,
+    "conductor": 15677388,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      381
+    ],
+    "L_leading": 36.822247604236324,
+    "omega": 1.562325468141842,
+    "regulator": 11.784435559394362,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 127,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999996,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d389",
+    "cm_type": "j=0",
+    "d": 389,
+    "conductor": 16342668,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      389
+    ],
+    "L_leading": 86.41671849336358,
+    "omega": 1.556923981434242,
+    "regulator": 27.752388531441433,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 389,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-391",
+    "cm_type": "j=0",
+    "d": -391,
+    "conductor": 16511148,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -391
+    ],
+    "L_leading": 39.615166875657984,
+    "omega": 2.6943675716325393,
+    "regulator": 7.351477818532166,
+    "tamagawa_product": 3,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 4,
+        "tamagawa": 3
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 17,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 23,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.6666666666666667,
+    "raw_ratio_frac": "2/3",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-393",
+    "cm_type": "j=0",
+    "d": -393,
+    "conductor": 66721968,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -393
+    ],
+    "L_leading": 116.9859417701112,
+    "omega": 0.8973591372075591,
+    "regulator": 65.18345716863881,
+    "tamagawa_product": 1,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 131,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 1.9999999999999998,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j0_d-397",
+    "cm_type": "j=0",
+    "d": -397,
+    "conductor": 22695696,
+    "ainvs": [
+      0,
+      0,
+      0,
+      0,
+      -397
+    ],
+    "L_leading": 77.7371872815804,
+    "omega": 1.7916917429259887,
+    "regulator": 21.69379514877621,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 397,
+        "kodaira": 2,
+        "tamagawa": 1
+      }
+    ],
+    "torsion_order": 1,
+    "torsion_structure": [],
+    "raw_ratio": 0.9999999999999998,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j1728_d-184",
+    "cm_type": "j=1728",
+    "d": -184,
+    "conductor": 135424,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -184,
+      0
+    ],
+    "L_leading": 26.45770054944797,
+    "omega": 1.4238615423820746,
+    "regulator": 9.290826306462735,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": -3,
+        "tamagawa": 2
+      },
+      {
+        "p": 23,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d-161",
+    "cm_type": "j=1728",
+    "d": -161,
+    "conductor": 829472,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -161,
+      0
+    ],
+    "L_leading": 25.28849558497934,
+    "omega": 2.9443927694543306,
+    "regulator": 4.29434820098168,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 7,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 23,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d-156",
+    "cm_type": "j=1728",
+    "d": -156,
+    "conductor": 48672,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -156,
+      0
+    ],
+    "L_leading": 17.318608802435875,
+    "omega": 2.9677072795092445,
+    "regulator": 2.9178431649936463,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": -7,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 13,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d-155",
+    "cm_type": "j=1728",
+    "d": -155,
+    "conductor": 1537600,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -155,
+      0
+    ],
+    "L_leading": 35.414862793689935,
+    "omega": 1.4862411835002154,
+    "regulator": 11.914238142118071,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 5,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 31,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.9999999999999996,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j1728_d-145",
+    "cm_type": "j=1728",
+    "d": -145,
+    "conductor": 672800,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -145,
+      0
+    ],
+    "L_leading": 31.6233064575336,
+    "omega": 3.0224575572633063,
+    "regulator": 5.231389665264154,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 5,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 29,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j1728_d-141",
+    "cm_type": "j=1728",
+    "d": -141,
+    "conductor": 636192,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -141,
+      0
+    ],
+    "L_leading": 30.822401409653292,
+    "omega": 3.0436690869633365,
+    "regulator": 5.063362758729587,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 47,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0000000000000002,
+    "raw_ratio_frac": "1/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d-136",
+    "cm_type": "j=1728",
+    "d": -136,
+    "conductor": 73984,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -136,
+      0
+    ],
+    "L_leading": 17.814155682248156,
+    "omega": 1.5356331856158463,
+    "regulator": 5.800263972253249,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": -3,
+        "tamagawa": 2
+      },
+      {
+        "p": 17,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d-132",
+    "cm_type": "j=1728",
+    "d": -132,
+    "conductor": 69696,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -132,
+      0
+    ],
+    "L_leading": 16.46784273844743,
+    "omega": 6.188547439161066,
+    "regulator": 1.3305095339690771,
+    "tamagawa_product": 16,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": -6,
+        "tamagawa": 4
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 11,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 0.4999999999999999,
+    "raw_ratio_frac": "1/2",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d-117",
+    "cm_type": "j=1728",
+    "d": -117,
+    "conductor": 48672,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -117,
+      0
+    ],
+    "L_leading": 15.491519955771844,
+    "omega": 6.378018018028956,
+    "regulator": 1.2144462364312432,
+    "tamagawa_product": 16,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": -1,
+        "tamagawa": 4
+      },
+      {
+        "p": 13,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 0.5,
+    "raw_ratio_frac": "1/2",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d-97",
+    "cm_type": "j=1728",
+    "d": -97,
+    "conductor": 301088,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -97,
+      0
+    ],
+    "L_leading": 17.5565452123025,
+    "omega": 1.6710108982179654,
+    "regulator": 5.253270709073627,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 97,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d-90",
+    "cm_type": "j=1728",
+    "d": -90,
+    "conductor": 57600,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -90,
+      0
+    ],
+    "L_leading": 19.716213792110825,
+    "omega": 6.810383683262068,
+    "regulator": 1.4475112349813353,
+    "tamagawa_product": 16,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": -1,
+        "tamagawa": 4
+      },
+      {
+        "p": 5,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 0.5000000000000001,
+    "raw_ratio_frac": "1/2",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j1728_d-77",
+    "cm_type": "j=1728",
+    "d": -77,
+    "conductor": 189728,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -77,
+      0
+    ],
+    "L_leading": 16.934112567446505,
+    "omega": 3.5406217286543993,
+    "regulator": 2.3914038077547266,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 7,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 11,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d-65",
+    "cm_type": "j=1728",
+    "d": -65,
+    "conductor": 135200,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -65,
+      0
+    ],
+    "L_leading": 23.527885442227326,
+    "omega": 3.6938042139553566,
+    "regulator": 3.1847770048745314,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 5,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 13,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j1728_d-56",
+    "cm_type": "j=1728",
+    "d": -56,
+    "conductor": 12544,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -56,
+      0
+    ],
+    "L_leading": 11.37731047884208,
+    "omega": 1.917013667193227,
+    "regulator": 2.967456798443184,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": -3,
+        "tamagawa": 2
+      },
+      {
+        "p": 7,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d-17",
+    "cm_type": "j=1728",
+    "d": -17,
+    "conductor": 9248,
+    "ainvs": [
+      0,
+      0,
+      0,
+      -17,
+      0
+    ],
+    "L_leading": 9.590696975182613,
+    "omega": 2.5826168818580144,
+    "regulator": 1.8567788824106908,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 17,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d14",
+    "cm_type": "j=1728",
+    "d": 14,
+    "conductor": 12544,
+    "ainvs": [
+      0,
+      0,
+      0,
+      14,
+      0
+    ],
+    "L_leading": 11.37731047884208,
+    "omega": 1.917013667193227,
+    "regulator": 2.9674567984431834,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 7,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d33",
+    "cm_type": "j=1728",
+    "d": 33,
+    "conductor": 69696,
+    "ainvs": [
+      0,
+      0,
+      0,
+      33,
+      0
+    ],
+    "L_leading": 16.46784273844743,
+    "omega": 1.5471368597902666,
+    "regulator": 5.3220381358763085,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 11,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.9999999999999996,
+    "raw_ratio_frac": "2/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d34",
+    "cm_type": "j=1728",
+    "d": 34,
+    "conductor": 73984,
+    "ainvs": [
+      0,
+      0,
+      0,
+      34,
+      0
+    ],
+    "L_leading": 17.814155682248156,
+    "omega": 1.5356331856158463,
+    "regulator": 5.800263972253248,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 17,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d39",
+    "cm_type": "j=1728",
+    "d": 39,
+    "conductor": 48672,
+    "ainvs": [
+      0,
+      0,
+      0,
+      39,
+      0
+    ],
+    "L_leading": 17.318608802435875,
+    "omega": 2.9677072795092445,
+    "regulator": 2.9178431649936467,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 13,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 0.9999999999999998,
+    "raw_ratio_frac": "1/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d46",
+    "cm_type": "j=1728",
+    "d": 46,
+    "conductor": 135424,
+    "ainvs": [
+      0,
+      0,
+      0,
+      46,
+      0
+    ],
+    "L_leading": 26.45770054944797,
+    "omega": 1.4238615423820746,
+    "regulator": 9.290826306462735,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 23,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": 2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d55",
+    "cm_type": "j=1728",
+    "d": 55,
+    "conductor": 96800,
+    "ainvs": [
+      0,
+      0,
+      0,
+      55,
+      0
+    ],
+    "L_leading": 21.73014822993513,
+    "omega": 2.7233066174541767,
+    "regulator": 3.9896624365876736,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 5,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 11,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 0.9999999999999999,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j1728_d63",
+    "cm_type": "j=1728",
+    "d": 63,
+    "conductor": 14112,
+    "ainvs": [
+      0,
+      0,
+      0,
+      63,
+      0
+    ],
+    "L_leading": 11.064190968115396,
+    "omega": 2.632401177403669,
+    "regulator": 2.101539663309979,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": -1,
+        "tamagawa": 2
+      },
+      {
+        "p": 7,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 0.9999999999999999,
+    "raw_ratio_frac": "1/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d65",
+    "cm_type": "j=1728",
+    "d": 65,
+    "conductor": 270400,
+    "ainvs": [
+      0,
+      0,
+      0,
+      65,
+      0
+    ],
+    "L_leading": 27.768000214553037,
+    "omega": 1.3059570040316388,
+    "regulator": 10.631284234025333,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 5,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 13,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.9999999999999998,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j1728_d66",
+    "cm_type": "j=1728",
+    "d": 66,
+    "conductor": 278784,
+    "ainvs": [
+      0,
+      0,
+      0,
+      66,
+      0
+    ],
+    "L_leading": 33.27258286610405,
+    "omega": 2.6019636786090476,
+    "regulator": 6.393744682072356,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 11,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0000000000000002,
+    "raw_ratio_frac": "1/1",
+    "a5": 2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d68",
+    "cm_type": "j=1728",
+    "d": 68,
+    "conductor": 9248,
+    "ainvs": [
+      0,
+      0,
+      0,
+      68,
+      0
+    ],
+    "L_leading": 9.590696975182613,
+    "omega": 2.5826168818580144,
+    "regulator": 1.8567788824106906,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": -7,
+        "tamagawa": 4
+      },
+      {
+        "p": 17,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d73",
+    "cm_type": "j=1728",
+    "d": 73,
+    "conductor": 341056,
+    "ainvs": [
+      0,
+      0,
+      0,
+      73,
+      0
+    ],
+    "L_leading": 17.412894075884193,
+    "omega": 0.6343026230939266,
+    "regulator": 13.726014556702939,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 73,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 4.000000000000001,
+    "raw_ratio_frac": "4/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d89",
+    "cm_type": "j=1728",
+    "d": 89,
+    "conductor": 506944,
+    "ainvs": [
+      0,
+      0,
+      0,
+      89,
+      0
+    ],
+    "L_leading": 25.860844681296502,
+    "omega": 0.603642377229738,
+    "regulator": 21.420666984960718,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 89,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 3.9999999999999996,
+    "raw_ratio_frac": "4/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d94",
+    "cm_type": "j=1728",
+    "d": 94,
+    "conductor": 565504,
+    "ainvs": [
+      0,
+      0,
+      0,
+      94,
+      0
+    ],
+    "L_leading": 24.68627769299942,
+    "omega": 1.1908998887130149,
+    "regulator": 10.364547820924503,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 47,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.9999999999999993,
+    "raw_ratio_frac": "2/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d99",
+    "cm_type": "j=1728",
+    "d": 99,
+    "conductor": 34848,
+    "ainvs": [
+      0,
+      0,
+      0,
+      99,
+      0
+    ],
+    "L_leading": 15.55534517103202,
+    "omega": 4.702279186622356,
+    "regulator": 1.6540218640447646,
+    "tamagawa_product": 16,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": -1,
+        "tamagawa": 4
+      },
+      {
+        "p": 11,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 0.5000000000000001,
+    "raw_ratio_frac": "1/2",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d105",
+    "cm_type": "j=1728",
+    "d": 105,
+    "conductor": 705600,
+    "ainvs": [
+      0,
+      0,
+      0,
+      105,
+      0
+    ],
+    "L_leading": 32.11643524559038,
+    "omega": 2.3168071721817167,
+    "regulator": 6.931184353885314,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 5,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 7,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 0.9999999999999998,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j1728_d113",
+    "cm_type": "j=1728",
+    "d": 113,
+    "conductor": 817216,
+    "ainvs": [
+      0,
+      0,
+      0,
+      113,
+      0
+    ],
+    "L_leading": 23.683361129420206,
+    "omega": 0.5686664564147739,
+    "regulator": 20.823596030909584,
+    "tamagawa_product": 2,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 113,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 4.0,
+    "raw_ratio_frac": "4/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d114",
+    "cm_type": "j=1728",
+    "d": 114,
+    "conductor": 831744,
+    "ainvs": [
+      0,
+      0,
+      0,
+      114,
+      0
+    ],
+    "L_leading": 32.52303112426505,
+    "omega": 2.269661030047538,
+    "regulator": 7.164733123955487,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 19,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0000000000000002,
+    "raw_ratio_frac": "1/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d129",
+    "cm_type": "j=1728",
+    "d": 129,
+    "conductor": 1065024,
+    "ainvs": [
+      0,
+      0,
+      0,
+      129,
+      0
+    ],
+    "L_leading": 38.64579049366004,
+    "omega": 1.100296649511677,
+    "regulator": 17.561532388020737,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 43,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d138",
+    "cm_type": "j=1728",
+    "d": 138,
+    "conductor": 1218816,
+    "ainvs": [
+      0,
+      0,
+      0,
+      138,
+      0
+    ],
+    "L_leading": 24.77773126347395,
+    "omega": 2.1638016226576355,
+    "regulator": 5.725508984747251,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 23,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d145",
+    "cm_type": "j=1728",
+    "d": 145,
+    "conductor": 1345600,
+    "ainvs": [
+      0,
+      0,
+      0,
+      145,
+      0
+    ],
+    "L_leading": 41.516374784380965,
+    "omega": 1.068600117294706,
+    "regulator": 19.425589662803347,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 5,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 29,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 2.0,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j1728_d150",
+    "cm_type": "j=1728",
+    "d": 150,
+    "conductor": 57600,
+    "ainvs": [
+      0,
+      0,
+      0,
+      150,
+      0
+    ],
+    "L_leading": 19.9035340634478,
+    "omega": 4.238326354081356,
+    "regulator": 2.348041703334314,
+    "tamagawa_product": 16,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 5,
+        "kodaira": -1,
+        "tamagawa": 4
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 0.5,
+    "raw_ratio_frac": "1/2",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j1728_d154",
+    "cm_type": "j=1728",
+    "d": 154,
+    "conductor": 1517824,
+    "ainvs": [
+      0,
+      0,
+      0,
+      154,
+      0
+    ],
+    "L_leading": 30.90481210204896,
+    "omega": 2.1052662756245226,
+    "regulator": 7.339882004446473,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 7,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 11,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 0.9999999999999999,
+    "raw_ratio_frac": "1/1",
+    "a5": -2,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d155",
+    "cm_type": "j=1728",
+    "d": 155,
+    "conductor": 768800,
+    "ainvs": [
+      0,
+      0,
+      0,
+      155,
+      0
+    ],
+    "L_leading": 37.746823099902464,
+    "omega": 2.1018624386634444,
+    "regulator": 8.979375244915012,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 5,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 31,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0000000000000002,
+    "raw_ratio_frac": "1/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  },
+  {
+    "label": "j1728_d158",
+    "cm_type": "j=1728",
+    "d": 158,
+    "conductor": 1597696,
+    "ainvs": [
+      0,
+      0,
+      0,
+      158,
+      0
+    ],
+    "L_leading": 25.365867977379416,
+    "omega": 1.0459067030656015,
+    "regulator": 12.126257486939737,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 79,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 2.0000000000000004,
+    "raw_ratio_frac": "2/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d178",
+    "cm_type": "j=1728",
+    "d": 178,
+    "conductor": 2027776,
+    "ainvs": [
+      0,
+      0,
+      0,
+      178,
+      0
+    ],
+    "L_leading": 20.769060018698422,
+    "omega": 1.0152014222154344,
+    "regulator": 10.22903414249308,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 89,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.9999999999999996,
+    "raw_ratio_frac": "2/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d183",
+    "cm_type": "j=1728",
+    "d": 183,
+    "conductor": 1071648,
+    "ainvs": [
+      0,
+      0,
+      0,
+      183,
+      0
+    ],
+    "L_leading": 24.964374635467458,
+    "omega": 2.0163895652270916,
+    "regulator": 6.190364963690907,
+    "tamagawa_product": 8,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 3,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 61,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.0,
+    "raw_ratio_frac": "1/1",
+    "a5": -4,
+    "ordinary_at_5": true
+  },
+  {
+    "label": "j1728_d185",
+    "cm_type": "j=1728",
+    "d": 185,
+    "conductor": 2190400,
+    "ainvs": [
+      0,
+      0,
+      0,
+      185,
+      0
+    ],
+    "L_leading": 36.30375178128404,
+    "omega": 1.0054588149716084,
+    "regulator": 18.053326123710583,
+    "tamagawa_product": 4,
+    "tam_details": [
+      {
+        "p": 2,
+        "kodaira": 2,
+        "tamagawa": 1
+      },
+      {
+        "p": 5,
+        "kodaira": 3,
+        "tamagawa": 2
+      },
+      {
+        "p": 37,
+        "kodaira": 3,
+        "tamagawa": 2
+      }
+    ],
+    "torsion_order": 2,
+    "torsion_structure": [
+      2
+    ],
+    "raw_ratio": 1.9999999999999996,
+    "raw_ratio_frac": "2/1",
+    "a5": 0,
+    "ordinary_at_5": false
+  }
+]
