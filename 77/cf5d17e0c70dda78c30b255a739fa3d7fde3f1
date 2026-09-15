@@ -1,0 +1,16 @@
+STRATEGY_INPUTS.md
+  h_ae4c05c847a7cd 23-25,33-37,47,49
+computation/CASTELLA_AUDIT_j1728_d68.md
+  h_ae4c05c847a7cd 16-19,27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "77cf5d17e0c70dda78c30b255a739fa3d7fde3f1",
+  "prompts": {},
+  "humans": {
+    "h_ae4c05c847a7cd": {
+      "author": "Mr. Implementation <carlangastr@gmail.com>"
+    }
+  }
+}
