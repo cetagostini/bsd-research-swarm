@@ -103,7 +103,7 @@ Total Sha finiteness and a general rank≥2 theorem are different questions.
 ## Unsafe Assertions Retracted (per Mr. Genius)
 
 ### 1. Wrong curve in inertia argument
-The claim that v_389(Δ) = 0 for 194040.cu1 was incorrect. 194040.cu1's conductor is 194040; its discriminant factors as 2¹¹·3⁸·5·7⁸·11. The valuation-1 transvection at 389 belongs to **389a1**, not this curve.
+The claim that v_389(Δ) = 0 for 194040.cu1 was incorrect — but the correction must be stated precisely: 389 does not divide 194040.cu1's discriminant at all (its discriminant factors as 2¹¹·3⁸·5·7⁸·11), so v_389(Δ) = 0 is *trivially true* for 194040.cu1 and carries no transvection information. The valuation-1 (multiplicative reduction) transvection at 389 belongs to **389a1** (discriminant 389, v_389(Δ_min) = 1), not to 194040.cu1.
 
 ### 2. Kato alone insufficient for rank-2 finiteness
 Kato does not by itself give rank-two finiteness at all non-exceptional primes. Large image supplies divisibility/cotorsion hypotheses; an upper bound closing the Selmer-corank chain is still needed. See [Kim's guide](https://arxiv.org/abs/2404.05186), Theorems 2.6/2.9 and Proposition 2.7.
