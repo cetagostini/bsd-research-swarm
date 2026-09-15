@@ -1,0 +1,1993 @@
+{
+  "timestamp": "2026-09-15 14:53:37",
+  "total_curves": 37,
+  "errors": 86,
+  "rank_distribution": {
+    "2": 37
+  },
+  "track_b_candidates": [
+    {
+      "label": "j1728_d-17",
+      "conductor": 9248,
+      "d": -17,
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "priority": "high"
+    },
+    {
+      "label": "j1728_d68",
+      "conductor": 9248,
+      "d": 68,
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "priority": "high"
+    },
+    {
+      "label": "j1728_d-56",
+      "conductor": 12544,
+      "d": -56,
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d14",
+      "conductor": 12544,
+      "d": 14,
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d63",
+      "conductor": 14112,
+      "d": 63,
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d99",
+      "conductor": 34848,
+      "d": 99,
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d-156",
+      "conductor": 48672,
+      "d": -156,
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d-117",
+      "conductor": 48672,
+      "d": -117,
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d39",
+      "conductor": 48672,
+      "d": 39,
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d-132",
+      "conductor": 69696,
+      "d": -132,
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d33",
+      "conductor": 69696,
+      "d": 33,
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d-136",
+      "conductor": 73984,
+      "d": -136,
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d34",
+      "conductor": 73984,
+      "d": 34,
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d-184",
+      "conductor": 135424,
+      "d": -184,
+      "sha_estimate": 1.0,
+      "a5": 2,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d46",
+      "conductor": 135424,
+      "d": 46,
+      "sha_estimate": 1.0,
+      "a5": 2,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d-77",
+      "conductor": 189728,
+      "d": -77,
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d66",
+      "conductor": 278784,
+      "d": 66,
+      "sha_estimate": 1.0,
+      "a5": 2,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d-97",
+      "conductor": 301088,
+      "d": -97,
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "priority": "medium"
+    },
+    {
+      "label": "j1728_d73",
+      "conductor": 341056,
+      "d": 73,
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "priority": "medium"
+    }
+  ],
+  "results": [
+    {
+      "label": "j0_d-11",
+      "cm_type": "j=0",
+      "d": -11,
+      "conductor": 13068,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        -11
+      ],
+      "rank": 2,
+      "L_leading": 11.8465495676,
+      "ellbsd": 1.6285443875,
+      "regulator": 3.6371589434,
+      "tamagawa_product": 1,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 4,
+          "tamagawa": 1
+        },
+        {
+          "p": 3,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 11,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d15",
+      "cm_type": "j=0",
+      "d": 15,
+      "conductor": 97200,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        15
+      ],
+      "rank": 2,
+      "L_leading": 20.1572297802,
+      "ellbsd": 2.6786160405,
+      "regulator": 3.7626202254,
+      "tamagawa_product": 1,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 3,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 5,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d17",
+      "cm_type": "j=0",
+      "d": 17,
+      "conductor": 10404,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        17
+      ],
+      "rank": 2,
+      "L_leading": 11.0353810885,
+      "ellbsd": 15.7399049425,
+      "regulator": 0.3505542482,
+      "tamagawa_product": 6,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 4,
+          "tamagawa": 3
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 17,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d-26",
+      "cm_type": "j=0",
+      "d": -26,
+      "conductor": 97344,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        -26
+      ],
+      "rank": 2,
+      "L_leading": 22.6140597047,
+      "ellbsd": 2.8220594084,
+      "regulator": 4.0066590444,
+      "tamagawa_product": 2,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 13,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d37",
+      "cm_type": "j=0",
+      "d": 37,
+      "conductor": 49284,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        37
+      ],
+      "rank": 2,
+      "L_leading": 18.5538435077,
+      "ellbsd": 4.608809068,
+      "regulator": 2.0128674495,
+      "tamagawa_product": 2,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 4,
+          "tamagawa": 1
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 37,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d-39",
+      "cm_type": "j=0",
+      "d": -39,
+      "conductor": 164268,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        -39
+      ],
+      "rank": 2,
+      "L_leading": 21.6403112346,
+      "ellbsd": 3.956479027,
+      "regulator": 2.7347941297,
+      "tamagawa_product": 3,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 4,
+          "tamagawa": 3
+        },
+        {
+          "p": 3,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 13,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d-47",
+      "cm_type": "j=0",
+      "d": -47,
+      "conductor": 238572,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        -47
+      ],
+      "rank": 2,
+      "L_leading": 28.2607319607,
+      "ellbsd": 3.8353351978,
+      "regulator": 3.6842584159,
+      "tamagawa_product": 3,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 4,
+          "tamagawa": 3
+        },
+        {
+          "p": 3,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 47,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d-53",
+      "cm_type": "j=0",
+      "d": -53,
+      "conductor": 404496,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        -53
+      ],
+      "rank": 2,
+      "L_leading": 27.2843555657,
+      "ellbsd": 2.5062000353,
+      "regulator": 5.4433714751,
+      "tamagawa_product": 2,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 53,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d57",
+      "cm_type": "j=0",
+      "d": 57,
+      "conductor": 350892,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        57
+      ],
+      "rank": 2,
+      "L_leading": 26.2450325681,
+      "ellbsd": 6.4328158695,
+      "regulator": 2.0399334522,
+      "tamagawa_product": 3,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 4,
+          "tamagawa": 3
+        },
+        {
+          "p": 3,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 19,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d65",
+      "cm_type": "j=0",
+      "d": 65,
+      "conductor": 456300,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        65
+      ],
+      "rank": 2,
+      "L_leading": 31.5919166863,
+      "ellbsd": 6.2935357522,
+      "regulator": 2.5098702804,
+      "tamagawa_product": 3,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 4,
+          "tamagawa": 3
+        },
+        {
+          "p": 3,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 5,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 13,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d-67",
+      "cm_type": "j=0",
+      "d": -67,
+      "conductor": 484812,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        -67
+      ],
+      "rank": 2,
+      "L_leading": 25.2794848137,
+      "ellbsd": 1.2050893468,
+      "regulator": 10.4886350875,
+      "tamagawa_product": 1,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 4,
+          "tamagawa": 1
+        },
+        {
+          "p": 3,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 67,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d73",
+      "cm_type": "j=0",
+      "d": 73,
+      "conductor": 191844,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        73
+      ],
+      "rank": 2,
+      "L_leading": 21.8903677463,
+      "ellbsd": 12.345910248,
+      "regulator": 0.8865432887,
+      "tamagawa_product": 6,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 4,
+          "tamagawa": 3
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 73,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j0_d89",
+      "cm_type": "j=0",
+      "d": 89,
+      "conductor": 285156,
+      "ainvs": [
+        0,
+        0,
+        0,
+        0,
+        89
+      ],
+      "rank": 2,
+      "L_leading": 30.8291597798,
+      "ellbsd": 11.9447919838,
+      "regulator": 1.2904854192,
+      "tamagawa_product": 6,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 4,
+          "tamagawa": 3
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 89,
+          "kodaira": 2,
+          "tamagawa": 1
+        }
+      ],
+      "torsion_order": 1,
+      "torsion_structure": [],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j1728_d-184",
+      "cm_type": "j=1728",
+      "d": -184,
+      "conductor": 135424,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -184,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 26.4577005494,
+      "ellbsd": 1.4238615424,
+      "regulator": 9.2908263065,
+      "tamagawa_product": 4,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": -3,
+          "tamagawa": 2
+        },
+        {
+          "p": 23,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": 2,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d-156",
+      "cm_type": "j=1728",
+      "d": -156,
+      "conductor": 48672,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -156,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 17.3186088024,
+      "ellbsd": 2.9677072795,
+      "regulator": 2.917843165,
+      "tamagawa_product": 8,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": -7,
+          "tamagawa": 2
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 13,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d-136",
+      "cm_type": "j=1728",
+      "d": -136,
+      "conductor": 73984,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -136,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 17.8141556822,
+      "ellbsd": 1.5356331856,
+      "regulator": 5.8002639723,
+      "tamagawa_product": 4,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": -3,
+          "tamagawa": 2
+        },
+        {
+          "p": 17,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d-132",
+      "cm_type": "j=1728",
+      "d": -132,
+      "conductor": 69696,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -132,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 16.4678427384,
+      "ellbsd": 6.1885474392,
+      "regulator": 1.330509534,
+      "tamagawa_product": 16,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": -6,
+          "tamagawa": 4
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 11,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d-117",
+      "cm_type": "j=1728",
+      "d": -117,
+      "conductor": 48672,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -117,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 15.4915199558,
+      "ellbsd": 6.378018018,
+      "regulator": 1.2144462364,
+      "tamagawa_product": 16,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 3,
+          "kodaira": -1,
+          "tamagawa": 4
+        },
+        {
+          "p": 13,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d-97",
+      "cm_type": "j=1728",
+      "d": -97,
+      "conductor": 301088,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -97,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 17.5565452123,
+      "ellbsd": 1.6710108982,
+      "regulator": 5.2532707091,
+      "tamagawa_product": 4,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 97,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d-90",
+      "cm_type": "j=1728",
+      "d": -90,
+      "conductor": 57600,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -90,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 19.7162137921,
+      "ellbsd": 6.8103836833,
+      "regulator": 1.447511235,
+      "tamagawa_product": 16,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 3,
+          "kodaira": -1,
+          "tamagawa": 4
+        },
+        {
+          "p": 5,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j1728_d-77",
+      "cm_type": "j=1728",
+      "d": -77,
+      "conductor": 189728,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -77,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 16.9341125674,
+      "ellbsd": 3.5406217287,
+      "regulator": 2.3914038078,
+      "tamagawa_product": 8,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 7,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 11,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d-65",
+      "cm_type": "j=1728",
+      "d": -65,
+      "conductor": 135200,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -65,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 23.5278854422,
+      "ellbsd": 3.693804214,
+      "regulator": 3.1847770049,
+      "tamagawa_product": 8,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 5,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 13,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j1728_d-56",
+      "cm_type": "j=1728",
+      "d": -56,
+      "conductor": 12544,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -56,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 11.3773104788,
+      "ellbsd": 1.9170136672,
+      "regulator": 2.9674567984,
+      "tamagawa_product": 4,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": -3,
+          "tamagawa": 2
+        },
+        {
+          "p": 7,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d-17",
+      "cm_type": "j=1728",
+      "d": -17,
+      "conductor": 9248,
+      "ainvs": [
+        0,
+        0,
+        0,
+        -17,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 9.5906969752,
+      "ellbsd": 2.5826168819,
+      "regulator": 1.8567788824,
+      "tamagawa_product": 4,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 17,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d14",
+      "cm_type": "j=1728",
+      "d": 14,
+      "conductor": 12544,
+      "ainvs": [
+        0,
+        0,
+        0,
+        14,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 11.3773104788,
+      "ellbsd": 1.9170136672,
+      "regulator": 2.9674567984,
+      "tamagawa_product": 4,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 7,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d33",
+      "cm_type": "j=1728",
+      "d": 33,
+      "conductor": 69696,
+      "ainvs": [
+        0,
+        0,
+        0,
+        33,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 16.4678427384,
+      "ellbsd": 1.5471368598,
+      "regulator": 5.3220381359,
+      "tamagawa_product": 4,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 11,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d34",
+      "cm_type": "j=1728",
+      "d": 34,
+      "conductor": 73984,
+      "ainvs": [
+        0,
+        0,
+        0,
+        34,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 17.8141556822,
+      "ellbsd": 1.5356331856,
+      "regulator": 5.8002639723,
+      "tamagawa_product": 4,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 17,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d39",
+      "cm_type": "j=1728",
+      "d": 39,
+      "conductor": 48672,
+      "ainvs": [
+        0,
+        0,
+        0,
+        39,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 17.3186088024,
+      "ellbsd": 2.9677072795,
+      "regulator": 2.917843165,
+      "tamagawa_product": 8,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 13,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d46",
+      "cm_type": "j=1728",
+      "d": 46,
+      "conductor": 135424,
+      "ainvs": [
+        0,
+        0,
+        0,
+        46,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 26.4577005494,
+      "ellbsd": 1.4238615424,
+      "regulator": 9.2908263065,
+      "tamagawa_product": 4,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 23,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": 2,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d55",
+      "cm_type": "j=1728",
+      "d": 55,
+      "conductor": 96800,
+      "ainvs": [
+        0,
+        0,
+        0,
+        55,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 21.7301482299,
+      "ellbsd": 2.7233066175,
+      "regulator": 3.9896624366,
+      "tamagawa_product": 8,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 5,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 11,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j1728_d63",
+      "cm_type": "j=1728",
+      "d": 63,
+      "conductor": 14112,
+      "ainvs": [
+        0,
+        0,
+        0,
+        63,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 11.0641909681,
+      "ellbsd": 2.6324011774,
+      "regulator": 2.1015396633,
+      "tamagawa_product": 8,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 3,
+          "kodaira": -1,
+          "tamagawa": 2
+        },
+        {
+          "p": 7,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d65",
+      "cm_type": "j=1728",
+      "d": 65,
+      "conductor": 270400,
+      "ainvs": [
+        0,
+        0,
+        0,
+        65,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 27.7680002146,
+      "ellbsd": 1.305957004,
+      "regulator": 10.631284234,
+      "tamagawa_product": 4,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 5,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 13,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    },
+    {
+      "label": "j1728_d66",
+      "cm_type": "j=1728",
+      "d": 66,
+      "conductor": 278784,
+      "ainvs": [
+        0,
+        0,
+        0,
+        66,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 33.2725828661,
+      "ellbsd": 2.6019636786,
+      "regulator": 6.3937446821,
+      "tamagawa_product": 8,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 11,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": 2,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d68",
+      "cm_type": "j=1728",
+      "d": 68,
+      "conductor": 9248,
+      "ainvs": [
+        0,
+        0,
+        0,
+        68,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 9.5906969752,
+      "ellbsd": 2.5826168819,
+      "regulator": 1.8567788824,
+      "tamagawa_product": 8,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": -7,
+          "tamagawa": 4
+        },
+        {
+          "p": 17,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d73",
+      "cm_type": "j=1728",
+      "d": 73,
+      "conductor": 341056,
+      "ainvs": [
+        0,
+        0,
+        0,
+        73,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 17.4128940759,
+      "ellbsd": 0.6343026231,
+      "regulator": 13.7260145567,
+      "tamagawa_product": 2,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 2,
+          "tamagawa": 1
+        },
+        {
+          "p": 73,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -4,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d99",
+      "cm_type": "j=1728",
+      "d": 99,
+      "conductor": 34848,
+      "ainvs": [
+        0,
+        0,
+        0,
+        99,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 15.555345171,
+      "ellbsd": 4.7022791866,
+      "regulator": 1.654021864,
+      "tamagawa_product": 16,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 3,
+          "kodaira": -1,
+          "tamagawa": 4
+        },
+        {
+          "p": 11,
+          "kodaira": 3,
+          "tamagawa": 2
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": -2,
+      "ordinary_at_5": true
+    },
+    {
+      "label": "j1728_d150",
+      "cm_type": "j=1728",
+      "d": 150,
+      "conductor": 57600,
+      "ainvs": [
+        0,
+        0,
+        0,
+        150,
+        0
+      ],
+      "rank": 2,
+      "L_leading": 19.9035340634,
+      "ellbsd": 4.2383263541,
+      "regulator": 2.3480417033,
+      "tamagawa_product": 16,
+      "tam_details": [
+        {
+          "p": 2,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 3,
+          "kodaira": 3,
+          "tamagawa": 2
+        },
+        {
+          "p": 5,
+          "kodaira": -1,
+          "tamagawa": 4
+        }
+      ],
+      "torsion_order": 2,
+      "torsion_structure": [
+        2
+      ],
+      "sha_estimate": 1.0,
+      "a5": 0,
+      "ordinary_at_5": false
+    }
+  ],
+  "error_details": [
+    {
+      "label": "j0_d43",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell798'"
+    },
+    {
+      "label": "j0_d-61",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1607'"
+    },
+    {
+      "label": "j0_d79",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell2696'"
+    },
+    {
+      "label": "j0_d-83",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell744'"
+    },
+    {
+      "label": "j0_d-89",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1140'"
+    },
+    {
+      "label": "j0_d101",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1101'"
+    },
+    {
+      "label": "j0_d106",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell4853'"
+    },
+    {
+      "label": "j0_d-106",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell4853'"
+    },
+    {
+      "label": "j0_d-109",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1710'"
+    },
+    {
+      "label": "j0_d-118",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell2005'"
+    },
+    {
+      "label": "j0_d122",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell6429'"
+    },
+    {
+      "label": "j0_d129",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1797'"
+    },
+    {
+      "label": "j0_d131",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell7413'"
+    },
+    {
+      "label": "j0_d-139",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell2086'"
+    },
+    {
+      "label": "j0_d142",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell8710'"
+    },
+    {
+      "label": "j0_d145",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell756'"
+    },
+    {
+      "label": "j0_d151",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell9850'"
+    },
+    {
+      "label": "j0_d-155",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell2594'"
+    },
+    {
+      "label": "j0_d161",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell933'"
+    },
+    {
+      "label": "j0_d-170",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell4161'"
+    },
+    {
+      "label": "j0_d186",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell14945'"
+    },
+    {
+      "label": "j0_d-186",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell14945'"
+    },
+    {
+      "label": "j0_d-191",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell3939'"
+    },
+    {
+      "label": "j0_d195",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell16426'"
+    },
+    {
+      "label": "j0_d197",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1397'"
+    },
+    {
+      "label": "j0_d-211",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell4808'"
+    },
+    {
+      "label": "j0_d-214",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell19783'"
+    },
+    {
+      "label": "j0_d217",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1695'"
+    },
+    {
+      "label": "j0_d-219",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell5179'"
+    },
+    {
+      "label": "j0_d222",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell21290'"
+    },
+    {
+      "label": "j0_d-222",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell21290'"
+    },
+    {
+      "label": "j0_d223",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell21482'"
+    },
+    {
+      "label": "j0_d229",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell5663'"
+    },
+    {
+      "label": "j0_d233",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1954'"
+    },
+    {
+      "label": "j0_d-233",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell7817'"
+    },
+    {
+      "label": "j0_d-249",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell26784'"
+    },
+    {
+      "label": "j0_d-262",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell9884'"
+    },
+    {
+      "label": "j0_d265",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell7584'"
+    },
+    {
+      "label": "j0_d269",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell2604'"
+    },
+    {
+      "label": "j0_d-277",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell33146'"
+    },
+    {
+      "label": "j0_d281",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell8527'"
+    },
+    {
+      "label": "j0_d-286",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell35335'"
+    },
+    {
+      "label": "j0_d-291",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell9145'"
+    },
+    {
+      "label": "j0_d-293",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell37086'"
+    },
+    {
+      "label": "j0_d295",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell37594'"
+    },
+    {
+      "label": "j0_d-298",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell12787'"
+    },
+    {
+      "label": "j0_d-299",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell9655'"
+    },
+    {
+      "label": "j0_d303",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell39661'"
+    },
+    {
+      "label": "j0_d322",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell44791'"
+    },
+    {
+      "label": "j0_d-327",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell11548'"
+    },
+    {
+      "label": "j0_d-329",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell46760'"
+    },
+    {
+      "label": "j0_d331",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell47330'"
+    },
+    {
+      "label": "j0_d-334",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell16064'"
+    },
+    {
+      "label": "j0_d337",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell12265'"
+    },
+    {
+      "label": "j0_d347",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell52016'"
+    },
+    {
+      "label": "j0_d353",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell13457'"
+    },
+    {
+      "label": "j0_d-355",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell13610'"
+    },
+    {
+      "label": "j0_d366",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell57868'"
+    },
+    {
+      "label": "j0_d-366",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell57868'"
+    },
+    {
+      "label": "j0_d-370",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell19713'"
+    },
+    {
+      "label": "j0_d-371",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell14865'"
+    },
+    {
+      "label": "j0_d373",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell15025'"
+    },
+    {
+      "label": "j0_d377",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell5116'"
+    },
+    {
+      "label": "j0_d381",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell15677'"
+    },
+    {
+      "label": "j0_d389",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell16342'"
+    },
+    {
+      "label": "j0_d-391",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell16511'"
+    },
+    {
+      "label": "j0_d-393",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell66721'"
+    },
+    {
+      "label": "j0_d-397",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell22695'"
+    },
+    {
+      "label": "j1728_d-161",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell829'"
+    },
+    {
+      "label": "j1728_d-155",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1537'"
+    },
+    {
+      "label": "j1728_d-145",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell672'"
+    },
+    {
+      "label": "j1728_d-141",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell636'"
+    },
+    {
+      "label": "j1728_d89",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell506'"
+    },
+    {
+      "label": "j1728_d94",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell565'"
+    },
+    {
+      "label": "j1728_d105",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell705'"
+    },
+    {
+      "label": "j1728_d113",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell817'"
+    },
+    {
+      "label": "j1728_d114",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell831'"
+    },
+    {
+      "label": "j1728_d129",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1065'"
+    },
+    {
+      "label": "j1728_d138",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1218'"
+    },
+    {
+      "label": "j1728_d145",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1345'"
+    },
+    {
+      "label": "j1728_d154",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1517'"
+    },
+    {
+      "label": "j1728_d155",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell768'"
+    },
+    {
+      "label": "j1728_d158",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1597'"
+    },
+    {
+      "label": "j1728_d178",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell2027'"
+    },
+    {
+      "label": "j1728_d183",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell1071'"
+    },
+    {
+      "label": "j1728_d185",
+      "error": "error opening elldata file: `/opt/homebrew/share/pari/elldata/ell2190'"
+    }
+  ]
+}
