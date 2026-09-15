@@ -1,0 +1,18 @@
+computation/CLS_AUDIT_j0_family.md
+  h_ae4c05c847a7cd 1-122
+computation/cls_j0_sweep.json
+  h_ae4c05c847a7cd 1-401186
+computation/cls_j0_sweep.py
+  h_ae4c05c847a7cd 1-367
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "95cb67fa221e90ee69098e3f0b8901b263e2531f",
+  "prompts": {},
+  "humans": {
+    "h_ae4c05c847a7cd": {
+      "author": "Mr. Implementation <carlangastr@gmail.com>"
+    }
+  }
+}
