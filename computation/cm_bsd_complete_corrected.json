@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-15 14:53:37",
+  "timestamp": "2026-09-15 15:34:47",
   "total_curves": 37,
   "errors": 86,
   "rank_distribution": {
@@ -10,7 +10,7 @@
       "label": "j1728_d-17",
       "conductor": 9248,
       "d": -17,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "priority": "high"
     },
@@ -18,7 +18,7 @@
       "label": "j1728_d68",
       "conductor": 9248,
       "d": 68,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "priority": "high"
     },
@@ -26,7 +26,7 @@
       "label": "j1728_d-56",
       "conductor": 12544,
       "d": -56,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "priority": "medium"
     },
@@ -34,7 +34,7 @@
       "label": "j1728_d14",
       "conductor": 12544,
       "d": 14,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "priority": "medium"
     },
@@ -42,7 +42,7 @@
       "label": "j1728_d63",
       "conductor": 14112,
       "d": 63,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "priority": "medium"
     },
@@ -50,7 +50,7 @@
       "label": "j1728_d99",
       "conductor": 34848,
       "d": 99,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "priority": "medium"
     },
@@ -58,7 +58,7 @@
       "label": "j1728_d-156",
       "conductor": 48672,
       "d": -156,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "priority": "medium"
     },
@@ -66,7 +66,7 @@
       "label": "j1728_d-117",
       "conductor": 48672,
       "d": -117,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "priority": "medium"
     },
@@ -74,7 +74,7 @@
       "label": "j1728_d39",
       "conductor": 48672,
       "d": 39,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "priority": "medium"
     },
@@ -82,7 +82,7 @@
       "label": "j1728_d-132",
       "conductor": 69696,
       "d": -132,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "priority": "medium"
     },
@@ -90,7 +90,7 @@
       "label": "j1728_d33",
       "conductor": 69696,
       "d": 33,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "priority": "medium"
     },
@@ -98,7 +98,7 @@
       "label": "j1728_d-136",
       "conductor": 73984,
       "d": -136,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "priority": "medium"
     },
@@ -106,7 +106,7 @@
       "label": "j1728_d34",
       "conductor": 73984,
       "d": 34,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "priority": "medium"
     },
@@ -114,7 +114,7 @@
       "label": "j1728_d-184",
       "conductor": 135424,
       "d": -184,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 2,
       "priority": "medium"
     },
@@ -122,7 +122,7 @@
       "label": "j1728_d46",
       "conductor": 135424,
       "d": 46,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 2,
       "priority": "medium"
     },
@@ -130,7 +130,7 @@
       "label": "j1728_d-77",
       "conductor": 189728,
       "d": -77,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "priority": "medium"
     },
@@ -138,7 +138,7 @@
       "label": "j1728_d66",
       "conductor": 278784,
       "d": 66,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 2,
       "priority": "medium"
     },
@@ -146,7 +146,7 @@
       "label": "j1728_d-97",
       "conductor": 301088,
       "d": -97,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "priority": "medium"
     },
@@ -154,7 +154,7 @@
       "label": "j1728_d73",
       "conductor": 341056,
       "d": 73,
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "priority": "medium"
     }
@@ -196,7 +196,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -236,7 +236,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -276,7 +276,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -316,7 +316,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -356,7 +356,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -396,7 +396,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -436,7 +436,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -476,7 +476,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -516,7 +516,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -561,7 +561,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -601,7 +601,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -641,7 +641,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -681,7 +681,7 @@
       ],
       "torsion_order": 1,
       "torsion_structure": [],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -718,7 +718,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 2,
       "ordinary_at_5": true
     },
@@ -760,7 +760,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "ordinary_at_5": true
     },
@@ -797,7 +797,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "ordinary_at_5": true
     },
@@ -839,7 +839,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "ordinary_at_5": true
     },
@@ -881,7 +881,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "ordinary_at_5": true
     },
@@ -918,7 +918,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "ordinary_at_5": true
     },
@@ -960,7 +960,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -1002,7 +1002,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "ordinary_at_5": true
     },
@@ -1044,7 +1044,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -1081,7 +1081,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "ordinary_at_5": true
     },
@@ -1118,7 +1118,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "ordinary_at_5": true
     },
@@ -1155,7 +1155,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "ordinary_at_5": true
     },
@@ -1197,7 +1197,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "ordinary_at_5": true
     },
@@ -1234,7 +1234,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "ordinary_at_5": true
     },
@@ -1276,7 +1276,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "ordinary_at_5": true
     },
@@ -1313,7 +1313,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 2,
       "ordinary_at_5": true
     },
@@ -1355,7 +1355,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -1397,7 +1397,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "ordinary_at_5": true
     },
@@ -1439,7 +1439,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     },
@@ -1481,7 +1481,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 2,
       "ordinary_at_5": true
     },
@@ -1518,7 +1518,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "ordinary_at_5": true
     },
@@ -1555,7 +1555,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -4,
       "ordinary_at_5": true
     },
@@ -1597,7 +1597,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": -2,
       "ordinary_at_5": true
     },
@@ -1639,7 +1639,7 @@
       "torsion_structure": [
         2
       ],
-      "sha_estimate": 1.0,
+      "bsd_quotient": 1.0,
       "a5": 0,
       "ordinary_at_5": false
     }

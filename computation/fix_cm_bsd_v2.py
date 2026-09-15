@@ -5,10 +5,12 @@ Fix CM BSD computation: correct the normalization formula.
 Per Mr. Genius's review:
 - lfun(E,1,r) returns L^(r)(E,1) (raw derivative, NOT divided by r!)
 - BSD formula: L^(r)(E,1)/r! = ellbsd(E) * Reg(E) * |Sha(E)|
-- So |Sha| = L^(r)(E,1) / (r! * ellbsd(E) * Reg(E))
+- So BSD quotient = L^(r)(E,1) / (r! * ellbsd(E) * Reg(E))
 
 Previous bug: raw_ratio = L_leading / (omega * regulator)
 Missing: division by r! (factorial of rank)
+
+NOTE: All "bsd_quotient" values are NUMERICAL estimates, NOT proven |Sha| orders.
 """
 import json
 import time
@@ -34,15 +36,20 @@ def safe_real(x):
 
 def compute_bsd_ratio_correct(pari, ainvs):
     """
-    Compute |Sha| via BSD: L^(r)(E,1) / (r! * ellbsd(E) * Reg(E))
+    Compute BSD quotient: L^(r)(E,1) / (r! * ellbsd(E) * Reg(E))
     
-    Returns dict with all BSD components and sha_estimate.
+    This is the NUMERICAL BSD quotient, NOT a proven |Sha| value.
+    Returns dict with all BSD components.
     """
     E = pari.ellinit(ainvs)
     
-    # Get rank
+    # Get rank — check certification
     rank_data = pari.ellrank(E)
-    rank = int(rank_data[0])
+    rank_lower = int(rank_data[0])
+    rank_upper = int(rank_data[1])
+    if rank_lower != rank_upper:
+        raise ValueError(f"Rank not certified: lower={rank_lower}, upper={rank_upper}")
+    rank = rank_lower
     
     # Get L-function leading coefficient
     # lfun(E,1,r) returns L^(r)(E,1) (raw, not divided by r!)
@@ -53,9 +60,10 @@ def compute_bsd_ratio_correct(pari, ainvs):
     ellbsd_raw = pari.ellbsd(E)
     ellbsd_val = safe_real(ellbsd_raw)
     
-    # Get generators and regulator
-    gens = pari.ellgenerators(E)
+    # Get generators and regulator only when needed (rank > 0)
+    # Rank 0: regulator = 1 unconditionally, no elldata dependency
     if rank > 0:
+        gens = pari.ellgenerators(E)
         hmat = pari.ellheightmatrix(E, gens, precision=60)
         reg = safe_real(pari.matdet(hmat))
     else:
@@ -87,17 +95,16 @@ def compute_bsd_ratio_correct(pari, ainvs):
     # The correct formula:
     # |Sha| = L^(r)(E,1) / (r! * ellbsd(E) * Reg(E))
     denom = factorial(rank) * ellbsd_val * reg
-    if denom == 0:
-        sha_estimate = 0
-    else:
-        sha_estimate = L_leading / denom
+    if abs(denom) < 1e-30:
+        raise ValueError(f"Invalid regulator or ellbsd: denom={denom}")
+    bsd_quotient = L_leading / denom
     
     return {
         "rank": rank,
         "L_leading": L_leading,
         "ellbsd": ellbsd_val,
         "regulator": reg,
-        "sha_estimate": sha_estimate,
+        "bsd_quotient": bsd_quotient,  # L^(r)(1)/(r!*ellbsd*Reg); NOT proven |Sha|
         "conductor": N,
         "tamagawa_product": tam,
         "tam_details": tam_details,
@@ -112,7 +119,8 @@ def verify_controls(pari):
     """
     controls = [
         # (label, ainvs, expected_sha)
-        ("11a1", [0, -1, 1, 0, 0], 1),
+        # Verified with ellidentify: these are the correct Cremona labels
+        ("11a1", [0, -1, 1, -10, -20], 1),  # NOT [0,-1,1,0,0] which is 11a3
         ("37a1", [0, 0, 1, -1, 0], 1),
         ("389a1", [0, 1, 1, -2, 0], 1),
     ]
@@ -121,10 +129,10 @@ def verify_controls(pari):
     all_pass = True
     for label, ainvs, expected_sha in controls:
         result = compute_bsd_ratio_correct(pari, ainvs)
-        sha_est = result["sha_estimate"]
+        sha_est = result["bsd_quotient"]
         ok = abs(sha_est - expected_sha) < 0.1
         status = "PASS" if ok else "FAIL"
-        print(f"{label}: rank={result['rank']}, sha_estimate={sha_est:.6f}, expected={expected_sha}, {status}")
+        print(f"{label}: rank={result['rank']}, bsd_quotient={sha_est:.6f}, expected={expected_sha}, {status}")
         if not ok:
             all_pass = False
             print(f"  L_leading={result['L_leading']:.6f}, ellbsd={result['ellbsd']:.6f}, reg={result['regulator']:.6f}, r!={factorial(result['rank'])}")
@@ -132,12 +140,16 @@ def verify_controls(pari):
     return all_pass
 
 
-def compute_d68_twist(pari):
+def compute_j1728_d68(pari):
     """
-    Compute BSD data for the d=2 twist candidate: y^2 = x^3 + 68x
-    Per Mr. Genius's analysis: conductor 9248, Cremona 9248g2
+    Compute BSD data for j1728_d68: y^2 = x^3 + 68x
+    Conductor 9248, Cremona 9248g2, CM by Q(i).
+    
+    NOTE: This is NOT the d=2 quadratic twist of 194040.cu1 (N1).
+    N1 has ainvs [0,0,0,-1825528908,-30021416896912], conductor 1,552,320.
+    This is the rank-2 CM curve for the Castella Track B audit.
     """
-    print("\n=== d=2 Twist: E: y^2 = x^3 + 68x ===")
+    print("\n=== j1728_d68: E: y^2 = x^3 + 68x (NOT the d=2 twist of N1) ===")
     # ainvs for y^2 = x^3 + 68x is [0, 0, 0, 68, 0]
     ainvs = [0, 0, 0, 68, 0]
     result = compute_bsd_ratio_correct(pari, ainvs)
@@ -147,7 +159,7 @@ def compute_d68_twist(pari):
     print(f"L^(r)(1): {result['L_leading']:.10f}")
     print(f"ellbsd(E): {result['ellbsd']:.10f}")
     print(f"Regulator: {result['regulator']:.10f}")
-    print(f"|Sha| estimate: {result['sha_estimate']:.6f}")
+    print(f"BSD quotient (numerical): {result['bsd_quotient']:.6f}")
     print(f"Torsion order: {result['torsion_order']}")
     print(f"Tamagawa product: {result['tamagawa_product']}")
     
@@ -170,8 +182,8 @@ def main():
         print("\nERROR: Control verification failed!")
         return
     
-    # Compute the key d=2 twist
-    d68_result = compute_d68_twist(pari)
+    # Compute the key CM curve for Track B audit
+    d68_result = compute_j1728_d68(pari)
     
     # Load CM curves
     curves_path = "computation/cm_rank2_curves.json"
@@ -208,7 +220,7 @@ def main():
                 "tam_details": bsd["tam_details"],
                 "torsion_order": bsd["torsion_order"],
                 "torsion_structure": bsd["torsion_structure"],
-                "sha_estimate": round(bsd["sha_estimate"], 6),
+                "bsd_quotient": round(bsd["bsd_quotient"], 6),
                 "a5": curve.get("a5", 0),
                 "ordinary_at_5": curve.get("ordinary_at_5", False)
             }
@@ -234,7 +246,7 @@ def main():
                 "label": r["label"],
                 "conductor": r["conductor"],
                 "d": r["d"],
-                "sha_estimate": r["sha_estimate"],
+                "bsd_quotient": r["bsd_quotient"],
                 "a5": r["a5"],
                 "priority": "high" if r["conductor"] < 10000 else "medium"
             })
@@ -243,7 +255,7 @@ def main():
     track_b_candidates.sort(key=lambda x: x["conductor"])
     
     # Summary
-    sha_values = [r["sha_estimate"] for r in results if r["rank"] == 2]
+    bsd_values = [r["bsd_quotient"] for r in results if r["rank"] == 2]
     rank_dist = {}
     for r in results:
         rank_dist[r["rank"]] = rank_dist.get(r["rank"], 0) + 1
@@ -252,14 +264,14 @@ def main():
     print(f"Total curves processed: {len(results)}")
     print(f"Errors: {len(errors)}")
     print(f"Rank distribution: {rank_dist}")
-    if sha_values:
-        print(f"Sha estimates (rank 2): min={min(sha_values):.4f}, max={max(sha_values):.4f}, mean={sum(sha_values)/len(sha_values):.4f}")
+    if bsd_values:
+        print(f"BSD quotients (rank 2): min={min(bsd_values):.4f}, max={max(bsd_values):.4f}, mean={sum(bsd_values)/len(bsd_values):.4f}")
     print(f"Track B candidates (rank 2, ordinary at 5): {len(track_b_candidates)}")
     
     if track_b_candidates:
         print("\nTop 5 Track B candidates:")
         for c in track_b_candidates[:5]:
-            print(f"  {c['label']}: conductor={c['conductor']}, d={c['d']}, Sha~{c['sha_estimate']:.2f}")
+            print(f"  {c['label']}: conductor={c['conductor']}, d={c['d']}, BSD quot~{c['bsd_quotient']:.2f}")
     
     # Save complete results
     complete_path = "computation/cm_bsd_complete_corrected.json"
